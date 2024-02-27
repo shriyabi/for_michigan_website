@@ -75,9 +75,10 @@ img{
     }
 }
 .scroll {
-    white-space: nowrap;
+    /*white-space: nowrap;*/
+    display: inline-flex; 
     overflow: hidden;
-    animation: scrollText 10s linear infinite;
+    animation: scrollText 30s linear infinite;
 }
 
 .fa-instagram, .fa-envelope, .fa-facebook, .fa-location-dot {
@@ -184,6 +185,7 @@ img{
         height: 10vh; 
         width: auto; 
         margin-right: 2vw; 
+        display: inline-flex;
     }
     .logo{
         height: auto; 
@@ -311,6 +313,7 @@ img{
         height: 10vh; 
         width: auto; 
         margin-right: 2vw; 
+        display: inline-flex;
     }
     .logo{
         height: auto; 
@@ -434,6 +437,7 @@ img{
         height: 10vh; 
         width: auto; 
         margin-right: 2vw; 
+        display: inline-flex;
     }
     .logo{
         height: auto; 

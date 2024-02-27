@@ -1,21 +1,75 @@
-var backgroundcolors = ['#4BABF1','#06BD91','#F4417A','#A992E0','#E6D2BB']
-var fontcolors = ['#A98F92','#E6D2BB','#E6D2BB','#E6D2BB', '#DD3AA6','#E6D2BB','#A98F92']; 
-var titlecolors = ['#5363F2','#A9992E','#FF001F','#DD3AA6','#A98F92']; 
-var boxcolors = ['#E6D2BB','#E6D2BB', '#E6D2BB', '#D1A5D7','#DDA8A1'];
-var bodyswirls = ['BlueSwirl.png','GreenSwirl.png','RedSwirl.png','PurpleSwirl.png','BeigeSwirl.png'];
-var currentIndex = 0; 
-function changeBackgroundColor(){
+var backgroundcolors = ['#4BABF1', '#06BD91', '#F4417A', '#A992E0', '#E6D2BB'];
+var fontcolors = ['#A98F92', '#E6D2BB', '#E6D2BB', '#E6D2BB', '#DD3AA6', '#E6D2BB'];
+var titlecolors = ['#5363F2', '#A9992E', '#FF001F', '#DD3AA6', '#A98F92'];
+var boxcolors = ['#E6D2BB', '#E6D2BB', '#E6D2BB', '#D1A5D7', '#DDA8A1'];
+var bodyswirls = ['BlueSwirl.png', 'GreenSwirl.png', 'RedSwirl.png', 'PurpleSwirl.png', 'BeigeSwirl.png'];
+var currentIndex = 0;
+var currentIndex1 = -1;
+function changeBackgroundColor() {
+    var body = document.body;
+    var button = document.querySelector('button');
+    var homeCollegeBox = document.querySelector(".home-college-box");
+    var link = document.querySelectorAll('a');
+    var dropbtnhover = document.querySelector('.dropbtn');
+    var swirl = document.querySelector('.body-swirl');
+    var colleges = document.querySelectorAll('.colleges');
+    currentIndex1 = currentIndex;
+    body.style.backgroundColor = backgroundcolors[currentIndex];
+    swirl.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
+    button.style.backgroundColor = titlecolors[currentIndex];
+    homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
+    link.forEach(function (link) {
+        link.addEventListener('mouseenter', function () {
+            link.style.color = fontcolors[currentIndex];
+            link.style.backgroundColor = backgroundcolors[currentIndex - 1];
+        });
+        link.addEventListener('mouseleave', function () {
+            link.style.color = '#000000';
+            link.style.backgroundColor = 'transparent';
+        });
+    });
+    colleges.forEach(function (college) {
+        college.style.backgroundColor = boxcolors[currentIndex];
+    });
+    dropbtnhover.addEventListener('mouseenter', function () {
+        if (currentIndex1 >= 0) {
+            dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
+        }
+        dropbtnhover.style.color = fontcolors[currentIndex];
+    });
+    dropbtnhover.addEventListener('mouseleave', function () {
+        dropbtnhover.style.color = '#000000';
+        dropbtnhover.style.backgroundColor = 'transparent';
+    });
+    currentIndex = (currentIndex + 1) % backgroundcolors.length;
+}
+
+
+var currentIndex1 = -1; 
+function changeBackgroundColor2(){
     var body = document.body; 
     var button = document.querySelector('button'); 
-    var homeCollegeBox = document.querySelector(".home-college-box")
+    var header = document.querySelector(".wwa-header"); 
+    var whoweare = document.querySelector(".mission");
+    var staff = document.querySelectorAll('.staff'); 
     var link = document.querySelectorAll('a');
     var dropbtnhover = document.querySelector('.dropbtn'); 
-    var swirl = document.querySelector('.body-swirl'); 
-    var colleges = document.querySelectorAll('.colleges'); 
     body.style.backgroundColor = backgroundcolors[currentIndex];
-    swirl.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')'; 
     button.style.backgroundColor = titlecolors[currentIndex]; 
-    homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
+    header.style.backgroundColor = boxcolors[currentIndex]; 
+    whoweare.style.backgroundColor = backgroundcolors[currentIndex];
+    staff.forEach(function (staff) {
+        staff.style.backgroundColor = boxcolors[currentIndex];
+        staff.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';  
+    });
+    dropbtnhover.addEventListener('mouseenter', function() {
+        dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1]; 
+        dropbtnhover.style.color = fontcolors[currentIndex1];
+    });
+    dropbtnhover.addEventListener('mouseleave', function() {
+        dropbtnhover.style.color = '#000000';
+        dropbtnhover.style.backgroundColor = 'transparent';
+    });
     link.forEach(function(link){
         link.addEventListener('mouseenter', function() {
         link.style.color = fontcolors[currentIndex];
@@ -26,36 +80,8 @@ function changeBackgroundColor(){
         link.style.backgroundColor = 'transparent';  
     });
     });
-    colleges.forEach(function (college) {
-        college.style.backgroundColor = boxcolors[currentIndex];
-    });
-    
-    dropbtnhover.addEventListener('mouseenter', function() {
-        dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex - 1]; 
-        dropbtnhover.style.color = fontcolors[currentIndex];
-    });
-    dropbtnhover.addEventListener('mouseleave', function() {
-        dropbtnhover.style.color = '#000000';
-        dropbtnhover.style.backgroundColor = 'transparent';
-    });
     currentIndex = (currentIndex + 1) % backgroundcolors.length; 
-}
-
-function changeBackgroundColor2(){
-    var body = document.body; 
-    var button = document.querySelector('button'); 
-    var header = document.querySelector(".wwa-header"); 
-    var whoweare = document.querySelector(".mission");
-    var staff = document.querySelectorAll('.staff'); 
-    body.style.backgroundColor = backgroundcolors[currentIndex];
-    button.style.backgroundColor = titlecolors[currentIndex]; 
-    header.style.backgroundColor = boxcolors[currentIndex]; 
-    whoweare.style.backgroundColor = backgroundcolors[currentIndex];
-    staff.forEach(function (staff) {
-        staff.style.backgroundColor = boxcolors[currentIndex];
-        staff.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';  
-    });
-    currentIndex = (currentIndex + 1) % backgroundcolors.length;  
+    currentIndex1 = (currentIndex1 + 1) % backgroundcolors.length - 1;  
 }
 
 function toggleDropdown() {

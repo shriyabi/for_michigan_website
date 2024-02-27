@@ -193,8 +193,8 @@ img{
         height: 50vh; 
         width: 70vw;
         position: absolute; 
-        top: 210%; 
-        left: 50%; 
+        top: 210vh; 
+        left: 50vw; 
         transform: translate(-50%, -50%);  
     }
     .colleges{
@@ -316,8 +316,8 @@ img{
         height: 70vh; 
         width: 70vw;
         position: absolute; 
-        top: 210%; 
-        left: 50%; 
+        top: 210vh; 
+        left: 50vw; 
         transform: translate(-50%, -50%);  
     }
     .colleges{

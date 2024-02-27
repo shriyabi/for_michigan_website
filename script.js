@@ -11,7 +11,7 @@ function changeBackgroundColor(){
     var link = document.querySelectorAll('a');
     var dropbtnhover = document.querySelector('.dropbtn'); 
     var swirl = document.querySelector('.body-swirl'); 
-    var colleges = document.querySelectorAll('.colleges');
+    var colleges = document.querySelectorAll('.colleges'); 
     body.style.backgroundColor = backgroundcolors[currentIndex];
     swirl.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')'; 
     button.style.backgroundColor = titlecolors[currentIndex]; 
@@ -41,6 +41,23 @@ function changeBackgroundColor(){
     currentIndex = (currentIndex + 1) % backgroundcolors.length; 
 }
 
+function changeBackgroundColor2(){
+    var body = document.body; 
+    var button = document.querySelector('button'); 
+    var header = document.querySelector(".wwa-header"); 
+    var whoweare = document.querySelector(".mission");
+    var staff = document.querySelectorAll('.staff'); 
+    body.style.backgroundColor = backgroundcolors[currentIndex];
+    button.style.backgroundColor = titlecolors[currentIndex]; 
+    header.style.backgroundColor = boxcolors[currentIndex]; 
+    whoweare.style.backgroundColor = backgroundcolors[currentIndex];
+    staff.forEach(function (staff) {
+        staff.style.backgroundColor = boxcolors[currentIndex];
+        staff.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';  
+    });
+    currentIndex = (currentIndex + 1) % backgroundcolors.length;  
+}
+
 function toggleDropdown() {
     var dropdown = document.getElementById("myDropdown");
     dropdown.classList.toggle("show");
@@ -56,3 +73,12 @@ window.onclick = function(event) {
         }
     }
 }
+
+const scroll1 = document.querySelector('.scroll');
+const scroll2 = document.querySelector('.scroll2');
+scroll1.addEventListener('animationiteration', () => {
+    scroll2.style.animationPlayState = 'running';
+});
+scroll2.addEventListener('animationiteration', () => {
+    scroll1.style.animationPlayState = 'running';
+});

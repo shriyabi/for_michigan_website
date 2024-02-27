@@ -63,6 +63,7 @@ a:link,a.visited,a:active{
 /*IMAGES*/
 img{
     text-align: center;
+    justify-content: center;
 }
 
 @keyframes scrollText {
@@ -149,36 +150,34 @@ img{
 
 
 @media only screen and (max-width: 767px){
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-    body{
-        min-width: 768px;
-        max-width: 1023px; 
+    body {
+        max-width: 767px;
+    }
+    .body-img{
+        margin-top: 10vh; 
     }
     /*FONTS*/
     h1{
-        font-size: 5em;
+        font-size: 3em;
     }
     h2{
-        font-size: 2em; 
+        font-size: 1em; 
     }
     h3{
-        font-size: 2em; 
+        font-size: 1em; 
         margin-top: 2vh;
     }
     h4{
         font-size: 1.25em; 
     }
     p {
-        font-size: 1em; 
+        font-size: 0.75em; 
     }
 
     /*IMAGES*/ 
     img{
         width: 20vw; 
-        height: 7vh;
+        height: 5vh;
         margin: 3vw;
     }
     .scrolling-images{
@@ -208,10 +207,180 @@ img{
         border-width: 1em; 
         object-fit: contain;
     }
+    .umich {
+        box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
+        margin-right: 2vw; 
+    }
+    .umich:hover{
+        box-shadow: 0 0 5em rgba(255, 208, 0, 0.7);
+    }
+    .msu{
+        box-shadow: 0 0 1em rgb(6, 171, 0);
+        margin-right: 2vw; 
+    }
+    .msu:hover{
+        box-shadow: 0 0 5em  rgb(6, 171, 0);
+    }
+    .cmu {
+        box-shadow: 0 0 1em rgb(195, 0, 68);
+    }
+    .cmu:hover{
+        box-shadow: 0 0 5em rgb(195, 0, 68);
+    }
+    .gvs {
+        box-shadow: 0 0 1em rgba(0, 55, 255, 0.7);
+        margin-top: 2.5vh;  
+        margin-right: 2vw; 
+    }
+    .gvs:hover{
+        box-shadow: 0 0 5em rgba(0, 55, 255, 0.7);
+    }
+    .wmu {
+        box-shadow: 0 0 1em rgb(195, 101, 0);
+        margin-top: 2.5vh; 
+        margin-right: 2vw; 
+    }
+    .wmu:hover{
+        box-shadow: 0 0 5em rgb(195, 101, 0);
+    }
+    .mtu {
+        box-shadow: 0 0 2em #000000;
+        margin-top: 2.5vh; 
+    }
+    .mtu:hover{
+        box-shadow: 0 0 5em #000000;
+    }
     .college-image{
         margin: auto; 
-        width: 7em; 
-        height: 4.5em; 
+        width: 45%; 
+        height: auto; 
+        bottom: 1; 
+        float:center;
+        
+    }
+    /*DROP DOWN*/
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu{
+        height: 2em; 
+        width: 50vw; 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .dropdown{
+        display: inline; 
+    }
+    .dropbtn{
+        font-size: 1em;
+        display: inline; 
+    }
+    .contact-us{
+        height: 10vh; 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        min-width: 768px;
+        max-width: 1023px; 
+    }
+    /*FONTS*/
+    h1{
+        font-size: 5em;
+    }
+    h2{
+        font-size: 2em; 
+    }
+    h3{
+        font-size: 2em; 
+        margin-top: 2vh;
+    }
+    h4{
+        font-size: 1.25em; 
+    }
+    p {
+        font-size: 1em; 
+    }
+
+    /*IMAGES*/ 
+    img{
+        width: 20vw; 
+        height: 5vh;
+        margin: 3vw;
+    }
+    .scrolling-images{
+        height: 10vh; 
+        width: auto; 
+        margin-right: 2vw; 
+    }
+    .logo{
+        height: auto; 
+        width: 12vw; 
+        margin-right: 5vw;
+        margin-bottom: 5vh; 
+        margin-left: 1.5vw;
+    }
+    .home-college-box{
+        height: 50vh; 
+        width: 70vw;
+        position: absolute; 
+        top: 200vh; 
+        left: 50vw; 
+        transform: translate(-50%, -50%);  
+    }
+    .colleges{
+        width: 20vw; 
+        height: 17vh;  
+        justify-content: center;
+        border-width: 1em; 
+        object-fit: contain;
+    }
+    .umich {
+        box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
+        margin-right: 2vw; 
+    }
+    .umich:hover{
+        box-shadow: 0 0 5em rgba(255, 208, 0, 0.7);
+    }
+    .msu{
+        box-shadow: 0 0 1em rgb(6, 171, 0);
+        margin-right: 2vw; 
+    }
+    .msu:hover{
+        box-shadow: 0 0 5em  rgb(6, 171, 0);
+    }
+    .cmu {
+        box-shadow: 0 0 1em rgb(195, 0, 68);
+    }
+    .cmu:hover{
+        box-shadow: 0 0 5em rgb(195, 0, 68);
+    }
+    .gvs {
+        box-shadow: 0 0 1em rgba(0, 55, 255, 0.7);
+        margin-top: 2.5vh;  
+        margin-right: 2vw; 
+    }
+    .gvs:hover{
+        box-shadow: 0 0 5em rgba(0, 55, 255, 0.7);
+    }
+    .wmu {
+        box-shadow: 0 0 1em rgb(195, 101, 0);
+        margin-top: 2.5vh; 
+        margin-right: 2vw; 
+    }
+    .wmu:hover{
+        box-shadow: 0 0 5em rgb(195, 101, 0);
+    }
+    .mtu {
+        box-shadow: 0 0 2em #000000;
+        margin-top: 2.5vh; 
+    }
+    .mtu:hover{
+        box-shadow: 0 0 5em #000000;
+    }
+    .college-image{
+        margin: auto; 
+        width: 30%;
+        height: auto; 
         bottom: 1; 
         float:center;
         
@@ -277,7 +446,7 @@ img{
         height: 70vh; 
         width: 70vw;
         position: absolute; 
-        top: 210vh; 
+        top: 200vh; 
         left: 50vw; 
         transform: translate(-50%, -50%);  
     }
@@ -353,9 +522,6 @@ img{
     .dropbtn{
         font-size: 1em;
         display: inline; 
-    }
-    .contact-us{
-        height: 10vh; 
     }
 }
 

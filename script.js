@@ -1,0 +1,58 @@
+var backgroundcolors = ['#4BABF1','#06BD91','#F4417A','#A992E0','#E6D2BB']
+var fontcolors = ['#A98F92','#E6D2BB','#E6D2BB','#E6D2BB', '#DD3AA6','#E6D2BB','#A98F92']; 
+var titlecolors = ['#5363F2','#A9992E','#FF001F','#DD3AA6','#A98F92']; 
+var boxcolors = ['#E6D2BB','#E6D2BB', '#E6D2BB', '#D1A5D7','#DDA8A1'];
+var bodyswirls = ['BlueSwirl.png','GreenSwirl.png','RedSwirl.png','PurpleSwirl.png','BeigeSwirl.png'];
+var currentIndex = 0; 
+function changeBackgroundColor(){
+    var body = document.body; 
+    var button = document.querySelector('button'); 
+    var homeCollegeBox = document.querySelector(".home-college-box")
+    var link = document.querySelectorAll('a');
+    var dropbtnhover = document.querySelector('.dropbtn'); 
+    var swirl = document.querySelector('.body-swirl'); 
+    var colleges = document.querySelectorAll('.colleges');
+    body.style.backgroundColor = backgroundcolors[currentIndex];
+    swirl.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')'; 
+    button.style.backgroundColor = titlecolors[currentIndex]; 
+    homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
+    link.forEach(function(link){
+        link.addEventListener('mouseenter', function() {
+        link.style.color = fontcolors[currentIndex];
+        link.style.backgroundColor = backgroundcolors[currentIndex - 1]; 
+    });
+    link.addEventListener('mouseleave', function() {
+        link.style.color = '#000000';
+        link.style.backgroundColor = 'transparent';  
+    });
+    });
+    colleges.forEach(function (college) {
+        college.style.backgroundColor = boxcolors[currentIndex];
+    });
+    
+    dropbtnhover.addEventListener('mouseenter', function() {
+        dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex - 1]; 
+        dropbtnhover.style.color = fontcolors[currentIndex];
+    });
+    dropbtnhover.addEventListener('mouseleave', function() {
+        dropbtnhover.style.color = '#000000';
+        dropbtnhover.style.backgroundColor = 'transparent';
+    });
+    currentIndex = (currentIndex + 1) % backgroundcolors.length; 
+}
+
+function toggleDropdown() {
+    var dropdown = document.getElementById("myDropdown");
+    dropdown.classList.toggle("show");
+}
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}

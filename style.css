@@ -1,0 +1,282 @@
+body {
+    background-color: #e6d2bb;
+    transition: background-color 0.5 ease; 
+    overflow: scroll; 
+    overflow-x: hidden;
+    /*background-image: url(BackgroundImg.png);*/
+}
+.body-img{
+    background-image: url(BackgroundImg.png);
+}
+.body-swirl{
+    background-image: url(BeigeSwirl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0; 
+}
+
+.home-college-box{
+    background-color: #e6d2bb; 
+    justify-content: center; 
+}
+
+/*Color-Change Button*/
+.color-change-button{
+    font-size: 16px; 
+    cursor: pointer; 
+    justify-content: center;
+    margin: auto;  
+    font-family: "Fira Sans", sans-serif;
+    background-color: #A98F92; 
+    position: fixed; 
+    bottom: 0; 
+    left: 95%; 
+    transform: translateX(-50%);  
+}
+
+h1, h2, h3, h4, p{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color:#000000;  
+}
+
+/*LINKS*/
+a:hover{
+    color: #A98F92;
+    background-color: #e6d2bb; 
+}
+a:link,a.visited,a:active{
+    text-decoration: none;
+}
+.link-color{
+    color: #000000;
+}
+
+/*IMAGES*/
+img{
+    text-align: center;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.scroll {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollText 10s linear infinite;
+}
+
+.fa-instagram, .fa-envelope, .fa-facebook, .fa-location-dot {
+    color: #000000;
+    margin-right: 1vw; 
+}
+
+/*COLLEGE BOXES*/
+.colleges{
+    background-color: #DDA8A1;  
+    border-radius: 3em; 
+}
+
+.college-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*DROPDOWN*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0 8px 1em rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.dropdown-content .box {
+    display: inline-block;
+}
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color:#000000; 
+}
+.dropbtn:hover{
+    color: #A98F92; 
+    background-color: #e6d2bb;
+}
+.box-umich {
+    background-color: rgb(255, 232, 103);
+}
+.box-msu {
+    background-color: rgb(92, 139, 92);
+}
+.box-cmu {
+    background-color: rgb(195, 102, 138);
+}
+.box-gvs {
+    background-color: rgb(74, 108, 218);
+}
+.box-wmu {
+    background-color: rgb(158, 105, 105);
+}
+.box-mtu {
+    background-color: rgb(116, 115, 115);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 767px){
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    /*FONTS*/
+    h1{
+        font-size: 5em;
+    }
+    h2{
+        font-size: 2em; 
+    }
+    h3{
+        font-size: 2em; 
+        margin-top: 2vh;
+    }
+    h4{
+        font-size: 1.25em; 
+    }
+    p {
+        font-size: 1em; 
+    }
+
+    /*IMAGES*/ 
+    img{
+        width: 20vw; 
+        height: 12vh;
+    }
+    .scrolling-images{
+        height: 10vh; 
+        width: auto; 
+        margin-right: 2vw; 
+    }
+    .logo{
+        height: auto; 
+        width: 15vw; 
+        margin-right: 5vw;
+        margin-bottom: 5vh; 
+        justify-self: left;
+    }
+    .home-college-box{
+        height: 70vh; 
+        width: 70vw;
+        position: absolute; 
+        top: 210%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);  
+    }
+    .colleges{
+        width: 20vw; 
+        height: 25vh;  
+        justify-content: center;
+        border-width: 1em; 
+        object-fit: contain;
+    }
+    .umich {
+        box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
+        margin-right: 2vw; 
+    }
+    .umich:hover{
+        box-shadow: 0 0 5em rgba(255, 208, 0, 0.7);
+    }
+    .msu{
+        box-shadow: 0 0 1em rgba(2, 49, 0);
+        margin-right: 2vw; 
+    }
+    .msu:hover{
+        box-shadow: 0 0 5em rgba(2, 49, 0);
+    }
+    .cmu {
+        box-shadow: 0 0 1em rgba(91, 0, 32);
+    }
+    .cmu:hover{
+        box-shadow: 0 0 5em rgba(91, 0, 32);
+    }
+    .gvs {
+        box-shadow: 0 0 1em rgba(0, 55, 255, 0.7);
+        margin-top: 2.5vh;  
+        margin-right: 2vw; 
+    }
+    .gvs:hover{
+        box-shadow: 0 0 5em rgba(0, 55, 255, 0.7);
+    }
+    .wmu {
+        box-shadow: 0 0 1em rgba(106, 55, 0);
+        margin-top: 2.5vh; 
+        margin-right: 2vw; 
+    }
+    .wmu:hover{
+        box-shadow: 0 0 5em rgb(106, 55, 0);
+    }
+    .mtu {
+        box-shadow: 0 0 2em #000000;
+        margin-top: 2.5vh; 
+    }
+    .mtu:hover{
+        box-shadow: 0 0 5em #000000;
+    }
+    .college-image{
+        margin: auto; 
+        width: 6em; 
+        height: 4.5em; 
+        bottom: 1; 
+        float:center;
+        
+    }
+    /*DROP DOWN*/
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu{
+        height: 3em; 
+        width: 20vw; 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .dropdown{
+        display: inline; 
+    }
+    .dropbtn{
+        font-size: 1em;
+        display: inline; 
+    }
+    .contact-us{
+        height: 10vh; 
+    }
+}
+
+@media only screen and (min-resolution: 192dpi) {}
+
+/* media only screen and (orientation:portrait){}
+media only screen and (orientation: landscape){} */    

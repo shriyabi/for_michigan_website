@@ -175,6 +175,7 @@ img{
     img{
         width: 20vw; 
         height: 7vh;
+        margin: 3vw;
     }
     .scrolling-images{
         height: 10vh; 
@@ -183,7 +184,7 @@ img{
     }
     .logo{
         height: auto; 
-        width: 15vw; 
+        width: 12vw; 
         margin-right: 5vw;
         margin-bottom: 5vh; 
         justify-self: left;
@@ -297,6 +298,7 @@ img{
     img{
         width: 20vw; 
         height: 12vh;
+        margin: 5vw; 
     }
     .scrolling-images{
         height: 10vh; 

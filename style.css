@@ -44,6 +44,8 @@ h1, h2, h3, h4, p{
     font-style: normal;
     text-align: center;
     color:#000000;  
+    word-wrap: break-word; 
+    padding: 0.5em; 
 }
 
 /*LINKS*/
@@ -151,7 +153,125 @@ img{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+    /*FONTS*/
+    h1{
+        font-size: 5em;
+    }
+    h2{
+        font-size: 2em; 
+    }
+    h3{
+        font-size: 2em; 
+        margin-top: 2vh;
+    }
+    h4{
+        font-size: 1.25em; 
+    }
+    p {
+        font-size: 1em; 
+    }
 
+    /*IMAGES*/ 
+    img{
+        width: 20vw; 
+        height: 7vh;
+    }
+    .scrolling-images{
+        height: 10vh; 
+        width: auto; 
+        margin-right: 2vw; 
+    }
+    .logo{
+        height: auto; 
+        width: 15vw; 
+        margin-right: 5vw;
+        margin-bottom: 5vh; 
+        justify-self: left;
+    }
+    .home-college-box{
+        height: 50vh; 
+        width: 70vw;
+        position: absolute; 
+        top: 210%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);  
+    }
+    .colleges{
+        width: 20vw; 
+        height: 17vh;  
+        justify-content: center;
+        border-width: 1em; 
+        object-fit: contain;
+    }
+    .umich {
+        box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
+        margin-right: 2vw; 
+    }
+    .umich:hover{
+        box-shadow: 0 0 5em rgba(255, 208, 0, 0.7);
+    }
+    .msu{
+        box-shadow: 0 0 1em rgba(2, 49, 0);
+        margin-right: 2vw; 
+    }
+    .msu:hover{
+        box-shadow: 0 0 5em rgba(2, 49, 0);
+    }
+    .cmu {
+        box-shadow: 0 0 1em rgba(91, 0, 32);
+    }
+    .cmu:hover{
+        box-shadow: 0 0 5em rgba(91, 0, 32);
+    }
+    .gvs {
+        box-shadow: 0 0 1em rgba(0, 55, 255, 0.7);
+        margin-top: 2.5vh;  
+        margin-right: 2vw; 
+    }
+    .gvs:hover{
+        box-shadow: 0 0 5em rgba(0, 55, 255, 0.7);
+    }
+    .wmu {
+        box-shadow: 0 0 1em rgba(106, 55, 0);
+        margin-top: 2.5vh; 
+        margin-right: 2vw; 
+    }
+    .wmu:hover{
+        box-shadow: 0 0 5em rgb(106, 55, 0);
+    }
+    .mtu {
+        box-shadow: 0 0 2em #000000;
+        margin-top: 2.5vh; 
+    }
+    .mtu:hover{
+        box-shadow: 0 0 5em #000000;
+    }
+    .college-image{
+        margin: auto; 
+        width: 7em; 
+        height: 4.5em; 
+        bottom: 1; 
+        float:center;
+        
+    }
+    /*DROP DOWN*/
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu{
+        height: 3em; 
+        width: 35vw; 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .dropdown{
+        display: inline; 
+    }
+    .dropbtn{
+        font-size: 1em;
+        display: inline; 
+    }
+    .contact-us{
+        height: 10vh; 
+    }
 }
 
 @media only screen and (min-width: 1024px){

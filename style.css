@@ -78,7 +78,7 @@ img{
     /*white-space: nowrap;*/
     display: inline-flex; 
     overflow: hidden;
-    animation: scrollText 30s linear infinite;
+    animation: scrollText 15s linear infinite;
 }
 
 .fa-instagram, .fa-envelope, .fa-facebook, .fa-location-dot {

@@ -204,49 +204,6 @@ img{
         border-width: 1em; 
         object-fit: contain;
     }
-    .umich {
-        box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
-        margin-right: 2vw; 
-    }
-    .umich:hover{
-        box-shadow: 0 0 5em rgba(255, 208, 0, 0.7);
-    }
-    .msu{
-        box-shadow: 0 0 1em rgba(2, 49, 0);
-        margin-right: 2vw; 
-    }
-    .msu:hover{
-        box-shadow: 0 0 5em rgba(2, 49, 0);
-    }
-    .cmu {
-        box-shadow: 0 0 1em rgba(91, 0, 32);
-    }
-    .cmu:hover{
-        box-shadow: 0 0 5em rgba(91, 0, 32);
-    }
-    .gvs {
-        box-shadow: 0 0 1em rgba(0, 55, 255, 0.7);
-        margin-top: 2.5vh;  
-        margin-right: 2vw; 
-    }
-    .gvs:hover{
-        box-shadow: 0 0 5em rgba(0, 55, 255, 0.7);
-    }
-    .wmu {
-        box-shadow: 0 0 1em rgba(106, 55, 0);
-        margin-top: 2.5vh; 
-        margin-right: 2vw; 
-    }
-    .wmu:hover{
-        box-shadow: 0 0 5em rgb(106, 55, 0);
-    }
-    .mtu {
-        box-shadow: 0 0 2em #000000;
-        margin-top: 2.5vh; 
-    }
-    .mtu:hover{
-        box-shadow: 0 0 5em #000000;
-    }
     .college-image{
         margin: auto; 
         width: 7em; 
@@ -335,17 +292,17 @@ img{
         box-shadow: 0 0 5em rgba(255, 208, 0, 0.7);
     }
     .msu{
-        box-shadow: 0 0 1em rgba(2, 49, 0);
+        box-shadow: 0 0 1em rgb(6, 171, 0);
         margin-right: 2vw; 
     }
     .msu:hover{
-        box-shadow: 0 0 5em rgba(2, 49, 0);
+        box-shadow: 0 0 5em  rgb(6, 171, 0);
     }
     .cmu {
-        box-shadow: 0 0 1em rgba(91, 0, 32);
+        box-shadow: 0 0 1em rgb(195, 0, 68);
     }
     .cmu:hover{
-        box-shadow: 0 0 5em rgba(91, 0, 32);
+        box-shadow: 0 0 5em rgb(195, 0, 68);
     }
     .gvs {
         box-shadow: 0 0 1em rgba(0, 55, 255, 0.7);
@@ -356,12 +313,12 @@ img{
         box-shadow: 0 0 5em rgba(0, 55, 255, 0.7);
     }
     .wmu {
-        box-shadow: 0 0 1em rgba(106, 55, 0);
+        box-shadow: 0 0 1em rgb(195, 101, 0);
         margin-top: 2.5vh; 
         margin-right: 2vw; 
     }
     .wmu:hover{
-        box-shadow: 0 0 5em rgb(106, 55, 0);
+        box-shadow: 0 0 5em rgb(195, 101, 0);
     }
     .mtu {
         box-shadow: 0 0 2em #000000;

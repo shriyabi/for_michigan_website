@@ -8,9 +8,14 @@ body {
 body:hover{
     cursor: url(Cursor.png), auto; 
 }
-.body-img{
+/*.body-img{
     background-image: url(BackgroundImg.png);
-}
+    z-index:-1;
+    justify-content: center; 
+    align-items: center; 
+    justify-content: center;
+    vertical-align: middle;
+} */
 .body-swirl{
     background-image: url(BeigeSwirl.png);
     background-size: cover;
@@ -35,6 +40,9 @@ body:hover{
 .home-college-box{
     background-color: #e6d2bb; 
     justify-content: center; 
+    align-items: center; 
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .college-div{
@@ -181,17 +189,13 @@ img{
     margin: auto; 
     background-color: #e6d2bb;
 }
-.wwa-body-img{
-    background-image: url(BackgroundImg.png);
-    z-index:-1;
-}
 .wwa-header{
     position: fixed; 
     display: flex; 
     align-items: center; 
     top: 0; 
     background-color: #DDA8A1;
-    z-index: 1; 
+    z-index: 3; 
 }
 .staff {
     background-color: #DDA8A1;
@@ -221,10 +225,17 @@ img{
 .vote-info{
     height: auto; 
     margin: auto; 
+    position: relative; 
+    z-index: 2; 
  } 
-.college-body-img{
+.college-body-img, .wwa-body-img , .body-img{
     background-image: url(BackgroundImg.png);
     z-index:-1;
+    align-items: center; 
+    justify-content: center;
+    display:flex; 
+    vertical-align: middle;
+    width: 100%; 
 }
 .boxes-college-page {
     border-radius: 1em;
@@ -244,23 +255,23 @@ img{
     background-color: transparent;
 }
 .umich-header-color:hover{
-    color: rgb(243, 218, 0); 
-    background-color: rgb(0, 35, 79);
+    color: #FFFFFF; 
+    background-color: #00274C;
 }
 .msu-header-color{
     color: black; 
     background-color: transparent;
 }
 .msu-header-color:hover{
-    color: white; 
-    background-color: rgb(0, 51, 36);
+    color: #0B9A6D; 
+    background-color: #18453B;
 }
 .cmu-header-color{
     color: black; 
     background-color: transparent;
 }
 .cmu-header-color:hover{
-    color: rgb(243, 218, 0); 
+    color: #F3F6F7; 
     background-color: rgb(72, 0, 0);
 }
 .gsv-header-color{
@@ -268,15 +279,15 @@ img{
     background-color: transparent;
 }
 .gsv-header-color:hover{
-    color: rgb(201, 201, 201); 
-    background-color: rgb(0, 101, 223);
+    color: #FFFFFF; 
+    background-color: #0032A0;
 }
 .mtu-header-color{
     color: black; 
     background-color: transparent;
 }
 .mtu-header-color:hover{
-    color: #ecb900; 
+    color: #8a8c8c; 
     background-color: rgb(0, 0, 0) ;
 }
 .wmu-header-color{
@@ -284,9 +295,20 @@ img{
     background-color: transparent;
 }
 .wmu-header-color:hover{
-    color: #ecb900; 
+    color: #FFFFFF; 
     background-color: rgb(95, 68, 1) ;
 }
+.background-container {
+    position: absolute;
+    z-index: -1;
+}
+
+.background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 
@@ -341,10 +363,6 @@ img{
     .home-college-box{
         height: 50vh; 
         width: 80vw;
-        position: absolute; 
-        top: 120vh; 
-        left: 50vw; 
-        transform: translate(-50%, -50%);  
     }
     .college-div{
         width: 80vw; 
@@ -478,12 +496,9 @@ img{
         margin-left: 1.5vw;
     }
     .home-college-box{
-        height: 50vh; 
-        width: 70vw;
-        position: absolute; 
-        top: 150vh; 
-        left: 50vw; 
-        transform: translate(-50%, -50%);  
+        height: auto; 
+        width: 70vw; 
+        padding-bottom: 3em;
     }
     .colleges{
         width: 20vw; 
@@ -572,15 +587,13 @@ img{
         text-align: center; 
         position: absolute; 
         align-self: center;
-        top: 40vh; 
-        left: 10vh;
     }
     .wwa-body-img{
         height:100vh;
     }
     .wwa-header{
         height:13vh;
-        width: 100%;  
+        width: 100%;   
     }
     .staff{
         width: 20vw; 
@@ -648,12 +661,9 @@ img{
         padding-left: 1em; 
     }
     .home-college-box{
-        height: 80vh; 
+        height: auto; 
         width: 70vw;
-        position: absolute; 
-        top: 200vh; 
-        left: 50vw; 
-        transform: translate(-50%, -50%);  
+        padding-bottom: 5em; 
     }
     .colleges{
         width: 20vw; 
@@ -733,8 +743,6 @@ img{
         justify-content: center;
         text-align: center; 
         position: absolute; 
-        top: 40vh; 
-        left: 30vh; 
     }
     .wwa-body-img{
         height:100vh;
@@ -757,22 +765,23 @@ img{
         justify-content: center;
         text-align: center; 
         position: absolute; 
-        align-self: center;
-        top: 25vh; 
-        left: 50vh;
+        align-self: center; 
+        border: 0.3em solid; 
     }
     .college-body-img{
         background-image: url(BackgroundImg.png);
         height:100vh; 
         z-index:-1;
+        margin-top: 12vh; 
     }
     .boxes-college-page{
         width: 20vw; 
         height: auto;  
         justify-content: center;
-        border-width: 1em; 
+        border-width: medium;
         object-fit: contain; 
         margin: 3em; 
+        border: 0.5em solid;
     }
     .boxes-event{
         width: 10vw; 
@@ -783,6 +792,7 @@ img{
         margin-right: 3em; 
         margin-left: 2em; 
         margin-bottom: 3em; 
+        border: 0.5em solid;
     }
     .boxes-other{
         width: 45vw; 
@@ -794,7 +804,8 @@ img{
         margin-left: 2em; 
         margin-bottom: 3em; 
         margin-top: 10vh;
-        display:inline; 
+        display:inline;
+        border: 0.5em solid; 
     }
 }
 

@@ -239,6 +239,54 @@ img{
     flex-direction: column;
     justify-content: center;
 }
+.umich-header-color{
+    color: black; 
+    background-color: transparent;
+}
+.umich-header-color:hover{
+    color: rgb(243, 218, 0); 
+    background-color: rgb(0, 35, 79);
+}
+.msu-header-color{
+    color: black; 
+    background-color: transparent;
+}
+.msu-header-color:hover{
+    color: white; 
+    background-color: rgb(0, 51, 36);
+}
+.cmu-header-color{
+    color: black; 
+    background-color: transparent;
+}
+.cmu-header-color:hover{
+    color: rgb(243, 218, 0); 
+    background-color: rgb(72, 0, 0);
+}
+.gsv-header-color{
+    color: black; 
+    background-color: transparent;
+}
+.gsv-header-color:hover{
+    color: rgb(201, 201, 201); 
+    background-color: rgb(0, 101, 223);
+}
+.mtu-header-color{
+    color: black; 
+    background-color: transparent;
+}
+.mtu-header-color:hover{
+    color: #ecb900; 
+    background-color: rgb(0, 0, 0) ;
+}
+.wmu-header-color{
+    color: black; 
+    background-color: transparent;
+}
+.wmu-header-color:hover{
+    color: #ecb900; 
+    background-color: rgb(95, 68, 1) ;
+}
 
 
 
@@ -717,54 +765,6 @@ img{
         background-image: url(BackgroundImg.png);
         height:100vh; 
         z-index:-1;
-    }
-    .umich-header-color{
-        color: black; 
-        background-color: transparent;
-    }
-    .umich-header-color:hover{
-        color: rgb(243, 218, 0); 
-        background-color: rgb(0, 35, 79);
-    }
-    .msu-header-color{
-        color: black; 
-        background-color: transparent;
-    }
-    .msu-header-color:hover{
-        color: white; 
-        background-color: rgb(0, 51, 36);
-    }
-    .cmu-header-color{
-        color: black; 
-        background-color: transparent;
-    }
-    .cmu-header-color:hover{
-        color: rgb(243, 218, 0); 
-        background-color: rgb(72, 0, 0);
-    }
-    .gsv-header-color{
-        color: black; 
-        background-color: transparent;
-    }
-    .gsv-header-color:hover{
-        color: rgb(201, 201, 201); 
-        background-color: rgb(0, 101, 223);
-    }
-    .mtu-header-color{
-        color: black; 
-        background-color: transparent;
-    }
-    .mtu-header-color:hover{
-        color: #ecb900; 
-        background-color: rgb(0, 0, 0) ;
-    }
-    .wmu-header-color{
-        color: black; 
-        background-color: transparent;
-    }
-    .wmu-header-color:hover{
-        color: #ecb900; 
-        background-color: rgb(95, 68, 1) ;
     }
     .boxes-college-page{
         width: 20vw; 

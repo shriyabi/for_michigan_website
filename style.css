@@ -3,6 +3,8 @@ body {
     transition: background-color 0.5 ease; 
     overflow: scroll; 
     overflow-x: hidden; 
+    margin: 0;
+    padding: 0;  
     /*background-image: url(BackgroundImg.png);*/
 }
 body:hover{
@@ -261,6 +263,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
 }
 .umich-header-color{
     color: black; 
@@ -275,7 +278,7 @@ img{
     background-color: transparent;
 }
 .msu-header-color:hover{
-    color: #0B9A6D; 
+    color: #FFFFFF; 
     background-color: #18453B;
 }
 .cmu-header-color{
@@ -299,7 +302,7 @@ img{
     background-color: transparent;
 }
 .mtu-header-color:hover{
-    color: #8a8c8c; 
+    color: #FFFFFF; 
     background-color: rgb(0, 0, 0) ;
 }
 .wmu-header-color{
@@ -325,9 +328,9 @@ img{
 }
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 737px){
     body {
-        max-width: 500px;
+        max-width: 737px;
     }
     .body-img{
         margin-top: 5vh; 
@@ -569,7 +572,7 @@ img{
     }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 1023px){
+@media only screen and (min-width: 738px) and (max-width: 1023px){
     body{
         min-width: 501px;
         max-width: 1023px; 
@@ -738,7 +741,7 @@ img{
         border-bottom-width: 0.7em; 
     }
     .boxes-college-page{
-        width: 60vw; 
+        width: 50vw; 
         height: auto;  
         justify-content: center;
         border-width: medium;
@@ -747,7 +750,7 @@ img{
         border: 0.5em solid;
     }
     .boxes-event{
-        width: 30vw; 
+        width: 50vw; 
         height: auto;  
         justify-content: center;
         border-width: 1em; 
@@ -987,24 +990,14 @@ img{
         margin-top: 12vh; 
         border-bottom-width: 0.7em; 
     }
-    .boxes-college-page{
-        width: 20vw;  
+    .boxes-college-page, .boxes-event{
+        width: 50vw;  
         justify-content: center;
         border-width: medium;
         object-fit: contain; 
         margin: 3em; 
         border: 0.5em solid;
-    }
-    .boxes-event{
-        width: 10vw; 
-        height: auto;  
-        justify-content: center;
-        border-width: 1em; 
-        object-fit: contain; 
-        margin-right: 3em; 
-        margin-left: 2em; 
-        margin-bottom: 3em; 
-        border: 0.5em solid;
+        align-items: stretch;
     }
     .boxes-other,.vote-img{
         width: 45vw; 

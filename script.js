@@ -53,7 +53,8 @@ function changeBackgroundColor2(){
     var whoweare = document.querySelector(".mission");
     var staff = document.querySelectorAll('.staff'); 
     var link = document.querySelectorAll('a');
-    var dropbtnhover = document.querySelector('.dropbtn'); 
+    var dropbtnhover = document.querySelector('.dropbtn');
+    var staffCont = document.querySelectorAll('.staff-content');  
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex]; 
     header.style.backgroundColor = boxcolors[currentIndex]; 
@@ -61,7 +62,11 @@ function changeBackgroundColor2(){
     staff.forEach(function (staff) {
         staff.style.backgroundColor = boxcolors[currentIndex];
         staff.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';  
+        staff.style.boxShadowColor = boxcolors[currentIndex - 1];
     });
+    staffCont.forEach(function (staffCont) {
+        staffCont.style.backgroundColor = titlecolors[currentIndex]; 
+    }); 
     dropbtnhover.addEventListener('mouseenter', function() {
         dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1]; 
         dropbtnhover.style.color = fontcolors[currentIndex1];

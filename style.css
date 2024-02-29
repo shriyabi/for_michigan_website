@@ -574,8 +574,8 @@ img{
 
 @media only screen and (min-width: 738px) and (max-width: 1200px){
     body{
-        min-width: 501px;
-        max-width: 1023px; 
+        min-width: 738px;
+        max-width: 1200px; 
     }
     .body-img{
         height: 100vh; 
@@ -1053,5 +1053,24 @@ img{
 
 @media only screen and (min-resolution: 192dpi) {}
 
-/* media only screen and (orientation:portrait){}
-media only screen and (orientation: landscape){} */    
+/* media only screen and (orientation:portrait){} */
+@media only screen and (orientation: landscape){
+    .sailor{
+        top: 17%; right: 40%; width: 30%; 
+    }
+    .spartan{
+        top: 15%; right: 40%; width: 25%; 
+    }
+    .seal{
+        top: 17%; right: 40%; width: 30%; 
+    }
+    .lakers{
+        top: 17%; right: 40%; width: 30%; 
+    }
+    .horse{
+        top: 17%; right: 35%; width: 40%; 
+    }
+    .wolf{
+        top: 17%; right: 30%; width: 50%; 
+    }
+}     

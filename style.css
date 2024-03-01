@@ -228,6 +228,7 @@ img{
     height: auto;
     width: 95%; 
     margin: 1em;
+    border-radius: 1em; 
     background-color: #e6d2bb;
     justify-content: center;
     align-items: center;

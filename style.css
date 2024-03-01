@@ -10,6 +10,12 @@ body {
 body:hover{
     cursor: url(Cursor.png), auto; 
 }
+.fa-envelope, .fa-instagram, .fa-location-dot, .fa-tiktok, .fa-linkedin{
+    color:#000000; 
+}
+.fa-instagram:hover, .fa-tiktok:hover, .fa-linkedin:hover{
+    color:gray; 
+}
 /*.body-img{
     background-image: url(BackgroundImg.png);
     z-index:-1;

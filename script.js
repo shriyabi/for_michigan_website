@@ -1,4 +1,5 @@
 var backgroundcolors = ['#4BABF1', '#06BD91', '#F4417A', '#A992E0', '#E6D2BB'];
+var backgroundcolors2 = ['#4BABF1', '#06BD91', '#F4417A', '#A992E0', '#E6D2BB'];
 var fontcolors = ['#A98F92', '#E6D2BB', '#E6D2BB', '#E6D2BB', '#DD3AA6', '#E6D2BB'];
 var titlecolors = ['#5363F2', '#A9992E', '#FF001F', '#DD3AA6', '#A98F92'];
 var boxcolors = ['#E6D2BB', '#E6D2BB', '#E6D2BB', '#D1A5D7', '#DDA8A1'];
@@ -55,9 +56,11 @@ function changeBackgroundColor2(){
     var link = document.querySelectorAll('a');
     var dropbtnhover = document.querySelector('.dropbtn');
     var staffCont = document.querySelectorAll('.staff-content');  
+    var contact = document.querySelector('.contact-box'); 
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex]; 
     header.style.backgroundColor = boxcolors[currentIndex]; 
+    contact.style.backgroundColor = boxcolors[currentIndex]; 
     whoweare.style.backgroundColor = backgroundcolors[currentIndex];
     staff.forEach(function (staff) {
         staff.style.backgroundColor = boxcolors[currentIndex];
@@ -68,8 +71,10 @@ function changeBackgroundColor2(){
         staffCont.style.backgroundColor = titlecolors[currentIndex]; 
     }); 
     dropbtnhover.addEventListener('mouseenter', function() {
-        dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1]; 
-        dropbtnhover.style.color = fontcolors[currentIndex1];
+        if (currentIndex1 >= 0) {
+            dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
+        }
+        dropbtnhover.style.color = fontcolors[currentIndex];
     });
     dropbtnhover.addEventListener('mouseleave', function() {
         dropbtnhover.style.color = '#000000';
@@ -78,7 +83,7 @@ function changeBackgroundColor2(){
     link.forEach(function(link){
         link.addEventListener('mouseenter', function() {
         link.style.color = fontcolors[currentIndex];
-        link.style.backgroundColor = backgroundcolors[currentIndex - 1]; 
+        link.style.backgroundColor = backgroundcolors2[currentIndex1]; 
     });
     link.addEventListener('mouseleave', function() {
         link.style.color = '#000000';
@@ -86,7 +91,7 @@ function changeBackgroundColor2(){
     });
     });
     currentIndex = (currentIndex + 1) % backgroundcolors.length; 
-    currentIndex1 = (currentIndex1 + 1) % backgroundcolors.length - 1;  
+    currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;  
 }
 
 function toggleDropdown() {

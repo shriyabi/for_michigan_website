@@ -24,7 +24,7 @@ body:hover{
     background-repeat: no-repeat;
     background-position: center;
     width: 100vw;
-    height: 100vh;
+    height: 100vh; 
     margin: 0;
     padding: 0; 
 }
@@ -66,7 +66,7 @@ body:hover{
     background-color: #A98F92; 
     position: fixed; 
     bottom: 0; 
-    left: 95%; 
+    left: 97%; 
     transform: translateX(-50%);  
 }
 
@@ -209,6 +209,10 @@ img{
     border-bottom-width: 0.5em;
     border-bottom-style: solid;
 }
+.contact-box{
+    background-color: #DDA8A1;
+    bottom: 0; 
+}
 .staff {
     background-color: #DDA8A1;
     border-radius: 3em;
@@ -327,6 +331,7 @@ img{
 .college-border{
     border-bottom-style: solid;
 }
+
 
 
 @media only screen and (max-width: 737px){
@@ -1021,23 +1026,23 @@ img{
         border-bottom-width: 0.6em;
     }
     .sailor{
-        top: 10%; right: 12%; width: 100%; opacity: 0.5;
+        top: 20%; right: 20%; opacity: 0.5;
     } 
     .spartan{
         top: 10%; right: 20%; width:80%; opacity: 0.5;
     }
     .seal{
-        top: 12%; right: 20%; width: 80%; opacity: 0.5;
+        top: 12%; right: 22%; width: 80%; opacity: 0.5;
     }
     .lakers{
         top: 15%; right: 20%; width: 80%; opacity: 0.5;
     }
     .horse{
-        top: 17%; right: 25%; opacity: 0.5; height: 70%; 
+        top: 15%; right: 15%; opacity: 0.5; width: 100%; 
     }
     .wolf{
         top: 20%; right: 12%; width: 100%; opacity: 0.5;
-    }
+    } 
     .contact-us1{
         display:inline-block; vertical-align: middle;
     }
@@ -1055,7 +1060,215 @@ img{
 @media only screen and (min-resolution: 192dpi) {}
 
 /* media only screen and (orientation:portrait){} */
-@media only screen and (orientation: landscape){
+@media only screen and (min-width: 738px) and (max-width: 1200px) and (orientation: landscape){
+    body{
+        min-width: 738px;
+        max-width: 1200px; 
+    }
+    .body-img{
+        height: 150vh; 
+    }
+    .body-swirl{
+        height:100vh; 
+    }
+    /*FONTS*/
+    h1{
+        font-size: 5em;
+    }
+    h2{
+        font-size: 1em; 
+    }
+    h3{
+        font-size: 1em; 
+        margin-top: 2vh;
+    }
+    h4{
+        font-size: 0.75em; 
+    }
+    p {
+        font-size: 0.5em; 
+    }
+
+    /*IMAGES*/ 
+    img{
+        width: 20vw; 
+        height: 5vh;
+        margin-left: 3vw;
+        margin-right: 3vw; 
+        margin-top: 0vh;
+        margin-bottom: 7vh; ;
+    }
+    .scrolling-images{
+        height: 7vh; 
+        width: auto; 
+        margin-right: 2vw; 
+        margin-bottom: 10vh; 
+        display: inline-flex;
+    }
+    .logo{
+        height: auto; 
+        width: 12vw; 
+        margin-right: 5vw;
+        margin-bottom: 5vh; 
+        margin-left: 1.5vw;
+    }
+    .home-college-box{
+        height: auto; 
+        width: 60vw; 
+        padding-bottom: 3em;
+    }
+    .colleges{
+        width: 15vw; 
+        height: 30vh;  
+        justify-content: center;
+        border-width: 1em; 
+        margin: 0.5em; 
+        object-fit: contain;
+    }
+    .umich {
+        box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
+    }
+    .umich:hover{
+        box-shadow: 0 0 5em rgba(255, 208, 0, 0.7);
+    }
+    .msu{
+        box-shadow: 0 0 1em rgb(6, 171, 0); 
+    }
+    .msu:hover{
+        box-shadow: 0 0 5em  rgb(6, 171, 0);
+    }
+    .cmu {
+        box-shadow: 0 0 1em rgb(195, 0, 68);
+    }
+    .cmu:hover{
+        box-shadow: 0 0 5em rgb(195, 0, 68);
+    }
+    .gvs {
+        box-shadow: 0 0 1em rgba(0, 55, 255, 0.7); 
+    }
+    .gvs:hover{
+        box-shadow: 0 0 5em rgba(0, 55, 255, 0.7);
+    }
+    .wmu {
+        box-shadow: 0 0 1em rgb(195, 101, 0);
+    }
+    .wmu:hover{
+        box-shadow: 0 0 5em rgb(195, 101, 0);
+    }
+    .mtu {
+        box-shadow: 0 0 2em #000000; 
+    }
+    .mtu:hover{
+        box-shadow: 0 0 5em #000000;
+    }
+    .college-image{
+        margin: auto; 
+        width: 30%;
+        height: auto; 
+        bottom: 1; 
+        float:center;
+    }
+    /*DROP DOWN*/
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu{
+        height: 3em; 
+        width: 35vw; 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .dropdown{
+        display: inline; 
+    }
+    .dropbtn{
+        font-size: 1em;
+        display: inline; 
+    }
+    .contact-us{
+        height: 10vh; 
+    }
+    .return-home{
+        height:8vh; 
+        width: auto; 
+        padding-top: 0.8em; 
+        margin-left: 10vw; 
+        margin-top: 7vh; 
+    }
+    .mission{
+        width: 70vw; 
+    }
+    .wwa-body-img{
+        height:100vh;
+    }
+    .wwa-header{
+        height:7vh;
+        width: 100%;   
+    }
+    .staff{
+        width: 20vw; 
+        height: auto;  
+        justify-content: center;
+        border-width: 1em; 
+        object-fit: contain; 
+        margin: 3em; 
+    }
+    .vote-info{
+        width: 80vw; 
+        justify-content: center;
+        text-align: center; 
+        position: absolute; 
+        align-self: center; 
+        border: 0.3em solid; 
+        border-radius: 1em; 
+        box-shadow: 0 0 0.3em #FFFF00;
+    }
+    .college-body-img{
+        background-image: url(BackgroundImg.png);
+        height:100vh; 
+        z-index:-1;
+        margin-top: 7vh; 
+        border-bottom-width: 0.7em; 
+    }
+    .boxes-college-page{
+        width: 50vw; 
+        height: auto;  
+        justify-content: center;
+        border-width: medium;
+        object-fit: contain; 
+        margin: 3em; 
+        border: 0.5em solid;
+    }
+    .boxes-event{
+        width: 50vw; 
+        height: auto;  
+        justify-content: center;
+        border-width: 1em; 
+        object-fit: contain; 
+        margin-right: 3em; 
+        margin-left: 2em; 
+        margin-bottom: 3em; 
+        border: 0.5em solid;
+    }
+    .boxes-other,.vote-img{
+        width: 45vw; 
+        height: auto;  
+        justify-content: center;
+        border-width: 1em; 
+        object-fit: contain; 
+        margin-right: 3em; 
+        margin-left: 2em; 
+        margin-bottom: 3em; 
+        margin-top: 10vh;
+        display:inline;
+        border: 0.5em solid; 
+    }
+    .vote-img{
+        background-color:#FFFFFF; background-image: url(Voting.jpeg); border-radius: 1em;
+        flex-direction: column;
+        border-color: transparent; 
+    }
+    .college-border{
+        border-bottom-width: 0.6em;
+    }
     .sailor{
         top: 17%; right: 40%; width: 30%; 
     }

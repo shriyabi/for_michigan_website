@@ -1171,7 +1171,7 @@ img{
     /*DROP DOWN*/
     .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu{
         height: 3em; 
-        width: 35vw; 
+        width: 20vw; 
         display: flex;
         align-items: center;
         justify-content: center; 
@@ -1187,11 +1187,9 @@ img{
         height: 10vh; 
     }
     .return-home{
-        height:8vh; 
+        height:10vh; 
         width: auto; 
-        padding-top: 0.8em; 
-        margin-left: 10vw; 
-        margin-top: 7vh; 
+        margin-left: 5vw; 
     }
     .mission{
         width: 70vw; 
@@ -1200,7 +1198,7 @@ img{
         height:100vh;
     }
     .wwa-header{
-        height:7vh;
+        height:10vh;
         width: 100%;   
     }
     .staff{

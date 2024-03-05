@@ -207,6 +207,9 @@ img{
 .box-wsu {
     background-color: rgb(132, 158, 105);
 }
+.box-svsu {
+    background-color: rgb(195, 72, 72);
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -351,6 +354,14 @@ img{
     color: #FFFFFF; 
     background-color: #0C5449;
 }
+.svsu-header-color{
+    color: #FFFFFF; 
+    background-color: transparent;
+}
+.svsu-header-color:hover{
+    color: #FFFFFF; 
+    background-color: rgb(179,23,52);
+}
 .background-container {
     position: absolute;
     z-index: -1;
@@ -487,6 +498,12 @@ img{
     .wsu:hover{
         box-shadow: 0 0 5em rgb(195, 195, 0);
     }
+    .svsu {
+        box-shadow: 0 0 1em rgb(160,1,1); 
+    }
+    .svsu:hover{
+        box-shadow: 0 0 5em rgb(160,1,1); 
+    }
     .college-image{
         margin: auto; 
         width: 45%; 
@@ -613,6 +630,9 @@ img{
     }
     .cat{
         top: 25%; right: 5%; width: 100%; opacity: 0.5;
+    }
+    .bird{
+        top: 30%; right: 10%; width: 83%; opacity: 0.5;
     }
     .contact-us1{
         display: flex; 
@@ -742,6 +762,12 @@ img{
     .wsu:hover{
         box-shadow: 0 0 5em rgb(195, 195, 0); 
     }
+    .svsu {
+        box-shadow: 0 0 2em rgb(160, 1, 1); 
+    }
+    .svsu:hover{
+        box-shadow: 0 0 5em rgb(160, 1, 1); 
+    }
     .college-image{
         margin: auto; 
         width: 30%;
@@ -750,7 +776,7 @@ img{
         float:center;
     }
     /*DROP DOWN*/
-    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu{
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu, .box-svsu{
         height: 3em; 
         width: 35vw; 
         display: flex;
@@ -872,6 +898,9 @@ img{
     }
     .horse{
         top: 30%; right: 10%; opacity: 0.5; width: 80%; 
+    }
+    .bird{
+        top: 33%; right: 25%; opacity: 0.5; width: 55%; 
     }
     .wolf{
         top: 25%; right: 11%; width: 85%; opacity: 0.5;
@@ -1015,19 +1044,27 @@ img{
     .wsu {
         box-shadow: 0 0 1em rgb(195, 195, 0);
         margin-top: 2em; 
+        margin-right: 2vw; 
     }
     .wsu:hover{
         box-shadow: 0 0 5em rgb(195, 195, 0); 
     }
+    .svsu {
+        box-shadow: 0 0 1em rgb(160, 1, 1);
+        margin-top: 2em; 
+    }
+    .svsu:hover{
+        box-shadow: 0 0 5em rgb(160, 1, 1); 
+    }
     .college-image{
         margin: auto; 
         width: 6em; 
-        height: 4.5em; 
+        height: 5.25em; 
         bottom: 1; 
         float:center;
     }
     /*DROP DOWN*/
-    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu{
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu, .box-svsu{
         height: 3em; 
         width: 20vw; 
         display: flex;
@@ -1139,6 +1176,9 @@ img{
     } 
     .cat{
         top: 20%; right: 10%; width: 100%; opacity: 0.5;
+    }
+    .bird{
+        top: 30%; right: 30%; opacity: 0.5; width: 55%; 
     }
     .contact-us1{
         display:inline-block; vertical-align: middle;
@@ -1270,6 +1310,12 @@ img{
     .wsu:hover{
         box-shadow: 0 0 5em rgb(195, 195, 0); 
     } 
+    .svsu {
+        box-shadow: 0 0 1em rgb(160, 1, 1);  
+    }
+    .svsu:hover{
+        box-shadow: 0 0 5em rgb(160, 1, 1); 
+    } 
     .college-image{
         margin: auto; 
         width: 30%;
@@ -1278,7 +1324,7 @@ img{
         float:center;
     }
     /*DROP DOWN*/
-    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu{
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu, .box-svsu{
         height: 3em; 
         width: 20vw; 
         display: flex;
@@ -1390,6 +1436,9 @@ img{
     }
     .horse{
         top: 40%; right: 35%; width: 40%; 
+    }
+    .bird{
+        top: 35%; right: 40%; opacity: 0.5; width: 30%; 
     }
     .wolf{
         top: 30%; right: 30%; width: 50%; 

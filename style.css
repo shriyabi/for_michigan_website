@@ -16,14 +16,29 @@ body:hover{
 .fa-instagram:hover, .fa-tiktok:hover, .fa-linkedin:hover{
     color:gray; 
 }
-/*.body-img{
-    background-image: url(BackgroundImg.png);
-    z-index:-1;
-    justify-content: center; 
-    align-items: center; 
-    justify-content: center;
-    vertical-align: middle;
-} */
+label{
+    display: inline-block; 
+    cursor: pointer; 
+    color:black; 
+    padding: 0.25em; 
+    border-radius: 0.25em; 
+}
+#ch, #ch1, #ch2, #ch3, #ch4, #ch5, #ch6, #ch7, #ch8, #ch9, #ch10, #ch11, #ch12{
+    display: none; 
+}
+#ch:checked ~ .content, #ch1:checked ~ .content, #ch2:checked ~ .content, #ch3:checked ~ .content,
+#ch4:checked ~ .content, #ch5:checked ~ .content, #ch6:checked ~ .content, #ch7:checked ~ .content,
+#ch8:checked ~ .content, #ch9:checked ~ .content, #ch10:checked ~ .content, #ch11:checked ~ .content, #ch12:checked ~ .content{
+    display:block;
+}
+#ch:checked ~ label, #ch1:checked ~ label, #ch2:checked ~ label, #ch3:checked ~ label, 
+#ch4:checked ~ label, #ch5:checked ~ label, #ch6:checked ~ label, #ch7:checked ~ label, 
+#ch8:checked ~ label, #ch9:checked ~ label, #ch10:checked ~ label, #ch11:checked ~ label, #ch12:checked ~ label{
+    display:none; 
+}
+.content{
+    display:none; 
+}
 .body-swirl{
     background-image: url(BeigeSwirl.png);
     background-size: cover;
@@ -83,7 +98,7 @@ body:hover{
     transform: translateX(-50%);  
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p, .name, .read{
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -189,6 +204,9 @@ img{
 .box-mtu {
     background-color: rgb(116, 115, 115);
 }
+.box-wsu {
+    background-color: rgb(132, 158, 105);
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -231,7 +249,8 @@ img{
 
 .staff-img {
     border-radius: 2em;
-    height: 10%;
+    height: 10%; 
+    width: 50%; 
 }
 
 .staff-content {
@@ -324,6 +343,14 @@ img{
     color: #FFFFFF; 
     background-color: rgb(95, 68, 1) ;
 }
+.wsu-header-color{
+    color: black; 
+    background-color: transparent;
+}
+.wsu-header-color:hover{
+    color: #FFFFFF; 
+    background-color: #0C5449;
+}
 .background-container {
     position: absolute;
     z-index: -1;
@@ -341,9 +368,6 @@ img{
 
 
 @media only screen and (max-width: 737px){
-    body {
-        max-width: 737px;
-    }
     .body-img{
         margin-top: 5vh; 
         height: 100vh; 
@@ -367,6 +391,12 @@ img{
     }
     p {
         font-size: 0.3em; 
+    }
+    .name{
+        font-size: 0.5em; 
+    }
+    .read{
+        font-size: 0.20em; 
     }
     /*IMAGES*/ 
     img{
@@ -451,6 +481,12 @@ img{
     .mtu:hover{
         box-shadow: 0 0 5em #000000;
     }
+    .wsu {
+        box-shadow: 0 0 1em rgb(195, 195, 0); 
+    }
+    .wsu:hover{
+        box-shadow: 0 0 5em rgb(195, 195, 0);
+    }
     .college-image{
         margin: auto; 
         width: 45%; 
@@ -459,7 +495,7 @@ img{
         float:center;
     }
     /*DROP DOWN*/
-    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu{
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu{
         height: 2em; 
         width: 50vw; 
         display: flex;
@@ -499,6 +535,7 @@ img{
         border-width: 1em; 
         object-fit: contain; 
         margin: 1em; 
+        padding: 0.3em; 
     }
     .vote-info{
         width: 80vw; 
@@ -574,6 +611,9 @@ img{
     .wolf{
         top: 20%; right: -10%; width: 130%; opacity: 0.5;
     }
+    .cat{
+        top: 25%; right: 5%; width: 100%; opacity: 0.5;
+    }
     .contact-us1{
         display: flex; 
         justify-content: center; 
@@ -595,7 +635,7 @@ img{
         max-width: 1200px; 
     }
     .body-img{
-        height: 100vh; 
+        height: 150vh; 
     }
     .body-swirl{
         height:100vh; 
@@ -616,6 +656,12 @@ img{
     }
     p {
         font-size: 0.75em; 
+    }
+    .name{
+        font-size: 0.9em; 
+    }
+    .read{
+        font-size: 0.5em; 
     }
 
     /*IMAGES*/ 
@@ -690,6 +736,12 @@ img{
     .mtu:hover{
         box-shadow: 0 0 5em #000000;
     }
+    .wsu {
+        box-shadow: 0 0 2em rgb(195, 195, 0); 
+    }
+    .wsu:hover{
+        box-shadow: 0 0 5em rgb(195, 195, 0); 
+    }
     .college-image{
         margin: auto; 
         width: 30%;
@@ -698,7 +750,7 @@ img{
         float:center;
     }
     /*DROP DOWN*/
-    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu{
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu{
         height: 3em; 
         width: 35vw; 
         display: flex;
@@ -739,6 +791,7 @@ img{
         border-width: 1em; 
         object-fit: contain; 
         margin: 1em; 
+        padding: 0.5em; 
     }
     .vote-info{
         width: 80vw; 
@@ -823,6 +876,9 @@ img{
     .wolf{
         top: 25%; right: 11%; width: 85%; opacity: 0.5;
     }
+    .cat{
+        top: 25%; right: 10%; width: 95%; opacity: 0.5;
+    }
     .contact-us1{
         display:inline-block; vertical-align: middle;
     }
@@ -839,7 +895,7 @@ img{
 
 @media only screen and (min-width: 1201px){
     .body-img{
-        height: 100vh;
+        height: 150vh;
         border-top-width: 0.7em; 
     }
     .body-swirl{
@@ -861,6 +917,12 @@ img{
     }
     p {
         font-size: 1em; 
+    }
+    .name{
+        font-size: 1.25em; 
+    }
+    .read{
+        font-size: 0.75em; 
     }
     /*IMAGES*/ 
     img{
@@ -950,6 +1012,13 @@ img{
     .mtu:hover{
         box-shadow: 0 0 5em #000000;
     }
+    .wsu {
+        box-shadow: 0 0 1em rgb(195, 195, 0);
+        margin-top: 2em; 
+    }
+    .wsu:hover{
+        box-shadow: 0 0 5em rgb(195, 195, 0); 
+    }
     .college-image{
         margin: auto; 
         width: 6em; 
@@ -958,7 +1027,7 @@ img{
         float:center;
     }
     /*DROP DOWN*/
-    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu{
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu{
         height: 3em; 
         width: 20vw; 
         display: flex;
@@ -988,13 +1057,14 @@ img{
         width: 100%;  
     }
     .staff{
-        width: 20vw; 
+        width: 25vw; 
         height: auto;  
         justify-content: center;
         border-width: 1em; 
         object-fit: contain; 
         margin: 3em; 
         box-shadow: 0 0 3em #A98F92;
+        padding: 1em; 
     }
     .vote-info{
         width: 60vw; 
@@ -1067,6 +1137,9 @@ img{
     .wolf{
         top: 20%; right: 10%; width: 95%; opacity: 0.5;
     } 
+    .cat{
+        top: 20%; right: 10%; width: 100%; opacity: 0.5;
+    }
     .contact-us1{
         display:inline-block; vertical-align: middle;
     }
@@ -1111,6 +1184,12 @@ img{
     }
     p {
         font-size: 0.5em; 
+    }
+    .name{
+        font-size: 0.7em; 
+    }
+    .read{
+        font-size: 0.3em; 
     }
 
     /*IMAGES*/ 
@@ -1185,6 +1264,12 @@ img{
     .mtu:hover{
         box-shadow: 0 0 5em #000000;
     }
+    .wsu {
+        box-shadow: 0 0 1em rgb(195, 195, 0);  
+    }
+    .wsu:hover{
+        box-shadow: 0 0 5em rgb(195, 195, 0); 
+    } 
     .college-image{
         margin: auto; 
         width: 30%;
@@ -1193,7 +1278,7 @@ img{
         float:center;
     }
     /*DROP DOWN*/
-    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu{
+    .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu{
         height: 3em; 
         width: 20vw; 
         display: flex;
@@ -1308,5 +1393,8 @@ img{
     }
     .wolf{
         top: 30%; right: 30%; width: 50%; 
+    }
+    .cat{
+        top: 25%; right: 30%; width: 55%; 
     }
 }          

@@ -33,9 +33,7 @@ function changeBackgroundColor() {
         college.style.backgroundColor = boxcolors[currentIndex];
     });
     dropbtnhover.addEventListener('mouseenter', function () {
-        if (currentIndex1 >= 0) {
-            dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
-        }
+        dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
         dropbtnhover.style.color = fontcolors[currentIndex];
     });
     dropbtnhover.addEventListener('mouseleave', function () {

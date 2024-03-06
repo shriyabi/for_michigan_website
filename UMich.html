@@ -25,8 +25,13 @@
             <h3 style="display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp</span></h3>
             <h3 style="display: inline;"><a href="WhoAreWe.html" class="umich-header-color"> WHO WE ARE </a> </h3>
             <h3 style="display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp</span></h3>
-            <h3 style="display: inline"> <a href="https://www.michigan.gov/sos/elections/voting/register-to-vote"
-                    class="umich-header-color"> REGISTRATION INFORMATION </a> </h3>
+            <div class="dropdown">
+                <h3><button class="dropbtn umich-header-color"> REGISTRATION INFORMATION </button> </h3>
+                <div class="dropdown-content">
+                    <div class="box-umich"> <a href ="https://www.michigan.gov/sos/elections/voting/register-to-vote"> <p> For In-State Students </p></a></div>
+                    <div class="box-umich"> <a href ="https://www.michigan.gov/sos/elections/voting/register-to-vote"> <p> For Out-of-State Students </p></a></div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -40,10 +45,17 @@
             <div style="display: flex; align-items: flex-start;">
                 <div class="boxes-college-page"
                     style="background-color:#FFCB05; align-self: stretch; border-color: #00274C; background-image: url(PollsOpaque.png); background-size:cover; background-repeat: no-repeat;">
-                    <h3> Nearest Polling Station </h3>
-                    <p style="text-align: left;"> &#127963;&nbsp;: City Hall 301 E.Huron St., Ann Arbor, MI 48104 <br>
-                        &#128222;&nbsp;: (734)794-6140 <br> &#128231;&nbsp;:
-                        CityClerk@a2gov.org <br> &#128343;&nbsp;: Monday-Friday 8AM-5PM (excluding holidays)</p>
+                    <input id="ch15" type="checkbox">
+                    <label for="ch15">
+                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"> Nearest Polling Station </h3>
+                    </label>
+                    <div class="content">
+                        <label for="ch15"> X </label>
+                        <p style="text-align: left;"> &#127963;&nbsp;: City Hall 301 E.Huron St., Ann Arbor, MI 48104
+                            <br>
+                            &#128222;&nbsp;: (734)794-6140 <br> &#128231;&nbsp;:
+                            CityClerk@a2gov.org <br> &#128343;&nbsp;: Monday-Friday 8AM-5PM (excluding holidays)</p>
+                    </div>
                 </div>
                 <div class="boxes-event" style="background-color: #FFCB05; align-self: stretch; border-color: #00274C;">
                     <h3 style="text-align: center;"> Voting Days </h3>
@@ -59,6 +71,18 @@
                         </li>
                     </ul>
                 </div>
+                <div class="boxes-college-page"
+                style="background-color:#FFCB05; align-self: stretch; border-color: #00274C; background-image: url(PollsOpaque.png); background-size:cover; background-repeat: no-repeat;">
+                <input id="ch17" type="checkbox">
+                <label for="ch17">
+                    <h3 style="color: black; align-self:flex-end; margin-top:50%;"> Register to Vote </h3>
+                </label>
+                <div class="content">
+                    <label for="ch17"> X </label>
+                    <h4 style = "padding-bottom:0;"> <a href="https://www.michigan.gov/sos/elections/voting/register-to-vote" class = "link-color"> For In-State Students </a> </h4>
+                    <h4> <a href="https://www.nass.org/can-I-vote" class = "link-color"> For Out-of-State Students </a></h4>
+                </div>
+            </div>
                 <!--<div style = "display:inline-flex; flex-direction:column;">
         <div class = "boxes-other" style="background-color: yellow;"> Voting Early </div>
         <div class = "boxes-other" style="background-color: yellow;"> Absentee </div>
@@ -85,49 +109,52 @@
                 </label>
             </div>
             <div class="boxes-other"
-            style="background-color: #00274C; border-color: #FFCB05; background-image: url(VotingOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex; flex-direction: column;">
-            <input id="ch13" type="checkbox">
-            <div class="content">
-                <label for="ch13"> X </label>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus eget sapien sed
-                    accumsan. Praesent cursus mauris ac turpis volutpat lacinia. Donec mollis velit quam, eu
-                    iaculis
-                    turpis maximus vel. Morbi id lacus sed turpis lacinia viverra. Donec et libero nisl. Sed in
-                    cursus mas.</p>
+                style="background-color: #00274C; border-color: #FFCB05; background-image: url(VotingOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex; flex-direction: column;">
+                <input id="ch13" type="checkbox">
+                <div class="content">
+                    <label for="ch13"> X </label>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus eget sapien sed
+                        accumsan. Praesent cursus mauris ac turpis volutpat lacinia. Donec mollis velit quam, eu
+                        iaculis
+                        turpis maximus vel. Morbi id lacus sed turpis lacinia viverra. Donec et libero nisl. Sed in
+                        cursus mas.</p>
+                </div>
+                <label for="ch13">
+                    <h3 style="color: white; align-self:flex-end; margin-top:95%;"> Voting Early </h3>
+                </label>
             </div>
-            <label for="ch13">
-                <h3 style="color: white; align-self:flex-end; margin-top:95%;"> Voting Early </h3>
-            </label>
+            <div class="boxes-other"
+                style="background-color: #00274C; border-color: #FFCB05; background-image: url(AbsenteeOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex; flex-direction: column;">
+                <input id="ch14" type="checkbox">
+                <div class="content">
+                    <label for="ch14"> X </label>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus eget sapien sed
+                        accumsan. Praesent cursus mauris ac turpis volutpat lacinia. Donec mollis velit quam, eu
+                        iaculis
+                        turpis maximus vel. Morbi id lacus sed turpis lacinia viverra. Donec et libero nisl. Sed in
+                        cursus mas.</p>
+                </div>
+                <label for="ch14">
+                    <h3 style="color: white; align-self:flex-end; margin-top:95%;"> Absentee </h3>
+                </label>
+            </div>
+            <!--<div class="vote-img"> </div> -->
         </div>
-        <div class="boxes-other"
-        style="background-color: #00274C; border-color: #FFCB05; background-image: url(AbsenteeOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex; flex-direction: column;">
-        <input id="ch14" type="checkbox">
-        <div class="content">
-            <label for="ch14"> X </label>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus eget sapien sed
-                accumsan. Praesent cursus mauris ac turpis volutpat lacinia. Donec mollis velit quam, eu
-                iaculis
-                turpis maximus vel. Morbi id lacus sed turpis lacinia viverra. Donec et libero nisl. Sed in
-                cursus mas.</p>
-        </div>
-        <label for="ch14">
-            <h3 style="color: white; align-self:flex-end; margin-top:95%;"> Absentee </h3>
-        </label>
-        </div>
-        <!--<div class="vote-img"> </div> -->
-    </div>
         <br>
     </div>
     <div style="border-top: 1em solid #FFCB05 ; background-color: #00274C; width: 100%;">
         <div class="contact-us1"><img src="ForMichiganLogo.png" class="logo"> </div>
         <div class="contact-us2">
             <div class="contact-us3">
-                <i class="fa-regular fa-envelope fa-2x" style="display: inline;"></i>
-                <h4 style="display: inline; margin-bottom: 0;"> Quinton Berkompas (quinton@4mich.org)
-                    <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4>
-                <i class="fa-solid fa-location-dot fa-2x" style="display: inline;"></i>
+                <i class="fa-regular fa-envelope fa-2x" style="display: inline; color: white; "></i>
+                <h4 style="display: inline; margin-bottom: 0; color: white; font-family:Arial, Helvetica, sans-serif ">
+                    Quinton Berkompas (quinton@4mich.org)
+                    <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span>
+                </h4>
+                <i class="fa-solid fa-location-dot fa-2x" style="display: inline; color: white; "></i>
                 <div style="display: inline-flex; ">
-                    <h4 class="address"> Coming Soon! <!--Address <br> City, State ZipCode --> </h4>
+                    <h4 class="address" style="color: white; font-family:Arial, Helvetica, sans-serif"> Coming Soon!
+                        <!--Address <br> City, State ZipCode --> </h4>
                 </div>
             </div>
         </div>
@@ -135,22 +162,25 @@
         <br>
         <br>
         <div style="text-align: center;">
-            <i class="fa-brands fa-instagram fa-2x" style="display: inline;"></i>
-            <h4 style="display: inline; margin-bottom: 0;"> @formichigan
-                <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span> </h4>
+            <i class="fa-brands fa-instagram fa-2x" style="display: inline; color: white; "></i>
+            <h4 style="display: inline; margin-bottom: 0; color: white;font-family:Arial, Helvetica, sans-serif ">
+                @formichigan
+                <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+            </h4>
             <a href="https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x"
-                    style="display: inline;"></i></a>
+                    style="display: inline; color: white;"></i></a>
             <a href="https://www.linkedin.com/company/for-michigan/about/">
-                <h4 style="display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4>
+                <h4 style="display: inline; color: white; font-family:Arial, Helvetica, sans-serif"> @formichigan
+                    <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4>
             </a>
-            <i class="fa-brands fa-tiktok fa-2x" style="display: inline;"></i>
-            <h4 style="display: inline;"> @formichigan </h4>
+            <i class="fa-brands fa-tiktok fa-2x" style="display: inline; color: white; "></i>
+            <h4 style="display: inline; color: white; font-family:Arial, Helvetica, sans-serif"> @formichigan </h4>
 
         </div>
         <br>
         <br>
-        <p> For Michigan is a 501(c)(4) Organization </p>
-        <p> &copy For Michigan | All Rights Reserved</p>
+        <p style="color: white; "> For Michigan is a 501(c)(4) Organization </p>
+        <p style="color: white; font-family:Arial, Helvetica, sans-serif"> &copy For Michigan | All Rights Reserved</p>
     </div>
 </body>
 

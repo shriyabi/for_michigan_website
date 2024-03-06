@@ -23,19 +23,19 @@ label{
     padding: 0.25em; 
     border-radius: 0.25em; 
 }
-#ch, #ch1, #ch2, #ch3, #ch4, #ch5, #ch6, #ch7, #ch8, #ch9, #ch10, #ch11, #ch12, #ch13, #ch14{
+#ch, #ch1, #ch2, #ch3, #ch4, #ch5, #ch6, #ch7, #ch8, #ch9, #ch10, #ch11, #ch12, #ch13, #ch14,#ch15,#ch16,#ch17{
     display: none; 
 }
 #ch:checked ~ .content, #ch1:checked ~ .content, #ch2:checked ~ .content, #ch3:checked ~ .content,
 #ch4:checked ~ .content, #ch5:checked ~ .content, #ch6:checked ~ .content, #ch7:checked ~ .content,
 #ch8:checked ~ .content, #ch9:checked ~ .content, #ch10:checked ~ .content, #ch11:checked ~ .content, #ch12:checked ~ .content,
-#ch13:checked ~ .content, #ch14:checked ~ .content{
+#ch13:checked ~ .content, #ch14:checked ~ .content,#ch15:checked ~ .content,#ch16:checked ~ .content,#ch17:checked ~ .content{
     display:block;
 }
 #ch:checked ~ label, #ch1:checked ~ label, #ch2:checked ~ label, #ch3:checked ~ label, 
 #ch4:checked ~ label, #ch5:checked ~ label, #ch6:checked ~ label, #ch7:checked ~ label, 
 #ch8:checked ~ label, #ch9:checked ~ label, #ch10:checked ~ label, #ch11:checked ~ label, #ch12:checked ~ label, 
-#ch13:checked ~ label,  #ch14:checked ~ label{
+#ch13:checked ~ label,  #ch14:checked ~ label,#ch15:checked ~ .label,#ch16:checked ~ .label,#ch17:checked ~ .label{
     display:none; 
 }
 .content{
@@ -1107,7 +1107,7 @@ img{
         padding: 1em; 
     }
     .vote-info{
-        width: 60vw; 
+        width: 80vw; 
         justify-content: center;
         text-align: center; 
         position: absolute; 

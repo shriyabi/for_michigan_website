@@ -307,15 +307,15 @@ img{
 }
 .umich-header-color:hover{
     color: #FFFFFF; 
-    background-color: #00274C;
+    background-color: transparent;
 }
 .msu-header-color{
-    color: black; 
+    color: white; 
     background-color: transparent;
 }
 .msu-header-color:hover{
-    color: #FFFFFF; 
-    background-color: #18453B;
+    color: #0B9A6D; 
+    background-color: transparent;
 }
 .cmu-header-color{
     color: #FFC82E; 
@@ -323,47 +323,47 @@ img{
 }
 .cmu-header-color:hover{
     color: #F3F6F7; 
-    background-color: rgb(72, 0, 0);
+    background-color: transparent;
 }
 .gsv-header-color{
-    color: black; 
+    color: #FFFFFF; 
     background-color: transparent;
 }
 .gsv-header-color:hover{
-    color: #FFFFFF; 
-    background-color: #0032A0;
+    color: #000000; 
+    background-color: transparent;
 }
 .mtu-header-color{
-    color: black; 
+    color: #ffcd00; 
     background-color: transparent;
 }
 .mtu-header-color:hover{
     color: #FFFFFF; 
-    background-color: rgb(0, 0, 0) ;
+    background-color:transparent;
 }
 .wmu-header-color{
-    color: black; 
+    color:#F1C500; 
     background-color: transparent;
 }
 .wmu-header-color:hover{
     color: #FFFFFF; 
-    background-color: rgb(95, 68, 1) ;
+    background-color: transparent ;
 }
 .wsu-header-color{
-    color: black; 
+    color: #FFCC33; 
     background-color: transparent;
 }
 .wsu-header-color:hover{
     color: #FFFFFF; 
-    background-color: #0C5449;
+    background-color: transparent; 
 }
 .svsu-header-color{
-    color: #FFFFFF; 
+    color: rgb(0,54,99); 
     background-color: transparent;
 }
 .svsu-header-color:hover{
     color: #FFFFFF; 
-    background-color: rgb(179,23,52);
+    background-color: transparent;
 }
 .background-container {
     position: absolute;
@@ -482,27 +482,28 @@ img{
     }
     .wmu {
         box-shadow: 0 0 1em rgb(195, 101, 0);
-        margin-top: 2.5vh; 
-        margin-right: 2vw; 
+        margin-top: 2vh;  
     }
     .wmu:hover{
         box-shadow: 0 0 5em rgb(195, 101, 0);
     }
     .mtu {
         box-shadow: 0 0 2em #000000;
-        margin-top: 2.5vh; 
+        margin-top: 2vh; 
     }
     .mtu:hover{
         box-shadow: 0 0 5em #000000;
     }
     .wsu {
         box-shadow: 0 0 1em rgb(195, 195, 0); 
+        margin-top: 2vh;
     }
     .wsu:hover{
         box-shadow: 0 0 5em rgb(195, 195, 0);
     }
     .svsu {
         box-shadow: 0 0 1em rgb(160,1,1); 
+        margin-top: 2vh;
     }
     .svsu:hover{
         box-shadow: 0 0 5em rgb(160,1,1); 
@@ -595,15 +596,21 @@ img{
     }
     .boxes-other{
         justify-content: center;
-        border-width: 0.5em; 
-        margin-right: 3vw; 
-        margin-left: 3vw; 
+        border-width: 0.1em;
         margin-top: 5vh;
         margin-bottom: 5vh;
-        display:inline-block;
         border: 0.3em solid; 
-        width: 80vw;
+        margin-right: 2em;
+        margin-left: 2em; 
+        height: 60vw; 
         text-align: center;
+        flex-direction:column;
+    }
+    .more-info{
+        flex-direction: column;
+    }
+    .phone-text{
+        margin-top: 50%; 
     }
     .college-border{
         border-bottom-width: 0.6em;
@@ -706,10 +713,10 @@ img{
     }
     .logo{
         height: auto; 
-        width: 12vw; 
-        margin-right: 5vw;
+        width: 15vw; 
         margin-bottom: 5vh; 
         margin-left: 1.5vw;
+        margin-top: 1.5vw; 
     }
     .home-college-box{
         height: auto; 
@@ -861,17 +868,22 @@ img{
         margin-bottom: 3em; 
         border: 0.3em solid;
     }
-    .boxes-other,.vote-img{
-        width: 45vw;   
+    .boxes-other{
         justify-content: center;
         border-width: 1em; 
         object-fit: contain; 
-        margin-right: 3em; 
-        margin-left: 2em; 
-        margin-bottom: 3em; 
-        margin-top: 10vh;
+        margin-right: 1em; 
+        margin-left: 1em; 
+        margin-top: 7vh;
+        margin-bottom: 7vh;
         display:inline;
         border: 0.5em solid; 
+        width: 30vw; 
+        height: auto;
+        text-align: center;
+    }
+    .phone-text{
+        margin-top: 90%; 
     }
     .vote-img{
         background-color:#FFFFFF; background-image: url(Voting.jpeg); border-radius: 1em;
@@ -1129,7 +1141,7 @@ img{
         justify-content: center;
         border-width: medium;
         object-fit: contain; 
-        margin: 5em; 
+        margin: 4em; 
         border: 0.4em solid;
         align-items: stretch;
     }
@@ -1146,6 +1158,9 @@ img{
         width: 27vw; 
         height: auto;
         text-align: center;
+    }
+    .phone-text{
+        margin-top: 95%; 
     }
     /*.vote-img{
         background-color:#FFFFFF; background-image: url(Voting.jpeg); border-radius: 1em;
@@ -1417,6 +1432,9 @@ img{
         margin-top: 10vh;
         display:inline;
         border: 0.5em solid; 
+    }
+    .phone-text{
+        margin-top: 95%; 
     }
     .vote-img{
         background-color:#FFFFFF; background-image: url(Voting.jpeg); border-radius: 1em;

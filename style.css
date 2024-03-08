@@ -379,6 +379,92 @@ img{
     border-bottom-style: solid;
 }
 
+.modal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+} 
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.box-close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.slideshow-container {
+    position: relative;
+    border-width: 1em;
+}
+.mySlides {
+    text-decoration: none;
+} 
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute; 
+    margin-top: -2em;
+    padding: 1em;
+    color: black; 
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3em 0 0 3em;
+}
+.prev {
+    left: 0;
+    border-radius: 3em 0 0 3em;
+}
+.prev:hover {
+    color: red;
+}
+.next:hover {
+    color: red;
+}
+.dot {
+    cursor: pointer;
+    height: 1em;
+    width: 1em;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+    background-color: gray; 
+}
+.polling{
+    text-decoration: none; ;
+}
+.polling:hover{
+    background-color: transparent; 
+}
+
+
+
 
 
 @media only screen and (max-width: 737px){
@@ -606,6 +692,10 @@ img{
         text-align: center;
         flex-direction:column;
     }
+    iframe{
+        width: 50px; 
+        height: 50px; 
+    }
     .more-info{
         flex-direction: column;
     }
@@ -781,10 +871,11 @@ img{
     }
     .college-image{
         margin: auto; 
-        width: 30%;
-        height: auto; 
-        bottom: 1; 
+        height: auto;  
+        width: 65%; 
         float:center;
+        padding: 0.5em; 
+        margin-top: 2vh; 
     }
     /*DROP DOWN*/
     .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu, .box-svsu{
@@ -872,8 +963,8 @@ img{
         justify-content: center;
         border-width: 1em; 
         object-fit: contain; 
-        margin-right: 1em; 
-        margin-left: 1em; 
+        margin-right: auto; 
+        margin-left: auto; 
         margin-top: 7vh;
         margin-bottom: 7vh;
         display:inline;
@@ -881,6 +972,10 @@ img{
         width: 30vw; 
         height: auto;
         text-align: center;
+    }
+    iframe{
+        width: 600px; 
+        height: 250px; 
     }
     .phone-text{
         margin-top: 90%; 
@@ -1073,11 +1168,10 @@ img{
     }
     .college-image{
         margin: auto; 
-        width: 6em; 
-        height: 5.25em; 
-        bottom: 1; 
+        width: 45%; 
+        height: auto; 
         float:center;
-    }
+    } 
     /*DROP DOWN*/
     .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu, .box-svsu{
         height: 3em; 
@@ -1149,8 +1243,8 @@ img{
         justify-content: center;
         border-width: 1em; 
         object-fit: contain; 
-        margin-right: 3em; 
-        margin-left: 3em; 
+        margin-right: auto; 
+        margin-left: auto;
         margin-top: 15vh;
         margin-bottom: 15vh;
         display:inline;
@@ -1421,17 +1515,21 @@ img{
         border: 0.3em solid;
     }
     .boxes-other,.vote-img{
-        width: 45vw; 
+        width: 40vw; 
         height: auto;  
         justify-content: center;
         border-width: 1em; 
         object-fit: contain; 
-        margin-right: 3em; 
-        margin-left: 2em; 
+        margin-right: auto; 
+        margin-left:auto; 
         margin-bottom: 3em; 
         margin-top: 10vh;
         display:inline;
         border: 0.5em solid; 
+    }
+    iframe{
+        width: 800px; 
+        height: 200px; 
     }
     .phone-text{
         margin-top: 95%; 

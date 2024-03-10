@@ -693,8 +693,8 @@ img{
         flex-direction:column;
     }
     iframe{
-        width: 50px; 
-        height: 50px; 
+        width: 200px; 
+        height: 100px; 
     }
     .more-info{
         flex-direction: column;
@@ -872,10 +872,9 @@ img{
     .college-image{
         margin: auto; 
         height: auto;  
-        width: 65%; 
+        width: 45%; 
         float:center;
-        padding: 0.5em; 
-        margin-top: 2vh; 
+        padding: 0.5em;  
     }
     /*DROP DOWN*/
     .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu, .box-svsu{
@@ -920,6 +919,14 @@ img{
         object-fit: contain; 
         margin: 1em; 
         padding: 0.5em; 
+    }
+    .staff-img {
+        border-radius: 2em;
+        height: auto;  
+        width: 50%; 
+    }
+    .staff-content{
+        margin-top: 0%;
     }
     .vote-info{
         width: 80vw; 

@@ -92,6 +92,53 @@ function changeBackgroundColor2(){
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;  
 }
 
+var currentIndex1 = -1;
+
+function changeBackgroundColor3() {
+    var body = document.body;
+    var button = document.querySelector('button');
+    var header = document.querySelector(".wwa-header");
+    var whoweare = document.querySelectorAll(".mission");
+    var staff = document.querySelectorAll('.staff');
+    var link = document.querySelectorAll('a');
+    var staffCont = document.querySelectorAll('.staff-content');
+    var contact = document.querySelector('.contact-box');
+    body.style.backgroundColor = backgroundcolors[currentIndex];
+    button.style.backgroundColor = titlecolors[currentIndex];
+    header.style.backgroundColor = boxcolors[currentIndex];
+    contact.style.backgroundColor = boxcolors[currentIndex];
+    whoweare.forEach(function (who) {
+        who.style.backgroundColor = backgroundcolors[currentIndex];
+    });
+    staff.forEach(function (staff) {
+        staff.style.backgroundColor = boxcolors[currentIndex];
+        staff.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
+        staff.style.boxShadowColor = boxcolors[currentIndex - 1];
+    });
+    staffCont.forEach(function (staffCont) {
+        staffCont.style.backgroundColor = titlecolors[currentIndex];
+    });
+    link.forEach(function (link) {
+        link.addEventListener('mouseenter', function () {
+            link.style.color = fontcolors[currentIndex];
+            link.style.backgroundColor = backgroundcolors2[currentIndex1];
+        });
+        link.addEventListener('mouseleave', function () {
+            link.style.color = '#000000';
+            link.style.backgroundColor = 'transparent';
+        });
+    });
+    currentIndex = (currentIndex + 1) % backgroundcolors.length;
+    currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
+}
+
+
+
+
+
+
+
+
 function toggleDropdown() {
     var dropdown = document.getElementById("myDropdown");
     dropdown.classList.toggle("show");
@@ -118,30 +165,33 @@ scroll2.addEventListener('animationiteration', () => {
 });
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-        slideIndex = 1;
+var slideIndex = 0;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
     }
-    if (n < 1) {
-        slideIndex = slides.length;
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
     }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}

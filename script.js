@@ -9,16 +9,16 @@ var currentIndex1 = -1;
 function changeBackgroundColor() {
     var body = document.body;
     var button = document.querySelector('button');
-    var homeCollegeBox = document.querySelector(".home-college-box");
+    //var homeCollegeBox = document.querySelector(".home-college-box");
     var link = document.querySelectorAll('a');
-    var dropbtnhover = document.querySelector('.dropbtn');
+    //var dropbtnhover = document.querySelector('.dropbtn');
     var swirl = document.querySelector('.body-swirl');
-    var colleges = document.querySelectorAll('.colleges');
+    //var colleges = document.querySelectorAll('.colleges');
     currentIndex1 = currentIndex;
     body.style.backgroundColor = backgroundcolors[currentIndex];
     swirl.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
     button.style.backgroundColor = titlecolors[currentIndex];
-    homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
+    //homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
     link.forEach(function (link) {
         link.addEventListener('mouseenter', function () {
             link.style.color = fontcolors[currentIndex];
@@ -29,17 +29,17 @@ function changeBackgroundColor() {
             link.style.backgroundColor = 'transparent';
         });
     });
-    colleges.forEach(function (college) {
+    /*colleges.forEach(function (college) {
         college.style.backgroundColor = boxcolors[currentIndex];
-    });
-    dropbtnhover.addEventListener('mouseenter', function () {
+    });*/
+   /* dropbtnhover.addEventListener('mouseenter', function () {
         dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
         dropbtnhover.style.color = fontcolors[currentIndex];
     });
     dropbtnhover.addEventListener('mouseleave', function () {
         dropbtnhover.style.color = '#000000';
         dropbtnhover.style.backgroundColor = 'transparent';
-    });
+    });*/
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
 }
 
@@ -52,7 +52,7 @@ function changeBackgroundColor2(){
     var whoweare = document.querySelector(".mission");
     var staff = document.querySelectorAll('.staff'); 
     var link = document.querySelectorAll('a');
-    var dropbtnhover = document.querySelector('.dropbtn');
+   //var dropbtnhover = document.querySelector('.dropbtn');
     var staffCont = document.querySelectorAll('.staff-content');  
     var contact = document.querySelector('.contact-box'); 
     body.style.backgroundColor = backgroundcolors[currentIndex];
@@ -68,7 +68,7 @@ function changeBackgroundColor2(){
     staffCont.forEach(function (staffCont) {
         staffCont.style.backgroundColor = titlecolors[currentIndex]; 
     }); 
-    dropbtnhover.addEventListener('mouseenter', function() {
+   /* dropbtnhover.addEventListener('mouseenter', function() {
         if (currentIndex1 >= 0) {
             dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
         }
@@ -77,7 +77,7 @@ function changeBackgroundColor2(){
     dropbtnhover.addEventListener('mouseleave', function() {
         dropbtnhover.style.color = '#000000';
         dropbtnhover.style.backgroundColor = 'transparent';
-    });
+    }); */
     link.forEach(function(link){
         link.addEventListener('mouseenter', function() {
         link.style.color = fontcolors[currentIndex];
@@ -130,14 +130,7 @@ function changeBackgroundColor3() {
     });
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
-}
-
-
-
-
-
-
-
+} 
 
 function toggleDropdown() {
     var dropdown = document.getElementById("myDropdown");

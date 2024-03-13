@@ -95,9 +95,10 @@ label{
 
 
 .return-home{
-    cursor: pointer; 
-    top: 0;  
-    transform: translateX(-50%);  
+    cursor: pointer;  
+    display: flex; 
+    align-items: center;
+    /*transform: translateX(-50%);  */
 }
 
 h1, h2, h3, h4, p, .name, .read{
@@ -227,16 +228,16 @@ img{
     align-self: center;
     border: solid;
 }
-.wwa-header{
-    position: fixed; 
-    display: flex; 
-    align-items: center; 
-    top: 0; 
+.wwa-header {
+    position: fixed;
+    display: flex;
+    top: 0;
     background-color: #DDA8A1;
-    z-index: 3; 
-    border-bottom-color: #000000; 
+    z-index: 3;
+    border-bottom-color: #000000;
     border-bottom-width: 0.5em;
     border-bottom-style: solid;
+    align-items: left;
 }
 .contact-box{
     background-color: #DDA8A1;
@@ -275,7 +276,7 @@ img{
     position: relative; 
     z-index: 2; 
  } 
-.college-body-img, .wwa-body-img , .body-img{
+.college-body-img, .wwa-body-img , .body-img, .job-body-img{
     background-image: url(BackgroundImg.png);
     z-index:-1;
     align-items: center; 
@@ -620,10 +621,10 @@ img{
         height: 10vh; 
     }
     .return-home{
-        height:5vh; 
-        width: auto; 
-        padding-top: 3.7em; 
-        margin-left: 10vw; 
+        width:  auto; 
+        height: auto; 
+        padding: 0.2em; 
+        padding-right: 0.75em; 
     }
     .mission{
         width: 80vw; 
@@ -631,9 +632,13 @@ img{
     .wwa-body-img{
         height:40vh;
     }
+    .job-body-img{
+        height:120vh;
+    }
     .wwa-header{
         height:6vh;  
         width: 100%; 
+        padding-top: 0.2em;
     }
     .staff{
         width: 100vw; 
@@ -907,9 +912,13 @@ img{
     .wwa-body-img{
         height:100vh;
     }
+    .job-body-img{
+        height:100vh;
+    }
     .wwa-header{
         height:7vh;
         width: 100%;   
+        padding-top: 0.3em;
     }
     .staff{
         width: 30vw; 
@@ -1095,10 +1104,8 @@ img{
         margin-left: 2vw; 
     }
     .return-home{
-        height:15vh; 
-        width: auto; 
-        padding-top: 0.8em; 
-        padding-left: 1em; 
+        height:100%; 
+        width: auto;
     }
     .home-college-box{
         height: auto; 
@@ -1205,9 +1212,13 @@ img{
         height:100vh;
         border-bottom-width: 0.7em;
     }
+    .job-body-img{
+        height:120vh;
+    }
     .wwa-header{
         height:13vh;
-        width: 100%;  
+        width: 100%;
+        padding-top: 0.5em;  
     }
     .staff{
         width: 25vw; 
@@ -1304,7 +1315,7 @@ img{
         display:inline-block; vertical-align: middle;
     }
     .contact-us2{
-        display:inline-block; margin-left:10%;
+        display:inline-block; margin-left:5%;
     }
     .contact-us3{
         height:auto; 

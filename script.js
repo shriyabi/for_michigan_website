@@ -22,7 +22,7 @@ function changeBackgroundColor() {
     link.forEach(function (link) {
         link.addEventListener('mouseenter', function () {
             link.style.color = fontcolors[currentIndex];
-            link.style.backgroundColor = backgroundcolors[currentIndex - 1];
+            link.style.backgroundColor = backgroundcolors[currentIndex1];
         });
         link.addEventListener('mouseleave', function () {
             link.style.color = '#000000';

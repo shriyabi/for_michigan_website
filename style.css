@@ -95,10 +95,12 @@ label{
 
 
 .return-home{
-    cursor: pointer;  
     display: flex; 
-    align-items: center;
-    /*transform: translateX(-50%);  */
+    align-self: left;
+    height:100%; 
+    width: auto;
+    margin-left: 1em; 
+    vertical-align: middle;
 }
 
 h1, h2, h3, h4, p, .name, .read{
@@ -255,8 +257,21 @@ img{
 
 .staff-img {
     border-radius: 2em;
-    height: 10%; 
-    width: 50%; 
+    height: 30%;
+    width: 60%; 
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    align-self: center; 
+    display: flex;
+    margin: auto; 
+    margin-top: 1em;
+}
+.staff-img img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 2em;
 }
 
 .staff-content {
@@ -620,12 +635,6 @@ img{
     .contact-us{
         height: 10vh; 
     }
-    .return-home{
-        width:  auto; 
-        height: auto; 
-        padding: 0.2em; 
-        padding-right: 0.75em; 
-    }
     .mission{
         width: 80vw; 
     }
@@ -753,6 +762,10 @@ img{
         text-align: center; 
         display: inline-block; 
         margin: auto;
+    }
+    .return-home{
+        margin-top: 0.2em; 
+        margin-bottom: 0.2em; 
     }
 }
 @media only screen and (min-width: 738px) and (max-width: 1200px){
@@ -899,13 +912,6 @@ img{
     .contact-us{
         height: 10vh; 
     }
-    .return-home{
-        height:8vh; 
-        width: auto; 
-        padding-top: 0.8em; 
-        margin-left: 10vw; 
-        margin-top: 7vh; 
-    }
     .mission{
         width: 70vw; 
     }
@@ -929,14 +935,18 @@ img{
         margin: 1em; 
         padding: 0.5em; 
     }
-    .staff-img {
+
+   /* .staff-img {
         border-radius: 2em;
         height: auto;  
         width: 50%; 
-    }
-    .staff-content{
-        margin-top: 0%;
-    }
+        overflow: hidden;
+    } */
+
+
+   /* .staff-content{
+        
+    } */
     .vote-info{
         width: 80vw; 
         justify-content: center;
@@ -1103,10 +1113,7 @@ img{
         margin-bottom: 5vh; 
         margin-left: 2vw; 
     }
-    .return-home{
-        height:100%; 
-        width: auto;
-    }
+
     .home-college-box{
         height: auto; 
         width: 70vw;
@@ -1471,11 +1478,6 @@ img{
     }
     .contact-us{
         height: 10vh; 
-    }
-    .return-home{
-        height:10vh; 
-        width: auto; 
-        margin-left: 5vw; 
     }
     .mission{
         width: 70vw; 

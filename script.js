@@ -92,6 +92,63 @@ function changeBackgroundColor2(){
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;  
 }
 
+
+
+
+var currentIndex1 = -1; 
+function changeBackgroundColor4(){
+    var body = document.body; 
+    var button = document.querySelector('button'); 
+    var header = document.querySelector(".wwa-header"); 
+    var whoweare = document.querySelector(".vr-info");
+    var staff = document.querySelectorAll('.boxes-vr'); 
+    var link = document.querySelectorAll('a');
+    var dropbtnhover = document.querySelectorAll('.dropbtn');
+    var staffCont = document.querySelectorAll('.dp-vr');  
+    var contact = document.querySelector('.contact-box'); 
+    body.style.backgroundColor = backgroundcolors[currentIndex];
+    button.style.backgroundColor = titlecolors[currentIndex]; 
+    header.style.backgroundColor = boxcolors[currentIndex]; 
+    contact.style.backgroundColor = boxcolors[currentIndex]; 
+    whoweare.style.backgroundColor = backgroundcolors[currentIndex];
+    staff.forEach(function (staff) {
+        staff.style.backgroundColor = boxcolors[currentIndex];
+        staff.style.boxShadowColor = boxcolors[currentIndex - 1];
+    });
+    staffCont.forEach(function (staffCont) {
+        staffCont.style.backgroundColor = titlecolors[currentIndex]; 
+    }); 
+    dropbtnhover.forEach(function(dropbtnhover){
+         dropbtnhover.addEventListener('mouseenter', function() {
+             if (currentIndex1 >= 0) {
+                dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
+            }
+         dropbtnhover.style.color = fontcolors[currentIndex];
+        });
+    dropbtnhover.addEventListener('mouseleave', function() {
+        dropbtnhover.style.color = '#000000';
+        dropbtnhover.style.backgroundColor = 'transparent';
+    }); 
+}); 
+    link.forEach(function(link){
+        link.addEventListener('mouseenter', function() {
+        link.style.color = fontcolors[currentIndex];
+        link.style.backgroundColor = backgroundcolors2[currentIndex1]; 
+    });
+    link.addEventListener('mouseleave', function() {
+        link.style.color = '#000000';
+        link.style.backgroundColor = 'transparent';  
+    });
+    });
+    currentIndex = (currentIndex + 1) % backgroundcolors.length; 
+    currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;  
+}
+
+
+
+
+
+
 var currentIndex1 = -1;
 
 function changeBackgroundColor3() {
@@ -189,17 +246,18 @@ var slideIndex = 0;
         dots[slideIndex - 1].className += " active";
     }
 
-    function openVote(evt, vote) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(vote).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    document.getElementById("defaultOpen").click();
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+

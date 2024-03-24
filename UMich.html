@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Rubik+Scribble&display=swap" rel="stylesheet">
 </head>
 
 <body style="background-color: #FFFFFF;">
@@ -28,16 +29,17 @@
             <div class="dropdown">
                 <h3><button class="dropbtn umich-header-color"> GET INVOLVED </button> </h3>
                 <div class="dropdown-content">
-                    <div class="box-umich" style="width:15vw">
+                    <a href = "Jobs.html#Events"><div class="box-umich" style="width:15vw">
                         <h4> Campus Events </h4>
-                    </a></div>
-                    <div class="box-umich" style="width:15vw;"> <a
-                        href="Jobs.html" class = "link-color" style = "background-color: none;">
-                        <h4> Join our Team </h4>
-                    </a></div>
-                    <div class="box-umich" style="width:15vw"> 
-                        <h4> Contact Us </h4>
-                    </a></div>
+                    </div></a> 
+                    <a
+            href="Jobs.html" class = "link-color" style = "background-color: none;"><div class="box-umich" style="width:15vw;">
+                <h4> Join our Team </h4>
+            </div></a>
+            <a href = "Jobs.html#Contact">
+                <div class="box-umich" style="width:15vw"> 
+                    <h4> Contact Us </h4>
+                </div></a>
                 </div>
             </div>
         </div>
@@ -106,20 +108,27 @@
         </div>
     </div>
 
+    <div style = "background-color: rgb(227, 0, 0); text-align: left; margin-top: -3vh; padding: 0.2em;"> 
+        <h3 style = "display: inline;"> COUNTDOWN TO PRIMARY ELECTION: </h3>
+        <h3 id="pres" style = "display:inline; font-family: Michroma, sans-serif; font-weight: 400; font-style: normal;"></h3>
+    </div>
+    
+    <p id="aug"></p>
+
     <div style="background-color: #FFFFFF; margin-top: 2vh;">
         <h2 style = "color:#00274C"> Step 1: Register to Vote </h2>
         <div
-        style="align-self: center; display: flex; justify-content: center; align-items: center;">
-        <div class="tab-umich">
-            <button class="tablinks" onclick="openCity(event, 'Vo')"><h3 style = "color: white">Voter Registration</h3></button>
-            <button class="tablinks" onclick="openCity(event, 'Vo1')" style = "background-color: #FFCB05; border-color:transparent"><h4 style = "color: #00274C; padding: 0">Voter Registration (15+ Days before Election Day) </h4></button>
-            <button class="tablinks" onclick="openCity(event, 'Vo2')" style = "background-color: #FFCB05; border-color:transparent"><h4 style = "color: #00274C; padding: 0">Voter Registration (14 Days through 8PM on Election Day) </h4></button>
-            <button class="tablinks" onclick="openCity(event, 'Ab')" ><h3 style = "color: white">Abroad Registration</h3></button>
-            <button class="tablinks" onclick="openCity(event, 'Per')" ><h3 style = "color: white">Permanent Mail Ballot List</h3></button>
-            <button class="tablinks" onclick="openCity(event, 'Ab2')" ><h3 style = "color: white">Abroad Ballot Requestment</h3></button>
+        style="align-self: center; display: flex; justify-content: center; align-items: center; align-items: flex-start;">
+        <div class="tab-umich" style = "vertical-align: top;">
+            <button class="tablinks" onclick="openCity(event, 'Vo')">Voter Registration</button>
+            <button class="tablinks" onclick="openCity(event, 'Vo1')" style = "background-color: #FFCB05; border-color:transparent; font-size: 1.2em; color:#00274C;">Voter Registration (15+ Days before Election Day)</button>
+            <button class="tablinks" onclick="openCity(event, 'Vo2')" style = "background-color: #FFCB05; border-color:transparent; font-size: 1.2em; color: #00274C;">Voter Registration (14 Days through 8PM on Election Day)</button>
+            <button class="tablinks" onclick="openCity(event, 'Ab')" >Abroad Registration</button>
+            <button class="tablinks" onclick="openCity(event, 'Per')" >Permanent Mail Ballot List</button>
+            <button class="tablinks" onclick="openCity(event, 'Ab2')" >Abroad Ballot Requestment</button>
           </div>
           
-          <div id="Vo" class="tabcontent" style = "display:block; background-color: #FFCB05; border-color:#00274C">
+          <div id="Vo" class="tabcontent" style = "display:block; background-color: #ffcd059c; border-color:#00274C">
             <h3 style = "color:#00274C">Voter Registration</h3>
             <h4 style = "color:#00274C"> To be eligible to register and vote in Michigan, you must be: </h4>
             <ul>
@@ -144,7 +153,8 @@
             <br>
             <h4 style = "color:#00274C"> To check if you’re registered to vote where you live, visit <a href="https://mvic.sos.state.mi.us/" class = "link-color" style = "color:#00274C">mi.gov/vote</a> and click on “Your voter information.”</h4>
           </div>
-          <div id="Vo1" class="tabcontent" style = "background-color: #FFCB05; border-color:#00274C">
+          <div id="Vo1" class="tabcontent" style = "background-color: #ffcd059c; border-color:#00274C">
+            <br> <br>
             <h4 style = "color:#00274C">If you are registering to vote 15 days or more before Election Day, you can register:</h4>
             <ul>
             <li>
@@ -164,7 +174,8 @@
             </li>
         </ul>
                 </div>
-                <div id="Vo2" class="tabcontent" style = "background-color: #FFCB05; border-color:#00274C">
+                <div id="Vo2" class="tabcontent" style = "background-color: #ffcd059c; border-color:#00274C">
+                    <br> <br>
                <h4 style = "color:#00274C"> If you are registering to vote within 14 days of the election through 8 p.m. on Election Day, you must register in person at your city or township clerk’s office with proof of residency.</h4>
                <ul>
                 <li>
@@ -199,7 +210,7 @@
             </ul>
             <br>
             </div>
-            <div id="Ab" class="tabcontent" style = "background-color: #FFCB05; border-color:#00274C">
+            <div id="Ab" class="tabcontent" style = "background-color: #ffcd059c; border-color:#00274C">
                 <h3 style = "color:#00274C">Abroad Registration</h3>
                 <h4 style = "color:#00274C"> If you plan to study aboard and need to register to vote, you must fill out a FWAB or FPCA form, which requires the following: </h4>
                 <ul>
@@ -232,11 +243,12 @@
                 </ul>
               </div>  
           
-          <div id="Per" class="tabcontent" style = "background-color: #FFCB05; border-color:#00274C">
+          <div id="Per" class="tabcontent" style = "background-color: #ffcd059c; border-color:#00274C;">
             <h3>Permanent Mail Ballot List</h3>
 <h4>If you check the permanent mail ballot list box when you apply for your absentee ballot, you will receive an absentee ballot automatically for every future election in your community without having to submit an application each time!</h4>
-          </div>
-          <div id="Ab2" class="tabcontent" style = "background-color: #FFCB05; border-color:#00274C">
+<img src = "AbsenteeBallot.jpeg" style = "width:auto; height: 50%; margin-left: 20vw; margin-right:20vw;"> 
+</div>
+          <div id="Ab2" class="tabcontent" style = "background-color: #ffcd059c; border-color:#00274C">
             <h3 style = "color:#00274C"> Abroad Ballot Requestment</h3>
             <h4 style = "color:#00274C"> Absentee ballots for overseas voters may be requested at any time before an election, and ballots are generally mailed beginning 45 days before an election.
                     <ul>

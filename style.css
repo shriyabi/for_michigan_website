@@ -104,7 +104,7 @@ label{
     vertical-align: middle;
 }
 
-h1, h2, h3, h4, p, .name, .read{
+h1, h2, h3, h4, p, .name, .read, .tab-umich button{
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -112,6 +112,10 @@ h1, h2, h3, h4, p, .name, .read{
     color:#000000;  
     word-wrap: break-word; 
     padding: 0.5em; 
+}
+
+.tab-umich button{
+    font-weight: 500;
 }
 
 /*LINKS*/
@@ -480,7 +484,38 @@ img{
     background-color: transparent; 
 }
 
+.want{
+    background-color: #DDA8A1;
+}
 
+.tab-umich button:hover, .tab-msu button:hover, .tab-cmu button:hover, .tab-gvsu button:hover, .tab-mtu button:hover, .tab-wmu button:hover, .tab-wsu button:hover, .tab-svsu button:hover{
+    background-color: #ffcd0539;
+    color:#000000; 
+    font-family: "Fira Sans", sans-serif;
+}
+.tab-umich, .tab-msu, .tab-cmu, .tab-gvsu, .tab-mtu, .tab-wmu, .tab-wsu, .tab-svsu{
+    display: inline; 
+    background-color: transparent;
+} 
+.tab-umich button, .tab-msu button, .tab-cmu button, .tab-gvsu button, .tab-mtu button, .tab-wmu button, .tab-wsu button, .tab-svsu button {
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #00274C; 
+    border-color:#FFCB05; 
+    text-align: center;
+  }
+.tab-umich button.active, .tab-msu button.active, .tab-cmu button.active, .tab-gvsu button.active, .tab-mtu button.active, .tab-wmu button.active, .tab-wsu button.active, .tab-svsu button.active{
+    background-color: #004d95;
+    color: white;
+}
+.dp-vr{
+    background-color: #A98F92; 
+    border: 1px solid gray;
+} 
 
 
 
@@ -1116,7 +1151,8 @@ img{
     }
     /*IMAGES*/ 
     img{
-        width: 20vw; 
+        /*width: 20vw;*/
+        width: 30%; 
         height: 5vh;
         margin-right: 5vw;
         margin-left: 5vw; 
@@ -1292,7 +1328,6 @@ img{
         border-bottom-width: 0.7em; 
     }
     .dp-vr{
-        background-color: #e6d2bb; 
         width: 35vw; 
     }
     .boxes-college-page, .boxes-event, .boxes-vr{
@@ -1377,44 +1412,28 @@ img{
     }
 
     .tab-umich, .tab-msu, .tab-cmu, .tab-gvsu, .tab-mtu, .tab-wmu, .tab-wsu, .tab-svsu{
-        display: inline; 
-        background-color: transparent;
         width: 20%;
       }
     
-      .tab-umich button, .tab-msu button, .tab-cmu button, .tab-gvsu button, .tab-mtu button, .tab-wmu button, .tab-wsu button, .tab-svsu button {
-        display: block;
-        border: 0.3em solid #ccc;
-        color: black;
-        width: 100%;
-        text-align: left;
-        cursor: pointer;
-        transition: 0.3s;
-        background-color: #00274C; 
-        border-color:#FFCB05; 
-      }
+    .tab-umich button, .tab-msu button, .tab-cmu button, .tab-gvsu button, .tab-mtu button, .tab-wmu button, .tab-wsu button, .tab-svsu button {
+        border: 0.3em solid #FFCB05;
+        font-size: 1.5em;
+    }
       
-      .tab-umich button:hover, .tab-msu button:hover, .tab-cmu button:hover, .tab-gvsu button:hover, .tab-mtu button:hover, .tab-wmu button:hover, .tab-wsu button:hover, .tab-svsu button:hover{
-        background-color: #ffcd0539;
-        color:#000000; 
-        font-family: "Fira Sans", sans-serif;
-      }
-      
-      .tab-umich button.active, .tab-msu button.active, .tab-cmu button.active, .tab-gvsu button.active, .tab-mtu button.active, .tab-wmu button.active, .tab-wsu button.active, .tab-svsu button.active{
-        background-color: #004d95;
+    .tab-umich button.active, .tab-msu button.active, .tab-cmu button.active, .tab-gvsu button.active, .tab-mtu button.active, .tab-wmu button.active, .tab-wsu button.active, .tab-svsu button.active{
         border: 0.2em solid white;
-        color: #00274C;
-      }
+    }
       
-      /* Style the tab content */
-      .tabcontent {
+    .tabcontent {
         float: left;
         padding: 0px 0.5em;
         border: 0.3em solid #ccc;
         width: 70%;
         height: 70vh;
         display: none;
-      }
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-resolution: 192dpi) {}

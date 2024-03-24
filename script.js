@@ -9,16 +9,14 @@ var currentIndex1 = -1;
 function changeBackgroundColor() {
     var body = document.body;
     var button = document.querySelector('button');
-    //var homeCollegeBox = document.querySelector(".home-college-box");
+    var staffCont = document.querySelectorAll('.dp-vr');
     var link = document.querySelectorAll('a');
-    //var dropbtnhover = document.querySelector('.dropbtn');
+    var dropbtnhover = document.querySelectorAll('.dropbtn');
     var swirl = document.querySelector('.body-swirl');
-    //var colleges = document.querySelectorAll('.colleges');
     currentIndex1 = currentIndex;
     body.style.backgroundColor = backgroundcolors[currentIndex];
     swirl.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
     button.style.backgroundColor = titlecolors[currentIndex];
-    //homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
     link.forEach(function (link) {
         link.addEventListener('mouseenter', function () {
             link.style.color = fontcolors[currentIndex];
@@ -29,17 +27,22 @@ function changeBackgroundColor() {
             link.style.backgroundColor = 'transparent';
         });
     });
-    /*colleges.forEach(function (college) {
-        college.style.backgroundColor = boxcolors[currentIndex];
-    });*/
-   /* dropbtnhover.addEventListener('mouseenter', function () {
-        dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
-        dropbtnhover.style.color = fontcolors[currentIndex];
+
+    staffCont.forEach(function (staffCont) {
+        staffCont.style.backgroundColor = titlecolors[currentIndex];
     });
-    dropbtnhover.addEventListener('mouseleave', function () {
-        dropbtnhover.style.color = '#000000';
-        dropbtnhover.style.backgroundColor = 'transparent';
-    });*/
+    dropbtnhover.forEach(function (dropbtnhover) {
+        dropbtnhover.addEventListener('mouseenter', function () {
+            if (currentIndex1 >= 0) {
+                dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
+            }
+            dropbtnhover.style.color = fontcolors[currentIndex];
+        });
+        dropbtnhover.addEventListener('mouseleave', function () {
+            dropbtnhover.style.color = '#000000';
+            dropbtnhover.style.backgroundColor = 'transparent';
+        });
+    });
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
 }
 
@@ -52,7 +55,8 @@ function changeBackgroundColor2(){
     var whoweare = document.querySelector(".mission");
     var staff = document.querySelectorAll('.staff'); 
     var link = document.querySelectorAll('a');
-   //var dropbtnhover = document.querySelector('.dropbtn');
+    var staffCont2 = document.querySelectorAll('.dp-vr');
+    var dropbtnhover = document.querySelectorAll('.dropbtn');
     var staffCont = document.querySelectorAll('.staff-content');  
     var contact = document.querySelector('.contact-box'); 
     body.style.backgroundColor = backgroundcolors[currentIndex];
@@ -68,7 +72,8 @@ function changeBackgroundColor2(){
     staffCont.forEach(function (staffCont) {
         staffCont.style.backgroundColor = titlecolors[currentIndex]; 
     }); 
-   /* dropbtnhover.addEventListener('mouseenter', function() {
+    dropbtnhover.forEach(function (dropbtnhover) {
+    dropbtnhover.addEventListener('mouseenter', function() {
         if (currentIndex1 >= 0) {
             dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
         }
@@ -77,7 +82,8 @@ function changeBackgroundColor2(){
     dropbtnhover.addEventListener('mouseleave', function() {
         dropbtnhover.style.color = '#000000';
         dropbtnhover.style.backgroundColor = 'transparent';
-    }); */
+    }); 
+    });
     link.forEach(function(link){
         link.addEventListener('mouseenter', function() {
         link.style.color = fontcolors[currentIndex];
@@ -87,6 +93,9 @@ function changeBackgroundColor2(){
         link.style.color = '#000000';
         link.style.backgroundColor = 'transparent';  
     });
+    });
+    staffCont2.forEach(function (staffCont) {
+        staffCont.style.backgroundColor = titlecolors[currentIndex];
     });
     currentIndex = (currentIndex + 1) % backgroundcolors.length; 
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;  
@@ -160,9 +169,15 @@ function changeBackgroundColor3() {
     var link = document.querySelectorAll('a');
     var staffCont = document.querySelectorAll('.staff-content');
     var contact = document.querySelector('.contact-box');
+    var want = document.querySelector('.want');
+    var homeCollegeBox = document.querySelector(".home-college-box"); 
+    var colleges = document.querySelectorAll('.colleges');
+    var dropbtnhover = document.querySelectorAll('.dropbtn');
+    homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
     header.style.backgroundColor = boxcolors[currentIndex];
+    want.style.backgroundColor = boxcolors[currentIndex];
     contact.style.backgroundColor = boxcolors[currentIndex];
     whoweare.forEach(function (who) {
         who.style.backgroundColor = backgroundcolors[currentIndex];
@@ -185,37 +200,37 @@ function changeBackgroundColor3() {
             link.style.backgroundColor = 'transparent';
         });
     });
+    dropbtnhover.forEach(function (dropbtnhover) {
+        dropbtnhover.addEventListener('mouseenter', function() {
+            if (currentIndex1 >= 0) {
+                dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
+            }
+            dropbtnhover.style.color = fontcolors[currentIndex];
+        });
+        dropbtnhover.addEventListener('mouseleave', function() {
+            dropbtnhover.style.color = '#000000';
+            dropbtnhover.style.backgroundColor = 'transparent';
+        }); 
+    });
+    colleges.forEach(function (college) {
+        college.style.backgroundColor = boxcolors[currentIndex];
+    });
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
+    
 } 
 
-function toggleDropdown() {
-    var dropdown = document.getElementById("myDropdown");
-    dropdown.classList.toggle("show");
-}
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
-const scroll1 = document.querySelector('.scroll');
+/*const scroll1 = document.querySelector('.scroll');
 const scroll2 = document.querySelector('.scroll2');
 scroll1.addEventListener('animationiteration', () => {
     scroll2.style.animationPlayState = 'running';
 });
 scroll2.addEventListener('animationiteration', () => {
     scroll1.style.animationPlayState = 'running';
-});
+}); */
 
 
-var slideIndex = 0;
+/*var slideIndex = 0;
     showSlides(slideIndex);
 
     function plusSlides(n) {
@@ -244,7 +259,7 @@ var slideIndex = 0;
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-    }
+    } */
 
 
 function openCity(evt, cityName) {
@@ -260,4 +275,24 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+function countDown(){
+//change to election day when time comes
+var countDownDate = new Date("Aug 6, 2024 00:00:00").getTime();
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("pres").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("pres").innerHTML = "Polls have closed.";
+    }
+}, 1000);
+} 
+countDown();
+
 

@@ -489,7 +489,7 @@ img{
 }
 
 .want{
-    background-color: #DDA8A1;
+    background-color: #A98F92;
 }
 
 .tab-umich button:hover, .tab-msu button:hover, .tab-cmu button:hover, .tab-gvsu button:hover, .tab-mtu button:hover, .tab-wmu button:hover, .tab-wsu button:hover, .tab-svsu button:hover{
@@ -539,6 +539,9 @@ img{
     background-color: #A98F92; 
     border: 1px solid gray;
 } 
+.contact-form1{
+    background-color: #e6d2bb; width: 70vw; margin-top: 5vh; margin-bottom: 5vh;
+}
 
 
 

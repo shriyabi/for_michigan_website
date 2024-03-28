@@ -752,7 +752,7 @@ img{
     }
     .boxes-college-page{
         /*width:70vw; */
-        height: 20vh;  
+        height: auto;  
         justify-content: center;
         border-width: medium;
         object-fit: contain; 
@@ -868,6 +868,10 @@ img{
         width: 70%;
         height: 50vh;
         display: none;
+    }
+
+    .tab-img{
+        width:auto; height: 30%; margin-left: 1vw; margin-right: 20vw; 
     }
 }
 @media only screen and (min-width: 738px) and (max-width: 1200px){

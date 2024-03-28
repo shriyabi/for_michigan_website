@@ -308,7 +308,7 @@ img{
     border-top-style: solid;
 }
 .counter{
-    background-color: rgb(227, 0, 0); 
+    background-color: #A98F92; 
     text-align: left; 
 }
 .boxes-college-page, .boxes-vr {
@@ -871,7 +871,7 @@ img{
     }
 
     .tab-img{
-        width:auto; height: 30%; margin-left: 1vw; margin-right: 20vw; 
+        width:auto; height: 30%; margin-left: 15vw; margin-right: 20vw; 
     }
 }
 @media only screen and (min-width: 738px) and (max-width: 1200px){
@@ -1192,6 +1192,9 @@ img{
         width: 70%;
         height: 50vh;
         display: none;
+    }
+    .tab-img{
+        width:auto; height: 40%; margin-left: 15vw; margin-right: 15vw; 
     }
 }
 
@@ -1519,6 +1522,9 @@ img{
     .temp-inline{
        display: flex; align-items: flex-start;
     }
+    .tab-img{
+        width:auto; height: 40%; margin-left: 23vw; margin-right: 15vw; 
+    }
 }
 
 @media only screen and (min-resolution: 192dpi) {}
@@ -1819,5 +1825,8 @@ img{
         display: none;
         justify-content: center;
         align-items: center;
+    }
+    .tab-img{
+        width:auto; height: 40%; margin-left: 22vw; margin-right: 10vw; 
     }
 }          

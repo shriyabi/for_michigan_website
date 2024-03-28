@@ -22,21 +22,21 @@
     <div class="wwa-header" style="background-color: #18453B;">
         <img src="4MichWhite.png" class="return-home">
         <div style="display: inline-flex; ">
-            <h3 style="display: inline;"><a href="index.html" class="msu-header-color"> HOME </a> </h3>
+            <h3 style="display: inline;"><a href="index" class="msu-header-color"> HOME </a> </h3>
             <h3 style="display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp</span></h3>
-            <h3 style="display: inline;"><a href="WhoAreWe.html" class="msu-header-color"> WHO WE ARE </a> </h3>
+            <h3 style="display: inline;"><a href="Who-Are-We" class="msu-header-color"> WHO WE ARE </a> </h3>
             <h3 style="display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp</span></h3>
             <div class="dropdown">
                 <h3><button class="dropbtn msu-header-color"> GET INVOLVED </button> </h3>
                 <div class="dropdown-content">
-                    <a href = "Jobs.html"><div class="box-msu" style="width:15vw">
+                    <a href = "Get-Involved"><div class="box-msy" style="width:15vw">
                         <h4> Campus Events </h4>
                     </div></a> 
                     <a
-            href="Jobs.html#Job" class = "link-color" style = "background-color: none;"><div class="box-msu" style="width:15vw;">
+            href="Get-Involved#Job" class = "link-color" style = "background-color: none;"><div class="box-msu" style="width:15vw;">
                 <h4> Join our Team </h4>
             </div></a>
-            <a href = "Jobs.html#Contact">
+            <a href = "Get-Involved#Contact">
                 <div class="box-msu" style="width:15vw"> 
                     <h4> Contact Us </h4>
                 </div></a>
@@ -44,6 +44,9 @@
             </div>
         </div>
     </div>
+    <div class = "counter" style = "background-color: #0B9A6D;"> 
+        <h3 style = "display: inline;"> COUNTDOWN TO PRIMARY ELECTION: </h3>
+        <h3 id="pres" style = "display:inline; font-family: Michroma, sans-serif; font-weight: 900; font-style: normal;"></h3>
     </div>
     <div class="college-body-img college-border" style="border-bottom-color: #18453B;">
         <div class="vote-info"
@@ -56,9 +59,10 @@
             <h2 style="color: #18453B;"> VOTING INFORMATION </h2>
             <div class = "temp-inline">
                 <div class="boxes-college-page"
-                    style="background-color:#00000079; align-self: stretch; border-color: #18453B; background-image: url(PollsOpaque.png); background-size:cover; background-repeat: no-repeat;">
+                    style="background-color:#0b9a6d67; align-self: stretch; border-color: #18453B; background-image: url(PollsOpaque.png); background-size:cover; background-repeat: no-repeat;">
                     <input id="ch15" type="checkbox">
                     <label for="ch15">
+                        <br><br><br>
                         <h3 style="color: black; align-self:flex-end; margin-top:50%;"><a href = "https://mvic.sos.state.mi.us/Voter/Index" class = "link-color"> Nearest Polling Station  </a></h3>
                     </label>
                     <div class="content">
@@ -66,7 +70,7 @@
                     </div>
                 </div>
                 <div class="boxes-college-page"
-                    style="background-color:#00000079; align-self: stretch; border-color: #18453B; background-image: url(SpartanOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
+                    style="background-color:#0b9a6d67; align-self: stretch; border-color: #18453B; background-image: url(SpartanOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
                     <input id="ch17" type="checkbox">
                     <div class="content" style = "background-color: #18453B;">
                         <label for="ch17" style = "color: #0B9A6D"> X </label>
@@ -80,7 +84,72 @@
                     
                 </div>
                 <div class="boxes-college-page"
-                    style="background-color:#00000079; align-self: stretch; border-color: #18453B; background-image: url(RegisterOpaque.png); background-size:cover; background-repeat: no-repeat;">
+                    style="background-color:#0b9a6d67; align-self: stretch; border-color: #18453B; background-image: url(RegisterOpaque.png); background-size:cover; background-repeat: no-repeat;">
+                    <input id="ch16" type="checkbox">
+                    <div class="content" style="background-color:#18453B">
+                        <label for="ch16" style = "color:#0B9A6D"> X </label>
+                        <a href="https://www.michigan.gov/sos/-/media/Project/Websites/sos/Elections/Election-Forms/Absent-Voter-Ballot-Application-Fillable.pdf?rev=c35e859a2abe40dfbca3c95027c8072a&hash=4430F4C6B6C603D59A7E196EB7E5B05A"
+                        style="background-color:transparent;">
+                            <h4 style = "color: white;">Mail-in Application</h4>
+                        </a>
+                        <a href="https://mvic.sos.state.mi.us/Home/VoteAtHome"
+                            style="background-color:transparent;">
+                            <h4 style = "color: white"> Web Application</h4>
+                        </a> 
+                        <a href="https://mvic.sos.state.mi.us/Voter/Index/#yourclerk"
+                        style="background-color:transparent;">
+                            <h4 style = "color: white"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; City or Township Clerk (In Person Application) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                        </a> 
+                    </div>
+                    <label for="ch16">
+                        <br><br><br>
+                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"> Registration Applications </h3>
+                    </label>
+                </div>
+                <!--<div style = "display:inline-flex; flex-direction:column;">
+        <div class = "boxes-other" style="background-color: yellow;"> Voting Early </div>
+        <div class = "boxes-other" style="background-color: yellow;"> Absentee </div>
+    </div>-->
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--<div class="college-body-img college-border" style="border-bottom-color: #18453B;">
+        <div class="vote-info"
+            style="background-color: #FFFFFF; box-shadow: 0 0 6em #18453B; border-color:transparent;">
+            <div class="background-container sailor">
+               
+            </div>
+            <img src="UMich.png" class="vote-logo">
+            <br> <br>
+            <h2 style="color: #18453B;"> VOTING INFORMATION </h2>
+            <div style="display: flex; align-items: flex-start;">
+                <div class="boxes-college-page"
+                    style="background-color:#ffcd0592; align-self: stretch; border-color: #18453B; background-image: url(PollsOpaque.png); background-size:cover; background-repeat: no-repeat;">
+                    <input id="ch15" type="checkbox">
+                    <label for="ch15">
+                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"><a href = "https://mvic.sos.state.mi.us/Voter/Index" class = "link-color"> Nearest Polling Station  </a></h3>
+                    </label>
+                    <div class="content">
+                        <label for="ch15"> X </label>
+                    </div>
+                </div>
+                <div class="boxes-college-page"
+                    style="background-color:#ffcd0592; align-self: stretch; border-color: #18453B; background-image: url(SailorWolverineOpaque.png); background-size:cover; background-repeat: no-repeat;">
+                    <input id="ch17" type="checkbox">
+                    <label for="ch17">
+                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"> Department of State Voter Information Center </h3>
+                    </label>
+                    <div class="content" style = "background-color: #18453B;">
+                        <label for="ch17" style = "color: #0B9A6D"> X </label>
+                        <h4 style="padding-bottom:0; color: white">  Get More Information about how to register to vote <a href = "Register" class = "link-color" style = "color: #0B9A6D"> here</a>! </h4>
+                        <h4 style ="color: white">To check if you’re registered to vote where you live, visit mi.gov/vote and click on "<a href = "https://mvic.sos.state.mi.us/Voter/Index" class = "link-color" style = "color: #0B9A6D">Your voter information </a>.”
+                        </h4>
+                    </div>
+                </div>
+                <div class="boxes-college-page"
+                    style="background-color:#ffcd0551; align-self: stretch; border-color: #18453B; background-image: url(RegisterOpaque.png); background-size:cover; background-repeat: no-repeat;">
                     <input id="ch16" type="checkbox">
                     <label for="ch16">
                         <h3 style="color: black; align-self:flex-end; margin-top:50%;"> Registration Applications </h3>
@@ -101,35 +170,29 @@
                         </a> 
                     </div>
                 </div>
-                <!--<div style = "display:inline-flex; flex-direction:column;">
+                <div style = "display:inline-flex; flex-direction:column;">
         <div class = "boxes-other" style="background-color: yellow;"> Voting Early </div>
-        <div class = "boxes-other" style="background-color: yellow;"> Absentee </div>
+        <div class = "boxes-other" style="background-color: yellow;"> Absentee </div> 
     </div>-->
             </div>
         </div>
     </div>
 
-    <div style = "background-color: rgb(227, 0, 0); text-align: left; margin-top: -3vh; padding: 0.2em;"> 
-        <h3 style = "display: inline;"> COUNTDOWN TO PRIMARY ELECTION: </h3>
-        <h3 id="pres" style = "display:inline; font-family: Michroma, sans-serif; font-weight: 400; font-style: normal;"></h3>
-    </div>
-    
-    <p id="aug"></p>
 
-    <div style="background-color: #FFFFFF; margin-top: 2vh;">
-        <h2 style = "color:#18453B"> Step 1: Register to Vote </h2>
+    <div style="background-color: #FFFFFF; margin-top: 2vh;" id = "/Register">
+        <h2 style = "color:#18453B"> Register to Vote </h2>
         <div
         style="align-self: center; display: flex; justify-content: center; align-items: center; align-items: flex-start;">
         <div class="tab-msu" style = "vertical-align: top;">
             <button class="tablinks" onclick="openCity(event, 'Vo')">Voter Registration</button>
-            <button class="tablinks" onclick="openCity(event, 'Vo1')" style = "background-color: #0B9A6D; border-color:transparent; font-size: 1.2em; color:#FFFFFF;">Voter Registration (15+ Days before Election Day)</button>
-            <button class="tablinks" onclick="openCity(event, 'Vo2')" style = "background-color: #0B9A6D; border-color:transparent; font-size: 1.2em; color: #FFFFFF;">Voter Registration (14 Days through 8PM on Election Day)</button>
+            <button class="tablinks" onclick="openCity(event, 'Vo1')" style = "background-color: #0B9A6D; border-color:transparent;color:#18453B;">Voter Registration (15+ Days before Election Day)</button>
+            <button class="tablinks" onclick="openCity(event, 'Vo2')" style = "background-color: #0B9A6D; border-color:transparent;color: #18453B;">Voter Registration (14 Days through 8PM on Election Day)</button>
             <button class="tablinks" onclick="openCity(event, 'Ab')" >Abroad Registration</button>
             <button class="tablinks" onclick="openCity(event, 'Per')" >Permanent Mail Ballot List</button>
             <button class="tablinks" onclick="openCity(event, 'Ab2')" >Abroad Ballot Requestment</button>
           </div>
           
-          <div id="Vo" class="tabcontent" style = "display:block; background-color: #f4f4f4; border-color:#18453B">
+          <div id="Vo" class="tabcontent" style = "display:block; background-color: #0b9a6d67; border-color:#18453B">
             <h3 style = "color:#18453B">Voter Registration</h3>
             <h4 style = "color:#18453B"> To be eligible to register and vote in Michigan, you must be: </h4>
             <ul>
@@ -154,7 +217,7 @@
             <br>
             <h4 style = "color:#18453B"> To check if you’re registered to vote where you live, visit <a href="https://mvic.sos.state.mi.us/" class = "link-color" style = "color:#18453B">mi.gov/vote</a> and click on “Your voter information.”</h4>
           </div>
-          <div id="Vo1" class="tabcontent" style = "background-color: #f4f4f4; border-color:#18453B">
+          <div id="Vo1" class="tabcontent" style = "background-color: #0b9a6d67; border-color:#18453B">
             <br> <br>
             <h4 style = "color:#18453B">If you are registering to vote 15 days or more before Election Day, you can register:</h4>
             <ul>
@@ -175,7 +238,7 @@
             </li>
         </ul>
                 </div>
-                <div id="Vo2" class="tabcontent" style = "background-color: #f4f4f4; border-color:#18453B">
+                <div id="Vo2" class="tabcontent" style = "background-color: #0b9a6d67; border-color:#18453B">
                     <br> <br>
                <h4 style = "color:#18453B"> If you are registering to vote within 14 days of the election through 8 p.m. on Election Day, you must register in person at your city or township clerk’s office with proof of residency.</h4>
                <ul>
@@ -211,7 +274,7 @@
             </ul>
             <br>
             </div>
-            <div id="Ab" class="tabcontent" style = "background-color: #f4f4f4; border-color:#18453B">
+            <div id="Ab" class="tabcontent" style = "background-color: #0b9a6d67; border-color:#18453B">
                 <h3 style = "color:#18453B">Abroad Registration</h3>
                 <h4 style = "color:#18453B"> If you plan to study aboard and need to register to vote, you must fill out a FWAB or FPCA form, which requires the following: </h4>
                 <ul>
@@ -236,20 +299,20 @@
                             <li>
                                 <p style="text-align: left; color: #18453B;">Driver’s license or state ID or the last 4 digits of Social Security number.
                                 </p>
-                                <p style="color: #4c0000;">* Deadline: Signed and completed FPCA must be received by a voter’s local clerk by 2 p.m. on the Saturday before Election Day. Options for returning an FPCA, including email, fax, or regular mail
-                                </p>
                             </li>
                         </ul>
                     </li>
                 </ul>
+                <p style="color: #4c0000;">* Deadline: Signed and completed FPCA must be received by a voter’s local clerk by 2 p.m. on the Saturday before Election Day. Options for returning an FPCA, including email, fax, or regular mail
+                </p>
               </div>  
           
-          <div id="Per" class="tabcontent" style = "background-color: #f4f4f4; border-color:#18453B;">
+          <div id="Per" class="tabcontent" style = "background-color: #0b9a6d67; border-color:#18453B;">
             <h3>Permanent Mail Ballot List</h3>
 <h4>If you check the permanent mail ballot list box when you apply for your absentee ballot, you will receive an absentee ballot automatically for every future election in your community without having to submit an application each time!</h4>
-<img src = "AbsenteeBallot.jpeg" style = "width: 50%; height: auto; margin-left: 20vw; margin-right:20vw;"> 
+<img src = "AbsenteeBallot.jpeg" class = "tab-img"> 
 </div>
-          <div id="Ab2" class="tabcontent" style = "background-color: #f4f4f4; border-color:#18453B">
+          <div id="Ab2" class="tabcontent" style = "background-color: #0b9a6d67; border-color:#18453B">
             <h3 style = "color:#18453B"> Abroad Ballot Requestment</h3>
             <h4 style = "color:#18453B"> Absentee ballots for overseas voters may be requested at any time before an election, and ballots are generally mailed beginning 45 days before an election.
                     <ul>
@@ -292,11 +355,11 @@
         <br> 
         <br>
         <br>
-    <div style="background-color: #FFFFFF; margin-top: 2vh; border-top: 0.5em solid #18453B">
-        <h2 style = "color:#0a4539"> Step 2: Vote </h2>
+    <!--<div style="background-color: #FFFFFF; margin-top: 2vh; border-top: 0.5em solid #18453B">
+        <h2 style = "color:#18453B"> Step 2: Vote </h2>
         <div style="display: flex;" class="more-info">
             <div class="boxes-other"
-                style="background-color: #18453B; border-color: #0B9A6D; background-image: url(VoteInPersonOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
+                style="background-color: #001930; border-color: #0B9A6D; background-image: url(VoteInPersonOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
                 <input id="ch12" type="checkbox">
                 <div class="content" style="background-color: #18453B;">
                     <label for="ch12" style="color: #FFFFFF;"> X </label>
@@ -306,13 +369,13 @@
                         locations are open from 7 a.m. until 8 p.m. local time on Election Day. Voters in line by 8 p.m.
                         have the right to cast a ballot.
                         <br>
-                    <div style="margin: 0.5em; background-color: #FFFFFF;">
-                        <p style="background-color: #FFFFFF; color:#18453B;">Checklist: </p>
+                    <div style="margin: 0.5em; background-color: #0B9A6D;">
+                        <p style="background-color: #0B9A6D; color:#18453B;">Checklist: </p>
                         <ul>
                             <li>
                                 <p style="text-align: left; color: #18453B;"> Make sure to go to the correct polling
                                     location! You can find your polling location at <a
-                                        href="https://mvic.sos.state.mi.us/Voter/index" class = "link-color" style = "color:#0B9A6D"> mi.gov/vote </a>.
+                                        href="https://mvic.sos.state.mi.us/Voter/index" class = "link-color" style = "color:gray"> mi.gov/vote </a>.
                                 </p>
                             </li>
                             <li>
@@ -352,8 +415,8 @@
                         <br>
                         <br>
                         <br>
-                    <div style="margin: 0.5em; background-color: #FFFFFF;">
-                        <p style="background-color: #FFFFFF; color:#18453B;">Checklist: </p>
+                    <div style="margin: 0.5em; background-color: #0B9A6D;">
+                        <p style="background-color: #0B9A6D; color:#18453B;">Checklist: </p>
                         <ul>
                             <li>
                                 <p style="text-align: left; color: #18453B;"> Be registered to vote! </p>
@@ -370,7 +433,7 @@
                             </li>
                             <li>
                                 <p style="text-align: left; color: #18453B;"> For more information, <a
-                                        href="https://www.michigan.gov/sos/elections/voting/early-in-person-voting" class = "link-color" style = "color:#0B9A6D">
+                                        href="https://www.michigan.gov/sos/elections/voting/early-in-person-voting" class = "link-color" style = "color:gray">
                                         click here! </a></p>
                             </li>
                         </ul>
@@ -393,11 +456,11 @@
                         ballot back at least two weeks before Election Day! (Ballot envelopes now come with pre-paid
                         postage, so no need to add a stamp.)
                         <br>
-                    <div style="margin: 0.5em; background-color: #FFFFFF;">
-                        <p style="background-color: #FFFFFF; color:#18453B;">Checklist: </p>
+                    <div style="margin: 0.5em; background-color: #0B9A6D;">
+                        <p style="background-color: #0B9A6D; color:#18453B;">Checklist: </p>
                         <ul>
                             <li>
-                                <p style="text-align: left; color: #18453B;"> At least 30 days before Election Day, request an absentee ballot <a href = "https://mvic.sos.state.mi.us/AVApplication/Index" class = "link-color" style = "color:#0B9A6D"> online </a>, <a href = "https://www.michigan.gov/sos/~/link.aspx?_id=08269D6FC8554AE388FED154A126B8B4&_z=z" class = "link-color" style = "color:#0B9A6D"> by mail </a>, or <a href = "https://mvic.sos.state.mi.us/Voter/Index/#yourclerk" class = "link-color" style = "color:#0B9A6D"> in person </a> at your city or township clerk’s office.
+                                <p style="text-align: left; color: #18453B;"> At least 30 days before Election Day, request an absentee ballot <a href = "https://mvic.sos.state.mi.us/AVApplication/Index" class = "link-color" style = "color:gray"> online </a>, <a href = "https://www.michigan.gov/sos/~/link.aspx?_id=08269D6FC8554AE388FED154A126B8B4&_z=z" class = "link-color" style = "color:gray"> by mail </a>, or <a href = "https://mvic.sos.state.mi.us/Voter/Index/#yourclerk" class = "link-color" style = "color:gray"> in person </a> at your city or township clerk’s office.
                                 </p>
                                 <li>
                                     <p style="text-align: left; color: #18453B;"> Make sure to mark the box on your application to join the permanent mail ballot list if you wish to receive a ballot automatically before every election without having to submit an application each time!
@@ -428,10 +491,9 @@
                     <h3 class="phone-text" style="color: white; align-self:flex-end;"> Absentee </h3>
                 </label>
             </div>
-            <!--<div class="vote-img"> </div> -->
-        </div>
+        </div> 
         <br>
-    </div>
+    </div> --> 
     <div style="border-top: 1em solid #0B9A6D ; background-color: #18453B; width: 100%;">
         <div class="contact-us1"><img src="4MichWhite.png" class="logo"> </div>
         <div class="contact-us2" style="text-align: left;">

@@ -13,10 +13,12 @@ function changeBackgroundColor() {
     var link = document.querySelectorAll('a');
     var dropbtnhover = document.querySelectorAll('.dropbtn');
     var swirl = document.querySelector('.body-swirl');
+    var count = document.querySelector('.counter');
     currentIndex1 = currentIndex;
     body.style.backgroundColor = backgroundcolors[currentIndex];
     swirl.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
     button.style.backgroundColor = titlecolors[currentIndex];
+    count.style.backgroundColor = titlecolors[currentIndex];
     link.forEach(function (link) {
         link.addEventListener('mouseenter', function () {
             link.style.color = fontcolors[currentIndex];

@@ -747,6 +747,8 @@ img{
     }
     .counter{
         margin-top: 5vh;
+        padding-top: 1.2em;
+        padding-bottom: 0.2em;
     }
     .boxes-college-page{
         /*width:70vw; */
@@ -843,6 +845,29 @@ img{
     .return-home{
         margin-top: 0.2em; 
         margin-bottom: 0.2em; 
+    }
+    .tab-umich, .tab-msu, .tab-cmu, .tab-gvsu, .tab-mtu, .tab-wmu, .tab-wsu, .tab-svsu{
+        width: 20%;
+      }
+    
+    .tab-umich button, .tab-msu button, .tab-cmu button, .tab-gvsu button, .tab-mtu button, .tab-wmu button, .tab-wsu button, .tab-svsu button {
+        border: 0.5em solid #FFCB05;
+        font-size: 0.05em;
+    }
+    .tab-msu button{
+        border: 0.5em solid #0B9A6D;
+    }
+      
+    .tab-umich button.active, .tab-msu button.active, .tab-cmu button.active, .tab-gvsu button.active, .tab-mtu button.active, .tab-wmu button.active, .tab-wsu button.active, .tab-svsu button.active{
+        border: 0.3em solid white;
+    }
+    .tabcontent {
+        float: left;
+        padding: 0px 0.5em;
+        border: 0.1em solid #ccc;
+        width: 70%;
+        height: 50vh;
+        display: none;
     }
 }
 @media only screen and (min-width: 738px) and (max-width: 1200px){
@@ -1153,7 +1178,7 @@ img{
     }
       
     .tab-umich button.active, .tab-msu button.active, .tab-cmu button.active, .tab-gvsu button.active, .tab-mtu button.active, .tab-wmu button.active, .tab-wsu button.active, .tab-svsu button.active{
-        border: 0.1.5em solid white;
+        border: 1.5em solid white;
     }
       
     .tabcontent {
@@ -1376,6 +1401,8 @@ img{
     }
     .counter{
         margin-top: 12vh;
+        padding-top: 1.5em;
+        padding-bottom: 0.3em;
     }
     .dp-vr{
         width: 35vw; 
@@ -1688,6 +1715,8 @@ img{
     }
     .counter{
         margin-top: 7vh;
+        padding-top: 2.5em;
+        padding-bottom: 0.3em;
     }
     .boxes-college-page{
         width: 70vw; 

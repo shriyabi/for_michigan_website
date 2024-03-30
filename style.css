@@ -613,7 +613,7 @@ img{
     }
     .home-college-box{
         height: auto; 
-        width: 80vw;
+        width: 94vw;
         border-width: 0.2em;
         padding-bottom: 1em;
     }
@@ -903,6 +903,9 @@ img{
     .body-img{
         height: 150vh; 
     }
+    .job-body-img{
+        height: 150vh; 
+    }
     .body-swirl{
         height:100vh; 
     }
@@ -966,7 +969,7 @@ img{
     }
     .home-college-box{
         height: auto; 
-        width: 60vw; 
+        width: 80vw; 
         padding-bottom: 3em;
     }
     .colleges{
@@ -1068,7 +1071,7 @@ img{
         padding-top: 0.3em;
     }
     .staff{
-        width: 30vw; 
+        width: 50vw; 
         height: auto;  
         justify-content: center;
         border-width: 1em; 

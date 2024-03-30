@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Michigan</title>
     <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel="icon" type="image/4MichBlack" href="/images/favicon.ico">
     <script src = "script.js"> </script>
     <script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body onclick = "changeBackgroundColor()">
     <div class = "body-swirl">
-    <div style = "display:flex; justify-content: center;  text-align: center; margin-top: 0vh; margin-bottom: 5vh;">
+        <div class = "counter" style = "margin-top: 0; padding-top: 0.3em; text-align: center;"> 
+            <h3 style = "display: inline;"> COUNTDOWN TO PRIMARY ELECTION: </h3>
+            <br>
+            <h3 id="pres" style = "display:inline; font-family: Chakra Petch, sans-serif; font-weight: 700; font-style: normal; margin:none; padding: 0;"></h3>
+        </div>
+        <br>
+    <div style = "display:flex; justify-content: center;  text-align: center;">
         <img src = "ForChoice.png" style = "margin-right: 5vw;">
         <img src = "ForVote.png" style = "margin-right: 5vw;">
         <img src = "ForVoice.png">
-    </div>
+    </div> 
     <br>
     <div class="scroll">
         <img class = "scrolling-images" src="Vernors.png">
@@ -43,10 +51,10 @@
     <br>
     <button class = "color-change-button" onclick = "changeBackgroundColor()"> Click Me </button>
     <div style = "display:flex;  justify-content: center; ">
-    <h3 style = "display:inline;"> <a href = "Who-Are-We" class = "link-color"> WHO ARE WE</a>
-    <h3 style = "display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></h3> 
+    <h2 class = "name4" style = "display:inline;"> <a href = "Who-Are-We" class = "link-color"> WHO ARE WE</a> </h2>
+    <h3 style = "display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp</span></h3> 
     <div class="dropdown">
-        <h3><button class="dropbtn"> VOTING INFORMATION </button> </h3>
+        <h2 class = "name4"><button class="dropbtn"> VOTING INFORMATION </button> </h2>
         <div class="dropdown-content">
             <a href="University-of-Michigan" style="background-color:transparent;"><div class="box-umich">
                     <p> University of Michigan </p>
@@ -74,9 +82,9 @@
                 </a> </div> -->
         </div>
     </div>
-    <h3 style = "display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></h3>
+    <h3 style = "display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span></h3>
     <div class="dropdown">
-        <h3><button class="dropbtn"> GET INVOLVED </button> </h3>
+        <h2 class = "name4"><button class="dropbtn"> GET INVOLVED </button> </h2>
         <div class="dropdown-content">
             <a
             href="Jobs" class = "link-color" style = "background-color: none;"><div class="dp-vr" style="width:15vw;">
@@ -93,24 +101,21 @@
     </div>
 </div>
 </div>
-<div class = "counter" style = "margin-top: 0; padding-top: 0.3em;"> 
-    <h3 style = "display: inline;"> COUNTDOWN TO PRIMARY ELECTION: </h3>
-    <h3 id="pres" style = "display:inline; font-family: Michroma, sans-serif; font-weight: 900; font-style: normal;"></h3>
-</div>
+
 <div id = "College" class = "body-img">
     <div class = "home-college-box">
     <h2> Find your college here! </h2>
     <br>
     <div class = "college-div"> 
         <div class = "umich colleges"> 
-            <br> <br> <br>  
+            <br>  <br>
             <a href = "University-of-Michigan"> <img src = "UMich.png" class = "college-image"> </a>
-            <div class = "name"> University of Michigan </div> 
+            <h3 class = "name2" style = "margin-top: 0;">University of Michigan </h3> 
         </div> 
         <div class = "msu colleges"> 
              <br>
             <a href = "Michigan-State-University"> <img src = "MichiganStateLogo.png" class = "college-image"> </a>
-            <div class = "name"> Michigan State University </div> 
+            <h3 class = "name2" style = "margin-top: 0"> Michigan State University </h3> 
         </div>
         <!--<div class = "cmu colleges"> 
             <br> <br> <br>

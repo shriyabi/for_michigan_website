@@ -558,10 +558,10 @@ img{
         font-size: 3em;
     }
     h2{
-        font-size: 1em; 
+        font-size: 1.5em; 
     }
     h3{
-        font-size: 0.5em; 
+        font-size: 1em; 
         margin-top: 2vh;
     }
     h4{
@@ -571,10 +571,20 @@ img{
         font-size: 0.3em; 
     }
     .name{
-        font-size: 0.5em; 
+        font-size: 1em; 
+    }
+    .name2{
+        padding-top: 0;
+        font-size: 0.7em; 
+    }
+    .name3{
+        font-size: 0.7em; 
+    }
+    .name4{
+        font-size: 0.8em; 
     }
     .read{
-        font-size: 0.20em; 
+        font-size: 0.5em; 
     }
     /*IMAGES*/ 
     img{
@@ -612,11 +622,12 @@ img{
     }
     .colleges{
         width: 30vw; 
-        height: 17vh;  
+        height: 15vh;  
         justify-content: center;
         border-width: 1em; 
         object-fit: contain;
         margin: auto; 
+        vertical-align: middle;
     }
     .umich {
         box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
@@ -682,7 +693,7 @@ img{
     /*DROP DOWN*/
     .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu,.box-svsu, .dp-vr{
         height: 2em; 
-        width: 50vw; 
+        width: 30vw; 
         display: flex;
         align-items: center;
         justify-content: center; 
@@ -701,7 +712,7 @@ img{
         width: 80vw; 
     }
     .wwa-body-img{
-        height:40vh;
+        height:45vh;
     }
     .job-body-img{
         height:120vh;
@@ -712,7 +723,10 @@ img{
     .wwa-header{
         height:6vh;  
         width: 100%; 
-        padding-top: 0.2em;
+    }
+    .go-up{
+        margin-top: -1.5vh; 
+        padding: 0; 
     }
     .staff{
         width: 100vw; 
@@ -724,10 +738,9 @@ img{
         padding: 0.3em; 
     }
     .vote-info{
-        width: 85vw; 
+        width: 100vw; 
         object-fit: contain;
-        border: 0.3em solid; 
-        border-radius: 1em; 
+        border: 0.3em solid;  
         height: auto;
         box-shadow: 0 0 0.3em #FFFF00;
         display:flex;
@@ -744,7 +757,7 @@ img{
     }
     .college-body-img{
         background-image: url(BackgroundImg.png);
-        height:120vh;  
+        height:150vh;  
         z-index:-1; 
         border-bottom-width: 0.7em; 
     }
@@ -752,19 +765,20 @@ img{
         margin-top: 5vh;
         padding-top: 1.2em;
         padding-bottom: 0.2em;
+        text-align: center;
     }
     .boxes-college-page{
         /*width:70vw; */
-        height: auto;  
+        height: 35vh;  
         justify-content: center;
         border-width: medium;
         object-fit: contain; 
         border: 0.25em solid;
         position: relative;
         flex-direction:column;
-        margin-left: 1em; 
-        margin-right: 1em;
-        margin-bottom: 1.5em;
+        margin-left: 0.5em; 
+        margin-right: 0.5em;
+        margin-bottom: 1em;
     }
     .boxes-event{
         width: 50vw;   
@@ -851,6 +865,8 @@ img{
     }
     .tab-umich, .tab-msu, .tab-cmu, .tab-gvsu, .tab-mtu, .tab-wmu, .tab-wsu, .tab-svsu{
         width: 20%;
+        display: flex; 
+        flex-direction: column;
       }
     
     .tab-umich button, .tab-msu button, .tab-cmu button, .tab-gvsu button, .tab-mtu button, .tab-wmu button, .tab-wsu button, .tab-svsu button {
@@ -865,11 +881,13 @@ img{
         border: 0.3em solid white;
     }
     .tabcontent {
-        float: left;
+        /*float: left;*/
+        display: flex; 
+        flex-direction: column;
         padding: 0px 0.5em;
         border: 0.1em solid #ccc;
-        width: 70%;
-        height: 50vh;
+        width: 100vw;
+        height: 60vh;
         display: none;
     }
 
@@ -893,10 +911,10 @@ img{
         font-size: 5em;
     }
     h2{
-        font-size: 1em; 
+        font-size: 1.5em; 
     }
     h3{
-        font-size: 1em; 
+        font-size: 1.25em; 
         margin-top: 2vh;
     }
     h4{
@@ -928,6 +946,17 @@ img{
         margin-bottom: 10vh; 
         display: inline-flex;
     }
+
+    .staff-img {
+        height: 50%;
+        width: 80%; 
+        margin-bottom: -4vh;
+    } 
+
+.staff-content {
+    margin-top: 0.25em;
+}
+
     .logo{
         height: auto; 
         width: 15vw; 
@@ -1162,6 +1191,10 @@ img{
     }
     .contact-us1{
         display:inline-block; vertical-align: middle;
+        align-self: center;
+        justify-content: center;
+        display: flex; 
+        align-items: center; 
     }
     .contact-us2{
         display:inline-block; margin-left:10%;
@@ -1185,19 +1218,22 @@ img{
     }
       
     .tab-umich button.active, .tab-msu button.active, .tab-cmu button.active, .tab-gvsu button.active, .tab-mtu button.active, .tab-wmu button.active, .tab-wsu button.active, .tab-svsu button.active{
-        border: 1.5em solid white;
+        border: 0.3em solid white;
     }
       
     .tabcontent {
         float: left;
         padding: 0px 0.5em;
         border: 0.1em solid #ccc;
-        width: 70%;
+        width: 80%;
         height: 50vh;
         display: none;
     }
     .tab-img{
         width:auto; height: 40%; margin-left: 15vw; margin-right: 15vw; 
+    }
+    .name4{
+        font-size: 1em;
     }
 }
 

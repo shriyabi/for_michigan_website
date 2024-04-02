@@ -1528,6 +1528,7 @@ img{
         box-shadow: 0 0 1em rgb(195, 101, 0);
         margin-top: 2em; 
         margin-right: 2vw; 
+        margin-left: 2vw; 
     }
     .wmu:hover{
         box-shadow: 0 0 5em rgb(195, 101, 0);
@@ -1544,6 +1545,8 @@ img{
         box-shadow: 0 0 1em rgb(195, 195, 0);
         margin-top: 2em; 
         margin-right: 2vw; 
+        margin-left: 2vw; 
+    }
     }
     .wsu:hover{
         box-shadow: 0 0 5em rgb(195, 195, 0); 
@@ -1551,6 +1554,9 @@ img{
     .svsu {
         box-shadow: 0 0 1em rgb(160, 1, 1);
         margin-top: 2em; 
+        margin-top: 2em; 
+        margin-right: 2vw; 
+        margin-left: 2vw; 
     }
     .svsu:hover{
         box-shadow: 0 0 5em rgb(160, 1, 1); 
@@ -1558,7 +1564,8 @@ img{
     .del {
         box-shadow: 0 0 1em #00d18b; 
         margin-top: 2em; 
-        margin-right: 2vw; 
+        margin-right: 2vw;
+        margin-left: 2vw; 
     }
     .del:hover{
         box-shadow: 0 0 5em #00d18b;  
@@ -1566,7 +1573,10 @@ img{
     .mm {
         box-shadow: 0 0 2em #0084f7;  
         margin-top: 2em; 
+        margin-right: 2vw; 
+        margin-left: 2vw; 
     }
+
     .mm:hover{
         box-shadow: 0 0 5em #0084f7; 
     }

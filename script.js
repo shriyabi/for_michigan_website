@@ -290,4 +290,38 @@ var x = setInterval(function() {
 } 
 countDown();
 
+function form(){
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById('myForm');
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent default form submission
+        
+        const formData = new FormData(form); // Get form data
+        
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text(); // Assuming the response is text
+        })
+        .then(data => {
+            // Handle successful response
+            alert("Form submitted successfully!");
+            console.log(data); // You can log the response data if needed
+        })
+        .catch(error => {
+            // Handle errors
+            console.error('There was a problem with the fetch operation:', error);
+            alert("An error occurred. Please try again.");
+        });
+    });
+});
+} 
+
+
 

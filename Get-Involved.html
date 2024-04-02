@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Michigan: Get Involved</title>
-    <link rel="icon" type="image/4MichBlack" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" href="FavIcon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"> </script>
     <script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
 </head>
 
 <body onclick="changeBackgroundColor4()" style="cursor: url(Cursor.png), auto;">
-    <button class = "color-change-button" onclick = "changeBackgroundColor4()"> Click Me </button>
+    <button class="color-change-button" onclick="changeBackgroundColor4()"> Click Me </button>
     <div class="wwa-header">
         <img src="4MichBlack.png" class="return-home">
         <div style="display: inline-flex; ">
@@ -50,20 +50,57 @@
                             <p> Saginaw Valley State University </p>
                         </a> </div>
                 </div> 
-            </div> --> 
+            </div> -->
             <h3 style="display: inline;"><a href="index" class="link-color"> HOME </a> </h3>
             <h3 style="display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp</span></h3>
             <h3 style="display: inline;"><a href="Who-Are-We" class="link-color"> WHO WE ARE </a> </h3>
             <h3 style="display:inline;"> <span>&nbsp&nbsp&nbsp&nbsp</span></h3>
             <div class="dropdown">
-                <h3><button class="dropbtn"> VOTING INFORMATION </button> </h3>
+                <h2 class = "name4"><button class="dropbtn"> VOTING INFORMATION </button> </h2>
                 <div class="dropdown-content">
                     <a href="University-of-Michigan" style="background-color:transparent;"><div class="box-umich">
                             <p> University of Michigan </p>
-                        </div> </a>
-                    <div class="box-msu"> <a href="MSU" style="background-color:transparent;">
-                            <p> Michigan State University </p>
-                        </a> </div>
+                        </div></a> 
+                        <a href="Michigan-State-University" style="background-color:transparent;">
+                            <div class="box-msu">
+                                <p> Michigan State University </p>
+                            </div>
+                        </a>
+                        <a href="Michigan-Technological-University" style="background-color:transparent;">
+                            <div class="box-mtu">
+                                <p> Michigan Technological University </p>
+                            </div>
+                        </a>
+                        <a href="Central-Michigan-University" style="background-color:transparent;">
+                            <div class="box-cmu">
+                                <p> Central Michigan University </p>
+                            </div>
+                        </a>
+                        <a href="Saginaw-Valley-State-University" style="background-color:transparent;">
+                            <div class="box-svsu">
+                                <p> Saginaw Valley State University </p>
+                            </div>
+                        </a>
+                        <a href="Wayne-State-University" style="background-color:transparent;">
+                            <div class="box-wsu">
+                                <p> Wayne State University </p>
+                            </div>
+                        </a>
+                        <a href="Western-Michigan-University" style="background-color:transparent;">
+                            <div class="box-wmu">
+                                <p> Western Michigan University </p>
+                            </div>
+                        </a>
+                        <a href="Delta-College" style="background-color:transparent;">
+                            <div class="box-del">
+                                <p> Delta College </p>
+                            </div>
+                        </a>
+                        <a href="Mid-Michigan-College" style="background-color:transparent;">
+                            <div class="box-mm">
+                                <p> Mid Michigan College </p>
+                            </div>
+                        </a>
                     <!--<div class="box-cmu"> <a href="CMU.html" style="background-color:transparent;">
                             <p> Central Michigan University </p>
                         </a> </div>
@@ -82,25 +119,26 @@
                     <div class="box-svsu"> <a href="SVSU.html" style="background-color:transparent;">
                             <p> Saginaw Valley State University </p>
                         </a> </div>-->
-                </div> 
+                </div>
             </div>
-            </div>
+        </div>
     </div>
-    <div class = "body-img">
-        <div class = "home-college-box">
-        <h2> EVENTS </h2>
-        <h4 style = "padding-top: 0; margin-top: 0;"> Find For Michigan Events at your school here! </h4> </h2>
+    <div class="body-img" style = "height: 100vh;">
+        <div class="home-college-box">
+            <h2> EVENTS </h2>
+            <h4 style="padding-top: 0; margin-top: 0;"> Find For Michigan Events at your school here! </h4>
+            </h2>
             <br>
             <br>
             <br>
             <h3> Coming Soon! </h3>
-       </div>
+        </div>
     </div>
     </div>
-    
 
-     
-            <!--<div class = "college-div"> 
+
+
+    <!--<div class = "college-div"> 
                 <div class = "umich colleges"> 
                     <br> <br> <br>  
                     <a href = "UMich.html"> <img src = "UMich.png" class = "college-image"> </a>
@@ -148,35 +186,52 @@
 </div>
 <br> <br><br> <br> <br><br> <br> <br><br> <br> <br><br> -->
 
-   
-     
-            <h2>CONTACT US</h2>
-            <div style = "background-image: url(BackgroundImg.png); width: 80vw; display: flex; justify-content: center; align-self: center; margin: auto; vertical-align: middle; height: auto;">
-                <br>
-                <div class = "contact-form1">
-            <h4>Coming Soon....</h4> </div>
+
+
+    <h2>CONTACT US</h2>
+    <div
+        style="background-image: url(BackgroundImg.png); width: 80vw; display: flex; justify-content: center; align-self: center; margin: auto; vertical-align: middle; height: auto;">
+        <br>
+        <div class="contact-form1" style="display: flex; justify-content: center; align-items: center;">
+            <script src = "script.js"> </script>
             <br>
-            </div>
-        
-   
+            <br> 
+            <form id="my-form" action="YOUR_APPS_SCRIPT_ENDPOINT" method="POST"  style = "text-align: center">
+                <!-- Your form fields here -->
+                <input type="email" name="Email" placeholder="Email" style = "display:inline-block;" required>
+                <input type="text" name="Name" placeholder="Name" style = "display:inline-block;" required> 
+                <br>
+                <textarea type="subject" name="Subject" placeholder="Subject" required> </textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <br>
+    </div>
+
+
 
     <br><br><br>
-    <div style="border-top: 1em solid black;" class = "contact-box">
-        <div class = "contact-us1"><img src = "4MichBlack.png" class = "logo"> </div>
-    <div class = "contact-us2" style = "text-align: left;">
-        <i class="fa-brands fa-instagram fa-2x" style = "display: inline;"></i>
-        <h4 style = "display: inline; margin-bottom: 0;"> @formichigan <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>  </h4>
-        <a href = "https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x" style = "display: inline;"></i></a>
-        <a href = "https://www.linkedin.com/company/for-michigan/about/"><h4 style = "display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4> </a>
-        <i class="fa-brands fa-tiktok fa-2x" style = "display: inline;"></i>
-        <h4 style = "display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4>
-        <i class="fa-regular fa-envelope fa-2x" style = "display: inline;"></i>
-        <h4 style = "display: inline; margin-bottom: 0;"> info@4mich.org </h4>
-    </div>
-    <br>
-    <br> 
-    <p> For Michigan is a 501(c)(4) Organization </p>
-    <p> &copy For Michigan | All Rights Reserved</p>
+    <div style="border-top: 1em solid black;" class="contact-box">
+        <div class="contact-us1"><img src="4MichBlack.png" class="logo"> </div>
+        <div class="contact-us2" style="text-align: left;">
+            <i class="fa-brands fa-instagram fa-2x" style="display: inline;"></i>
+            <h4 style="display: inline; margin-bottom: 0;"> @formichigan
+                <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span> </h4>
+            <a href="https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x"
+                    style="display: inline;"></i></a>
+            <a href="https://www.linkedin.com/company/for-michigan/about/">
+                <h4 style="display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4>
+            </a>
+            <i class="fa-brands fa-tiktok fa-2x" style="display: inline;"></i>
+            <h4 style="display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4>
+            <i class="fa-regular fa-envelope fa-2x" style="display: inline;"></i>
+            <h4 style="display: inline; margin-bottom: 0;"> info@4mich.org </h4>
+        </div>
+        <br>
+        <br>
+        <p> For Michigan is a 501(c)(4) Organization </p>
+        <p> &copy For Michigan | All Rights Reserved</p>
     </div>
 </body>
 

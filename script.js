@@ -110,6 +110,7 @@ var currentIndex1 = -1;
 function changeBackgroundColor4() {
     var body = document.body;
     var button = document.querySelector('button');
+    var sub = document.querySelector('.submit'); 
     var header = document.querySelector(".wwa-header");
     var link = document.querySelectorAll('a');
     var dropbtnhover = document.querySelectorAll('.dropbtn');
@@ -118,6 +119,8 @@ function changeBackgroundColor4() {
     var contactForm1 = document.querySelector(".contact-form1");
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
+    sub.style.backgroundColor = titlecolors[currentIndex];
+    sub.style.color = boxcolors[currentIndex]; 
     header.style.backgroundColor = boxcolors[currentIndex];
     contact.style.backgroundColor = boxcolors[currentIndex];
     contactForm1.style.backgroundColor = boxcolors[currentIndex];
@@ -144,6 +147,7 @@ function changeBackgroundColor4() {
             dropbtnhover.style.backgroundColor = 'transparent';
         });
     });
+    
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
 }

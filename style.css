@@ -97,6 +97,11 @@ label{
     left: 97%; 
     transform: translateX(-50%);  
 }
+.submit{
+    font-size: 1em; 
+    background-color: #A98F92;
+    color: #DDA8A1; 
+}
 
 
 .return-home{
@@ -164,13 +169,19 @@ img{
 /*COLLEGE BOXES*/
 .colleges{
     background-color: #DDA8A1;  
-    border-radius: 3em; 
+    border-radius: 3em;
+    vertical-align: middle;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
 }
 
 .college-image{
     display: flex;
     justify-content: center;
     align-items: center;
+    vertical-align: middle;
 }
 
 /*DROPDOWN*/
@@ -734,13 +745,11 @@ img{
     }
     .colleges{
         width: 35vw; 
-        height: 20vh;  
+        height: 15vh;  
         border-width: 1em; 
         object-fit: contain;
         margin-bottom: 1em; 
         /*margin: auto; */
-       /* vertical-align: middle;*/
-       
     }
     .umich {
         box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
@@ -809,9 +818,10 @@ img{
     }
     .college-image{
         margin: auto; 
-        height: 30%; 
+        height: 50px; 
         width: auto; 
-        float:center;
+        /*float:center;*/
+        vertical-align: middle;
     }
     /*DROP DOWN*/
     .box-umich, .box-msu, .box-cmu, .box-gvs, .box-wmu, .box-mtu, .box-wsu,.box-svsu, .box-del, .box-mm, .dp-vr{
@@ -1127,7 +1137,7 @@ img{
         padding-bottom: 3em;
     }
     .colleges{
-        width: 20vw; 
+        width: 30vw; 
         height: 20vh;  
         justify-content: center;
         border-width: 1em; 
@@ -1195,9 +1205,9 @@ img{
         box-shadow: 0 0 5em #0084f7; 
     }
     .college-image{
-        margin: auto; 
-        height: auto;  
-        width: 45%; 
+        margin: auto;  
+        width: 100px; 
+        height: auto;
         float:center;
         padding: 0.5em;  
     }

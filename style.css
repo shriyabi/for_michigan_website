@@ -1522,57 +1522,69 @@ img{
         box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
         /*margin-right: 2vw; */ 
         margin: 1em; 
+        font-size: 1em;
     }
     .umich:hover{
         box-shadow: 0 0 5em rgba(255, 208, 0, 0.7);
+        font-size: 1.25em;
     }
     .msu{
         box-shadow: 0 0 1em rgb(6, 171, 0);
         margin: 1em; 
-      
+        font-size: 1em;
     }
     .msu:hover{
         box-shadow: 0 0 5em  rgb(6, 171, 0);
+        font-size: 1.25em;
     }
     .cmu {
         box-shadow: 0 0 1em rgb(195, 0, 68);
         margin: 1em; 
+        font-size: 1em;
     }
     .cmu:hover{
         box-shadow: 0 0 5em rgb(195, 0, 68);
+        font-size: 1.25em;
     }
     .gvs {
         box-shadow: 0 0 1em rgba(0, 55, 255, 0.7); 
         margin: 1em;
+        font-size: 1em;
        /* margin-top: 2em; 
         margin-left:2vw; 
         margin-right: 2vw; */
     }
     .gvs:hover{
         box-shadow: 0 0 5em rgba(0, 55, 255, 0.7);
+        font-size: 1.25em;
     }
     .wmu {
         box-shadow: 0 0 1em rgb(195, 101, 0);
         margin: 1em;
+        font-size: 1em;
         /*margin-top: 2em; 
         margin-right: 2vw; 
         margin-left: 2vw; */
     }
     .wmu:hover{
         box-shadow: 0 0 5em rgb(195, 101, 0);
+        font-size: 1.25em;
     }
     .mtu {
         box-shadow: 0 0 2em #000000;
         margin: 1em;
+        font-size: 1em;
        /* margin-top: 2em;
         margin-right: 2vw;  */
     }
     .mtu:hover{
         box-shadow: 0 0 5em #000000;
+        font-size: 1.25em;
     }
     .wsu {
         box-shadow: 0 0 1em rgb(195, 195, 0);
         margin: 1em;
+        font-size: 1em;
         /*margin-top: 2em; 
         margin-right: 2vw; 
         margin-left: 2vw; */
@@ -1580,10 +1592,12 @@ img{
     
     .wsu:hover{
         box-shadow: 0 0 5em rgb(195, 195, 0); 
+        font-size: 1.25em;
     }
     .svsu {
         box-shadow: 0 0 1em rgb(160, 1, 1);
         margin: 1em;
+        font-size: 1em;
         /*margin-top: 2em; 
         margin-top: 2em; 
         margin-right: 2vw; 
@@ -1591,27 +1605,31 @@ img{
     }
     .svsu:hover{
         box-shadow: 0 0 5em rgb(160, 1, 1); 
+        font-size: 1.25em;
     }
     .del {
         box-shadow: 0 0 1em #00d18b; 
         margin: 1em;
+        font-size: 1em;
         /*margin-top: 2em; 
         margin-right: 2vw;
         margin-left: 2vw; */
     }
     .del:hover{
-        box-shadow: 0 0 5em #00d18b;  
+        box-shadow: 0 0 5em #00d18b; 
+        font-size: 1.25em; 
     }
     .mm {
         box-shadow: 0 0 1em #0084f7;  
         margin: 1em;
+        font-size: 1em;
        /* margin-top: 2em; 
         margin-right: 2vw; 
         margin-left: 2vw; */
     }
-
     .mm:hover{
         box-shadow: 0 0 5em #0084f7; 
+        font-size: 1.25em;
     }
     .college-image{
         margin: auto; 

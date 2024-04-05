@@ -138,6 +138,9 @@ a:link,a.visited,a:active{
 .link-color{
     color: #000000;
 }
+.transparent{
+    background-color: transparent;
+}
 
 /*IMAGES*/
 img{
@@ -182,6 +185,7 @@ img{
     justify-content: center;
     align-items: center;
     vertical-align: middle;
+    background-color: none;
 }
 
 /*DROPDOWN*/

@@ -103,9 +103,6 @@ function changeBackgroundColor2(){
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;  
 }
 
-
-
-
 var currentIndex1 = -1; 
 function changeBackgroundColor4() {
     var body = document.body;
@@ -116,14 +113,13 @@ function changeBackgroundColor4() {
     var dropbtnhover = document.querySelectorAll('.dropbtn');
     var contact = document.querySelector('.contact-box');
     var homeCollegeBox = document.querySelector(".home-college-box");
-    var contactForm1 = document.querySelector(".contact-form1");
+    var contactForm1 = document.querySelectorAll(".contact-form1");
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
     sub.style.backgroundColor = titlecolors[currentIndex];
     sub.style.color = boxcolors[currentIndex]; 
     header.style.backgroundColor = boxcolors[currentIndex];
     contact.style.backgroundColor = boxcolors[currentIndex];
-    contactForm1.style.backgroundColor = boxcolors[currentIndex];
     homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex]; 
     link.forEach(function (link) {
         link.addEventListener('mouseenter', function () {
@@ -147,18 +143,14 @@ function changeBackgroundColor4() {
             dropbtnhover.style.backgroundColor = 'transparent';
         });
     });
-    
+    contactForm1.forEach(function (contactForm1) {
+        contactForm1.style.backgroundColor = boxcolors[currentIndex];
+    });
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
 }
 
-
-
-
-
-
 var currentIndex1 = -1;
-
 function changeBackgroundColor3() {
     var body = document.body;
     var button = document.querySelector('button');

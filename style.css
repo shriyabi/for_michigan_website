@@ -284,6 +284,16 @@ img {
     text-align: center;
 }
 
+.events {
+    background-color: #DDA8A1;
+    border-radius: 3em;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .college-image {
     display: flex;
     justify-content: center;
@@ -1137,6 +1147,16 @@ img {
         /*margin: auto; */
     }
 
+    .events {
+        width: 35vw;
+        height: 7vh;
+        border-width: 1em;
+        object-fit: contain;
+        margin-bottom: 1em;
+        border-radius: 1em;
+        /*margin: auto; */
+    }
+
     .umich {
         box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
         margin-right: 1em;
@@ -1701,6 +1721,15 @@ img {
         margin: 2em;
         object-fit: contain;
     }
+    .events {
+        width: 30vw;
+        height: 10vh;
+        justify-content: center;
+        border-width: 1em;
+        margin: 2em;
+        object-fit: contain;
+        border-radius: 1em;
+    }
 
     .umich {
         box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
@@ -2252,6 +2281,14 @@ img {
         justify-content: center;
         border-width: 1em;
         object-fit: contain;
+    }
+    .events {
+        width: 20vw;
+        height: 10vh;
+        justify-content: center;
+        border-width: 1em;
+        object-fit: contain;
+        border-radius: 1em;
     }
 
     .umich {
@@ -2841,7 +2878,7 @@ img {
 
     .colleges {
         width: 20vw;
-        height: 20vh;
+        height: 15vh;
         justify-content: center;
         border-width: 1em;
         margin: 0.5em;

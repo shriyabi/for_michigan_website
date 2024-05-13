@@ -114,7 +114,7 @@ function changeBackgroundColor4() {
     var contact = document.querySelector('.contact-box');
     var homeCollegeBox = document.querySelector(".home-college-box");
     var contactForm1 = document.querySelectorAll(".contact-form1");
-    var events = document.querySelector(".events"); 
+    var events = document.querySelectorAll(".events"); 
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
     sub.style.backgroundColor = titlecolors[currentIndex];
@@ -148,7 +148,7 @@ function changeBackgroundColor4() {
         contactForm1.style.backgroundColor = boxcolors[currentIndex];
     });
     events.forEach((event) => {
-        events.style.backgroundColor = boxcolors[currentIndex]; 
+        event.style.backgroundColor = boxcolors[currentIndex]; 
     });
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;

@@ -1147,14 +1147,39 @@ img {
         /*margin: auto; */
     }
 
-    .events {
+    /*.events {
         width: 35vw;
         height: 7vh;
         border-width: 1em;
         object-fit: contain;
         margin-bottom: 1em;
         border-radius: 1em;
-        /*margin: auto; */
+    } */
+    .events {
+        background-color: #DDA8A1;
+        color: black;
+        padding:0.5rem; 
+        border-radius: 0em;
+        background-image: url(PrideBackgroundOpaque.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /*width: 30vw;
+        height: 10vh;
+        justify-content: center;
+        border-width: 1em;
+        margin: 2em;
+        object-fit: contain;
+        border-radius: 1em;*/
+    }
+    .pride{
+        position: relative;
+        width: 60vw; 
+        border-radius: 0.5em;
+        margin: 2em; 
+        padding: 0.3em; 
+        border-width: 1em; 
+        background: linear-gradient(to right, rgba(255, 0, 0, 1.0), rgba(255, 166, 0, 1.0), rgba(255, 255, 0, 1.0), rgba(0, 128, 0, 1.0), rgba(0, 0, 255, 1.0), rgba(128, 0, 128, 1.0));
     }
 
     .umich {
@@ -1370,6 +1395,9 @@ img {
         margin-bottom: 1em;
     }
 
+    .sm{
+        width: 100vw;
+    }
     .boxes-event {
         width: 50vw;
         justify-content: center;
@@ -1722,13 +1750,30 @@ img {
         object-fit: contain;
     }
     .events {
-        width: 30vw;
+        background-color: #DDA8A1;
+        color: black;
+        padding:2rem; 
+        border-radius: 0em;
+        background-image: url(PrideBackgroundOpaque.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /*width: 30vw;
         height: 10vh;
         justify-content: center;
         border-width: 1em;
         margin: 2em;
         object-fit: contain;
-        border-radius: 1em;
+        border-radius: 1em;*/
+    }
+    .pride{
+        position: relative;
+        width: 25vw; 
+        border-radius: 0.5em;
+        margin: 2em; 
+        padding: 0.3em; 
+        border-width: 1em; 
+        background: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 166, 0, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 128, 0, 0.3), rgba(0, 0, 255, 0.3), rgba(128, 0, 128, 0.3));
     }
 
     .umich {
@@ -2282,14 +2327,14 @@ img {
         border-width: 1em;
         object-fit: contain;
     }
-    .events {
+    /*.events {
         width: 20vw;
         height: 10vh;
         justify-content: center;
         border-width: 1em;
         object-fit: contain;
         border-radius: 1em;
-    }
+    }*/
 
     .umich {
         box-shadow: 0 0 1em rgba(255, 208, 0, 0.7);
@@ -2571,6 +2616,10 @@ img {
         margin-top: 95%;
     }
 
+    .sm{
+        width:60vw;
+    }
+
     /*.vote-img{
         background-color:#FFFFFF; background-image: url(Voting.jpeg); border-radius: 1em;
         border-color: transparent; 
@@ -2789,6 +2838,32 @@ img {
         font-family: "Fira Sans", sans-serif;
         font-size: 1.4em;
     }
+
+    .events {
+        background-color: #DDA8A1;
+        color: black;
+        padding:2rem; 
+        border-radius: 0em;
+        background-image: url(PrideBackgroundOpaque.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .pride{
+        position: relative;
+        width: 20vw; 
+        border-radius: 0.5em;
+        margin: 2em; 
+        padding: 0.6em; 
+        border-width: 1em; 
+        background: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 166, 0, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 128, 0, 0.3), rgba(0, 0, 255, 0.3), rgba(128, 0, 128, 0.3));
+    }
+    /*.events:hover{
+        width: 17.25vw;
+    }
+    .pride:hover{
+        width: 21vw;
+    }*/
 }
 
 @media only screen and (min-resolution: 192dpi) {}

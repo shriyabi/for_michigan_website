@@ -1,126 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Michigan</title>
-    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" href="FavIcon.png">
-    <script src = "script.js"> </script>
+    <script src="script.js"> </script>
     <script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @media only screen and (max-width: 737px) {
+            .south {
+                height: 5%;
+                width: 22%;
+                border: 0.2em solid none;
+                position: absolute;
+                z-index: 2;
+                top: 75%;
+                left: 70%;
+            }
+            .west{
+                height: 7%; 
+                width:15%; 
+                border: 0.2em solid none; 
+                position: absolute; 
+                z-index: 2; 
+                top: 77%; 
+                left: 52%;
+            }
+            .central{
+               height: 12%; 
+               width: 20%; 
+               border: 0.2em solid none; 
+               position: absolute; 
+               z-index: 2; 
+               top: 63%; 
+               left: 60%;
+            }
+        }
+
+        @media only screen and (min-width: 738px) and (max-width: 1200px) {
+            .south {
+                height: 5%;
+                width: 20%;
+                border: 0.5em solid none; 
+                position: absolute;
+                z-index: 2;
+                top: 72%;
+                left: 70%;
+            }
+            .west{
+                height: 7%; 
+                width:15%; 
+                border: 0.5em solid none; 
+                position: absolute; 
+                z-index: 2; 
+                top: 75%; 
+                left: 50%;
+            }
+            .central{
+               height: 12%; 
+               width:20%; 
+               border: 0.5em solid none; 
+               position: absolute; 
+               z-index: 2; 
+               top: 60%; 
+               left: 60%;
+            }
+        }
+
+        @media only screen and (min-width: 1201px) {
+            .south {
+                height: 5%;
+                width: 24%;
+                border: 0.5em solid none; 
+                position: absolute;
+                z-index: 2;
+                top: 82%;
+                left: 70%;
+            }
+            .west{
+                height: 7%; 
+                width:17%; 
+                border: 0.5em solid none; 
+                position: absolute; 
+                z-index: 2; 
+                top: 82%; 
+                left: 52%;
+            }
+            .central{
+               height: 15%; 
+               width:20%; 
+               border: 0.5em solid none; 
+               position: absolute; 
+               z-index: 2; 
+               top: 66%; 
+               left: 62%;
+            }
+        }
+    </style>
 </head>
-<body onclick = "changeBackgroundColor()">
-    <div class = "body-swirl">
-        <div class = "counter" style = "margin-top: 0; padding-top: 0.3em; text-align: center;"> 
-            <h3 style = "display: inline;"> COUNTDOWN TO PRIMARY ELECTION: </h3>
+
+<body onclick="changeBackgroundColor()">
+    <div class="body-swirl">
+        <div class="counter" style="margin-top: 0; padding-top: 0.3em; text-align: center;">
+            <h3 style="display: inline;"> COUNTDOWN TO PRIMARY ELECTION: </h3>
             <br>
-            <h3 id="pres" style = "display:inline; font-family: Chakra Petch, sans-serif; font-weight: 700; font-style: normal; margin:none; padding: 0;"></h3>
+            <h3 id="pres"
+                style="display:inline; font-family: Chakra Petch, sans-serif; font-weight: 700; font-style: normal; margin:none; padding: 0;">
+            </h3>
         </div>
         <br>
-    <div style = "display:flex; justify-content: center;  text-align: center;">
-        <img src = "ForChoice.png" style = "margin-right: 5vw;">
-        <img src = "ForVote.png" style = "margin-right: 5vw;">
-        <img src = "ForVoice.png">
-    </div> 
-    <br>
-    <div class="scroll">
-        <img class = "scrolling-images" src="Vernors.png">
-        <img class = "scrolling-images" src="Faygo.png">
-        <img class = "scrolling-images" src="Pickles.png">
-        <img class = "scrolling-images" src="BBQ.png">
-        <img class = "scrolling-images" src="Caesars.png">
-        <img class = "scrolling-images" src="OriginalChips.png">
-        <img class = "scrolling-images" src="Cornflakes.png">
-        <img class = "scrolling-images" src="Bambi.png">
-        <img class = "scrolling-images" src="Vernors.png">
-        <img class = "scrolling-images" src="Faygo.png">
-        <img class = "scrolling-images" src="Pickles.png">
-        <img class = "scrolling-images" src="BBQ.png">
-        <img class = "scrolling-images" src="Caesars.png">
-        <img class = "scrolling-images" src="OriginalChips.png">
-        <img class = "scrolling-images" src="Cornflakes.png">
-        <img class = "scrolling-images" src="Bambi.png">
-    </div>
-    <img src = "4MichBlack.png" style = "display: block; margin-left: auto; margin-right:auto; width: auto; height: 35%; text-align: center; margin-bottom: 1vh;">
-   <!-- <h1 style = "margin-bottom: 2vh;"> FOR MICHIGAN </h1> -->
-    <br>
-    <button class = "color-change-button" onclick = "changeBackgroundColor()"> Click Me </button>
-    <div style = "display:flex;  justify-content: center; ">
-    <h2 class = "name4" style = "display:inline; padding-right: 10vw;"> <a href = "Who-Are-We" class = "link-color"> WHO ARE WE</a> </h2>
-    <!--<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>-->
-    <div class="dropdown" style = "padding-right: 7vw;">
-        <h2 class = "name4"><button class="dropbtn"> VOTING INFORMATION </button> </h2>
-        <div class="dropdown-content">
-            <a href="Central-Michigan-University" style="background-color:transparent;">
-                <div class="box-cmu">
-                    <p> Central Michigan University </p>
-                </div>
-            </a>
-            <a href="Delta-College" style="background-color:transparent;">
-                <div class="box-del">
-                    <p> Delta College </p>
-                </div>
-            </a>
-            <a href="Jackson-College" style="background-color:transparent;">
-                <div class="box-jc">
-                    <p> Jackson College </p>
-                </div>
-            </a>
-            <a href="Kalamazoo-College" style="background-color:transparent;">
-                <div class="box-kc">
-                    <p> Kalamazoo College </p>
-                </div>
-            </a>
-            <a href="Kalamazoo-Valley-Community-College" style="background-color:transparent;">
-                <div class="box-kvcc">
-                    <p> Kalamazoo Valley Community College </p>
-                </div>
-            </a>
-            <a href="Lansing-Community-College" style="background-color:transparent;">
-                <div class="box-lcc">
-                    <p> Lansing Community College </p>
-                </div>
-            </a>
-            <a href="Michigan-Technological-University" style="background-color:transparent;">
-                <div class="box-mtu">
-                    <p> Michigan Technological University </p>
-                </div>
-            </a>
-            <a href="Michigan-State-University" style="background-color:transparent;">
-                <div class="box-msu">
-                    <p> Michigan State University </p>
-                </div>
-            </a>
-            <a href="Mid-Michigan-College" style="background-color:transparent;">
-                <div class="box-mm">
-                    <p> Mid Michigan College </p>
-                </div>
-            </a>
-            <a href="Saginaw-Valley-State-University" style="background-color:transparent;">
-                <div class="box-svsu">
-                    <p> Saginaw Valley State University </p>
-                </div>
-            </a>
-            <a href="Wayne-State-University" style="background-color:transparent;">
-                <div class="box-wsu">
-                    <p> Wayne State University </p>
-                </div>
-            </a>
-            <a href="Western-Michigan-University" style="background-color:transparent;">
-                <div class="box-wmu">
-                    <p> Western Michigan University </p>
-                </div>
-            </a>
-            <a href="University-of-Michigan" style="background-color:transparent;"><div class="box-umich">
-                    <p> University of Michigan </p>
-                </div>
-            </a> 
-           <!--<div class="box-cmu"> <a href="CMU.html" style="background-color:transparent;">
+        <div style="display:flex; justify-content: center;  text-align: center;">
+            <img src="ForChoice.png" style="margin-right: 5vw;">
+            <img src="ForVote.png" style="margin-right: 5vw;">
+            <img src="ForVoice.png">
+        </div>
+        <br>
+        <div class="scroll">
+            <img class="scrolling-images" src="Vernors.png">
+            <img class="scrolling-images" src="Faygo.png">
+            <img class="scrolling-images" src="Pickles.png">
+            <img class="scrolling-images" src="BBQ.png">
+            <img class="scrolling-images" src="Caesars.png">
+            <img class="scrolling-images" src="OriginalChips.png">
+            <img class="scrolling-images" src="Cornflakes.png">
+            <img class="scrolling-images" src="Bambi.png">
+            <img class="scrolling-images" src="Vernors.png">
+            <img class="scrolling-images" src="Faygo.png">
+            <img class="scrolling-images" src="Pickles.png">
+            <img class="scrolling-images" src="BBQ.png">
+            <img class="scrolling-images" src="Caesars.png">
+            <img class="scrolling-images" src="OriginalChips.png">
+            <img class="scrolling-images" src="Cornflakes.png">
+            <img class="scrolling-images" src="Bambi.png">
+        </div>
+        <img src="4MichBlack.png"
+            style="display: block; margin-left: auto; margin-right:auto; width: auto; height: 35%; text-align: center; margin-bottom: 1vh;">
+        <!-- <h1 style = "margin-bottom: 2vh;"> FOR MICHIGAN </h1> -->
+        <br>
+        <button class="color-change-button" onclick="changeBackgroundColor()"> Click Me </button>
+        <div style="display:flex;  justify-content: center; ">
+            <h2 class="name4" style="display:inline; padding-right: 10vw;"> <a href="Who-Are-We" class="link-color"> WHO
+                    ARE WE</a> </h2>
+            <!--<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>-->
+            <div class="dropdown" style="padding-right: 7vw;">
+                <h2 class="name4"><button class="dropbtn"> VOTING INFORMATION </button> </h2>
+                <div class="dropdown-content">
+                    <a href="Central-Michigan-University" style="background-color:transparent;">
+                        <div class="box-cmu">
+                            <p> Central Michigan University </p>
+                        </div>
+                    </a>
+                    <a href="Delta-College" style="background-color:transparent;">
+                        <div class="box-del">
+                            <p> Delta College </p>
+                        </div>
+                    </a>
+                    <a href="Jackson-College" style="background-color:transparent;">
+                        <div class="box-jc">
+                            <p> Jackson College </p>
+                        </div>
+                    </a>
+                    <a href="Kalamazoo-College" style="background-color:transparent;">
+                        <div class="box-kc">
+                            <p> Kalamazoo College </p>
+                        </div>
+                    </a>
+                    <a href="Kalamazoo-Valley-Community-College" style="background-color:transparent;">
+                        <div class="box-kvcc">
+                            <p> Kalamazoo Valley Community College </p>
+                        </div>
+                    </a>
+                    <a href="Lansing-Community-College" style="background-color:transparent;">
+                        <div class="box-lcc">
+                            <p> Lansing Community College </p>
+                        </div>
+                    </a>
+                    <a href="Michigan-Technological-University" style="background-color:transparent;">
+                        <div class="box-mtu">
+                            <p> Michigan Technological University </p>
+                        </div>
+                    </a>
+                    <a href="Michigan-State-University" style="background-color:transparent;">
+                        <div class="box-msu">
+                            <p> Michigan State University </p>
+                        </div>
+                    </a>
+                    <a href="Mid-Michigan-College" style="background-color:transparent;">
+                        <div class="box-mm">
+                            <p> Mid Michigan College </p>
+                        </div>
+                    </a>
+                    <a href="Saginaw-Valley-State-University" style="background-color:transparent;">
+                        <div class="box-svsu">
+                            <p> Saginaw Valley State University </p>
+                        </div>
+                    </a>
+                    <a href="Wayne-State-University" style="background-color:transparent;">
+                        <div class="box-wsu">
+                            <p> Wayne State University </p>
+                        </div>
+                    </a>
+                    <a href="Western-Michigan-University" style="background-color:transparent;">
+                        <div class="box-wmu">
+                            <p> Western Michigan University </p>
+                        </div>
+                    </a>
+                    <a href="University-of-Michigan" style="background-color:transparent;">
+                        <div class="box-umich">
+                            <p> University of Michigan </p>
+                        </div>
+                    </a>
+                    <!--<div class="box-cmu"> <a href="CMU.html" style="background-color:transparent;">
                     <p> Central Michigan University </p>
                 </a> </div>
             <div class="box-gvs"> <a href="GSV.html" style="background-color:transparent;">
@@ -138,59 +241,152 @@
             <div class="box-svsu"> <a href="SVSU.html" style="background-color:transparent;">
                     <p> Saginaw Valley State University </p>
                 </a> </div> -->
+                </div>
+            </div>
+            <!--<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>-->
+            <div class="dropdown">
+                <h2 class="name4"> <button class="dropbtn"> GET INVOLVED </button> </h2>
+                <div class="dropdown-content">
+                    <a href="Jobs" class="link-color" style="background-color: none;">
+                        <div class="dp-vr">
+                            <h4> Join our Team </h4>
+                        </div>
+                    </a>
+                    <a href="Get-Involved">
+                        <div class="dp-vr">
+                            <h4> Campus Events </h4>
+                        </div>
+                    </a>
+                    <a href="Get-Involved">
+                        <div class="dp-vr">
+                            <h4> Contact Us </h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <!--<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>-->
-    <div class="dropdown">
-        <h2 class = "name4"> <button class="dropbtn"> GET INVOLVED </button> </h2>
-        <div class="dropdown-content">
-            <a
-            href="Jobs" class = "link-color" style = "background-color: none;"><div class="dp-vr">
-                <h4> Join our Team </h4>
-            </div></a>
-            <a href = "Get-Involved"><div class="dp-vr">
-                <h4> Campus Events </h4>
-            </div></a>
-            <a href = "Get-Involved">
-            <div class="dp-vr"> 
-                <h4> Contact Us </h4>
-            </div></a>
-        </div>
-    </div>
-</div>
-</div>
 
-<div id = "College" class = "body-img">
-    <div class = "home-college-box" style = "display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative; z-index: 0">
-    <h2> Find your college here! </h2>
-    <br>
-    <img src="Campus Map.png" style="width: 90%; height: auto; position: relative; z-index: 0">
-    <div style = "height: 25%; width:80%; border: 0.5em solid black; position: absolute; z-index: 2; top: 20%; left: 0;"></div>
-    <div style = "height: 12%; width:20%; border: 0.5em solid black; position: absolute; z-index: 2; top: 60%; left: 60%;"></div>
-    <div style = "height: 5%; width:20%; border: 0.5em solid black; position: absolute; z-index: 2; top: 72%; left: 70%;"></div>
-    <div style = "height: 7%; width:15%; border: 0.5em solid black; position: absolute; z-index: 2; top: 75%; left: 50%;"></div>
-    
-</div>
-</div> 
-<div style = "border-top: 1em solid #000000; background-color: transparent">
-    <div class = "contact-us1"><img src = "4MichBlack.png" class = "logo"> </div>
-    <div class = "contact-us2" style = "text-align: left;">
-        <a href = "https://www.instagram.com/formichigan/"></a><i class="fa-brands fa-instagram fa-2x" style = "display: inline;"></i>
-        <h4 class = "name4" style = "display: inline; margin-bottom: 0;"> @formichigan <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>  </h4>
-        <a href = "https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x" style = "display: inline;"></i></a>
-        <a href = "https://www.linkedin.com/company/for-michigan/about/"><h4 class = "name4" style = "display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4> </a>
-        <i class="fa-brands fa-tiktok fa-2x" style = "display: inline;"></i>
-        <h4 class = "name4" style = "display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4>
-        <i class="fa-regular fa-envelope fa-2x" style = "display: inline;"></i>
-        <h4 class = "name4" style = "display: inline; margin-bottom: 0;"> info@4mich.org </h4>
+    <div id="College" class="body-img">
+        <div class="home-college-box"
+            style="display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative; z-index: 0">
+            <h2> Find your college here! </h2>
+            <br>
+            <img src="Campus Map.png" style="width: 90%; height: auto; position: relative; z-index: 0">
+            <a href = "Michigan-Technological-University"><div
+                style="height: 25%; width:80%; border: 0.5em solid none; position: absolute; z-index: 2; top: 20%; left: 0;">
+            </div> </a>
+            <div class="central">
+            <div class = "dropdown">
+                <button style="width: 100%; height: 100%; background-color: transparent; border-color:transparent;"></button>
+                <div class="dropdown-content">
+                    <a href="Central-Michigan-University" style="background-color:transparent;">
+                        <div class="box-cmu">
+                            <p>Central Michigan University</p>
+                        </div>
+                    </a>
+                    <a href="Delta-College" style="background-color:transparent;">
+                        <div class="box-del">
+                            <p>Delta College</p>
+                        </div>
+                    </a>
+                    <a href="Lansing-Community-College" style="background-color: transparent">
+                        <div class = "box-lcc">
+                            <p>Lansing Community College </p>
+                        </div>
+                    </a>
+                    <a href="Michigan-State-University" style="background-color: transparent">
+                        <div class = "box-msu">
+                            <p> Michigan State University </p>
+                        </div>
+                    </a>
+                    <a href="Mid-Michigan-College" style="background-color: transparent">
+                        <div class = "box-mm">
+                            <p>Mid-Michigan College </p>
+                        </div>
+                    </a>
+                    <a href="Saginaw-Valley-State-University" style="background-color: transparent">
+                        <div class = "box-svsu">
+                            <p>Saginaw Valley State University</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="west">
+                <div class = "dropdown">
+                <button style="width: 100%; height: 100%; background-color: transparent; border-color:transparent;"></button>
+                <div class="dropdown-content">
+                    <a href="Kalamazoo-College" style="background-color:transparent;">
+                        <div class="box-kc">
+                            <p>Kalamazoo College</p>
+                        </div>
+                    </a>
+                    <a href="Kalamazoo-Valley-Community-College" style="background-color: transparent">
+                        <div class = "box-kvcc">
+                            <p>Kalamazoo Valley Community College </p>
+                        </div>
+                    </a>
+                    <a href="Western-Michigan-University" style="background-color:transparent;">
+                        <div class="box-wmu">
+                            <p>Western Michigan University</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class = "south">
+                <div class = "dropdown">
+                    <button style="width: 100%; height: 100%; background-color: transparent; border-color:transparent;"></button>
+                    <div class="dropdown-content">
+                        <a href="Jackson-College" style="background-color: transparent">
+                            <div class = "box-jc">
+                                <p>Jackson College </p>
+                            </div>
+                        </a>
+                        <a href="University-of-Michigan" style="background-color:transparent;">
+                            <div class="box-umich">
+                                <p>University of Michigan</p>
+                            </div>
+                        </a>
+                        <a href="Wayne-State-University" style="background-color:transparent;">
+                            <div class="box-wsu">
+                                <p>Wayne State University</p>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="border-top: 1em solid #000000; background-color: transparent">
+        <div class="contact-us1"><img src="4MichBlack.png" class="logo"> </div>
+        <div class="contact-us2" style="text-align: left;">
+            <a href="https://www.instagram.com/formichigan/"></a><i class="fa-brands fa-instagram fa-2x"
+                style="display: inline;"></i>
+            <h4 class="name4" style="display: inline; margin-bottom: 0;"> @formichigan
+                <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span> </h4>
+            <a href="https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x"
+                    style="display: inline;"></i></a>
+            <a href="https://www.linkedin.com/company/for-michigan/about/">
+                <h4 class="name4" style="display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp;
+                        |&nbsp;&nbsp;&nbsp;</span> </h4>
+            </a>
+            <i class="fa-brands fa-tiktok fa-2x" style="display: inline;"></i>
+            <h4 class="name4" style="display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span>
+            </h4>
+            <i class="fa-regular fa-envelope fa-2x" style="display: inline;"></i>
+            <h4 class="name4" style="display: inline; margin-bottom: 0;"> info@4mich.org </h4>
+        </div>
+        <br>
+        <br>
     </div>
     <br>
     <br>
-</div>
-    <br>
-    <br> 
     <p> For Michigan is a 501(c)(4) Organization </p>
     <p> &copy For Michigan | All Rights Reserved</p>
     </div>
 </body>
+
 </html>

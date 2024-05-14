@@ -216,7 +216,7 @@ function changeBackgroundColor3() {
 }
 
 
-function showCollege() {
+/*function showCollege() {
     <>
         <div class="dropdown" style="padding-right: 4vw;">
             <h3 class="name3"><button class="dropbtn"> VOTING INFORMATION </button> </h3>
@@ -244,7 +244,7 @@ function showCollege() {
             </div>
         </div>
     </>
-}
+}*/
 
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;

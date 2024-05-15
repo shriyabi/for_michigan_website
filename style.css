@@ -1034,12 +1034,6 @@ img {
     margin-bottom: 5vh;
 }
 
-.summer-event{
-    background-color: none;
-    border-color: #00d18b;
-}
-
-
 
 
 @media only screen and (max-width: 737px) {
@@ -1178,7 +1172,7 @@ img {
         object-fit: contain;
         border-radius: 1em;*/
     }
-    .pride, .summer-event{
+    .pride{
         position: relative;
         width: 60vw; 
         border-radius: 0.5em;
@@ -1800,7 +1794,7 @@ img {
         object-fit: contain;
         border-radius: 1em;*/
     }
-    .pride, .summer-event{
+    .pride{
         position: relative;
         width: 25vw; 
         border-radius: 0.5em;
@@ -2911,7 +2905,7 @@ img {
         background-repeat: no-repeat;
         background-position: center;
     }
-    .pride, .summer-event{
+    .pride{
         position: relative;
         width: 20vw; 
         border-radius: 0.5em;

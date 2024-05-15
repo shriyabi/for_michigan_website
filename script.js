@@ -115,6 +115,8 @@ function changeBackgroundColor4() {
     var homeCollegeBox = document.querySelector(".home-college-box");
     var contactForm1 = document.querySelectorAll(".contact-form1");
     var events = document.querySelectorAll(".events");
+    var volun = document.querySelector(".want");
+    volun.style.backgroundColor = titlecolors[currentIndex]; 
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
     sub.style.backgroundColor = titlecolors[currentIndex];

@@ -143,6 +143,7 @@ label {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    display: inline-flex;
 }
 
 /*Color-Change Button*/
@@ -302,13 +303,18 @@ img {
     background-color: none;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0; 
+}
+
 /*DROPDOWN*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content, .nested-dropdown-content {
     display: none;
     position: relative;
     box-shadow: 0 8px 1em rgba(0, 0, 0, 0.1);
@@ -316,6 +322,10 @@ img {
 
 .dropdown-content .box {
     display: inline-block;
+}
+
+.nested-dropdown:hover .nested-dropdown-content {
+    display: block;
 }
 
 .dropbtn {
@@ -475,7 +485,8 @@ img {
 .wwa-body-img,
 .body-img,
 .job-body-img,
-.vr-body-img {
+.vr-body-img,
+.gi-body-img {
     background-image: url(BackgroundImg.png);
     z-index: -1;
     align-items: center;
@@ -1128,7 +1139,7 @@ img {
         padding-bottom: 1em;
     }
 
-    .college-div {
+    /*.college-div {
         width: 80vw;
         align-items: center;
         align-self: center;
@@ -1136,7 +1147,7 @@ img {
         display: flex;
         margin-left: 2em;
         margin-right: 2em;
-    }
+    } */
 
     .colleges {
         width: 35vw;
@@ -1174,9 +1185,9 @@ img {
     }
     .pride{
         position: relative;
-        width: 60vw; 
+        width: 25vw;
         border-radius: 0.5em;
-        margin: 2em; 
+        margin: 1em; 
         padding: 0.3em; 
         border-width: 1em; 
         background: linear-gradient(to right, rgba(255, 0, 0, 1.0), rgba(255, 166, 0, 1.0), rgba(255, 255, 0, 1.0), rgba(0, 128, 0, 1.0), rgba(0, 0, 255, 1.0), rgba(128, 0, 128, 1.0));
@@ -1317,6 +1328,10 @@ img {
 
     .wwa-body-img {
         height: 45vh;
+    }
+
+    .gi-body-img{
+        height: 200vh; 
     }
 
     .job-body-img {
@@ -1796,12 +1811,12 @@ img {
     }
     .pride{
         position: relative;
-        width: 25vw; 
+        width: 15vw; 
         border-radius: 0.5em;
         margin: 2em; 
         padding: 0.3em; 
         border-width: 1em; 
-        background: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 166, 0, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 128, 0, 0.3), rgba(0, 0, 255, 0.3), rgba(128, 0, 128, 0.3));
+        background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 166, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
     }
 
     .umich {
@@ -1934,6 +1949,10 @@ img {
 
     .wwa-body-img {
         height: 100vh;
+    }
+    
+    .gi-body-img{
+        height: 160vh; 
     }
 
     .job-body-img {
@@ -2576,6 +2595,10 @@ img {
         border-bottom-width: 0.7em;
     }
 
+    .gi-body-img{
+        height: 200vh; 
+    }
+
     .job-body-img {
         height: 125vh;
     }
@@ -2912,7 +2935,7 @@ img {
         margin: 2em; 
         padding: 0.6em; 
         border-width: 1em; 
-        background: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 166, 0, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 128, 0, 0.3), rgba(0, 0, 255, 0.3), rgba(128, 0, 128, 0.3));
+        background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 166, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
     }
 
     .south {
@@ -3169,6 +3192,10 @@ img {
 
     .wwa-body-img {
         height: 100vh;
+    }
+
+    .gi-body-img{
+        height: 300vh; 
     }
 
     .vr-body-img {

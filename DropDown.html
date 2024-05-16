@@ -25,22 +25,22 @@
   background-color: #f2f2f2;
 } */
 
-/*.sidebar ul {
+        /*.sidebar ul {
   list-style-type: none;
   padding: 0;
 } */
 
-/*.sidebar ul li {
+        /*.sidebar ul li {
   padding: 10px;
   border-bottom: 1px solid #ccc;
 } */
 
-/*.sidebar ul li a {
+        /*.sidebar ul li a {
   text-decoration: none;
   color: #333;
 } */
 
-/*.dropdown-content,
+        /*.dropdown-content,
 .nested-dropdown-content {
   display: none;
 }
@@ -52,8 +52,6 @@
 .nested-dropdown:hover .nested-dropdown-content {
   display: block;
 } */
-
-
     </style>
 </head>
 
@@ -101,83 +99,101 @@
                     ARE WE</a> </h2>
             <!--<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>-->
 
-            
-        <div>
-            <ul>
-                
-            </ul>
-        </div>
-            
-            <div class="sidebar">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li class="dropdown">
-                    <a href="#">Services</a>
-                    <ul class="dropdown-content">
-                      <li><a href="#">Service 1</a></li>
-                      <li class="nested-dropdown">
-                        <a href="#">Service 2</a>
+
+            <li class="dropdown" style="z-index: 3; padding-right: 7vw;">
+                <h2 class="name4">VOTING INFORMATION</h2>
+                <ul class="dropdown-content">
+                    <li class="nested-dropdown">
+                        <div class="box-main">
+                            <p> North Michigan </p>
+                        </div>
                         <ul class="nested-dropdown-content">
-                          <li><a href="#">Sub-service 1</a></li>
-                          <li><a href="#">Sub-service 2</a></li>
-                          <li><a href="#">Sub-service 3</a></li>
+                            <a href="Michigan-Technological-University" style="background-color:transparent;">
+                                <div class="box-mtu">
+                                    <p> Michigan Technological University </p>
+                                </div>
+                            </a>
                         </ul>
-                      </li>
-                      <li><a href="#">Service 3</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Contact</a></li>
+                    </li>
+                    <li class="nested-dropdown">
+                        <div class="box-main">
+                            <p> Central Michigan </p>
+                        </div>
+                        <ul class="nested-dropdown-content">
+                            <a href="Central-Michigan-University" style="background-color:transparent;">
+                                <div class="box-cmu">
+                                    <p> Central Michigan University </p>
+                                </div>
+                            </a>
+                            <a href="Delta-College" style="background-color:transparent;">
+                                <div class="box-main">
+                                    <p> Delta College </p>
+                                </div>
+                            </a>
+                            <a href="Mid-Michigan-College" style="background-color:transparent;">
+                                <div class="box-mm">
+                                    <p> Mid Michigan College </p>
+                                </div>
+                            </a>
+                            <a href="Saginaw-Valley-State-University" style="background-color:transparent;">
+                                <div class="box-svsu">
+                                    <p> Sagniaw Valley State University </p>
+                                </div>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="nested-dropdown" style="z-index:3">
+                        <div class="box-main" style="z-index:3">
+                            <p> West Michigan </p>
+                        </div>
+                        <ul class="nested-dropdown-content" style="z-index:4">
+                            <a href="Kalamazoo-College" style="background-color:transparent;">
+                                <div class="box-kc" style="z-index:4">
+                                    <p> Kalamazoo College </p>
+                                </div>
+                            </a>
+                            <a href="Kalamazoo-Valley-Community-College" style="background-color:transparent;">
+                                <div class="box-kvcc">
+                                    <p> Kalamazoo Valley Community College </p>
+                                </div>
+                            </a>
+                            <a href="Western-Michigan-University" style="background-color:transparent;">
+                                <div class="box-wmu">
+                                    <p> Western Michigan University </p>
+                                </div>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="nested-dropdown">
+                        <div class="box-main">
+                            <p> South-East Michigan </p>
+                        </div>
+                        <ul class="nested-dropdown-content">
+                            <a href="Jackson-College" style="background-color:transparent;">
+                                <div class="box-jc">
+                                    <p> Jackson College </p>
+                                </div>
+                            </a>
+                            <a href="University-of-Michigan" style="background-color:transparent;">
+                                <div class="box-umich">
+                                    <p> University of Michigan </p>
+                                </div>
+                            </a>
+                            <a href="Wayne-State-University" style="background-color:transparent;">
+                                <div class="box-wsu">
+                                    <p> Wayne State University </p>
+                                </div>
+                            </a>
+                        </ul>
+                    </li>
                 </ul>
-              </div>
-              
-              
-            
-            
-            <div class="dropdown">
-                <button class="dropbtn"> Button </button>
-                <div class="dropdown-content">
-                    <button class="dropbtn"> TEMP </button>
-                    <div class="dropdown-content"  style="display: flex; display: inline-flex;">
-                        <div class="box-cmu">
-                            Temp 2
-                        </div>
-                        <div class="box-cmu">
-                            Temp 2
-                        </div>
-                    </div>
-                    <button class="dropbtn"> TEMP </button>
-                    <div class="dropdown-content">
-                        <div class="box-cmu">
-                            Temp 2
-                        </div>
-                        <div class="box-cmu">
-                            Temp 2
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </li>
 
 
-            <div class="dropdown" style="padding-right: 7vw;">
+
+            <!--<div class="dropdown" style="padding-right: 7vw;">
                 <h2 class="name4"><button class="dropbtn">VOTING INFORMATION</button></h2>
-                <!--<div class="dropdown-content" style="z-index: 3">
-            <div class="box-cmu" onmouseenter="showColleges()">
-                <p> Central Michigan University </p>
-            </div>-->
-
-                <!--<div class="dropdown">
-                <button class="dropbtn box-cmu" style="width:100%;">South Michigan</button>
-                <div class="dropdown-content" style="z-index: 3">
-                    <a href="Central-Michigan-University" style="background-color:transparent;">
-                        <div class="box-cmu">
-                            <p>Central Michigan University</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
+                
 
                 <div class="dropdown-content" style="z-index: 3">
                     <a href="Delta-College" style="background-color:transparent;">
@@ -241,7 +257,7 @@
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> -->
             <!--<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>-->
             <div class="dropdown">
                 <h2 class="name4"> <button class="dropbtn"> GET INVOLVED </button> </h2>
@@ -476,7 +492,8 @@
             <a href="https://www.instagram.com/formichigan/"></a><i class="fa-brands fa-instagram fa-2x"
                 style="display: inline;"></i>
             <h4 class="name4" style="display: inline; margin-bottom: 0;"> @formichigan
-                <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span> </h4>
+                <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+            </h4>
             <a href="https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x"
                     style="display: inline;"></i></a>
             <a href="https://www.linkedin.com/company/for-michigan/about/">

@@ -399,6 +399,12 @@ ul{
 .box-lcc {
     background-color: #42578a;
 }
+
+.box-main {
+    background-color: #DDA8A1;
+    border-bottom: 1px solid gray;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -1035,7 +1041,7 @@ ul{
 
 .dp-vr {
     background-color: #A98F92;
-    border: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .contact-form1 {
@@ -1301,12 +1307,18 @@ ul{
     .box-kc,
     .box-kvcc,
     .box-lcc,
-    .dp-vr {
+    .dp-vr, 
+    .box-main{
         height: 2em;
         width: auto;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .box-main{
+        height: 0.5em; 
+        padding: 0.3em; 
     }
 
     .dropdown {
@@ -1922,12 +1934,17 @@ ul{
     .box-kc,
     .box-kvcc,
     .box-lcc,
-    .dp-vr {
+    .dp-vr,
+    .box-main {
         height: 3em;
         width: auto;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .box-main{
+        height: 1.5em; 
+        padding: 0.3em; 
     }
 
     .dropdown {
@@ -2565,12 +2582,18 @@ ul{
     .box-kc,
     .box-kvcc,
     .box-lcc,
-    .dp-vr {
+    .dp-vr, 
+    .box-main {
         height: 3em;
         width: auto;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .box-main{
+        height: 1.5em; 
+        padding: 0.3em; 
     }
 
     .dropdown {
@@ -3165,12 +3188,17 @@ ul{
     .box-kc,
     .box-kvcc,
     .box-lcc,
-    .box-mm .dp-vr {
+    .box-mm, .dp-vr, 
+    .box-main{
         height: 3em;
         width: auto;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .box-main{
+        height: 1.5em; 
+        padding: 0.3em; 
     }
 
     .dropdown {

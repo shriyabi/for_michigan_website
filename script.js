@@ -65,6 +65,7 @@ function changeBackgroundColor2() {
     var dropbtnhover = document.querySelectorAll('.dropbtn');
     var staffCont = document.querySelectorAll('.staff-content');
     var contact = document.querySelector('.contact-box');
+    var dpbox = document.querySelectorAll('.box-main');
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
     header.style.backgroundColor = boxcolors[currentIndex];
@@ -77,6 +78,9 @@ function changeBackgroundColor2() {
     });
     staffCont.forEach(function (staffCont) {
         staffCont.style.backgroundColor = titlecolors[currentIndex];
+    });
+    dpbox.forEach((box)=>{
+        box.style.backgroundColor = titlecolors[currentIndex]; 
     });
     dropbtnhover.forEach(function (dropbtnhover) {
         dropbtnhover.addEventListener('mouseenter', function () {
@@ -120,6 +124,7 @@ function changeBackgroundColor4() {
     var contactForm1 = document.querySelectorAll(".contact-form1");
     var events = document.querySelectorAll(".events");
     var volun = document.querySelector(".want");
+    var dpbox = document.querySelectorAll('.box-main'); 
     volun.style.backgroundColor = titlecolors[currentIndex]; 
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
@@ -137,6 +142,9 @@ function changeBackgroundColor4() {
             link.style.color = '#000000';
             link.style.backgroundColor = 'transparent';
         });
+    });
+    dpbox.forEach((box)=>{
+        box.style.backgroundColor = titlecolors[currentIndex]; 
     });
     dropbtnhover.forEach(function (dropbtnhover) {
         dropbtnhover.addEventListener('mouseenter', function () {
@@ -174,6 +182,7 @@ function changeBackgroundColor3() {
     var homeCollegeBox = document.querySelector(".home-college-box");
     var colleges = document.querySelectorAll('.colleges');
     var dropbtnhover = document.querySelectorAll('.dropbtn');
+    var dpbox = document.querySelectorAll('.box-main'); 
     homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
@@ -215,6 +224,9 @@ function changeBackgroundColor3() {
     });
     colleges.forEach(function (college) {
         college.style.backgroundColor = boxcolors[currentIndex];
+    });
+    dpbox.forEach((box)=>{
+        box.style.backgroundColor = titlecolors[currentIndex]; 
     });
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;

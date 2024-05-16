@@ -14,6 +14,7 @@ function changeBackgroundColor() {
     var dropbtnhover = document.querySelectorAll('.dropbtn');
     var swirl = document.querySelector('.body-swirl');
     var count = document.querySelector('.counter');
+    var dpbox = document.querySelectorAll('.box-main'); 
     currentIndex1 = currentIndex;
     body.style.backgroundColor = backgroundcolors[currentIndex];
     swirl.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
@@ -31,7 +32,10 @@ function changeBackgroundColor() {
     });
 
     staffCont.forEach(function (staffCont) {
-        staffCont.style.backgroundColor = titlecolors[currentIndex];
+        staffCont.style.backgroundColor = titlecolors[currentIndex1];
+    });
+    dpbox.forEach((box)=>{
+        box.style.backgroundColor = titlecolors[currentIndex]; 
     });
     dropbtnhover.forEach(function (dropbtnhover) {
         dropbtnhover.addEventListener('mouseenter', function () {

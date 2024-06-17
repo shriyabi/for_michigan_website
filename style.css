@@ -1826,12 +1826,14 @@ ul{
         margin: 2em;
         object-fit: contain;
         border-radius: 1em;*/
+        height: 70%; 
     }
     .pride{
         position: relative;
-        width: 15vw; 
+        width: 20vw; 
+        height: 15vh;
         border-radius: 0.5em;
-        margin: 2em; 
+        margin: 1em; 
         padding: 0.3em; 
         border-width: 1em; 
         background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 166, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));

@@ -330,5 +330,60 @@ function form() {
     });
 }
 
+/*
+//data
+const apiUrl = 'https://api.mobilize.us/v1/organizations/:organization_id/events'; 
+const apiKey = 'd635c1172c5df2675bffe1b88d3c7279f71c2d2e'; 
+//retrieving event
+function getEvents() {
+    //fetching response to get data json
+    fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${apiKey}`
+        }
+    })
+    //getting data json
+    .then(response => {
+        if (!response.ok) {
+            console.log("Failed to fetch data");
+            throw new Error('Network response was not ok');
+        }
+        return response.json(); 
+    })
+    //parsing data json
+    .then(data => {
+        data.forEach(event => {
+            const { title, description, timeslots, location } = event;
+            document.write(`<h2>${title}</h2>`);
+            document.write(`<p>${description}</p>`);
+            if (timeslots.length > 0) {
+                document.write('<h3>Timeslots:</h3>');
+                timeslots.forEach(slot => {
+                    document.write(`<p>Start Date: ${new Date(slot.start_date * 1000)}</p>`);
+                    document.write(`<p>End Date: ${new Date(slot.end_date * 1000)}</p>`);
+                    document.write(`<p>Is Full: ${slot.is_full ? 'Yes' : 'No'}</p>`);
+                });
+            }
+            if (location) {
+                document.write('<h3>Location:</h3>');
+                document.write(`<p>Venue: ${location.venue}</p>`);
+                document.write(`<p>Address: ${location.address_lines.join(', ')}</p>`);
+                document.write(`<p>City: ${location.locality}</p>`);
+                document.write(`<p>State: ${location.region}</p>`);
+                document.write(`<p>Country: ${location.country}</p>`);
+                document.write(`<p>Postal Code: ${location.postal_code}</p>`);
+            }
+        }); 
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+}
+
+// Call the function to get events
+getEvents(); */
+
+
 
 

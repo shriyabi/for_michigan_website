@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 body {
     background-color: #e6d2bb;
     transition: background-color 0.5 ease;
@@ -1051,7 +1053,9 @@ ul{
     margin-bottom: 5vh;
 }
 
-
+.event-logo{
+    width: 5em; height: auto; margin-bottom: 0;
+}
 
 @media only screen and (max-width: 737px) {
     .body-img {
@@ -1188,12 +1192,14 @@ ul{
         margin: 2em;
         object-fit: contain;
         border-radius: 1em;*/
+        height:90%;
     }
     .pride{
         position: relative;
-        width: 25vw;
+        width: 30vw;
+        height: 20vh;
         border-radius: 0.5em;
-        margin: 1em; 
+        margin: 0.8em; 
         padding: 0.3em; 
         border-width: 1em; 
         background: linear-gradient(to right, rgba(255, 0, 0, 1.0), rgba(255, 166, 0, 1.0), rgba(255, 255, 0, 1.0), rgba(0, 128, 0, 1.0), rgba(0, 0, 255, 1.0), rgba(128, 0, 128, 1.0));
@@ -2950,15 +2956,27 @@ ul{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        height: 75%;
     }
     .pride{
         position: relative;
         width: 15vw; 
+        height: 25vh;
         border-radius: 0.5em;
         margin: 2em; 
         padding: 0.6em; 
         border-width: 1em; 
         background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 166, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
+    }
+    .pride:hover{
+        margin:1em;
+        width: 16vw;
+        transition: all 0.2s ease-in-out;
+    }
+    .event-logo:hover{
+        animation: heartBeat; 
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
 
     .south {

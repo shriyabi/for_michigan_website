@@ -15,7 +15,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body onclick="changeBackgroundColor4()" style="cursor: url(Cursor.png), auto;">
     <button class="color-change-button" onclick="changeBackgroundColor4()"> Click Me </button>
     <div class="wwa-header">
@@ -279,7 +282,6 @@
             <h4 style="padding-top: 0; margin-top: 0;"> Find For Michigan Events at your school here! </h4>
             </h2>
             <div class="college-div" style = "display:inline-flex">
-                
                 <div class="pride">
                     <div class="events">
                         <div style="display: flex;
@@ -287,7 +289,7 @@
                     align-items: center;">
                             <a href="https://grpride.org/pride-festival/" style="background-color:transparent;">
                                 <p style="margin-top: 0; margin-bottom: 0;"> 6-22-24 </p>
-                                <img src="PrideLogo.png" style="width: 5em; height: auto; margin-bottom: 0; filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
+                                <img src="PrideLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
                                 <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Grand Rapids Pride Festival
                                 </h3>
                             </a>
@@ -301,8 +303,36 @@
                     align-items: center;">
                             <a href="https://www.lansingpride.org/" style="background-color:transparent;">
                                 <p style="margin-top: 0; margin-bottom: 0;"> 6-22-24 </p>
-                                <img src="PrideLogo.png" style="width: 5em; height: auto; margin-bottom: 0; filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
+                                <img src="PrideLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
                                 <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Lansing Pride
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pride" style = "background: linear-gradient(to top, rgb(255, 0, 251), rgb(255, 174, 247));">
+                    <div class="events" style = "background-image: url(DobbsBackgroundOpaque.png);">
+                        <div style="display: flex;
+                    flex-direction: column;
+                    align-items: center;">
+                            <a href="Mt Pleasant - Dobbs 2 Year Anniversary.png" style="background-color:transparent;">
+                                <p style="margin-top: 0; margin-bottom: 0;"> 6-23-24 </p>
+                                <img src="DobbsLogoBetter.png" class="event-logo" style="width: 6em; filter: drop-shadow(0 0 0.5em rgb(252, 175, 255))">
+                                <h3 class="name5" style="margin-top: 0em; margin-bottom: 0;"> Mt.Pleasant Reproductive Freedom Rally
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pride" style = "background: linear-gradient(to top, rgb(255, 0, 251), rgb(255, 174, 247));">
+                    <div class="events" style = "background-image: url(DobbsBackgroundOpaque.png);">
+                        <div style="display: flex;
+                    flex-direction: column;
+                    align-items: center;">
+                            <a href="svsu Dobbs 2 Year Anniversary (2).png" style="background-color:transparent;">
+                                <p style="margin-top: 0; margin-bottom: 0;"> 6-23-24 </p>
+                                <img src="DobbsLogoBetter.png" class="event-logo" style="width: 6em; filter: drop-shadow(0 0 0.5em rgb(252, 175, 255))">
+                                <h3 class="name5" style="margin-top: 0em; margin-bottom: 0;"> Saginaw Reproductive Freedom Rally
                                 </h3>
                             </a>
                         </div>
@@ -315,7 +345,7 @@
                     align-items: center;">
                             <a href="https://greatlakesbaypride.org/events/great-lakes-bay-pride-festival/" style="background-color:transparent;">
                                 <p style="margin-top: 0; margin-bottom: 0;"> 6-24-24 </p>
-                                <img src="PrideLogo.png" style="width: 5em; height: auto; margin-bottom: 0; filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
+                                <img src="PrideLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
                                 <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Great Lakes Bay Pride Festival</h3>
                             </a>
                         </div>
@@ -328,7 +358,7 @@
                     align-items: center;">
                             <a href="https://wellnessaids.org/2024/" style="background-color:transparent;">
                                 <p style="margin-top: 0; margin-bottom: 0;"> 6-29-24 </p>
-                                <img src="PrideLogo.png" style="width: 5em; height: auto; margin-bottom: 0; filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
+                                <img src="PrideLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
                                 <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Flint Pride in the Park</h3>
                             </a>
                         </div>
@@ -341,7 +371,7 @@
                     align-items: center;">
                             <a href="https://www.mijacksonpride.org/events" style="background-color:transparent;">
                                 <p style="margin-top: 0; margin-bottom: 0;"> 6-29-24 </p>
-                                <img src="PrideLogo.png" style="width: 5em; height: auto; margin-bottom: 0; filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
+                                <img src="PrideLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
                                 <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Jackson Pride</h3>
                             </a>
                         </div>
@@ -354,7 +384,7 @@
                     align-items: center;">
                             <a href="https://battlecreekpride.org/" style="background-color:transparent;">
                                 <p style="margin-top: 0; margin-bottom: 0;"> 7-20-24 </p>
-                                <img src="PrideLogo.png" style="width: 5em; height: auto; margin-bottom: 0; filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
+                                <img src="PrideLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
                                 <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Battle Creek Pride</h3>
                             </a>
                         </div>
@@ -367,7 +397,7 @@
                     align-items: center;">
                             <a href="https://www.annarborpride.com/" style="background-color:transparent;">
                                 <p style="margin-top: 0; margin-bottom: 0;"> 8-3-24 </p>
-                                <img src="PrideLogo.png" style="width: 5em; height: auto; margin-bottom: 0; filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
+                                <img src="PrideLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(255, 0, 238))">
                                 <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Ann Arbor Pride
                                 </h3>
                             </a>

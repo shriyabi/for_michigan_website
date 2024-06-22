@@ -299,18 +299,27 @@ countDown();
 
 function form() {
     document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById('myForm');
-
+        const form = document.getElementById('my-form');
         form.addEventListener("submit", function (e) {
             e.preventDefault(); // Prevent default form submission
-
-            const formData = new FormData(form); // Get form data
-
+            //const formData = new FormData(form); // Get form data
+            var form = e.target; 
+            //console.log(formData); 
             fetch(form.action, {
                 method: 'POST',
-                body: formData
-            })
-                .then(response => {
+                body: new FormData(form)
+            }).then(function(response) {
+                return response.json();
+            }).then(function(data) {
+                console.log(data);
+                // Show success message
+                document.getElementById('success-message').style.display = 'block';
+                // Optionally, clear the form fields
+                form.reset();
+            }).catch(function(error) {
+                console.error('Error!', error.message);
+            });
+                /*.then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
@@ -325,10 +334,30 @@ function form() {
                     // Handle errors
                     console.error('There was a problem with the fetch operation:', error);
                     alert("An error occurred. Please try again.");
-                });
+                });*/
         });
     });
 }
+
+/*document.getElementById('my-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+    var form = event.target;
+
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+    }).then(function(response) {
+        return response.json();
+    }).then(function(data) {
+        console.log(data);
+        // Show success message
+        document.getElementById('success-message').style.display = 'block';
+        // Optionally, clear the form fields
+        form.reset();
+    }).catch(function(error) {
+        console.error('Error!', error.message);
+    });
+}); */
 
 /*
 //data

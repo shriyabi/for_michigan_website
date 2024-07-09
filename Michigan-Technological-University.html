@@ -16,92 +16,129 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #ffcd00;
+            ;
+            --turkey-color: white;
+            --secondary-opaque-one: #ffcd0592;
+            --secondary-opaque-two: #ffe993; 
+            --primary-opaque-one: #001930; 
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const img = document.getElementById('dynamic-image-logo');
+            img.src = 'MichiganTech.png';
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const img = document.getElementById('dynamic-image-background');
+            img.src = 'mtuLogoOpaque.png';
+        });
+    </script>
 </head>
 
-<body style="background-color: #ffffff;">
+<body style="background-color: var(--turkey-color);">
+
     <!--<button class = "color-change-button" onclick = "changeBackgroundColor2()"> Click Me </button> -->
-    <div class="wwa-header" style="background-color: #000000;">
+    <div class="wwa-header" style="background-color: var(--primary-color);">
         <img src="4MichWhite.png" class="return-home">
         <div style="display: inline-flex; ">
-            <h3 class = "name2" style="display: inline; padding-right: 4vw;"><a href="index" class="mtu-header-color"> HOME </a> </h3>
-            
-            <h3 class = "name2" style="display: inline; padding-right: 4vw;"><a href="Who-Are-We" class="mtu-header-color"> WHO WE ARE </a> </h3>
-            
+            <h3 class="name2" style="display: inline; padding-right: 4vw;"><a href="index" class="mtu-header-color">
+                    HOME </a> </h3>
+
+            <h3 class="name2" style="display: inline; padding-right: 4vw;"><a href="Who-Are-We"
+                    class="mtu-header-color"> WHO WE ARE </a> </h3>
+
             <div class="dropdown">
-                <h3 class = "name2"><button class="dropbtn mtu-header-color"> GET INVOLVED </button> </h3>
+                <h3 class="name2"><button class="dropbtn mtu-header-color"> GET INVOLVED </button> </h3>
                 <div class="dropdown-content">
-                    <a
-               href="Jobs" class = "link-color" style = "background-color: none;"><div class="box-mtu"  >
-                <h4> Join our Team </h4>
-            </div></a>
-                    <a href = "Get-Involved"><div class="box-mtu"  >
-                        <h4> Campus Events </h4>
-                    </div></a> 
-            <a href = "Get-Involved">
-                <div class="box-mtu"  > 
-                    <h4> Contact Us </h4>
-                </div></a>
+                    <a href="Jobs" class="link-color" style="background-color: none;">
+                        <div class="box-mtu">
+                            <h4> Join our Team </h4>
+                        </div>
+                    </a>
+                    <a href="Get-Involved">
+                        <div class="box-mtu">
+                            <h4> Campus Events </h4>
+                        </div>
+                    </a>
+                    <a href="Get-Involved">
+                        <div class="box-mtu">
+                            <h4> Contact Us </h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class = "counter" style = "background-color: #ffcd00; text-align: center"> 
-        <h3 style = "display: inline;"> COUNTDOWN TO PRIMARY ELECTION: </h3>
-        <br> 
-        <h3 id="pres" style = "display:inline; font-family: Michroma, sans-serif; font-weight: 900; font-style: normal;"></h3>
+    <div class="counter" style="background-color:var(--secondary-color); text-align: center">
+        <h3 style="display: inline;"> COUNTDOWN TO PRIMARY ELECTION: </h3>
+        <br>
+        <h3 id="pres" style="display:inline; font-family: Michroma, sans-serif; font-weight: 900; font-style: normal;">
+        </h3>
     </div>
-    <div class="college-body-img college-border" style="border-bottom-color: #000000;">
+    <div class="college-body-img college-border" style="border-bottom-color: var(--primary-color);">
         <div class="vote-info"
-            style="background-color: white; box-shadow: 0 0 6em #000000; border-color:transparent;">
+            style="background-color: var(--turkey-color); box-shadow: 0 0 6em var(--primary-color); border-color:transparent;">
             <div class="background-container sailor">
                 <!--<img src="SailorWolverine.png">-->
             </div>
-            <img src="mtu.png" class="vote-logo">
+
+            <img src="" class="vote-logo" id="dynamic-image-logo">
+
             <br> <br>
-            <h2 style="color: #000000;"> VOTING INFORMATION </h2>
-            <div class = "temp-inline">
+            <h2 style="color: var(--primary-color);"> VOTING INFORMATION </h2>
+            <div class="temp-inline">
                 <div class="boxes-college-page"
-                    style="background-color:#ffcd0592; align-self: stretch; border-color: #000000; background-image: url(PollsOpaque.png); background-size:cover; background-repeat: no-repeat;">
+                    style="background-color:var(--secondary-opaque-one); align-self: stretch; border-color: var(--primary-color); background-image: url(PollsOpaque.png); background-size:cover; background-repeat: no-repeat;">
                     <input id="ch15" type="checkbox">
                     <label for="ch15">
                         <br><br><br>
-                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"><a href = "https://mvic.sos.state.mi.us/Voter/Index" class = "link-color"> Nearest Polling Station  </a></h3>
+                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"><a
+                                href="https://mvic.sos.state.mi.us/Voter/Index" class="link-color"> Nearest Polling
+                                Station </a></h3>
                     </label>
                     <div class="content">
                         <label for="ch15"> X </label>
                     </div>
                 </div>
                 <div class="boxes-college-page"
-                    style="background-color:#ffcd0592; align-self: stretch; border-color: #000000; background-image: url(MTULogoOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
+                    style="background-color:var(--secondary-opaque-one); align-self: stretch; border-color: var(--primary-color); background-image: url(MTULogoOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;" id="dynamic-image-background">
                     <input id="ch17" type="checkbox">
-                    <div class="content" style = "background-color: #000000;">
-                        <label for="ch17" style = "color: #ffcd00"> X </label>
-                        <h4 style="padding-bottom:0; color: white">  Get More Information about how to register to vote <a href = "VotingRegistration.html" class = "link-color" style = "color: #ffcd00"> here</a>! </h4>
-                        <h4 style ="color: white">To check if you’re registered to vote where you live, visit mi.gov/vote and click on "<a href = "https://mvic.sos.state.mi.us/Voter/Index" class = "link-color" style = "color: #ffcd00">Your voter information </a>.”
+                    <div class="content" style="background-color: var(--primary-color);">
+                        <label for="ch17" style="color: var(--secondary-color)"> X </label>
+                        <h4 style="padding-bottom:0; color: var(--turkey-color)"> Get More Information about how to
+                            register to vote <a href="VotingRegistration.html" class="link-color"
+                                style="color: var(--secondary-color)"> here</a>! </h4>
+                        <h4 style="color: var(--turkey-color)">To check if you’re registered to vote where you live,
+                            visit mi.gov/vote and click on "<a href="https://mvic.sos.state.mi.us/Voter/Index"
+                                class="link-color" style="color: var(--secondary-color)">Your voter information </a>.”
                         </h4>
                     </div>
                     <label for="ch17">
-                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"> Department of State Voter Information Center </h3>
+                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"> Department of State Voter
+                            Information Center </h3>
                     </label>
-                    
+
                 </div>
                 <div class="boxes-college-page"
-                    style="background-color:#ffcd0592; align-self: stretch; border-color: #000000; background-image: url(RegisterOpaque.png); background-size:cover; background-repeat: no-repeat;">
+                    style="background-color:var(--secondary-opaque-one); align-self: stretch; border-color: var(--primary-color); background-image: url(RegisterOpaque.png); background-size:cover; background-repeat: no-repeat;">
                     <input id="ch16" type="checkbox">
-                    <div class="content" style="background-color:#000000">
-                        <label for="ch16" style = "color:#ffcd00"> X </label>
+                    <div class="content" style="background-color:var(--primary-color)">
+                        <label for="ch16" style="color:var(--secondary-color)"> X </label>
                         <a href="https://www.michigan.gov/sos/-/media/Project/Websites/sos/Elections/Election-Forms/Absent-Voter-Ballot-Application-Fillable.pdf?rev=c35e859a2abe40dfbca3c95027c8072a&hash=4430F4C6B6C603D59A7E196EB7E5B05A"
-                        style="background-color:transparent;">
-                            <h4 style = "color: white;">Mail-in Application</h4>
-                        </a>
-                        <a href="https://mvic.sos.state.mi.us/Home/VoteAtHome"
                             style="background-color:transparent;">
-                            <h4 style = "color: white"> Web Application</h4>
-                        </a> 
+                            <h4 style="color: var(--turkey-color);">Mail-in Application</h4>
+                        </a>
+                        <a href="https://mvic.sos.state.mi.us/Home/VoteAtHome" style="background-color:transparent;">
+                            <h4 style="color: var(--turkey-color)"> Web Application</h4>
+                        </a>
                         <a href="https://mvic.sos.state.mi.us/Voter/Index/#yourclerk"
-                        style="background-color:transparent;">
-                            <h4 style = "color: white">City or Township Clerk (In Person Application)</h4>
-                        </a> 
+                            style="background-color:transparent;">
+                            <h4 style="color: var(--turkey-color)"> City or Township Clerk (In Person Application) </h4>
+                        </a>
                     </div>
                     <label for="ch16">
                         <br><br><br>
@@ -115,299 +152,296 @@
             </div>
         </div>
     </div>
-    
-    
-    <!--<div class="college-body-img college-border" style="border-bottom-color: #000000;">
-        <div class="vote-info"
-            style="background-color: white; box-shadow: 0 0 6em #000000; border-color:transparent;">
-            <div class="background-container sailor">
-               
-            </div>
-            <img src="mtu.png" class="vote-logo">
-            <br> <br>
-            <h2 style="color: #000000;"> VOTING INFORMATION </h2>
-            <div style="display: flex; align-items: flex-start;">
-                <div class="boxes-college-page"
-                    style="background-color:#ffcd0592; align-self: stretch; border-color: #000000; background-image: url(PollsOpaque.png); background-size:cover; background-repeat: no-repeat;">
-                    <input id="ch15" type="checkbox">
-                    <label for="ch15">
-                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"><a href = "https://mvic.sos.state.mi.us/Voter/Index" class = "link-color"> Nearest Polling Station  </a></h3>
-                    </label>
-                    <div class="content">
-                        <label for="ch15"> X </label>
-                    </div>
-                </div>
-                <div class="boxes-college-page"
-                    style="background-color:#ffcd0592; align-self: stretch; border-color: #000000; background-image: url(SailorWolverineOpaque.png); background-size:cover; background-repeat: no-repeat;">
-                    <input id="ch17" type="checkbox">
-                    <label for="ch17">
-                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"> Department of State Voter Information Center </h3>
-                    </label>
-                    <div class="content" style = "background-color: #000000;">
-                        <label for="ch17" style = "color: #ffcd00"> X </label>
-                        <h4 style="padding-bottom:0; color: white">  Get More Information about how to register to vote <a href = "Register" class = "link-color" style = "color: #ffcd00"> here</a>! </h4>
-                        <h4 style ="color: white">To check if you’re registered to vote where you live, visit mi.gov/vote and click on "<a href = "https://mvic.sos.state.mi.us/Voter/Index" class = "link-color" style = "color: #ffcd00">Your voter information </a>.”
-                        </h4>
-                    </div>
-                </div>
-                <div class="boxes-college-page"
-                    style="background-color:#ffcd0551; align-self: stretch; border-color: #000000; background-image: url(RegisterOpaque.png); background-size:cover; background-repeat: no-repeat;">
-                    <input id="ch16" type="checkbox">
-                    <label for="ch16">
-                        <h3 style="color: black; align-self:flex-end; margin-top:50%;"> Registration Applications </h3>
-                    </label>
-                    <div class="content" style="background-color:#000000">
-                        <label for="ch16" style = "color:#ffcd00"> X </label>
-                        <a href="https://www.michigan.gov/sos/-/media/Project/Websites/sos/Elections/Election-Forms/Absent-Voter-Ballot-Application-Fillable.pdf?rev=c35e859a2abe40dfbca3c95027c8072a&hash=4430F4C6B6C603D59A7E196EB7E5B05A"
-                        style="background-color:transparent;">
-                            <h4 style = "color: white;"> Mail-in Application </h4>
-                        </a>
-                        <a href="https://mvic.sos.state.mi.us/Home/VoteAtHome"
-                            style="background-color:transparent;">
-                            <h4 style = "color: white"> Web Application </h4>
-                        </a> 
-                        <a href="https://mvic.sos.state.mi.us/Voter/Index/#yourclerk"
-                        style="background-color:transparent;">
-                            <h4 style = "color: white"> City or Township Clerk (In Person Application) </h4>
-                        </a> 
-                    </div>
-                </div>
-                <div style = "display:inline-flex; flex-direction:column;">
-        <div class = "boxes-other" style="background-color: yellow;"> Voting Early </div>
-        <div class = "boxes-other" style="background-color: yellow;"> Absentee </div> 
-    </div>-->
-            </div>
-        </div>
+    </div>
+    </div>
     </div>
 
 
-    <div style="background-color: white; margin-top: 2vh;" id = "/Register">
-        <h2 style = "color:#000000"> Register to Vote </h2>
+    <div style="background-color: var(--turkey-color); margin-top: 2vh;" id="/Register">
+        <h2 style="color:var(--primary-color); text-decoration:underline;"> Step 1: Register to Vote </h2>
         <div
-        style="align-self: center; display: flex; justify-content: center; align-items: center; align-items: flex-start;">
-        <div class="tab-mtu" style = "vertical-align: top;">
-            <button class="tablinks" onclick="openCity(event, 'Vo')">Voter Registration</button>
-            <button class="tablinks" onclick="openCity(event, 'Vo1')" style = "background-color: #ffcd00; border-color:transparent;color:#000000;">Voter Registration (15+ Days before Election Day)</button>
-            <button class="tablinks" onclick="openCity(event, 'Vo2')" style = "background-color: #ffcd00; border-color:transparent;color: #000000;">Voter Registration (14 Days through 8PM on Election Day)</button>
-            <button class="tablinks" onclick="openCity(event, 'Ab')" >Abroad Registration</button>
-            <button class="tablinks" onclick="openCity(event, 'Per')" >Permanent Mail Ballot List</button>
-            <button class="tablinks" onclick="openCity(event, 'Ab2')" >Abroad Ballot Requestment</button>
-          </div>
-          
-          <div id="Vo" class="tabcontent" style = "display:block; background-color: #ffe993; border-color:#000000">
-            <h3 style = "color:#000000">Voter Registration</h3>
-            <h3 class = "name4" style = "color:#000000"> To be eligible to register and vote in Michigan, you must be: </h4>
-            <ul>
-                <li>
-                    <p class = "name4"  style="text-align: left; color: #000000;"> A Michigan resident and a resident of the city or township where you are registering to vote for at least 30 days by Election Day; 
-                    </p>
-                </li>
-                <li>
-                    <p class = "name4"  style="text-align: left; color: #000000;">A U.S. Citizen;
-                    </p>
-                </li>
-                <li>
-                    <p class = "name4"  style="text-align: left; color: #000000;"> Not currently serving a sentence in jail or prison.
-                    </p>
-                </li>
-                <li>
-                    <p class = "name4" style="text-align: left; color: #000000;"> Leave the killer campaign clothes and
-                        accessories at home!
-                    </p>
-                </li>
-            </ul>
-            <br>
-            <h4 class = "name4" style = "color:#000000"> To check if you’re registered to vote where you live, visit <a href="https://mvic.sos.state.mi.us/" class = "link-color" style = "color:#000000">mi.gov/vote</a> and click on “Your voter information.”</h4>
-          </div>
-          <div id="Vo1" class="tabcontent" style = "background-color: #ffe993; border-color:#000000">
-            <br> <br>
-            <h4 class = "name4" style = "color:#000000">If you are registering to vote 15 days or more before Election Day, you can register:</h4>
-            <ul>
-            <li>
-                <p class = "name4" style="text-align: left; color: #000000;"> <a href ="https://www.michigan.gov/sos/-/media/Project/Websites/sos/Elections/Election-Forms/Voter-Registration-Form-English.pdf?rev=10b1eafe0fb542c4b352653f5896f43d&hash=2A233AE4D84E018AA0688E0D8801FAD7" class = "link-color" style = "color:#000000">By Mail;</a></p>
-            </li>
-            <li>
-                <p class = "name4" style="text-align: left; color: #000000;"><a href = "https://mvic.sos.state.mi.us/RegisterVoter/Index" class = "link-color" style = "color:#000000">Online;</a>
-                </p>
-            </li>
-            <li>
-                <p class = "name4" style="text-align: left; color: #000000;"> Through a voter registration drive; or
-                </p>
-            </li>
-            <li>
-                <p class = "name4" style="text-align: left; color: #000000;"> In person at any Secretary of State branch office, any state agency that provides services to people with disabilities or public assistance, your county clerk’s office, or your <a href="https://mvic.sos.state.mi.us/Voter/Index/#yourclerk" class = "link-color" style = "color:#000000">city or township clerk’s office.</a>
-                </p>
-            </li>
-        </ul>
-                </div>
-                <div id="Vo2" class="tabcontent" style = "background-color: #ffe993; border-color:#000000">
-                    <br> <br>
-               <h4 class = "name4" style = "color:#000000"> If you are registering to vote within 14 days of the election through 8 p.m. on Election Day, you must register in person at your city or township clerk’s office with proof of residency.</h4>
-               <ul>
-                <li>
-                    <p class = "name4" style="text-align: left; color: #000000;">  Proof of residency is a document that includes your name and current address. Examples include: </p>
+            style="align-self: center; display: flex; justify-content: center; align-items: center; align-items: flex-start;">
+            <div class="tab-mtu" style="vertical-align: top;">
+                <button class="tablinks" onclick="openCity(event, 'Vo')">Voter Registration</button>
+                <button class="tablinks" onclick="openCity(event, 'Vo1')"
+                    style="background-color: var(--secondary-color); border-color:transparent;color:var(--primary-color);">Voter
+                    Registration (15+ Days before Election Day)</button>
+                <button class="tablinks" onclick="openCity(event, 'Vo2')"
+                    style="background-color: var(--secondary-color); border-color:transparent;color: var(--primary-color);">Voter
+                    Registration (14 Days through 8PM on Election Day)</button>
+                <button class="tablinks" onclick="openCity(event, 'Ab')">Abroad Registration</button>
+                <button class="tablinks" onclick="openCity(event, 'Per')">Permanent Mail Ballot List</button>
+                <button class="tablinks" onclick="openCity(event, 'Ab2')">Abroad Ballot Requestment</button>
+            </div>
+
+            <div id="Vo" class="tabcontent"
+                style="display:block; background-color: var(--secondary-opaque-two); border-color:var(--primary-color)">
+                <h3 style="color:var(--primary-color)">Voter Registration</h3>
+                <h3 class="name4" style="color:var(--primary-color)"> To be eligible to register and vote in Michigan,
+                    you must be: </h4>
                     <ul>
                         <li>
-                            <p class = "name4" style="text-align: left; color: #000000;"> a Michigan driver’s license or state ID card
+                            <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; A Michigan resident
+                                and a resident of the city or township where you are registering to vote for at least 30
+                                days by Election Day
                             </p>
                         </li>
                         <li>
-                            <p class = "name4" style="text-align: left; color: #000000;">a utility bill
+                            <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; A U.S. Citizen
                             </p>
                         </li>
                         <li>
-                            <p class = "name4" style="text-align: left; color: #000000;"> a bank statement bill
-                            </p>
-                        </li>
-                        <li>
-                            <p class = "name4" style="text-align: left; color: #000000;"> a paycheck
-                            </p>
-                        </li>
-                        <li>
-                            <p class = "name4" style="text-align: left; color: #000000;"> a government check
-                            </p>
-                        </li>
-                        <li>
-                            <p class = "name4" style="text-align: left; color: #000000;"> any other government document
+                            <p class="name4" style="text-align: left; color: var(--primary-color);">&bull; Not currently
+                                serving a sentence in jail or prison
                             </p>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            <br>
+                    <br>
+                    <h4 class="name4" style="color:var(--primary-color)"> To check if you’re registered to vote where
+                        you live, visit <a href="https://mvic.sos.state.mi.us/" class="link-color"
+                            style="color:var(--primary-color)">mi.gov/vote</a> and click on “Your voter information.”
+                    </h4>
+
+                    <p class="name4" style="text-align: center; color: var(--primary-color);"> Remember, leave the killer
+                        campaign clothes and
+                        accessories at home!
+                    </p>
             </div>
-            <div id="Ab" class="tabcontent" style = "background-color: #ffe993; border-color:#000000">
-                <h3 style = "color:#000000">Abroad Registration</h3>
-                <h4 class = "name4" style = "color:#000000"> If you plan to study aboard and need to register to vote, you must fill out a FWAB or FPCA form, which requires the following: </h4>
+            <div id="Vo1" class="tabcontent" style="background-color: var(--secondary-opaque-two); border-color:var(--primary-color)">
+                <br> <br>
+                <h4 class="name4" style="color:var(--primary-color)">If you are registering to vote 15 days or more
+                    before Election Day, you can register:</h4>
                 <ul>
                     <li>
-                        <p class = "name4" style="text-align: left; color: #000000;"> A Michigan resident and a resident of the city or township where you are registering to vote for at least 30 days by Election Day; 
+                        <p class="name4" style="text-align: left; color: var(--primary-color);"> <a
+                                href="https://www.michigan.gov/sos/-/media/Project/Websites/sos/Elections/Election-Forms/Voter-Registration-Form-English.pdf?rev=10b1eafe0fb542c4b352653f5896f43d&hash=2A233AE4D84E018AA0688E0D8801FAD7"
+                                class="link-color" style="color:var(--primary-color)">&bull; By Mail</a></p>
+                    </li>
+                    <li>
+                        <p class="name4" style="text-align: left; color: var(--primary-color);"><a
+                                href="https://mvic.sos.state.mi.us/RegisterVoter/Index" class="link-color"
+                                style="color:var(--primary-color)">&bull; Online</a>
                         </p>
+                    </li>
+                    <li>
+                        <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Through a voter
+                            registration drive
+                        </p>
+                    </li>
+                    <li>
+                        <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; In person at any
+                            Secretary of State branch office, any state agency that provides services to people with
+                            disabilities or public assistance, your county clerk’s office, or your <a
+                                href="https://mvic.sos.state.mi.us/Voter/Index/#yourclerk" class="link-color"
+                                style="color:var(--primary-color)">city or township clerk’s office.</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="Vo2" class="tabcontent" style="background-color: var(--secondary-opaque-two); border-color:var(--primary-color)">
+                <br> <br>
+                <h4 class="name4" style="color:var(--primary-color)"> If you are registering to vote within 14 days of
+                    the election through 8 p.m. on Election Day, you must register in person at your city or township
+                    clerk’s office with proof of residency.</h4>
+                <ul>
+                    <li>
+                        <p class="name4" style="text-align: left; color: var(--primary-color);"> Proof of residency is a
+                            document that includes your name and current address. Examples include: </p>
                         <ul>
                             <li>
-                                <p class = "name4" style="text-align: left; color: #000000;"> Full name
-                                </p>
-                                
-                            </li>
-                            <li>
-                                <p class = "name4" style="text-align: left; color: #000000;">Date of birth
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; a Michigan
+                                    driver’s license or state ID card
                                 </p>
                             </li>
                             <li>
-                                <p class = "name4" style="text-align: left; color: #000000;"> Registration address and current address
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; a utility bill
                                 </p>
-                                
                             </li>
                             <li>
-                                <p class = "name4" style="text-align: left; color: #000000;">Driver’s license or state ID or the last 4 digits of Social Security number.
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; a bank
+                                    statement bill
+                                </p>
+                            </li>
+                            <li>
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; a paycheck
+                                </p>
+                            </li>
+                            <li>
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; a government
+                                    check
+                                </p>
+                            </li>
+                            <li>
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; any other
+                                    government document
                                 </p>
                             </li>
                         </ul>
                     </li>
                 </ul>
-                <p class = "name4" style="color: #4c0000;">* Deadline: Signed and completed FPCA must be received by a voter’s local clerk by 2 p.m. on the Saturday before Election Day. Options for returning an FPCA, including email, fax, or regular mail
+                <br>
+            </div>
+            <div id="Ab" class="tabcontent" style="background-color: var(--secondary-opaque-two); border-color:var(--primary-color)">
+                <h3 style="color:var(--primary-color)">Abroad Registration</h3>
+                <h4 class="name4" style="color:var(--primary-color)"> If you plan to study aboard and need to register
+                    to vote, you must fill out a FWAB or FPCA form, which requires the following: </h4>
+                <ul>
+                    <li>
+                        <p class="name4" style="text-align: left; color: var(--primary-color);"> A Michigan resident and
+                            a resident of the city or township where you are registering to vote for at least 30 days by
+                            Election Day;
+                        </p>
+                        <ul>
+                            <li>
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Full name
+                                </p>
+
+                            </li>
+                            <li>
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Date of birth
+                                </p>
+                            </li>
+                            <li>
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Registration
+                                    address and current address
+                                </p>
+
+                            </li>
+                            <li>
+                                <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Driver’s license
+                                    or state ID or the last 4 digits of Social Security number.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="name4" style="color: var(--primary-opaque-one); font-style: italic">* Deadline: Signed and completed FPCA must be received by a
+                    voter’s local clerk by 2 p.m. on the Saturday before Election Day. Options for returning an FPCA,
+                    including email, fax, or regular mail
                 </p>
-              </div>  
-          
-          <div id="Per" class="tabcontent" style = "background-color: #ffe993; border-color:#000000;">
-            <h3 style = "color: #000000;">Permanent Mail Ballot List</h3>
-<h4 style = "color: #000000;" class = "name4" >If you check the permanent mail ballot list box when you apply for your absentee ballot, you will receive an absentee ballot automatically for every future election in your community without having to submit an application each time!</h4>
-<img src = "AbsenteeBallot.jpeg" class = "tab-img"> 
-</div>
-          <div id="Ab2" class="tabcontent" style = "background-color: #ffe993; border-color:#000000">
-            <h3 style = "color:#000000"> Abroad Ballot Requestment</h3>
-            <h4 class = "name4" style = "color:#000000"> Absentee ballots for overseas voters may be requested at any time before an election, and ballots are generally mailed beginning 45 days before an election.
+            </div>
+
+            <div id="Per" class="tabcontent" style="background-color: var(--secondary-opaque-two); border-color:var(--primary-color);">
+                <h3 style="color: var(--primary-color);">Permanent Mail Ballot List</h3>
+                <div style="display:flex; flex-direction: row; width: full; justify-content: center; align-items: center;">
+                <div style="width:50%;"><h4 style="color: var(--primary-color);" class="name4">If you check the permanent mail ballot list box
+                    when you apply for your absentee ballot, you will receive an absentee ballot automatically for every
+                    future election in your community without having to submit an application each time!</h4></div>
+                    <div style="width:50%; height:10vh; display: inline-block;"><img src="AbsenteeBallot.jpeg" style="margin-left: 2em; width:90%; height:auto;"> </div> </div>
+            </div>
+            <div id="Ab2" class="tabcontent" style="background-color: var(--secondary-opaque-two); border-color:var(--primary-color)">
+                <h3 style="color:var(--primary-color)"> Abroad Ballot Requestment</h3>
+                <h4 class="name4" style="color:var(--primary-color)"> Absentee ballots for overseas voters may be
+                    requested at any time before an election, and ballots are generally mailed beginning 45 days before
+                    an election.
+                    <br>
+                    <br>
+                    You will need to provide the following information: 
                     <ul>
                         <li>
-                            <p class = "name4" style="text-align: left; color: #000000;"> Full name
+                            <p class="name4" style="text-align: left; color: var(--primary-color);"> &#8226; Full name
                             </p>
-                            
-                        </li>
-                        <li>
-                            <p class = "name4" style="text-align: left; color: #000000;">Date of birth
-                            </p>
-                        </li>
-                        <li>
-                            <p class = "name4" style="text-align: left; color: #000000;"> Jurisdiction (Michigan city or township and county)
-                            </p>
-                            
-                        </li>
-                        <li>
-                            <p class = "name4" style="text-align: left; color: #000000;">Classification [reason for requesting a Military and Overseas Voter Empowerment (MOVE) ballot]
-                            </p>
-                        </li>
-                        <li>
-                            <p class = "name4" style="text-align: left; color: #000000;"> Registration address and current address
 
-                            </p>  
                         </li>
                         <li>
-                            <p class = "name4" style="text-align: left; color: #000000;"> Driver’s license number or state ID number or the last 4 digits of Social Security number
-                            </p>  
+                            <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Date of birth
+                            </p>
                         </li>
                         <li>
-                            <p class = "name4" style="text-align: left; color: #4c0000;">Deadline: Voters living overseas (or serving in the military) must have their completed absentee ballots postmarked on or before Election Day and received by their local clerk within 6 days after the election to be counted.
+                            <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Jurisdiction
+                                (Michigan city or township and county)
+                            </p>
+
+                        </li>
+                        <li>
+                            <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Classification
+                                [reason for requesting a Military and Overseas Voter Empowerment (MOVE) ballot]
+                            </p>
+                        </li>
+                        <li>
+                            <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Registration
+                                address and current address
+
+                            </p>
+                        </li>
+                        <li>
+                            <p class="name4" style="text-align: left; color: var(--primary-color);"> &bull; Driver’s license
+                                number or state ID number or the last 4 digits of Social Security number
+                            </p>
+                        </li>
+                        <li>
+                            <p class="name4" style="text-align: center; color: var(--primary-opaque-one); font-style:italic"> *Deadline: Voters living overseas
+                                (or serving in the military) must have their completed absentee ballots postmarked on or
+                                before Election Day and received by their local clerk within 6 days after the election
+                                to be counted.
                             </p>
                         </li>
                     </ul>
-                
-          </div>  
-          </div>        
+
+            </div>
+        </div>
     </div>
-        <br> 
-    <!--<div style="background-color: white; margin-top: 2vh; border-top: 0.5em solid #000000">
-        <h2 style = "color:#000000"> Step 2: Vote </h2>
+    <br>
+    <div style="background-color: var(--turkey-color); margin-top: 2vh; border-top: 0.5em solid var(--primary-color)">
+        <h2 style="color:var(--primary-color); text-decoration: underline"> Step 2: Vote </h2>
         <div style="display: flex;" class="more-info">
             <div class="boxes-other"
-                style="background-color: #001930; border-color: #ffcd00; background-image: url(VoteInPersonOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
+                style="background-color: var(--primary-opaque-one); border-color: var(--secondary-color); background-image: url(VoteInPersonOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
                 <input id="ch12" type="checkbox">
-                <div class="content" style="background-color: #000000;">
-                    <label for="ch12" style="color: white;"> X </label>
-                    <p style="color: white;">
+                <div class="content" style="background-color: var(--primary-color);">
+                    <label for="ch12" style="color: var(--turkey-color);"> X </label>
+                    <p style="color: var(--turkey-color);">
                         All registered voters in Michigan may cast their ballot at their assigned polling location on
                         August 6th (for the Primary Election) and November 5th (for the General Election). Polling
                         locations are open from 7 a.m. until 8 p.m. local time on Election Day. Voters in line by 8 p.m.
                         have the right to cast a ballot.
                         <br>
-                    <div style="margin: 0.5em; background-color: #ffcd00;">
-                        <p style="background-color: #ffcd00; color:#000000;">Checklist: </p>
+                    <div style="margin: 0.5em; background-color: var(--secondary-color);">
+                        <p style="background-color: var(--secondary-color); color:var(--primary-color);">Checklist: </p>
                         <ul>
                             <li>
-                                <p style="text-align: left; color: #000000;"> Make sure to go to the correct polling
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; Make sure to go to the
+                                    correct polling
                                     location! You can find your polling location at <a
-                                        href="https://mvic.sos.state.mi.us/Voter/index" class = "link-color" style = "color:gray"> mi.gov/vote </a>.
+                                        href="https://mvic.sos.state.mi.us/Voter/index" class="link-color"
+                                        style="color:gray"> mi.gov/vote </a>.
                                 </p>
                             </li>
                             <li>
-                                <p style="text-align: left; color: #000000;">Triple-check your voter registration; you
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; Triple-check your voter
+                                    registration; you
                                     have until 8 p.m. on Election Day to register at your city or township clerk’s
                                     office (with proof of residency) if needed!
                                 </p>
                             </li>
                             <li>
-                                <p style="text-align: left; color: #000000;"> You do not need a photo ID to vote in
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; You do not need a photo ID to
+                                    vote in
                                     Michigan, but bring a photo ID if you have one. It will make the process go faster.
                                 </p>
                             </li>
                             <li>
-                                <p style="text-align: left; color: #000000;"> Leave the killer campaign clothes and
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; Leave the killer campaign
+                                    clothes and
                                     accessories at home!
                                 </p>
                             </li>
                         </ul>
                     </div>
+                    <p style="font-style:italic; text-decoration: none;"> <a href="For Michigan Election Day Checklist (In Person).pdf" style="color: var(--turkey-color)">Get a printable election day checklist here! </a></p>
                     </p>
                 </div>
                 <label for="ch12">
-                    <h3 class="phone-text" style="color: white; align-self:flex-end;"> Voting In-Person </h3>
+                    <h3 class="phone-text" style="color: var(--turkey-color); align-self:flex-end;"> Voting In-Person
+                    </h3>
                 </label>
             </div>
             <div class="boxes-other"
-                style="background-color: #000000; border-color: #ffcd00; background-image: url(VotingOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
+                style="background-color: var(--primary-color); border-color: var(--secondary-color); background-image: url(VotingOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
                 <input id="ch13" type="checkbox">
-                <div class="content" style="background-color: #000000;">
-                    <label for="ch13" style="color: white;"> X </label>
-                    <p style="color: white;">
+                <div class="content" style="background-color: var(--primary-color);">
+                    <label for="ch13" style="color: var(--turkey-color);"> X </label>
+                    <p style="color: var(--turkey-color);">
                         Early voting works similarly to absentee voting. However, voters cast their ballot in person at
                         an early voting center – just like on election day. Any Michigan registered voter can now cast a
                         ballot in person up to 60 days before election day. The early voting period starts the second
@@ -415,25 +449,28 @@
                         <br>
                         <br>
                         <br>
-                    <div style="margin: 0.5em; background-color: #ffcd00;">
-                        <p style="background-color: #ffcd00; color:#000000;">Checklist: </p>
+                    <div style="margin: 0.5em; background-color: var(--secondary-color);">
+                        <p style="background-color: var(--secondary-color); color:var(--primary-color);">Checklist: </p>
                         <ul>
                             <li>
-                                <p style="text-align: left; color: #000000;"> Be registered to vote! </p>
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; Be registered to vote! </p>
                             </li>
                             <li>
-                                <p style="text-align: left; color: #000000;">Look up your early voting location within
+                                <p style="text-align: left; color: var(--primary-color);">&#9745; Look up your early voting
+                                    location within
                                     60 days of the election!
                                 </p>
                             </li>
                             <li>
-                                <p style="text-align: left; color: #000000;"> Visit your early voting location with
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; Visit your early voting
+                                    location with
                                     photo identification and vote!
                                 </p>
                             </li>
                             <li>
-                                <p style="text-align: left; color: #000000;"> For more information, <a
-                                        href="https://www.michigan.gov/sos/elections/voting/early-in-person-voting" class = "link-color" style = "color:gray">
+                                <p style="text-align: left; color: var(--primary-color);"> For more information, <a
+                                        href="https://www.michigan.gov/sos/elections/voting/early-in-person-voting"
+                                        class="link-color" style="color:gray">
                                         click here! </a></p>
                             </li>
                         </ul>
@@ -441,46 +478,66 @@
                     </p>
                 </div>
                 <label for="ch13">
-                    <h3 class="phone-text" style="color: white; align-self:flex-end;"> Voting Early </h3>
+                    <h3 class="phone-text" style="color: var(--turkey-color); align-self:flex-end;"> Voting Early </h3>
                 </label>
             </div>
             <div class="boxes-other"
-                style="background-color: #000000; border-color: #ffcd00; background-image: url(AbsenteeOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
+                style="background-color: var(--primary-color); border-color: var(--secondary-color); background-image: url(AbsenteeOpaque.png); background-size:cover; background-repeat: no-repeat; display: flex;">
                 <input id="ch14" type="checkbox">
-                <div class="content" style="background-color: #000000;">
-                    <label for="ch14" style="color: white;"> X </label>
-                    <p style="color: white;">
+                <div class="content" style="background-color: var(--primary-color);">
+                    <label for="ch14" style="color: var(--turkey-color);"> X </label>
+                    <p style="color: var(--turkey-color);">
                         All registered Michigan voters can vote from home by absentee ballot starting 40 days before an
                         election. You can request an absentee ballot at any time, but we recommend applying at least 30
                         days before the election to allow ample mailing time. To return your ballot via mail, send the
                         ballot back at least two weeks before Election Day! (Ballot envelopes now come with pre-paid
                         postage, so no need to add a stamp.)
                         <br>
-                    <div style="margin: 0.5em; background-color: #ffcd00;">
-                        <p style="background-color: #ffcd00; color:#000000;">Checklist: </p>
+                    <div style="margin: 0.5em; background-color: var(--secondary-color);">
+                        <p style="background-color: var(--secondary-color); color:var(--primary-color);">Checklist: </p>
                         <ul>
                             <li>
-                                <p style="text-align: left; color: #000000;"> At least 30 days before Election Day, request an absentee ballot <a href = "https://mvic.sos.state.mi.us/AVApplication/Index" class = "link-color" style = "color:gray"> online </a>, <a href = "https://www.michigan.gov/sos/~/link.aspx?_id=08269D6FC8554AE388FED154A126B8B4&_z=z" class = "link-color" style = "color:gray"> by mail </a>, or <a href = "https://mvic.sos.state.mi.us/Voter/Index/#yourclerk" class = "link-color" style = "color:gray"> in person </a> at your city or township clerk’s office.
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; At least 30 days before
+                                    Election Day, request an absentee ballot <a
+                                        href="https://mvic.sos.state.mi.us/AVApplication/Index" class="link-color"
+                                        style="color:gray"> online </a>, <a
+                                        href="https://www.michigan.gov/sos/~/link.aspx?_id=08269D6FC8554AE388FED154A126B8B4&_z=z"
+                                        class="link-color" style="color:gray"> by mail </a>, or <a
+                                        href="https://mvic.sos.state.mi.us/Voter/Index/#yourclerk" class="link-color"
+                                        style="color:gray"> in person </a> at your city or township clerk’s office.
                                 </p>
-                                <li>
-                                    <p style="text-align: left; color: #000000;"> Make sure to mark the box on your application to join the permanent mail ballot list if you wish to receive a ballot automatically before every election without having to submit an application each time!
-                                </p>
-                                </li>
-                            </li>
                             <li>
-                                <p style="text-align: left; color: #000000;">Fill out your absentee ballot. Don’t forget to sign and date the return envelope!
-                                </p>
-                            </li>
-                            <li>
-                                <p style="text-align: left; color: #000000;"> Return your absentee ballot by mail, to a ballot dropbox provided by your city or township clerk or in person to your local clerk’s office. For most voters, your absentee ballot must be received by 8 p.m. on Election Day. However, the ballots of voters serving in the military or living overseas must be postmarked by Election Day and received within six days of the election to be counted.
-                                </p>
-                            </li>
-                            <li>
-                                <p style="text-align: left; color: #000000;"> If returning your ballot by mail, please send it at least two weeks before Election Day.
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; Make sure to mark the box on
+                                    your application to join the permanent mail ballot list if you wish to receive a
+                                    ballot automatically before every election without having to submit an application
+                                    each time!
                                 </p>
                             </li>
+                            </li>
                             <li>
-                                <p style="text-align: left; color: #000000;"> You can also bring your absentee ballot to your early voting site or (if you live anywhere but Detroit) your polling place on Election Day, check in with the poll workers, and insert your ballot directly into the tabulator.
+                                <p style="text-align: left; color: var(--primary-color);">&#9745; Fill out your absentee ballot.
+                                    Don’t forget to sign and date the return envelope!
+                                </p>
+                            </li>
+                            <li>
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; Return your absentee ballot
+                                    by mail, to a ballot dropbox provided by your city or township clerk or in person to
+                                    your local clerk’s office. For most voters, your absentee ballot must be received by
+                                    8 p.m. on Election Day. However, the ballots of voters serving in the military or
+                                    living overseas must be postmarked by Election Day and received within six days of
+                                    the election to be counted.
+                                </p>
+                            </li>
+                            <li>
+                                <p style="text-align: left; color: var(--primary-color);"> &#9745; If returning your ballot by
+                                    mail, please send it at least two weeks before Election Day.
+                                </p>
+                            </li>
+                            <li>
+                                <p style="text-align: center; color: var(--primary-color);"> You can also bring your
+                                    absentee ballot to your early voting site or (if you live anywhere but Detroit) your
+                                    polling place on Election Day, check in with the poll workers, and insert your
+                                    ballot directly into the tabulator.
                                 </p>
                             </li>
                         </ul>
@@ -488,34 +545,41 @@
                     </p>
                 </div>
                 <label for="ch14">
-                    <h3 class="phone-text" style="color: white; align-self:flex-end;"> Absentee </h3>
+                    <h3 class="phone-text" style="color: var(--turkey-color); align-self:flex-end;"> Absentee </h3>
                 </label>
             </div>
-        </div> 
+        </div>
         <br>
-    </div> --> 
-    <div style="border-top: 1em solid #ffcd00 ; background-color: #000000; width: 100%;">
-        <div class="contact-us1"><img src="4MichWhite.png" class="logo"> </div>
-        <div class="contact-us2" style="text-align: left;">
-            <a href = "https://www.instagram.com/formichigan/"><i class="fa-brands fa-instagram fa-2x" style="display: inline; color: white;"></i></a>
-            <h4 style="display: inline; margin-bottom: 0; color: #ffcd00;"> @formichigan
-                <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span> </h4>
-            <a href="https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x"
-                    style="display: inline; color: #ffcd00;"></i></a>
-            <a href="https://www.linkedin.com/company/for-michigan/about/">
-                <h4 style="display: inline; color: #ffcd00;"> @formichigan <span>&nbsp;&nbsp;&nbsp;
-                        |&nbsp;&nbsp;&nbsp;</span> </h4>
-            </a>
-            <i class="fa-brands fa-tiktok fa-2x" style="display: inline; color: #ffcd00;"></i>
-            <h4 style="display: inline; color: #ffcd00;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span>
-            </h4>
-            <a href = "mailto:info@4mich.org"><i class="fa-regular fa-envelope fa-2x" style="display: inline; color: #ffcd00;"></i></a>
-            <h4 style="display: inline; margin-bottom: 0; color: #ffcd00;"> info@4mich.org </h4>
+    </div>
+    <div style="border-top: 1em solid var(--secondary-color); background-color: var(--primary-color); width: 100%;">
+        <div class="main-contact">
+            <div class="contact-us1"><img src="4MichWhite.png" class="logo"> </div>
+            <div class="contact-us2">
+                <a href="https://www.instagram.com/formichigan/"><i class="fa-brands fa-instagram fa-2x"
+                        style="display: inline; color: var(--secondary-color);"></i></a>
+                <h4 style="display: inline; margin-bottom: 0; color: var(--secondary-color);"> @formichigan
+                    <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+                </h4>
+                <a href="https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x"
+                        style="display: inline; color: var(--secondary-color);"></i></a>
+                <a href="https://www.linkedin.com/company/for-michigan/about/">
+                    <h4 style="display: inline; color: var(--secondary-color);"> @formichigan <span>&nbsp;&nbsp;&nbsp;
+                            |&nbsp;&nbsp;&nbsp;</span> </h4>
+                </a>
+                <i class="fa-brands fa-tiktok fa-2x" style="display: inline; color: var(--secondary-color);"></i>
+                <h4 style="display: inline; color: var(--secondary-color);"> @formichigan <span>&nbsp;&nbsp;&nbsp;
+                        |&nbsp;&nbsp;&nbsp;</span>
+                </h4>
+                <a href="mailto:info@4mich.org"><i class="fa-regular fa-envelope fa-2x"
+                        style="display: inline; color: var(--secondary-color);"></i></a>
+                <h4 style="display: inline; margin-bottom: 0; color: var(--secondary-color);"> info@4mich.org </h4>
+            </div>
         </div>
         <br>
         <br>
-        <p style="color: #ffcd00; "> For Michigan is a 501(c)(4) Organization </p>
-        <p style="color: #ffcd00; font-family:Arial, Helvetica, sans-serif"> &copy For Michigan | All Rights Reserved</p>
+        <p style="color: var(--secondary-color); "> For Michigan is a 501(c)(4) Organization </p>
+        <p style="color: var(--secondary-color); font-family:Arial, Helvetica, sans-serif"> &copy For Michigan | All
+            Rights Reserved</p>
     </div>
 </body>
 

@@ -339,6 +339,7 @@ function form() {
     });
 }
 
+
 /*document.getElementById('my-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting the traditional way
     var form = event.target;

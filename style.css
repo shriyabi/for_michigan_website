@@ -195,7 +195,9 @@ p,
 .tab-jc button,
 .tab-kvcc button,
 .tab-kc button,
-.tab-lcc button {
+.tab-lcc button, 
+.tab-alb button, 
+.tab-wcc button{
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -217,7 +219,9 @@ p,
 .tab-jc button,
 .tab-kvcc button,
 .tab-kc button,
-.tab-lcc button {
+.tab-lcc button,
+.tab-alb button, 
+.tab-wcc button {
     font-weight: 500;
 }
 
@@ -398,6 +402,14 @@ ul{
 
 .box-lcc {
     background-color: #42578a;
+}
+
+.box-alb{
+    background-color: #5a4770;
+}
+
+.box-wcc{
+    background-color: #4bb582;
 }
 
 .box-main {
@@ -660,8 +672,25 @@ ul{
     color: #ABBACC;
     background-color: transparent;
 }
-
 .lcc-header-color:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.alb-header-color {
+    color: #FFC845;
+    background-color: transparent;
+}
+.alb-header-color:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.wcc-header-color{
+    color: #97D700; 
+    background-color: transparent;
+}
+.wcc-header-color:hover{
     color: #ffffff;
     background-color: transparent;
 }
@@ -795,7 +824,9 @@ ul{
 .tab-jc button:hover,
 .tab-kvcc button:hover,
 .tab-kc button:hover,
-.tab-lcc button:hover {
+.tab-lcc button:hover,
+.tab-alb button:hover, 
+.tab-wcc button:hover {
     background-color: #ffcd0539;
     color: #000000;
     font-family: "Fira Sans", sans-serif;
@@ -845,6 +876,14 @@ ul{
     background-color: #c7ccd2;
 }
 
+.tab-alb button:hover {
+    background-color: #f4c557;
+}
+
+.tab-wcc button:hover{
+    background-color: #40e54e;
+}
+
 .tab-umich,
 .tab-msu,
 .tab-cmu,
@@ -859,7 +898,9 @@ ul{
 .tab-jc,
 .tab-kvcc,
 .tab-kc,
-.tab-lcc {
+.tab-lcc,
+.tab-alb, 
+.tab-wcc{
     display: inline;
     background-color: transparent;
 }
@@ -877,7 +918,9 @@ ul{
 .tab-jc button,
 .tab-kvcc button,
 .tab-kc button,
-.tab-lcc button {
+.tab-lcc button,
+.tab-alb button, 
+.tab-wcc button{
     display: block;
     color: white;
     width: 100%;
@@ -949,6 +992,17 @@ ul{
     background-color: #012169;
 }
 
+.tab-alb button {
+    border-color: #FFC845;
+    background-color: #4B306A;
+}
+
+.tab-wcc button{
+    border-color: #97D700;
+    background-color: #046A38;
+}
+
+
 .tab-umich button.active,
 .tab-msu button.active,
 .tab-cmu button.active,
@@ -962,7 +1016,9 @@ ul{
 .tab-jc button.active,
 .tab-kvcc button.active,
 .tab-kc button.active,
-.tab-lcc button.active {
+.tab-lcc button.active,
+.tab-alb button.active, 
+.tab-wcc button.active {
     background-color: #004d95;
     color: white;
 }
@@ -1030,6 +1086,16 @@ ul{
 .tab-lcc button.active {
     color: white;
     background-color: #344a7d;
+}
+
+.tab-alb button.active {
+    background-color: #8c64ba; 
+    color: white;
+}
+
+.tab-wcc button.active{
+    color: white; 
+    background-color:#468265;
 }
 
 .tabcontent {
@@ -1311,6 +1377,8 @@ ul{
     .box-kc,
     .box-kvcc,
     .box-lcc,
+    .box-alb,
+    .box-wcc
     .dp-vr, 
     .box-main{
         height: 2em;
@@ -1569,7 +1637,7 @@ ul{
     .tab-wsu,
     .tab-svsu,
     .tab-del,
-    .tab-mm, .tab-jc, .tab-kc, .tab-kvcc, .tab-lcc {
+    .tab-mm, .tab-jc, .tab-kc, .tab-kvcc, .tab-lcc, .tab-alb, .tab-wcc{
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -1588,7 +1656,9 @@ ul{
     .tab-jc button, 
     .tab-kc button, 
     .tab-kvcc button, 
-    .tab-lcc button{
+    .tab-lcc button, 
+    .tab-alb button, 
+    .tab-wcc button{
         border: 0.5em solid #FFCB05;
         font-size: 0.05em;
     }
@@ -1636,6 +1706,12 @@ ul{
     .tab-kvcc button {
         border: 0.5em solid #ABBACC;
     }
+    .tab-alb button{
+        border: 0.5em solid #FFC845;
+    }
+    .tab-wcc button{
+        border: 0.5em solid #97D700;
+    }
 
     .tab-umich button.active,
     .tab-msu button.active,
@@ -1651,7 +1727,9 @@ ul{
     .tab-jc button.active,
     .tab-kc button.active,
     .tab-kvcc button.active,
-    .tab-lcc button.active {
+    .tab-lcc button.active, 
+    .tab-alb button.active, 
+    .tab-wcc button.active {
         border: 0.3em solid white;
     }
 
@@ -1929,6 +2007,7 @@ ul{
         box-shadow: 0 0 5em #0084f7;
     }
 
+
     .college-image {
         margin: auto;
         width: 100px;
@@ -1952,6 +2031,8 @@ ul{
     .box-kc,
     .box-kvcc,
     .box-lcc,
+    .box-alb,
+    .box-wcc,
     .dp-vr,
     .box-main {
         height: 3em;
@@ -1987,7 +2068,7 @@ ul{
     }
     
     .gi-body-img{
-        height: 160vh; 
+        height: 100vh; 
     }
 
     .job-body-img {
@@ -2216,7 +2297,12 @@ ul{
     .tab-wsu,
     .tab-del,
     .tab-mm,
-    .tab-jc, .tab-kc, .tab-kvcc, .tab-lcc {
+    .tab-jc,
+    .tab-kc, 
+    .tab-kvcc, 
+    .tab-lcc, 
+    .tab-alb, 
+    .tab-wcc {
         width: 20%;
     }
 
@@ -2234,7 +2320,9 @@ ul{
     .tab-jc button, 
     .tab-kc button, 
     .tab-kvcc button, 
-    .tab-lcc button {
+    .tab-lcc button, 
+    .tab-alb button, 
+    .tab-wcc button {
         border: 0.2em solid #FFCB05;
         font-size: 1.1em;
     }
@@ -2283,6 +2371,12 @@ ul{
     .tab-kvcc button {
         border: 0.2em solid #ABBACC;
     }
+    .tab-alb button {
+        border: 0.2em solid #FFC845;
+    }
+    .tab-wcc button{
+        border: 0.2em solid #97D700;
+    }
 
     .tab-umich button.active,
     .tab-msu button.active,
@@ -2298,7 +2392,9 @@ ul{
     .tab-jc button.active,
     .tab-kvcc button.active,
     .tab-kc button.active,
-    .tab-lcc button.active {
+    .tab-lcc button.active, 
+    .tab-alb button.active,
+    .tab-wcc button.active{
         border: 0.3em solid white;
     }
 
@@ -2609,6 +2705,8 @@ ul{
     .box-kc,
     .box-kvcc,
     .box-lcc,
+    .box-alb,
+    .box-wcc,
     .dp-vr, 
     .box-main {
         height: 3em;
@@ -2646,7 +2744,7 @@ ul{
     }
 
     .gi-body-img{
-        height: 200vh; 
+        height: 125vh; 
     }
 
     .job-body-img {
@@ -2846,7 +2944,13 @@ ul{
     .tab-wsu,
     .tab-svsu,
     .tab-del,
-    .tab-mm, .tab-jc, .tab-kvcc, .tab-kc, .tab-lcc {
+    .tab-mm, 
+    .tab-jc, 
+    .tab-kvcc, 
+    .tab-kc,
+    .tab-lcc, 
+    .tab-alb, 
+    .tab-wcc {
         width: 20%;
     }
 
@@ -2860,7 +2964,13 @@ ul{
     .tab-svsu button,
     .tab-wsu button,
     .tab-del button,
-    .tab-mm button, .tab-jc button, .tab-kc button, .tab-kvcc button, .tab-lcc button {
+    .tab-mm button, 
+    .tab-jc button, 
+    .tab-kc button, 
+    .tab-kvcc button, 
+    .tab-lcc button, 
+    .tab-alb button, 
+    .tab-wcc button{
         border: 0.3em solid #FFCB05;
         font-size: 1.5em;
     }
@@ -2904,14 +3014,25 @@ ul{
     .tab-jc button {
         border: 0.3em solid #F2A900;
     }
+
     .tab-kc button {
         border: 0.3em solid #EA6820;
     }
+
     .tab-lcc button {
         border: 0.3em solid #ABBACC;
     }
+
     .tab-kvcc button {
         border: 0.3em solid #ABBACC;
+    }
+
+    .tab-alb button {
+        border: 0.3em solid #FFC845;
+    }
+
+    .tab-wcc button{
+        border: 0.3em solid #97D700;
     }
 
     .tab-umich button.active,
@@ -2928,7 +3049,9 @@ ul{
     .tab-jc button.active,
     .tab-kc button.active,
     .tab-kvcc button.active,
-    .tab-lcc button.active {
+    .tab-lcc button.active, 
+    .tab-alb button.active,
+    .tab-wcc button.active {
         border: 0.2em solid white;
     }
 
@@ -3227,7 +3350,10 @@ ul{
     .box-kc,
     .box-kvcc,
     .box-lcc,
-    .box-mm, .dp-vr, 
+    .box-mm, 
+    .box-alb, 
+    .box-wcc,
+    .dp-vr, 
     .box-main{
         height: 3em;
         width: auto;
@@ -3266,7 +3392,7 @@ ul{
     }
 
     .vr-body-img {
-        height: 300vh;
+        height: 100vh;
     }
 
     .wwa-header {
@@ -3434,7 +3560,13 @@ ul{
     .tab-svsu,
     .tab-wsu,
     .tab-del,
-    .tab-mm, .tab-jc, .tab-kc, .tab-kvcc, .tab-lcc {
+    .tab-mm, 
+    .tab-jc, 
+    .tab-kc, 
+    .tab-kvcc, 
+    .tab-lcc, 
+    .tab-alb, 
+    .tab-wcc {
         width: 20%;
     }
 
@@ -3446,7 +3578,14 @@ ul{
     .tab-wmu button,
     .tab-wsu button,
     .tab-svsu button,
-    .tab-wsu button, .tab-mm button, .tab-kc button, .tab-kvcc button, .tab-lcc button, .tab-jc button{
+    .tab-wsu button, 
+    .tab-mm button, 
+    .tab-kc button, 
+    .tab-kvcc button, 
+    .tab-lcc button, 
+    .tab-jc button, 
+    .tab-alb button, 
+    .tab-wcc button{
         border: 0.3em solid #FFCB05;
         font-size: 1em;
     }
@@ -3494,6 +3633,12 @@ ul{
     .tab-kvcc button {
         border: 0.3em solid #ABBACC;
     }
+    .tab-alb button{
+        border: 0.3em solid #FFC845; 
+    }
+    .tab-wcc button{
+        border: 0.3em solid #97D700; 
+    }
 
     .tab-umich button.active,
     .tab-msu button.active,
@@ -3508,7 +3653,9 @@ ul{
     .tab-jc button.active,
     .tab-kc button.active,
     .tab-kvcc button.active,
-    .tab-lcc button.active {
+    .tab-lcc button.active, 
+    .tab-alb button.active,
+    .tab-wcc button.active {
         border: 0.2em solid white;
     }
 

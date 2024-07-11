@@ -195,9 +195,23 @@ p,
 .tab-jc button,
 .tab-kvcc button,
 .tab-kc button,
-.tab-lcc button, 
-.tab-alb button, 
-.tab-wcc button{
+.tab-lcc button,
+.tab-alb button,
+.tab-wcc button,
+.tab-emu button,
+.tab-mccc button,
+.tab-alm button,
+.tab-ket button,
+.tab-mcc button,
+.tab-det button,
+.tab-ou button,
+.tab-occ button,
+.tab-macc button,
+.tab-ltu button,
+.tab-fsu button,
+.tab-gvsu button,
+.tab-grcc button,
+.tab-aq button {
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -220,8 +234,22 @@ p,
 .tab-kvcc button,
 .tab-kc button,
 .tab-lcc button,
-.tab-alb button, 
-.tab-wcc button {
+.tab-alb button,
+.tab-wcc button,
+.tab-emu button,
+.tab-mccc button,
+.tab-alm button,
+.tab-ket button,
+.tab-mcc button,
+.tab-det button,
+.tab-ou button,
+.tab-occ button,
+.tab-macc button,
+.tab-ltu button,
+.tab-fsu button,
+.tab-gvsu button,
+.tab-grcc button,
+.tab-aq button {
     font-weight: 500;
 }
 
@@ -307,9 +335,9 @@ img {
     background-color: none;
 }
 
-ul{
+ul {
     list-style-type: none;
-    padding: 0; 
+    padding: 0;
 }
 
 /*DROPDOWN*/
@@ -318,7 +346,8 @@ ul{
     display: inline-block;
 }
 
-.dropdown-content, .nested-dropdown-content {
+.dropdown-content,
+.nested-dropdown-content {
     display: none;
     position: relative;
     box-shadow: 0 8px 1em rgba(0, 0, 0, 0.1);
@@ -404,13 +433,56 @@ ul{
     background-color: #42578a;
 }
 
-.box-alb{
-    background-color: #5a4770;
+.box-alb {
+    background-color: #8869ab;
 }
 
-.box-wcc{
+.box-wcc {
     background-color: #4bb582;
 }
+
+.box-emu{
+    background-color: #23e085;
+}
+    .box-mccc{
+        background-color: rgb(181, 106, 106);
+    }
+    .box-alm{
+        background-color: #9d4551;
+    }
+    .box-ket{
+        background-color: #323793;
+    }
+    .box-macc{
+        background-color: #3a87b7;
+    }
+    .box-det{
+        background-color: #2862b8;
+    }
+    .box-ou{
+        background-color: #e1b374;
+    }
+    .box-occ{
+        background-color: #2f9d68;
+    }
+    .box-mcc{
+        background-color: #e1cd74;
+    }
+    .box-ltu{
+        background-color: #74a0e1;
+    }
+    .box-fsu{
+        background-color: #e83d5f;
+    }
+    .box-gvsu{
+        background-color: #2e66df;
+    }
+    .box-grcc{
+        background-color: #247df0;
+    }
+    .box-aq{
+        background-color: #ce434e;
+    }
 
 .box-main {
     background-color: #A98F92;
@@ -570,12 +642,12 @@ ul{
     background-color: transparent;
 }
 
-.gsv-header-color {
+.gvsu-header-color {
     color: #FFFFFF;
     background-color: transparent;
 }
 
-.gsv-header-color:hover {
+.gvsu-header-color:hover {
     color: #000000;
     background-color: transparent;
 }
@@ -654,6 +726,7 @@ ul{
     color: #EA6820;
     background-color: transparent;
 }
+
 .kc-header-color:hover {
     color: #ffffff;
     background-color: transparent;
@@ -663,6 +736,7 @@ ul{
     color: #ABBACC;
     background-color: transparent;
 }
+
 .kvcc-header-color:hover {
     color: #ffffff;
     background-color: transparent;
@@ -672,6 +746,7 @@ ul{
     color: #ABBACC;
     background-color: transparent;
 }
+
 .lcc-header-color:hover {
     color: #ffffff;
     background-color: transparent;
@@ -681,17 +756,116 @@ ul{
     color: #FFC845;
     background-color: transparent;
 }
+
 .alb-header-color:hover {
     color: #ffffff;
     background-color: transparent;
 }
 
-.wcc-header-color{
-    color: #97D700; 
+.wcc-header-color {
+    color: #97D700;
     background-color: transparent;
 }
-.wcc-header-color:hover{
+
+.wcc-header-color:hover {
     color: #ffffff;
+    background-color: transparent;
+}
+
+.emu-header-color {
+    color: #000000;
+    background-color: transparent;
+}
+.emu-header-color:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+.mccc-header-color {
+    color: #000000;
+    background-color: transparent;
+}
+.mccc-header-color:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.alm-header-color {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.alm-header-color:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.ket-header-color {
+    color: #ffe100;
+    background-color: transparent;
+}
+.ket-header-color:hover {
+    color: #e8e8e8;
+    background-color: transparent;
+}
+.det-header-color {
+    color: #ce434e;
+    background-color: transparent;
+}
+.det-header-color:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.occ-header-color {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.occ-header-color:hover {
+    color: #000000;
+    background-color: transparent;
+}
+.ou-header-color {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.ou-header-color:hover {
+    color: #000000;
+    background-color: transparent;
+}
+.ltu-header-color {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.ltu-header-color:hover {
+    color: #b9b9b9;
+    background-color: transparent;
+}
+.grcc-header-color {
+    color: #f7d177;
+    background-color: transparent;
+}
+.grcc-header-color:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.aq-header-color {
+    color: #9B9E72;
+    background-color: transparent;
+}
+.aq-header-color:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.mcc-header-color {
+    color: #fad900;
+    background-color: transparent;
+}
+.mcc-header-color:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.fsu-header-color {
+    color: #fad000;
+    background-color: transparent;
+}
+.fsu-header-color:hover {
+    color: #e8e8e8;
     background-color: transparent;
 }
 
@@ -825,8 +999,22 @@ ul{
 .tab-kvcc button:hover,
 .tab-kc button:hover,
 .tab-lcc button:hover,
-.tab-alb button:hover, 
-.tab-wcc button:hover {
+.tab-alb button:hover,
+.tab-wcc button:hover,
+.tab-emu button:hover,
+.tab-mccc button:hover,
+.tab-alm button:hover,
+.tab-ket button:hover,
+.tab-mcc button:hover,
+.tab-det button:hover,
+.tab-ou button:hover,
+.tab-occ button:hover,
+.tab-macc button:hover,
+.tab-ltu button:hover,
+.tab-fsu button:hover,
+.tab-gvsu button:hover,
+.tab-grcc button:hover,
+.tab-aq button:hover {
     background-color: #ffcd0539;
     color: #000000;
     font-family: "Fira Sans", sans-serif;
@@ -877,11 +1065,49 @@ ul{
 }
 
 .tab-alb button:hover {
-    background-color: #f4c557;
+    background-color: #8869ab;
 }
 
-.tab-wcc button:hover{
-    background-color: #40e54e;
+.tab-wcc button:hover {
+    background-color: #9dffa5;
+}
+
+.tab-emu button:hover {
+    background-color: #7effc1;
+}
+.tab-det button:hover {
+    background-color: #2879f1;
+}
+.tab-occ button:hover {
+    background-color: #05d36f;
+}
+.tab-ou button:hover {
+    background-color: #f9d097;
+}
+.tab-ltu button:hover {
+    background-color: #90c4ff;
+}
+.tab-fsu button:hover {
+    background-color: #ff6181;
+}
+
+.tab-gvsu button:hover {
+    background-color: #6896fb;
+}
+.tab-grcc button:hover {
+    background-color: #87bbff;
+}
+.tab-aq button:hover {
+    background-color: #ff7b86;
+}
+.tab-mccc button:hover {
+    background-color: #f2768a;
+}
+.tab-ket button:hover {
+    background-color: #6b7fd6;
+}
+.tab-mcc button:hover {
+    background-color: #c9c9c9;
 }
 
 .tab-umich,
@@ -899,8 +1125,22 @@ ul{
 .tab-kvcc,
 .tab-kc,
 .tab-lcc,
-.tab-alb, 
-.tab-wcc{
+.tab-alb,
+.tab-wcc,
+.tab-emu,
+.tab-mccc,
+.tab-alm,
+.tab-ket,
+.tab-mcc,
+.tab-det,
+.tab-ou,
+.tab-occ,
+.tab-macc,
+.tab-ltu,
+.tab-fsu,
+.tab-gvsu,
+.tab-grcc,
+.tab-aq {
     display: inline;
     background-color: transparent;
 }
@@ -919,8 +1159,22 @@ ul{
 .tab-kvcc button,
 .tab-kc button,
 .tab-lcc button,
-.tab-alb button, 
-.tab-wcc button{
+.tab-alb button,
+.tab-wcc button,
+.tab-emu button,
+.tab-mccc button,
+.tab-alm button,
+.tab-ket button,
+.tab-mcc button,
+.tab-det button,
+.tab-ou button,
+.tab-occ button,
+.tab-macc button,
+.tab-ltu button,
+.tab-fsu button,
+.tab-gvsu button,
+.tab-grcc button,
+.tab-aq button {
     display: block;
     color: white;
     width: 100%;
@@ -997,10 +1251,75 @@ ul{
     background-color: #4B306A;
 }
 
-.tab-wcc button{
+.tab-wcc button {
     border-color: #97D700;
     background-color: #046A38;
 }
+
+.tab-emu button {
+    border-color: #000000;
+    background-color: #046A38;
+}
+.tab-det button {
+    border-color: #A6093D;
+    background-color: #002D72;
+}
+.tab-occ button {
+    border-color: #7ac695;
+    background-color: #046a38;
+}
+.tab-ltu button {
+    border-color: #a4a4a4;
+    background-color: #3990fa;
+}
+.tab-ou button {
+    border-color: #000000;
+    background-color: #BC945B;
+}
+.tab-fsu button {
+    border-color: #FFD043;
+    background-color: #BA0C2F;
+}
+.tab-gvsu button {
+    border-color: #000000;
+    background-color: #0032A0;
+}
+.tab-grcc button {
+    border-color: #f7d117;
+    background-color: #003882;
+}
+.tab-aq button {
+    border-color: #9B9E72;
+    background-color: #7C2128;
+}
+.tab-mccc button {
+    border-color: #525252;
+    background-color: #a32136;
+}
+.tab-ket button {
+    border-color: #f9d400;
+    background-color: #0f2595;
+}
+.tab-mcc button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color:white; 
+}
+
+/*.tab-emu button, 
+.tab-mccc button, 
+.tab-alm button, 
+.tab-ket button, 
+.tab-mcc button, 
+.tab-det button,
+.tab-ou button, 
+.tab-occ button, 
+.tab-macc button, 
+.tab-ltu button, 
+.tab-fsu button, 
+.tab-gvsu button, 
+.tab-grcc button, 
+.tab-aq button */
 
 
 .tab-umich button.active,
@@ -1017,8 +1336,22 @@ ul{
 .tab-kvcc button.active,
 .tab-kc button.active,
 .tab-lcc button.active,
-.tab-alb button.active, 
-.tab-wcc button.active {
+.tab-alb button.active,
+.tab-wcc button.active,
+.tab-emu button.active,
+.tab-mccc button.active,
+.tab-alm button.active,
+.tab-ket button.active,
+.tab-mcc button.active,
+.tab-det button.active,
+.tab-ou button.active,
+.tab-occ button.active,
+.tab-macc button.active,
+.tab-ltu button.active,
+.tab-fsu button.active,
+.tab-gvsu button.active,
+.tab-grcc button.active,
+.tab-aq button.active {
     background-color: #004d95;
     color: white;
 }
@@ -1089,14 +1422,71 @@ ul{
 }
 
 .tab-alb button.active {
-    background-color: #8c64ba; 
+    background-color: #8c64ba;
     color: white;
 }
 
-.tab-wcc button.active{
-    color: white; 
-    background-color:#468265;
+.tab-wcc button.active {
+    color: white;
+    background-color: #468265;
 }
+
+.tab-emu button.active{
+    color:black; 
+    background-color: #6cad97;
+}
+    .tab-mccc button.active{
+        color: white;
+    background-color: rgb(181, 106, 106);
+    }
+    .tab-alm button.active{
+        color: white;
+        background-color: #973b61;
+    }
+    .tab-ket button.active{
+        color: white;
+        background-color: #323793;
+    }
+    .tab-mcc button.active{
+        color: white;
+        background-color: #e1cd74;
+    }
+    .tab-det button.active{
+        color: white;
+        background-color: #2862b8;
+    }
+    .tab-ou button.active{
+        color: white;
+        background-color: #e1b374;
+    }
+    .tab-occ button.active{
+        color: white;
+        background-color: #2f9d68;
+    }
+    .tab-macc button.active{
+        color: white;
+        background-color: rgb(181, 106, 106);
+    }
+    .tab-ltu button.active{
+        color: white;
+        background-color: #74a0e1;
+    }
+    .tab-fsu button.active{
+        color: white;
+        background-color: #e83d5f;
+    }
+    .tab-gvsu button.active{
+        color: white;
+        background-color: #2e66df;
+    }
+    .tab-grcc button.active{
+        color: white;
+        background-color: #247df0;
+    }
+    .tab-aq button.active{
+        color: white;
+        background-color: #ce434e;
+    }
 
 .tabcontent {
     justify-content: center;
@@ -1117,8 +1507,10 @@ ul{
     margin-bottom: 5vh;
 }
 
-.event-logo{
-    width: 5em; height: auto; margin-bottom: 0;
+.event-logo {
+    width: 5em;
+    height: auto;
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 737px) {
@@ -1210,7 +1602,6 @@ ul{
         height: auto;
         width: 94vw;
         border-width: 0.2em;
-        padding-bottom: 1em;
     }
 
     /*.college-div {
@@ -1243,7 +1634,7 @@ ul{
     .events {
         background-color: #DDA8A1;
         color: black;
-        padding:0.5rem; 
+        padding: 0.5rem;
         border-radius: 0em;
         background-image: url(PrideBackgroundOpaque.png);
         background-size: cover;
@@ -1256,16 +1647,17 @@ ul{
         margin: 2em;
         object-fit: contain;
         border-radius: 1em;*/
-        height:90%;
+        height: 90%;
     }
-    .pride{
+
+    .pride {
         position: relative;
         width: 30vw;
         height: 20vh;
         border-radius: 0.5em;
-        margin: 0.8em; 
-        padding: 0.3em; 
-        border-width: 1em; 
+        margin: 0.8em;
+        padding: 0.3em;
+        border-width: 1em;
         background: linear-gradient(to right, rgba(255, 0, 0, 1.0), rgba(255, 166, 0, 1.0), rgba(255, 255, 0, 1.0), rgba(0, 128, 0, 1.0), rgba(0, 0, 255, 1.0), rgba(128, 0, 128, 1.0));
     }
 
@@ -1378,9 +1770,22 @@ ul{
     .box-kvcc,
     .box-lcc,
     .box-alb,
-    .box-wcc
-    .dp-vr, 
-    .box-main{
+    .box-emu,
+    .box-mccc,
+    .box-alm,
+    .box-ket,
+    .box-mcc,
+    .box-det,
+    .box-ou,
+    .box-occ,
+    .box-macc,
+    .box-ltu,
+    .box-fsu,
+    .box-gvsu,
+    .box-grcc,
+    .box-aq,
+    .box-wcc, .dp-vr,
+    .box-main {
         height: 2em;
         width: auto;
         display: flex;
@@ -1388,9 +1793,9 @@ ul{
         justify-content: center;
     }
 
-    .box-main{
-        height: 0.5em; 
-        padding: 0.3em; 
+    .box-main {
+        height: 0.5em;
+        padding: 0.3em;
     }
 
     .dropdown {
@@ -1414,8 +1819,8 @@ ul{
         height: 45vh;
     }
 
-    .gi-body-img{
-        height: 200vh; 
+    .gi-body-img {
+        height: 200vh;
     }
 
     .job-body-img {
@@ -1494,9 +1899,10 @@ ul{
         margin-bottom: 1em;
     }
 
-    .sm{
+    .sm {
         width: 100vw;
     }
+
     .boxes-event {
         width: 50vw;
         justify-content: center;
@@ -1637,7 +2043,27 @@ ul{
     .tab-wsu,
     .tab-svsu,
     .tab-del,
-    .tab-mm, .tab-jc, .tab-kc, .tab-kvcc, .tab-lcc, .tab-alb, .tab-wcc{
+    .tab-mm,
+    .tab-jc,
+    .tab-kc,
+    .tab-kvcc,
+    .tab-lcc,
+    .tab-alb,
+    .tab-wcc,
+    .tab-emu,
+    .tab-mccc,
+    .tab-alm,
+    .tab-ket,
+    .tab-mcc,
+    .tab-det,
+    .tab-ou,
+    .tab-occ,
+    .tab-macc,
+    .tab-ltu,
+    .tab-fsu,
+    .tab-gvsu,
+    .tab-grcc,
+    .tab-aq {
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -1652,13 +2078,27 @@ ul{
     .tab-wsu button,
     .tab-svsu button,
     .tab-del button,
-    .tab-mm button, 
-    .tab-jc button, 
-    .tab-kc button, 
-    .tab-kvcc button, 
-    .tab-lcc button, 
-    .tab-alb button, 
-    .tab-wcc button{
+    .tab-mm button,
+    .tab-jc button,
+    .tab-kc button,
+    .tab-kvcc button,
+    .tab-lcc button,
+    .tab-alb button,
+    .tab-wcc button,
+    .tab-emu button,
+    .tab-mccc button,
+    .tab-alm button,
+    .tab-ket button,
+    .tab-mcc button,
+    .tab-det button,
+    .tab-ou button,
+    .tab-occ button,
+    .tab-macc button,
+    .tab-ltu button,
+    .tab-fsu button,
+    .tab-gvsu button,
+    .tab-grcc button,
+    .tab-aq button {
         border: 0.5em solid #FFCB05;
         font-size: 0.05em;
     }
@@ -1694,22 +2134,28 @@ ul{
     .tab-mm button {
         border: 0.5em solid #00aeef;
     }
+
     .tab-jc button {
         border: 0.5em solid #F2A900;
     }
+
     .tab-kc button {
         border: 0.5em solid #EA6820;
     }
+
     .tab-lcc button {
         border: 0.5em solid #ABBACC;
     }
+
     .tab-kvcc button {
         border: 0.5em solid #ABBACC;
     }
-    .tab-alb button{
+
+    .tab-alb button {
         border: 0.5em solid #FFC845;
     }
-    .tab-wcc button{
+
+    .tab-wcc button {
         border: 0.5em solid #97D700;
     }
 
@@ -1727,9 +2173,23 @@ ul{
     .tab-jc button.active,
     .tab-kc button.active,
     .tab-kvcc button.active,
-    .tab-lcc button.active, 
-    .tab-alb button.active, 
-    .tab-wcc button.active {
+    .tab-lcc button.active,
+    .tab-alb button.active,
+    .tab-wcc button.active,
+    .tab-emu button.active,
+    .tab-mccc button.active,
+    .tab-alm button.active,
+    .tab-ket button.active,
+    .tab-mcc button.active,
+    .tab-det button.active,
+    .tab-ou button.active,
+    .tab-occ button.active,
+    .tab-macc button.active,
+    .tab-ltu button.active,
+    .tab-fsu button.active,
+    .tab-gvsu button.active,
+    .tab-grcc button.active,
+    .tab-aq button.active {
         border: 0.3em solid white;
     }
 
@@ -1760,35 +2220,51 @@ ul{
     }
 
     .south {
-        height: 5%;
-        width: 22%;
+        height: 7%;
+        width: 20%;
+        border: 0.2em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 80%;
+        left: 65%;
+        /*background-color: #004d9569;*/
+    }
+
+    .east {
+        height: 7%;
+        width: 20%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
         top: 75%;
-        left: 70%;
-    }
-    .west{
-        height: 7%; 
-        width:15%; 
-        border: 0.2em solid none; 
-        position: absolute; 
-        z-index: 2; 
-        top: 77%; 
-        left: 52%;
-    }
-    .central{
-       height: 12%; 
-       width: 20%; 
-       border: 0.2em solid none; 
-       position: absolute; 
-       z-index: 2; 
-       top: 63%; 
-       left: 60%;
+        left: 82%;
+        /*background-color: #95000069;*/
     }
 
-    .main-contact{
-        display: flex; 
+    .west {
+        height: 9%;
+        width: 20%;
+        border: 0.2em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 77%;
+        left: 45%;
+        /*background-color: #95920069;*/
+    }
+
+    .central {
+        height: 14%;
+        width: 24%;
+        border: 0.2em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 64%;
+        left: 58%;
+        /*background-color: #14950069;*/
+    }
+
+    .main-contact {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1887,7 +2363,6 @@ ul{
     .home-college-box {
         height: auto;
         width: 80vw;
-        padding-bottom: 3em;
     }
 
     .colleges {
@@ -1898,10 +2373,11 @@ ul{
         margin: 2em;
         object-fit: contain;
     }
+
     .events {
         background-color: #DDA8A1;
         color: black;
-        padding:2rem; 
+        padding: 2rem;
         border-radius: 0em;
         background-image: url(PrideBackgroundOpaque.png);
         background-size: cover;
@@ -1914,16 +2390,17 @@ ul{
         margin: 2em;
         object-fit: contain;
         border-radius: 1em;*/
-        height: 70%; 
+        height: 70%;
     }
-    .pride{
+
+    .pride {
         position: relative;
-        width: 20vw; 
+        width: 20vw;
         height: 15vh;
         border-radius: 0.5em;
-        margin: 1em; 
-        padding: 0.3em; 
-        border-width: 1em; 
+        margin: 1em;
+        padding: 0.3em;
+        border-width: 1em;
         background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 166, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
     }
 
@@ -2034,6 +2511,20 @@ ul{
     .box-alb,
     .box-wcc,
     .dp-vr,
+    .box-emu,
+    .box-mccc,
+    .box-alm,
+    .box-ket,
+    .box-mcc,
+    .box-det,
+    .box-ou,
+    .box-occ,
+    .box-macc,
+    .box-ltu,
+    .box-fsu,
+    .box-gvsu,
+    .box-grcc,
+    .box-aq,
     .box-main {
         height: 3em;
         width: auto;
@@ -2041,9 +2532,10 @@ ul{
         align-items: center;
         justify-content: center;
     }
-    .box-main{
-        height: 1.5em; 
-        padding: 0.3em; 
+
+    .box-main {
+        height: 1.5em;
+        padding: 0.3em;
     }
 
     .dropdown {
@@ -2066,9 +2558,9 @@ ul{
     .wwa-body-img {
         height: 100vh;
     }
-    
-    .gi-body-img{
-        height: 100vh; 
+
+    .gi-body-img {
+        height: 100vh;
     }
 
     .job-body-img {
@@ -2256,12 +2748,13 @@ ul{
         opacity: 0.5;
     }
 
-    .main-contact{
-        display: flex; 
+    .main-contact {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .contact-us1 {
         display: inline-block;
         vertical-align: middle;
@@ -2298,11 +2791,25 @@ ul{
     .tab-del,
     .tab-mm,
     .tab-jc,
-    .tab-kc, 
-    .tab-kvcc, 
-    .tab-lcc, 
-    .tab-alb, 
-    .tab-wcc {
+    .tab-kc,
+    .tab-kvcc,
+    .tab-lcc,
+    .tab-alb,
+    .tab-wcc,
+    .tab-emu,
+    .tab-mccc,
+    .tab-alm,
+    .tab-ket,
+    .tab-mcc,
+    .tab-det,
+    .tab-ou,
+    .tab-occ,
+    .tab-macc,
+    .tab-ltu,
+    .tab-fsu,
+    .tab-gvsu,
+    .tab-grcc,
+    .tab-aq {
         width: 20%;
     }
 
@@ -2316,13 +2823,27 @@ ul{
     .tab-svsu button,
     .tab-wsu button,
     .tab-del button,
-    .tab-mm button, 
-    .tab-jc button, 
-    .tab-kc button, 
-    .tab-kvcc button, 
-    .tab-lcc button, 
-    .tab-alb button, 
-    .tab-wcc button {
+    .tab-mm button,
+    .tab-jc button,
+    .tab-kc button,
+    .tab-kvcc button,
+    .tab-lcc button,
+    .tab-alb button,
+    .tab-wcc button,
+    .tab-emu button,
+    .tab-mccc button,
+    .tab-alm button,
+    .tab-ket button,
+    .tab-mcc button,
+    .tab-det button,
+    .tab-ou button,
+    .tab-occ button,
+    .tab-macc button,
+    .tab-ltu button,
+    .tab-fsu button,
+    .tab-gvsu button,
+    .tab-grcc button,
+    .tab-aq button {
         border: 0.2em solid #FFCB05;
         font-size: 1.1em;
     }
@@ -2362,20 +2883,62 @@ ul{
     .tab-jc button {
         border: 0.2em solid #F2A900;
     }
+
     .tab-kc button {
         border: 0.2em solid #EA6820;
     }
+
     .tab-lcc button {
         border: 0.2em solid #ABBACC;
     }
+
     .tab-kvcc button {
         border: 0.2em solid #ABBACC;
     }
+
     .tab-alb button {
         border: 0.2em solid #FFC845;
     }
-    .tab-wcc button{
+
+    .tab-wcc button {
         border: 0.2em solid #97D700;
+    }
+
+    .tab-mcc button {
+        border: 0.2em solid #ffee00;
+    }
+    .tab-ket button {
+        border: 0.2em solid #fbd502;
+    }
+    .tab-mccc button {
+        border: 0.2em solid #525252;
+    }
+    .tab-aq button {
+        border: 0.2em solid #9B9E72;
+    }
+    .tab-grcc button {
+        border: 0.2em solid #f7d117;
+    }
+    .tab-gvsu button {
+        border: 0.2em solid #000000;
+    }
+    .tab-fsu button {
+        border: 0.2em solid #FFD043;
+    }
+    .tab-ltu button {
+        border: 0.2em solid #7d7d7d;
+    }
+    .tab-ou button {
+        border: 0.2em solid #000000;
+    }
+    .tab-occ button {
+        border: 0.2em solid #000000;
+    }
+    .tab-det button {
+        border: 0.2em solid #A6093D;
+    }
+    .tab-emu button {
+        border: 0.2em solid #000000;
     }
 
     .tab-umich button.active,
@@ -2392,9 +2955,23 @@ ul{
     .tab-jc button.active,
     .tab-kvcc button.active,
     .tab-kc button.active,
-    .tab-lcc button.active, 
+    .tab-lcc button.active,
     .tab-alb button.active,
-    .tab-wcc button.active{
+    .tab-wcc button.active,
+    .tab-emu button.active,
+    .tab-mccc button.active,
+    .tab-alm button.active,
+    .tab-ket button.active,
+    .tab-mcc button.active,
+    .tab-det button.active,
+    .tab-ou button.active,
+    .tab-occ button.active,
+    .tab-macc button.active,
+    .tab-ltu button.active,
+    .tab-fsu button.active,
+    .tab-gvsu button.active,
+    .tab-grcc button.active,
+    .tab-aq button.active {
         border: 0.3em solid white;
     }
 
@@ -2427,31 +3004,47 @@ ul{
     }
 
     .south {
-        height: 5%;
+        height: 8%;
         width: 20%;
-        border: 0.5em solid none; 
+        border: 0.5em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 78%;
+        left: 65%;
+        background-color: #004d9569;
+    }
+
+    .east {
+        height: 10%;
+        width: 20%;
+        border: 0.2em solid none;
         position: absolute;
         z-index: 2;
         top: 72%;
-        left: 70%;
+        left: 82%;
+        background-color: #95000069;
     }
-    .west{
-        height: 7%; 
-        width:15%; 
-        border: 0.5em solid none; 
-        position: absolute; 
-        z-index: 2; 
-        top: 75%; 
-        left: 50%;
+
+    .west {
+        height: 10%;
+        width: 20%;
+        border: 0.5em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 74%;
+        left: 45%;
+        background-color: #95920069;
     }
-    .central{
-       height: 12%; 
-       width:20%; 
-       border: 0.5em solid none; 
-       position: absolute; 
-       z-index: 2; 
-       top: 60%; 
-       left: 60%;
+
+    .central {
+        height: 13%;
+        width: 22%;
+        border: 0.5em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 64%;
+        left: 60%;
+        background-color: #14950069;
     }
 }
 
@@ -2542,6 +3135,7 @@ ul{
         border-width: 1em;
         object-fit: contain;
     }
+
     /*.events {
         width: 20vw;
         height: 10vh;
@@ -2707,7 +3301,21 @@ ul{
     .box-lcc,
     .box-alb,
     .box-wcc,
-    .dp-vr, 
+    .box-emu,
+    .box-mccc,
+    .box-alm,
+    .box-ket,
+    .box-mcc,
+    .box-det,
+    .box-ou,
+    .box-occ,
+    .box-macc,
+    .box-ltu,
+    .box-fsu,
+    .box-gvsu,
+    .box-grcc,
+    .box-aq,
+    .dp-vr,
     .box-main {
         height: 3em;
         width: auto;
@@ -2716,9 +3324,9 @@ ul{
         justify-content: center;
     }
 
-    .box-main{
-        height: 1.5em; 
-        padding: 0.3em; 
+    .box-main {
+        height: 1.5em;
+        padding: 0.3em;
     }
 
     .dropdown {
@@ -2743,8 +3351,8 @@ ul{
         border-bottom-width: 0.7em;
     }
 
-    .gi-body-img{
-        height: 125vh; 
+    .gi-body-img {
+        height: 125vh;
     }
 
     .job-body-img {
@@ -2843,8 +3451,8 @@ ul{
         margin-top: 95%;
     }
 
-    .sm{
-        width:60vw;
+    .sm {
+        width: 60vw;
     }
 
     /*.vote-img{
@@ -2944,13 +3552,27 @@ ul{
     .tab-wsu,
     .tab-svsu,
     .tab-del,
-    .tab-mm, 
-    .tab-jc, 
-    .tab-kvcc, 
+    .tab-mm,
+    .tab-jc,
+    .tab-kvcc,
     .tab-kc,
-    .tab-lcc, 
-    .tab-alb, 
-    .tab-wcc {
+    .tab-lcc,
+    .tab-alb,
+    .tab-wcc,
+    .tab-emu,
+    .tab-mccc,
+    .tab-alm,
+    .tab-ket,
+    .tab-mcc,
+    .tab-det,
+    .tab-ou,
+    .tab-occ,
+    .tab-macc,
+    .tab-ltu,
+    .tab-fsu,
+    .tab-gvsu,
+    .tab-grcc,
+    .tab-aq {
         width: 20%;
     }
 
@@ -2964,13 +3586,27 @@ ul{
     .tab-svsu button,
     .tab-wsu button,
     .tab-del button,
-    .tab-mm button, 
-    .tab-jc button, 
-    .tab-kc button, 
-    .tab-kvcc button, 
-    .tab-lcc button, 
-    .tab-alb button, 
-    .tab-wcc button{
+    .tab-mm button,
+    .tab-jc button,
+    .tab-kc button,
+    .tab-kvcc button,
+    .tab-lcc button,
+    .tab-alb button,
+    .tab-wcc button,
+    .tab-emu button,
+    .tab-mccc button,
+    .tab-alm button,
+    .tab-ket button,
+    .tab-mcc button,
+    .tab-det button,
+    .tab-ou button,
+    .tab-occ button,
+    .tab-macc button,
+    .tab-ltu button,
+    .tab-fsu button,
+    .tab-gvsu button,
+    .tab-grcc button,
+    .tab-aq button {
         border: 0.3em solid #FFCB05;
         font-size: 1.5em;
     }
@@ -3031,8 +3667,45 @@ ul{
         border: 0.3em solid #FFC845;
     }
 
-    .tab-wcc button{
+    .tab-wcc button {
         border: 0.3em solid #97D700;
+    }
+
+    .tab-mcc button {
+        border: 0.3em solid #ffee00;
+    }
+    .tab-ket button {
+        border: 0.3em solid #fbd502;
+    }
+    .tab-mccc button {
+        border: 0.3em solid #525252;
+    }
+    .tab-aq button {
+        border: 0.3em solid #9B9E72;
+    }
+    .tab-grcc button {
+        border: 0.3em solid #f7d117;
+    }
+    .tab-gvsu button {
+        border: 0.3em solid #000000;
+    }
+    .tab-fsu button {
+        border: 0.3em solid #FFD043;
+    }
+    .tab-ltu button {
+        border: 0.3em solid #7d7d7d;
+    }
+    .tab-ou button {
+        border: 0.3em solid #000000;
+    }
+    .tab-occ button {
+        border: 0.3em solid #000000;
+    }
+    .tab-det button {
+        border: 0.3em solid #A6093D;
+    }
+    .tab-emu button {
+        border: 0.3em solid #000000;
     }
 
     .tab-umich button.active,
@@ -3049,9 +3722,23 @@ ul{
     .tab-jc button.active,
     .tab-kc button.active,
     .tab-kvcc button.active,
-    .tab-lcc button.active, 
+    .tab-lcc button.active,
     .tab-alb button.active,
-    .tab-wcc button.active {
+    .tab-wcc button.active,
+    .tab-emu button.active,
+    .tab-mccc button.active,
+    .tab-alm button.active,
+    .tab-ket button.active,
+    .tab-mcc button.active,
+    .tab-det button.active,
+    .tab-ou button.active,
+    .tab-occ button.active,
+    .tab-macc button.active,
+    .tab-ltu button.active,
+    .tab-fsu button.active,
+    .tab-gvsu button.active,
+    .tab-grcc button.active,
+    .tab-aq button.active {
         border: 0.2em solid white;
     }
 
@@ -3094,7 +3781,7 @@ ul{
     .events {
         background-color: #DDA8A1;
         color: black;
-        padding:2rem; 
+        padding: 2rem;
         border-radius: 0em;
         background-image: url(PrideBackgroundOpaque.png);
         background-size: cover;
@@ -3102,53 +3789,72 @@ ul{
         background-position: center;
         height: 75%;
     }
-    .pride{
+
+    .pride {
         position: relative;
-        width: 15vw; 
+        width: 15vw;
         height: 25vh;
         border-radius: 0.5em;
-        margin: 2em; 
-        padding: 0.6em; 
-        border-width: 1em; 
+        margin: 2em;
+        padding: 0.6em;
+        border-width: 1em;
         background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 166, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
     }
-    .pride:hover{
-        margin:1em;
+
+    .pride:hover {
+        margin: 1em;
         width: 16vw;
         transition: all 0.2s ease-in-out;
     }
-    .event-logo:hover{
-        animation: heartBeat; 
+
+    .event-logo:hover {
+        animation: heartBeat;
         animation-duration: 3s;
         animation-iteration-count: infinite;
     }
 
     .south {
-        height: 5%;
-        width: 24%;
-        border: 0.5em solid none; 
+        height: 7%;
+        width: 20%;
+        border: 0.5em solid none;
         position: absolute;
         z-index: 2;
-        top: 82%;
-        left: 70%;
+        top: 75%;
+        left: 65%;
+        /*background-color: #004d9569;*/
     }
-    .west{
-        height: 7%; 
-        width:17%; 
-        border: 0.5em solid none; 
-        position: absolute; 
-        z-index: 2; 
-        top: 82%; 
-        left: 52%;
+
+    .west {
+        height: 10%;
+        width: 17%;
+        border: 0.5em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 72%;
+        left: 48%;
+        /*background-color: #95920069;*/
     }
-    .central{
-       height: 15%; 
-       width:20%; 
-       border: 0.5em solid none; 
-       position: absolute; 
-       z-index: 2; 
-       top: 66%; 
-       left: 62%;
+
+    .east {
+        height: 7%;
+        width: 20%;
+        border: 0.2em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 70%;
+        left: 81%;
+        /*background-color: #95000069;*/
+    }
+
+    .central {
+        height: 15%;
+        width: 22%;
+        border: 0.5em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 58%;
+        left: 60%;
+        /*background-color: #14950069;*/
     }
 }
 
@@ -3234,7 +3940,6 @@ ul{
     .home-college-box {
         height: auto;
         width: 80vw;
-        padding-bottom: 3em;
     }
 
     .colleges {
@@ -3350,20 +4055,35 @@ ul{
     .box-kc,
     .box-kvcc,
     .box-lcc,
-    .box-mm, 
-    .box-alb, 
+    .box-mm,
+    .box-alb,
     .box-wcc,
-    .dp-vr, 
-    .box-main{
+    .box-emu,
+    .box-mccc,
+    .box-alm,
+    .box-ket,
+    .box-mcc,
+    .box-det,
+    .box-ou,
+    .box-occ,
+    .box-macc,
+    .box-ltu,
+    .box-fsu,
+    .box-gvsu,
+    .box-grcc,
+    .box-aq,
+    .dp-vr,
+    .box-main {
         height: 3em;
         width: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .box-main{
-        height: 1.5em; 
-        padding: 0.3em; 
+
+    .box-main {
+        height: 1.5em;
+        padding: 0.3em;
     }
 
     .dropdown {
@@ -3387,8 +4107,8 @@ ul{
         height: 100vh;
     }
 
-    .gi-body-img{
-        height: 300vh; 
+    .gi-body-img {
+        height: 300vh;
     }
 
     .vr-body-img {
@@ -3560,13 +4280,27 @@ ul{
     .tab-svsu,
     .tab-wsu,
     .tab-del,
-    .tab-mm, 
-    .tab-jc, 
-    .tab-kc, 
-    .tab-kvcc, 
-    .tab-lcc, 
-    .tab-alb, 
-    .tab-wcc {
+    .tab-mm,
+    .tab-jc,
+    .tab-kc,
+    .tab-kvcc,
+    .tab-lcc,
+    .tab-alb,
+    .tab-wcc,
+    .tab-emu,
+    .tab-mccc,
+    .tab-alm,
+    .tab-ket,
+    .tab-mcc,
+    .tab-det,
+    .tab-ou,
+    .tab-occ,
+    .tab-macc,
+    .tab-ltu,
+    .tab-fsu,
+    .tab-gvsu,
+    .tab-grcc,
+    .tab-aq {
         width: 20%;
     }
 
@@ -3578,14 +4312,28 @@ ul{
     .tab-wmu button,
     .tab-wsu button,
     .tab-svsu button,
-    .tab-wsu button, 
-    .tab-mm button, 
-    .tab-kc button, 
-    .tab-kvcc button, 
-    .tab-lcc button, 
-    .tab-jc button, 
-    .tab-alb button, 
-    .tab-wcc button{
+    .tab-wsu button,
+    .tab-mm button,
+    .tab-kc button,
+    .tab-kvcc button,
+    .tab-lcc button,
+    .tab-jc button,
+    .tab-alb button,
+    .tab-wcc button,
+    .tab-emu button,
+    .tab-mccc button,
+    .tab-alm button,
+    .tab-ket button,
+    .tab-mcc button,
+    .tab-det button,
+    .tab-ou button,
+    .tab-occ button,
+    .tab-macc button,
+    .tab-ltu button,
+    .tab-fsu button,
+    .tab-gvsu button,
+    .tab-grcc button,
+    .tab-aq button {
         border: 0.3em solid #FFCB05;
         font-size: 1em;
     }
@@ -3621,24 +4369,69 @@ ul{
     .tab-mm button {
         border: 0.3em solid #00aeef;
     }
+
     .tab-jc button {
         border: 0.3em solid #F2A900;
     }
+
     .tab-kc button {
         border: 0.3em solid #EA6820;
     }
+
     .tab-lcc button {
         border: 0.3em solid #ABBACC;
     }
+
     .tab-kvcc button {
         border: 0.3em solid #ABBACC;
     }
-    .tab-alb button{
-        border: 0.3em solid #FFC845; 
+
+    .tab-alb button {
+        border: 0.3em solid #FFC845;
     }
-    .tab-wcc button{
-        border: 0.3em solid #97D700; 
+
+    .tab-wcc button {
+        border: 0.3em solid #97D700;
     }
+
+    .tab-mcc button {
+        border: 0.3em solid #ffee00;
+    }
+    .tab-ket button {
+        border: 0.3em solid #fbd502;
+    }
+    .tab-mccc button {
+        border: 0.3em solid #525252;
+    }
+    .tab-aq button {
+        border: 0.3em solid #9B9E72;
+    }
+    .tab-grcc button {
+        border: 0.3em solid #f7d117;
+    }
+    .tab-gvsu button {
+        border: 0.3em solid #000000;
+    }
+    .tab-fsu button {
+        border: 0.3em solid #FFD043;
+    }
+    .tab-ltu button {
+        border: 0.3em solid #7d7d7d;
+    }
+    .tab-ou button {
+        border: 0.3em solid #000000;
+    }
+    .tab-occ button {
+        border: 0.3em solid #000000;
+    }
+    .tab-det button {
+        border: 0.3em solid #A6093D;
+    }
+    .tab-emu button {
+        border: 0.3em solid #000000;
+    }
+
+    
 
     .tab-umich button.active,
     .tab-msu button.active,
@@ -3649,13 +4442,27 @@ ul{
     .tab-wsu button.active,
     .tab-svsu button.active,
     .tab-del button.active,
-    .tab-mm button.active, 
+    .tab-mm button.active,
     .tab-jc button.active,
     .tab-kc button.active,
     .tab-kvcc button.active,
-    .tab-lcc button.active, 
+    .tab-lcc button.active,
     .tab-alb button.active,
-    .tab-wcc button.active {
+    .tab-wcc button.active,
+    .tab-emu button.active,
+    .tab-mccc button.active,
+    .tab-alm button.active,
+    .tab-ket button.active,
+    .tab-mcc button.active,
+    .tab-det button.active,
+    .tab-ou button.active,
+    .tab-occ button.active,
+    .tab-macc button.active,
+    .tab-ltu button.active,
+    .tab-fsu button.active,
+    .tab-gvsu button.active,
+    .tab-grcc button.active,
+    .tab-aq button.active {
         border: 0.2em solid white;
     }
 

@@ -2292,18 +2292,18 @@ ul {
         z-index: 2;
         top: 80%;
         left: 65%;
-        /*background-color: #004d9569;*/
-    }
+        background-color: #004d9569;
+    } 
 
     .east {
-        height: 7%;
+        height: 9%;
         width: 20%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 75%;
-        left: 82%;
-        /*background-color: #95000069;*/
+        top: 73%;
+        left: 78%;
+        background-color: #95000069;
     }
 
     .west {
@@ -2319,13 +2319,13 @@ ul {
 
     .central {
         height: 14%;
-        width: 24%;
+        width: 22%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
         top: 64%;
-        left: 58%;
-        /*background-color: #14950069;*/
+        left: 60%;
+        background-color: #14950069;
     }
 
     .main-contact {
@@ -3899,7 +3899,7 @@ ul {
         width: 20%;
         border: 0.5em solid none;
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         top: 75%;
         left: 65%;
         /*background-color: #004d9569;*/

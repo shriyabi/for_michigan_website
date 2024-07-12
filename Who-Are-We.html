@@ -25,7 +25,7 @@
         <div style="display: inline-flex; ">
             <h3 class="name3" style="display: inline; padding-right: 4vw;"><a href="index" class="link-color"> HOME </a>
             </h3>
-            <div class="dropdown" style="padding-right: 4vw;">
+            <div class="dropdown" style="z-index: 3; padding-right: 4vw;">
                 <h3 class="name3"><button class="dropbtn"> VOTING INFORMATION </button> </h3>
                 <div class="dropdown-content">
                     <ul class="dropdown-content">
@@ -41,11 +41,16 @@
                                 </a>
                             </ul>
                         </li>
-                        <li class="nested-dropdown">
-                            <div class="box-main">
+                        <li class="nested-dropdown" style="z-index:4">
+                            <div class="box-main" style="z-index:4">
                                 <p> Central Michigan </p>
                             </div>
-                            <ul class="nested-dropdown-content">
+                            <ul class="nested-dropdown-content" style="z-index:4">
+                                <!--<a href="Alma-College" style="background-color:transparent;">
+                                    <div class="box-alm">
+                                        <p> Alma College </p>
+                                    </div>
+                                </a> -->
                                 <a href="Central-Michigan-University" style="background-color:transparent;">
                                     <div class="box-cmu">
                                         <p> Central Michigan University </p>
@@ -56,9 +61,34 @@
                                         <p> Delta College </p>
                                     </div>
                                 </a>
+                                <a href="Ferris-State-University" style="background-color:transparent;">
+                                    <div class="box-fsu">
+                                        <p> Ferris State University </p>
+                                    </div>
+                                </a>
+                                <a href="Kettering-University" style="background-color:transparent;">
+                                    <div class="box-ket">
+                                        <p> Kettering University </p>
+                                    </div>
+                                </a>
+                                <a href="Lansing-Community-College" style="background-color:transparent;">
+                                    <div class="box-lcc">
+                                        <p> Lansing Community College </p>
+                                    </div>
+                                </a>
+                                <a href="Michigan-State-University" style="background-color:transparent;">
+                                    <div class="box-msu">
+                                        <p> Michigan State University </p>
+                                    </div>
+                                </a>
                                 <a href="Mid-Michigan-College" style="background-color:transparent;">
                                     <div class="box-mm">
                                         <p> Mid Michigan College </p>
+                                    </div>
+                                </a>
+                                <a href="Mott-Community-College" style="background-color:transparent;">
+                                    <div class="box-mcc">
+                                        <p> Mott Community College </p>
                                     </div>
                                 </a>
                                 <a href="Saginaw-Valley-State-University" style="background-color:transparent;">
@@ -68,11 +98,26 @@
                                 </a>
                             </ul>
                         </li>
-                        <li class="nested-dropdown" style="z-index:3">
-                            <div class="box-main" style="z-index:3">
+                        <li class="nested-dropdown" style="z-index:4">
+                            <div class="box-main" style="z-index:4">
                                 <p> West Michigan </p>
                             </div>
                             <ul class="nested-dropdown-content" style="z-index:4">
+                                <a href="Aquinas-College" style="background-color:transparent;">
+                                    <div class="box-aq">
+                                        <p> Aquinas College </p>
+                                    </div>
+                                </a>
+                                <a href="Grand-Rapids-Community-College" style="background-color:transparent;">
+                                    <div class="box-grcc">
+                                        <p> Grand Rapids Community College </p>
+                                    </div>
+                                </a>
+                                <a href="Grand-Valley-State-University" style="background-color:transparent;">
+                                    <div class="box-gvsu">
+                                        <p> Grand Valley State University </p>
+                                    </div>
+                                </a>
                                 <a href="Kalamazoo-College" style="background-color:transparent;">
                                     <div class="box-kc" style="z-index:4">
                                         <p> Kalamazoo College </p>
@@ -90,19 +135,64 @@
                                 </a>
                             </ul>
                         </li>
-                        <li class="nested-dropdown">
-                            <div class="box-main">
+                        <li class="nested-dropdown" style="z-index:4">
+                            <div class="box-main" style="z-index:4">
                                 <p> South-East Michigan </p>
                             </div>
-                            <ul class="nested-dropdown-content">
+                            <ul class="nested-dropdown-content" style="z-index:4">
+                                <a href="Albion-College" style="background-color:transparent;">
+                                    <div class="box-alb">
+                                        <p> Albion College </p>
+                                    </div>
+                                </a>
+                                <a href="Eastern-Michigan-University" style="background-color:transparent;">
+                                    <div class="box-emu">
+                                        <p> Eastern Michigan University </p>
+                                    </div>
+                                </a>
                                 <a href="Jackson-College" style="background-color:transparent;">
                                     <div class="box-jc">
                                         <p> Jackson College </p>
                                     </div>
                                 </a>
+                                <a href="Lawrence-Technological-University" style="background-color:transparent;">
+                                    <div class="box-ltu">
+                                        <p> Lawrence Technological University </p>
+                                    </div>
+                                </a>
+                                <!--<a href="Macomb-Community-College" style="background-color:transparent;">
+                                    <div class="box-macc">
+                                        <p> Macomb Community College </p>
+                                    </div>
+                                </a>-->
+                                <a href="Monroe-County-Community-College" style="background-color:transparent;">
+                                    <div class="box-mccc">
+                                        <p> Monroe County Community College </p>
+                                    </div>
+                                </a>
+                                <a href="Oakland-Community-College" style="background-color:transparent;">
+                                    <div class="box-occ">
+                                        <p> Oakland Community College </p>
+                                    </div>
+                                </a>
+                                <a href="Oakland-University" style="background-color:transparent;">
+                                    <div class="box-ou">
+                                        <p> Oakland University </p>
+                                    </div>
+                                </a>
+                                <a href="University-of-Detroit-Mercy" style="background-color:transparent;">
+                                    <div class="box-det">
+                                        <p> University of Detroit Mercy </p>
+                                    </div>
+                                </a>
                                 <a href="University-of-Michigan" style="background-color:transparent;">
                                     <div class="box-umich">
                                         <p> University of Michigan </p>
+                                    </div>
+                                </a>
+                                <a href="Washtenaw-Community-College" style="background-color:transparent;">
+                                    <div class="box-wcc">
+                                        <p> Washtenaw Community College </p>
                                     </div>
                                 </a>
                                 <a href="Wayne-State-University" style="background-color:transparent;">
@@ -276,7 +366,7 @@
     </div>
     <div style="border-top: 1em solid black;" class="contact-box">
         <div class="contact-us1"><img src="4MichBlack.png" class="logo"> </div>
-        <div class="contact-us2" style="text-align: left;">
+        <div class="contact-us2">
             <a href="https://www.instagram.com/formichigan/"><i class="fa-brands fa-instagram fa-2x"
                     style="display: inline; color: black;"></i></a>
             <h4 style="display: inline; margin-bottom: 0;"> @formichigan

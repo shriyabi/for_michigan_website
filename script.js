@@ -15,11 +15,15 @@ function changeBackgroundColor() {
     var swirl = document.querySelector('.body-swirl');
     var count = document.querySelector('.counter');
     var dpbox = document.querySelectorAll('.box-main'); 
+    var headline = document.querySelector('.news-ticker')
+    var headline2 = document.querySelector('.static-text');
     currentIndex1 = currentIndex;
     body.style.backgroundColor = backgroundcolors[currentIndex];
     swirl.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
     button.style.backgroundColor = titlecolors[currentIndex];
     count.style.backgroundColor = titlecolors[currentIndex];
+    headline.style.backgroundColor = boxcolors[currentIndex]; 
+    headline2.style.backgroundColor = boxcolors[currentIndex]; 
     link.forEach(function (link) {
         link.addEventListener('mouseenter', function () {
             link.style.color = fontcolors[currentIndex];

@@ -155,7 +155,7 @@ label {
 .ticker-item {
     display: inline-block;
     padding-left: 100%;
-    animation: ticker 20s linear infinite;
+    animation: ticker 60s linear infinite;
     white-space: nowrap;
 }
 .ticker-item2 {
@@ -184,6 +184,7 @@ label {
     border-color: #000000;
     border-style: solid;
     object-fit: contain;
+    z-index: 0;
 }
 
 .college-div {
@@ -850,11 +851,11 @@ ul {
     background-color: transparent;
 }
 .mccc-header-color {
-    color: #000000;
+    color: #FFFFFF;
     background-color: transparent;
 }
 .mccc-header-color:hover {
-    color: #FFFFFF;
+    color: red;
     background-color: transparent;
 }
 .alm-header-color {

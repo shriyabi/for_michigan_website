@@ -651,11 +651,16 @@ ul {
     flex-direction: row;
     padding-top: 3em;
     padding-bottom:3em; 
+    padding-top:7em;
 }
 
 .gi-body-img {
     padding-top: 6em;
     padding-bottom: 3em;
+}
+.job-body-img{
+    padding-top:10em;
+    padding-bottom:7em; 
 }
 
 .counter {
@@ -1928,9 +1933,6 @@ ul {
         min-height: 85vh;
     } 
 
-    .job-body-img {
-        height: 100vh;
-    }
 
     .vr-body-img {
         height: 300vh;
@@ -2394,9 +2396,7 @@ ul {
         height: 100vh;
     }
 
-    .job-body-img {
-        height: 150vh;
-    }
+   
 
     .body-swirl {
         height: 100vh;
@@ -2672,9 +2672,7 @@ ul {
         height: 100vh;
     }
 
-    .job-body-img {
-        height: 120vh;
-    }
+  
 
     .vr-body-img {
         height: 300vh;
@@ -3476,9 +3474,7 @@ ul {
         border-bottom-width: 0.7em;
     }
 
-    .job-body-img {
-        height: 150vh;
-    }
+    
 
     .vr-body-img {
         height: 100vh;

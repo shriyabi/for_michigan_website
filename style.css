@@ -3169,13 +3169,13 @@ ul {
         border-top-width: 0.7em;
     }
 
-    /*.nested-dropdown-content{
+    .nested-dropdown-content{
         position:absolute; 
         width:95%;
         align-self: center;
         margin:auto;
         filter: drop-shadow(1em 1em rgba(0, 0, 0, 0.377));
-    }*/
+    }
 
     .body-swirl {
         height: 100vh;

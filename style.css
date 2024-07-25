@@ -3992,13 +3992,13 @@ ul {
         max-width: 1200px;
     }
 
-    /*.nested-dropdown-content{
+    .nested-dropdown-content{
         position:absolute; 
         width:95%;
         align-self: center;
         margin:auto;
         filter: drop-shadow(1em 1em rgba(0, 0, 0, 0.377));
-    }*/
+    }
 
     .temp-inline {
         display: flex;

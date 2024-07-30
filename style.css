@@ -2167,7 +2167,7 @@ ul {
 
     .dropdown {
         display: inline;
-        position: absolute; 
+        position: relative; 
     }
 
     .dropbtn {

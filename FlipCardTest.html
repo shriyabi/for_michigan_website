@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Michigan: Get Involved</title>
+    <link rel="icon" type="image/png" href="FavIcon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"> </script>
+    <script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+</head>
+<style>
+    .flip-card {
+    background-color: transparent;
+    width: 90vw;
+    max-width: 300px;
+    height: 400px; /* Ensure the height is fixed */
+    perspective: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flip-card-front {
+    background: linear-gradient(to right, green, black);
+    color: white;
+}
+
+.flip-card-back {
+    background-color: #f1f1f1;
+    color: black;
+    /*box-shadow: 0.5em 1em 1em rgba(0, 0, 0, 0.257);*/
+    transform: rotateY(180deg);
+    border: 0.1em solid black;
+    padding: 1rem;
+}
+
+.flip-card.show-back .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+button.learn-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.learn-more:hover {
+    background-color: #218838;
+}
+
+.event-logo {
+    filter: drop-shadow(0 0 0.5em rgb(0, 123, 6));
+    margin: 10px 0;
+}
+
+.events {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0em;
+    background-image: url(PrideBackgroundOpaque.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content p {
+    margin: 0;
+}
+
+.pride {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.6em;
+    border-radius: 0.5em;
+}
+
+</style> 
+
+<body onclick="changeBackgroundColor4()" style="cursor: url(Cursor.png), auto;">
+    <button class="color-change-button" onclick="changeBackgroundColor4()"> Click Me </button>
+    <div class="wwa-header">
+        <img src="4MichBlack.png" class="return-home">
+        <div style="display: inline-flex; ">
+            <h3 class="name3" style="display: inline;"><a href="index" class="link-color" style="margin-right: 2rem;"> HOME </a>
+            </h3>
+            <h3 class="name3" style="display: inline;"><a href="Who-Are-We" class="link-color" style="margin-right: 2rem;"> WHO
+                    WE ARE </a> </h3>
+            <div class="dropdown" style="margin-right: 1rem;">
+                <h3 class="name3"><button class="dropbtn"> VOTING INFORMATION </button> </h3>
+                 <ul class="dropdown-content">
+                            <li class="nested-dropdown">
+                                <div class="box-main">
+                                    <p> North Michigan </p>
+                                </div>
+                                <ul class="nested-dropdown-content">
+                                    <a href="Michigan-Technological-University" style="background-color:transparent;">
+                                        <div class="box-mtu">
+                                            <p> Michigan Technological University </p>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="nested-dropdown">
+                                <div class="box-main">
+                                    <p> Central Michigan </p>
+                                </div>
+                                <ul class="nested-dropdown-content">
+                                    <!--<a href="Alma-College" style="background-color:transparent;">
+                                        <div class="box-alm">
+                                            <p> Alma College </p>
+                                        </div>
+                                    </a> -->
+                                    <a href="Central-Michigan-University" style="background-color:transparent;">
+                                        <div class="box-cmu">
+                                            <p> Central Michigan University </p>
+                                        </div>
+                                    </a>
+                                    <a href="Delta-College" style="background-color:transparent;">
+                                        <div class="box-del">
+                                            <p> Delta College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Ferris-State-University" style="background-color:transparent;">
+                                        <div class="box-fsu">
+                                            <p> Ferris State University </p>
+                                        </div>
+                                    </a>
+                                    <a href="Kettering-University" style="background-color:transparent;">
+                                        <div class="box-ket">
+                                            <p> Kettering University </p>
+                                        </div>
+                                    </a>
+                                    <a href="Lansing-Community-College" style="background-color:transparent;">
+                                        <div class="box-lcc">
+                                            <p> Lansing Community College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Michigan-State-University" style="background-color:transparent;">
+                                        <div class="box-msu">
+                                            <p> Michigan State University </p>
+                                        </div>
+                                    </a>
+                                    <a href="Mid-Michigan-College" style="background-color:transparent;">
+                                        <div class="box-mm">
+                                            <p> Mid Michigan College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Mott-Community-College" style="background-color:transparent;">
+                                        <div class="box-mcc">
+                                            <p> Mott Community College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Saginaw-Valley-State-University" style="background-color:transparent;">
+                                        <div class="box-svsu">
+                                            <p> Sagniaw Valley State University </p>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="nested-dropdown" style="z-index:3">
+                                <div class="box-main" style="z-index:3">
+                                    <p> West Michigan </p>
+                                </div>
+                                <ul class="nested-dropdown-content" style="z-index:4">
+                                    <a href="Aquinas-College" style="background-color:transparent;">
+                                        <div class="box-aq">
+                                            <p> Aquinas College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Grand-Rapids-Community-College" style="background-color:transparent;">
+                                        <div class="box-grcc">
+                                            <p> Grand Rapids Community College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Grand-Valley-State-University" style="background-color:transparent;">
+                                        <div class="box-gvsu">
+                                            <p> Grand Valley State University </p>
+                                        </div>
+                                    </a>
+                                    <a href="Kalamazoo-College" style="background-color:transparent;">
+                                        <div class="box-kc" style="z-index:4">
+                                            <p> Kalamazoo College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Kalamazoo-Valley-Community-College" style="background-color:transparent;">
+                                        <div class="box-kvcc">
+                                            <p> Kalamazoo Valley Community College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Western-Michigan-University" style="background-color:transparent;">
+                                        <div class="box-wmu">
+                                            <p> Western Michigan University </p>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="nested-dropdown">
+                                <div class="box-main">
+                                    <p> South-East Michigan </p>
+                                </div>
+                                <ul class="nested-dropdown-content">
+                                    <a href="Albion-College" style="background-color:transparent;">
+                                        <div class="box-alb">
+                                            <p> Albion College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Eastern-Michigan-University" style="background-color:transparent;">
+                                        <div class="box-emu">
+                                            <p> Eastern Michigan University </p>
+                                        </div>
+                                    </a>
+                                    <a href="Jackson-College" style="background-color:transparent;">
+                                        <div class="box-jc">
+                                            <p> Jackson College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Lawrence-Technological-University" style="background-color:transparent;">
+                                        <div class="box-ltu">
+                                            <p> Lawrence Technological University </p>
+                                        </div>
+                                    </a>
+                                    <!--<a href="Macomb-Community-College" style="background-color:transparent;">
+                                        <div class="box-macc">
+                                            <p> Macomb Community College </p>
+                                        </div>
+                                    </a>-->
+                                    <a href="Monroe-County-Community-College" style="background-color:transparent;">
+                                        <div class="box-mccc">
+                                            <p> Monroe County Community College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Oakland-Community-College" style="background-color:transparent;">
+                                        <div class="box-occ">
+                                            <p> Oakland Community College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Oakland-University" style="background-color:transparent;">
+                                        <div class="box-ou">
+                                            <p> Oakland University </p>
+                                        </div>
+                                    </a>
+                                    <a href="University-of-Detroit-Mercy" style="background-color:transparent;">
+                                        <div class="box-det">
+                                            <p> University of Detroit Mercy </p>
+                                        </div>
+                                    </a>
+                                    <a href="University-of-Michigan" style="background-color:transparent;">
+                                        <div class="box-umich">
+                                            <p> University of Michigan </p>
+                                        </div>
+                                    </a>
+                                    <a href="Washtenaw-Community-College" style="background-color:transparent;">
+                                        <div class="box-wcc">
+                                            <p> Washtenaw Community College </p>
+                                        </div>
+                                    </a>
+                                    <a href="Wayne-State-University" style="background-color:transparent;">
+                                        <div class="box-wsu">
+                                            <p> Wayne State University </p>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            </div>
+            <!--<h3 style="display:inline;"> <span>&nbsp&nbsp</span></h3>-->
+            <h3 class="name3" style="display: inline;"><a href="Jobs" class="link-color" style="margin-right: 2rem;"> JOBS </a> </h3>
+            <h3 class="name3" style="display: inline;"><a href="" class="link-color"> LINKTREE </a> </h3>
+
+        </div>
+    </div>
+    <div class="gi-body-img" style="border-bottom: 0.5em solid #000000;">
+        <div class="home-college-box" style = "padding-bottom: 0; width: 80vw;">
+            <h2> EVENTS </h2>
+            <h4 style="padding-top: 0; margin-top: 0;"> Find For Michigan Events at your school here! </h4>
+            </h2>
+            <div class="college-div" style = "display:inline-flex">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front pride" style="background: linear-gradient(to right, green, black);">
+                            <div class="events" style="background-image: url('B2Cevent.png');">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <p style="margin-top: 0; margin-bottom: 0;">8-24-24: 11-2 PM</p>
+                                    <p style="margin-top: -1em; margin-bottom: 0;">Oakland Community College</p>
+                                    <img src="OCCLogo.png" class="event-logo" style="filter: drop-shadow(0 0 0.5em rgb(0, 123, 6))">
+                                    <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Farmers Market for Change</h3>
+                                    <button class="learn-more" onclick="flipCard(this)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Event Details</h2>
+                            <p>Join us for the Farmers Market for Change at Oakland Community College on 8-24-24 from 11 AM to 2 PM. Enjoy fresh produce and support local farmers!</p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            
+            <!--<script>
+               //data
+const apiUrl = 'https://api.mobilize.us/v1/organizations/:organization_id/events'; 
+const apiKey = 'd635c1172c5df2675bffe1b88d3c7279f71c2d2e'; 
+//retrieving event
+function getEvents() {
+    //fetching response to get data json
+    fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${apiKey}`
+        }
+    })
+    //getting data json
+    .then(response => {
+        if (!response.ok) {
+            console.log("Failed to fetch data");
+            throw new Error('Network response was not ok');
+        }
+        return response.json(); 
+    })
+    //parsing data json
+    .then(data => {
+        data.forEach(event => {
+            const { title, description, timeslots, location } = event;
+            document.write(`<h2>${title}</h2>`);
+            document.write(`<p>${description}</p>`);
+            if (timeslots.length > 0) {
+                document.write('<h3>Timeslots:</h3>');
+                timeslots.forEach(slot => {
+                    document.write(`<p>Start Date: ${new Date(slot.start_date * 1000)}</p>`);
+                    document.write(`<p>End Date: ${new Date(slot.end_date * 1000)}</p>`);
+                    document.write(`<p>Is Full: ${slot.is_full ? 'Yes' : 'No'}</p>`);
+                });
+            }
+            if (location) {
+                document.write('<h3>Location:</h3>');
+                document.write(`<p>Venue: ${location.venue}</p>`);
+                document.write(`<p>Address: ${location.address_lines.join(', ')}</p>`);
+                document.write(`<p>City: ${location.locality}</p>`);
+                document.write(`<p>State: ${location.region}</p>`);
+                document.write(`<p>Country: ${location.country}</p>`);
+                document.write(`<p>Postal Code: ${location.postal_code}</p>`);
+            }
+        }); 
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+}
+
+// Call the function to get events
+getEvents();
+            </script> --> 
+            <div class="want" style = "object-fit: contain; margin-bottom: 0%; border-bottom: 0.2em solid transparent;">
+                <h3>Interested in volunteering <br> </h3>
+                <h4>Fill out the form here!</h4>
+            </div>
+
+            <!--<h4 style="margin-bottom: 0"> TBD </h4>
+            <div class="college-div">
+                <div class="umich events">
+                    <div style="display: flex;
+                    flex-direction: column;
+                    align-items: center;">
+                        <a href="https://grpride.org/pride-festival/" style="background-color:transparent;">
+                            <p style="margin-top: 0; margin-bottom: 0;"> 6-1-24 </p>
+                            <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Ferndale Pride 2024</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="umich events">
+                    <div style="display: flex;
+                    flex-direction: column;
+                    align-items: center;">
+                        <a href="https://grpride.org/pride-festival/" style="background-color:transparent;">
+                            <p style="margin-top: 0; margin-bottom: 0;"> 6-8-24 </p>
+                            <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Motor City Pride 2024</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="umich events">
+                    <div style="display: flex;
+                    flex-direction: column;
+                    align-items: center;">
+                        <a href="https://grpride.org/pride-festival/" style="background-color:transparent;">
+                            <p style="margin-top: 0; margin-bottom: 0;"> 6-22-24 </p>
+                            <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Lansing Pride</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="umich events">
+                    <div style="display: flex;
+                    flex-direction: column;
+                    align-items: center; z-index: 2;">
+                        <a href="https://grpride.org/pride-festival/" style="background-color:transparent;">
+                            <p style="margin-top: 0; margin-bottom: 0;"> 6-29-24 </p>
+                            <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Jackson Pride Fest</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="pride">
+                    <div class="events">
+                        <div style="display: flex;
+                    flex-direction: column;
+                    align-items: center; z-index: 2;">
+                            <a href="https://grpride.org/pride-festival/" style="background-color:transparent;">
+                                <p style="margin-top: 0; margin-bottom: 0;"> 8-3-24 </p>
+                                <img src="PrideLogo.png" style="width: 5em; height: auto; margin-bottom: 0;">
+                                <h3 class="name5" style="margin-top: 0; margin-bottom: 0;">Ann Arbor Pride 2024</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <div
+        style="height: 100vh; justify-content: center; display: flex; flex-direction: column; align-items: center; vertical-align: middle;">
+        <h2 style="margin-top: 10vh;">Social Media </h2>
+        <h3 style="margin-bottom: -10vh;"> Connect with your campus socials! </h3>
+        <div
+            style="background-image: url(BackgroundImg.png); width: 100vw; display: flex; flex-direction: column; justify-content: center; align-self: center; margin: auto; vertical-align: middle; height: 50vh;">
+            <br>
+            <div class="contact-form1 sm"
+                style="display: flex; justify-content: center; align-items: center; margin:auto; padding: 0.25em;">
+                <div style="padding-right: 3em; padding-top: 2em; padding-bottom: 2em;">
+                    <a href="https://www.instagram.com/chip4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: #6A0032; filter: drop-shadow(0 0 0.5em #6A0032)"></i>
+                        <h4 style="display:inline;"> Central Michigan University</h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/duck4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: #00704a; filter: drop-shadow(0 0 0.5em #00704a)"></i>
+                        <h4 style="display:inline;"> Delta College </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/eagles4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                        style="color: rgb(14, 170, 0); filter: drop-shadow(0 0 0.5em rgb(14, 170, 0))"></i>
+                    <h4 style="display:inline;"> Eastern Michigan University </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/lakers4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: blue; filter: drop-shadow(0 0 0.5em blue)"></i>
+                        <h4 style="display:inline;"> Grand Valley State University </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/jets4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: #6C1D45; filter: drop-shadow(0 0 0.5em #6c1d45)"></i>
+                        <h4 style="display:inline;"> Jackson College</h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/hornets4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: #000000; filter: drop-shadow(0 0 0.5em #000000)"></i>
+                        <h4 style="display:inline;">Kalamazoo College</h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/cougars4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: #007FB0; filter: drop-shadow(0 0 0.5em #007FB0)"></i>
+                        <h4 style="display:inline;">Kalamazoo Valley Community College</h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/bulldogs4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: #007FB0; filter: drop-shadow(0 0 0.5em #007FB0)"></i>
+                        <h4 style="display:inline;">Kettering College</h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/lcc4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: #012169; filter: drop-shadow(0 0 0.5em #012169)"></i>
+                        <h4 style="display:inline;">Lansing Community College</h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/bluedevils4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: #1d6280; filter: drop-shadow(0 0 0.5em #1d6280)"></i>
+                        <h4 style="display:inline;">Lawerence Technological University </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/monarchs4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: rgb(108, 133, 144); filter: drop-shadow(0 0 0.5em rgb(108, 133, 144))"></i>
+                        <h4 style="display:inline;">Macomb Community College</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/spartans4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color: #18453B; filter: drop-shadow(0 0 0.5em #18453B)"></i>
+                        <h4 style="display:inline;">Michigan State University</h4>
+                    </a>
+                    <br>
+                    <!--<i class="fa-brands fa-square-instagram fa-2x" style="color: #000000"></i> <h4 style="display:inline;">Michigan Technological University </h4>
+                <br>-->
+                    <a href="https://www.instagram.com/mid4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color:#003d71; filter: drop-shadow(0 0 0.5em #003d71)"></i>
+                        <h4 style="display:inline;">Mid Michigan College</h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/bears4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color:#000000; filter: drop-shadow(0 0 0.5em #000000)"></i>
+                        <h4 style="display:inline;">Mott Community College</h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/grizzilies4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color:rgb(73, 80, 0); filter: drop-shadow(0 0 0.5em rgb(73, 80, 0));"></i>
+                        <h4 style="display:inline;"> Oakland University </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/cards4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color:rgb(179,23,52); filter: drop-shadow(0 0 0.5em rgb(179,23,52));"></i>
+                        <h4 style="display:inline;"> Saginaw Valley State University </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/titans4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color:rgb(85, 68, 2); filter: drop-shadow(0 0 0.5em rgb(85, 68, 2));"></i>
+                        <h4 style="display:inline;"> University of Detriot Mercy </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/wolverines4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color:rgb(2, 19, 85); filter: drop-shadow(0 0 0.5em rgb(2, 19, 85));"></i>
+                        <h4 style="display:inline;"> University of Michigan - Ann Arbor </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/flintwolverines4mich/"><i
+                            class="fa-brands fa-square-instagram fa-2x"
+                            style="color:rgb(2, 19, 85); filter: drop-shadow(0 0 0.5em rgb(2, 19, 85));"></i>
+                        <h4 style="display:inline;"> University of Michigan - Flint </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/warriors4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color:#2e531f; filter: drop-shadow(0 0 0.5em #2e531f)"></i>
+                        <h4 style="display:inline;"> Wayne State University </h4>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/broncos4mich/"><i class="fa-brands fa-square-instagram fa-2x"
+                            style="color:#532E1F; filter: drop-shadow(0 0 0.5em #532E1F)"></i>
+                        <h4 style="display:inline;"> Western Michigan University </h4>
+                    </a>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="body-img" style="height: 100vh; flex-direction: column; border-top: 0.5em solid #000000;">
+        <div class="contact-form1"
+            style="display: flex; justify-content: center; align-items: center; padding: 1em; flex-direction: column;">
+            <h2>CONTACT US</h2>
+            <script src="script.js"> </script>
+            <form id="my-form" action="https://script.google.com/macros/s/AKfycbzQe693nK0A4x9iZY9Hpq_PbOss3SyaDWvp-VWoL6_U4o2V9e9GaqdSHf1-EQK0RPW_/exec" method="POST" style="text-align: center">
+                <!-- Your form fields here -->
+                <input type="email" name="Email" placeholder="Email" style="display:inline-block;" required>
+                <input type="text" name="Name" placeholder="Name" style="display:inline-block;" required>
+                <br>
+                <textarea type="text" name="Subject" placeholder="Subject" required></textarea>
+                <br>
+                <br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+            <div id="success-message" class="success-message" style="display:none;">Thank you for contacting us!</div>
+        </div>
+        <br>
+    </div>
+
+    <div style="border-top: 1em solid black;" class="contact-box">
+        <div class="contact-us1"><img src="4MichBlack.png" class="logo"> </div>
+        <div class="contact-us2">
+            <a href="https://www.instagram.com/formichigan/"><i class="fa-brands fa-instagram fa-2x"
+                    style="display: inline; color: black;"></i></a>
+            <h4 style="display: inline; margin-bottom: 0;"> @formichigan
+                <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span> </h4>
+            <a href="https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x"
+                    style="display: inline;"></i></a>
+            <a href="https://www.linkedin.com/company/for-michigan/about/">
+                <h4 style="display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4>
+            </a>
+            <i class="fa-brands fa-tiktok fa-2x" style="display: inline;"></i>
+            <h4 style="display: inline;"> @formichigan <span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;</span> </h4>
+            <a href = "mailto:info@4mich.org"><i class="fa-regular fa-envelope fa-2x" style="display: inline;"></i></a>
+            <h4 style="display: inline; margin-bottom: 0;"> info@4mich.org </h4>
+        </div>
+        <br>
+        <br>
+        <p> For Michigan is a 501(c)(4) Organization </p>
+        <p> &copy For Michigan | All Rights Reserved</p>
+    </div>
+</body>
+
+</html>

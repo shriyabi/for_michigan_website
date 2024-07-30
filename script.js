@@ -129,9 +129,14 @@ function changeBackgroundColor4() {
     var events = document.querySelectorAll(".events");
     var volun = document.querySelector(".want");
     var dpbox = document.querySelectorAll('.box-main'); 
+    var phonehead = document.querySelector('.dropdown-toggle-phone'); 
     volun.style.backgroundColor = titlecolors[currentIndex]; 
     body.style.backgroundColor = backgroundcolors[currentIndex];
-    button.style.backgroundColor = titlecolors[currentIndex];
+    /*button.forEach((press)=>{
+        press.style.backgroundColor = titlecolors[currentIndex];
+    }); */
+    button.style.backgroundColor = titlecolors[currentIndex]; 
+    phonehead.style.backgroundColor = titlecolors[currentIndex]; 
     sub.style.backgroundColor = titlecolors[currentIndex];
     sub.style.color = boxcolors[currentIndex];
     header.style.backgroundColor = boxcolors[currentIndex];
@@ -164,7 +169,7 @@ function changeBackgroundColor4() {
     });
     contactForm1.forEach(function (contactForm1) {
         contactForm1.style.backgroundColor = boxcolors[currentIndex];
-    });
+   });
     events.forEach((event) => {
         event.style.backgroundColor = boxcolors[currentIndex];
     });
@@ -342,6 +347,17 @@ function form() {
         });
     });
 }
+
+function toggleDropdown() {
+    var content = document.getElementById("dropdown-content-phone");
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}
+
+
 
 
 /*document.getElementById('my-form').addEventListener('submit', function(event) {

@@ -68,12 +68,12 @@ function changeBackgroundColor2() {
     var staffCont2 = document.querySelectorAll('.dp-vr');
     var dropbtnhover = document.querySelectorAll('.dropbtn');
     var staffCont = document.querySelectorAll('.staff-content');
-    var contact = document.querySelector('.contact-box');
+    //var contact = document.querySelector('.contact-box');
     var dpbox = document.querySelectorAll('.box-main');
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
     header.style.backgroundColor = boxcolors[currentIndex];
-    contact.style.backgroundColor = boxcolors[currentIndex];
+    //contact.style.backgroundColor = boxcolors[currentIndex];
     whoweare.style.backgroundColor = backgroundcolors[currentIndex];
     staff.forEach(function (staff) {
         staff.style.backgroundColor = boxcolors[currentIndex];
@@ -119,58 +119,66 @@ var currentIndex1 = -1;
 function changeBackgroundColor4() {
     var body = document.body;
     var button = document.querySelector('button');
-    var sub = document.querySelector('.submit');
+    var sub = document.querySelectorAll('.submit');
     var header = document.querySelector(".wwa-header");
-    var link = document.querySelectorAll('a');
-    var dropbtnhover = document.querySelectorAll('.dropbtn');
-    var contact = document.querySelector('.contact-box');
-    var homeCollegeBox = document.querySelector(".home-college-box");
-    var contactForm1 = document.querySelectorAll(".contact-form1");
+var link = document.querySelectorAll('a');
+     var dropbtnhover = document.querySelectorAll('.dropbtn');
+     //issue w contact
+     var contact = document.querySelectorAll('.contact-box');
+     var homeCollegeBox = document.querySelector(".home-college-box");
+     var contactForm1 = document.querySelectorAll(".contact-form1");
     var events = document.querySelectorAll(".events");
-    var volun = document.querySelector(".want");
+     var volun = document.querySelector(".want");
     var dpbox = document.querySelectorAll('.box-main'); 
     var phonehead = document.querySelector('.dropdown-toggle-phone'); 
     volun.style.backgroundColor = titlecolors[currentIndex]; 
     body.style.backgroundColor = backgroundcolors[currentIndex];
-    /*button.forEach((press)=>{
-        press.style.backgroundColor = titlecolors[currentIndex];
-    }); */
-    button.style.backgroundColor = titlecolors[currentIndex]; 
-    phonehead.style.backgroundColor = titlecolors[currentIndex]; 
-    sub.style.backgroundColor = titlecolors[currentIndex];
-    sub.style.color = boxcolors[currentIndex];
+//     /*button.forEach((press)=>{
+//         press.style.backgroundColor = titlecolors[currentIndex];
+//     }); */
+     button.style.backgroundColor = titlecolors[currentIndex]; 
+     phonehead.style.backgroundColor = titlecolors[currentIndex]; 
+    sub.forEach((sub)=>{
+        sub.style.backgroundColor = titlecolors[currentIndex];
+        sub.style.color = boxcolors[currentIndex];
+     });     
+
+     contact.forEach((contact)=>{
+        contact.style.backgroundColor = titlecolors[currentIndex];
+        contact.style.color = boxcolors[currentIndex];
+     });  
+
     header.style.backgroundColor = boxcolors[currentIndex];
-    contact.style.backgroundColor = boxcolors[currentIndex];
     homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
-    link.forEach(function (link) {
-        link.addEventListener('mouseenter', function () {
-            link.style.color = fontcolors[currentIndex];
-            link.style.backgroundColor = backgroundcolors2[currentIndex1];
-        });
-        link.addEventListener('mouseleave', function () {
-            link.style.color = '#000000';
-            link.style.backgroundColor = 'transparent';
-        });
+     link.forEach(function (link) {
+         link.addEventListener('mouseenter', function () {
+             link.style.color = fontcolors[currentIndex];
+             link.style.backgroundColor = backgroundcolors2[currentIndex1];
+         });
+         link.addEventListener('mouseleave', function () {
+             link.style.color = '#000000';
+             link.style.backgroundColor = 'transparent';
+         });
+     });
+     dpbox.forEach((box)=>{
+         box.style.backgroundColor = titlecolors[currentIndex]; 
+     });
+     dropbtnhover.forEach(function (dropbtnhover) {
+         dropbtnhover.addEventListener('mouseenter', function () {
+             if (currentIndex1 >= 0) {
+                 dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
+             }
+             dropbtnhover.style.color = fontcolors[currentIndex];
+         });
+         dropbtnhover.addEventListener('mouseleave', function () {
+             dropbtnhover.style.color = '#000000';
+             dropbtnhover.style.backgroundColor = 'transparent';
+         });
+     });
+     contactForm1.forEach(function (contactForm1) {
+         contactForm1.style.backgroundColor = boxcolors[currentIndex];
     });
-    dpbox.forEach((box)=>{
-        box.style.backgroundColor = titlecolors[currentIndex]; 
-    });
-    dropbtnhover.forEach(function (dropbtnhover) {
-        dropbtnhover.addEventListener('mouseenter', function () {
-            if (currentIndex1 >= 0) {
-                dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
-            }
-            dropbtnhover.style.color = fontcolors[currentIndex];
-        });
-        dropbtnhover.addEventListener('mouseleave', function () {
-            dropbtnhover.style.color = '#000000';
-            dropbtnhover.style.backgroundColor = 'transparent';
-        });
-    });
-    contactForm1.forEach(function (contactForm1) {
-        contactForm1.style.backgroundColor = boxcolors[currentIndex];
-   });
-    events.forEach((event) => {
+     events.forEach((event) => {
         event.style.backgroundColor = boxcolors[currentIndex];
     });
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
@@ -186,60 +194,64 @@ function changeBackgroundColor3() {
     var staff = document.querySelectorAll('.staff');
     var link = document.querySelectorAll('a');
     var staffCont = document.querySelectorAll('.staff-content');
-    var contact = document.querySelector('.contact-box');
+    var dpvr = document.querySelectorAll('.dp-vr'); 
+    //var contact = document.querySelector('.contact-box');
     var want = document.querySelector('.want');
     var homeCollegeBox = document.querySelector(".home-college-box");
     var colleges = document.querySelectorAll('.colleges');
-    var dropbtnhover = document.querySelectorAll('.dropbtn');
-    var dpbox = document.querySelectorAll('.box-main'); 
+     var dropbtnhover = document.querySelectorAll('.dropbtn');
+     var dpbox = document.querySelectorAll('.box-main'); 
     homeCollegeBox.style.backgroundColor = backgroundcolors[currentIndex];
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
     header.style.backgroundColor = boxcolors[currentIndex];
     want.style.backgroundColor = titlecolors[currentIndex];
-    contact.style.backgroundColor = boxcolors[currentIndex];
-    whoweare.forEach(function (who) {
-        who.style.backgroundColor = backgroundcolors[currentIndex];
+    //contact is culpirt
+    //contact.style.backgroundColor = boxcolors[currentIndex];
+     whoweare.forEach(function (who) {
+         who.style.backgroundColor = backgroundcolors[currentIndex];
+     });
+     dpvr.forEach(function (dp) {
+        dp.style.backgroundColor = titlecolors[currentIndex];
     });
-    staff.forEach(function (staff) {
-        staff.style.backgroundColor = boxcolors[currentIndex];
-        staff.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
-        staff.style.boxShadowColor = boxcolors[currentIndex - 1];
-    });
-    staffCont.forEach(function (staffCont) {
-        staffCont.style.backgroundColor = titlecolors[currentIndex];
-    });
-    link.forEach(function (link) {
-        link.addEventListener('mouseenter', function () {
-            link.style.color = fontcolors[currentIndex];
-            link.style.backgroundColor = backgroundcolors2[currentIndex1];
-        });
-        link.addEventListener('mouseleave', function () {
-            link.style.color = '#000000';
-            link.style.backgroundColor = 'transparent';
-        });
-    });
-    dropbtnhover.forEach(function (dropbtnhover) {
-        dropbtnhover.addEventListener('mouseenter', function () {
-            if (currentIndex1 >= 0) {
-                dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
-            }
-            dropbtnhover.style.color = fontcolors[currentIndex];
-        });
-        dropbtnhover.addEventListener('mouseleave', function () {
-            dropbtnhover.style.color = '#000000';
-            dropbtnhover.style.backgroundColor = 'transparent';
-        });
-    });
-    colleges.forEach(function (college) {
-        college.style.backgroundColor = boxcolors[currentIndex];
-    });
-    dpbox.forEach((box)=>{
-        box.style.backgroundColor = titlecolors[currentIndex]; 
-    });
+     staff.forEach(function (staff) {
+         staff.style.backgroundColor = boxcolors[currentIndex];
+         staff.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
+         staff.style.boxShadowColor = boxcolors[currentIndex - 1];
+     });
+     staffCont.forEach(function (staffCont) {
+         staffCont.style.backgroundColor = titlecolors[currentIndex];
+     });
+     link.forEach(function (link) {
+         link.addEventListener('mouseenter', function () {
+             link.style.color = fontcolors[currentIndex];
+             link.style.backgroundColor = backgroundcolors2[currentIndex1];
+         });
+         link.addEventListener('mouseleave', function () {
+             link.style.color = '#000000';
+             link.style.backgroundColor = 'transparent';
+         });
+     });
+     dropbtnhover.forEach(function (dropbtnhover) {
+         dropbtnhover.addEventListener('mouseenter', function () {
+             if (currentIndex1 >= 0) {
+                 dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
+             }
+             dropbtnhover.style.color = fontcolors[currentIndex];
+         });
+         dropbtnhover.addEventListener('mouseleave', function () {
+             dropbtnhover.style.color = '#000000';
+             dropbtnhover.style.backgroundColor = 'transparent';
+         });
+     });
+     colleges.forEach(function (college) {
+         college.style.backgroundColor = boxcolors[currentIndex];
+     });
+     dpbox.forEach((box)=>{
+         box.style.backgroundColor = titlecolors[currentIndex]; 
+     });
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
-    currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
-
+    currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length; 
 }
 
 

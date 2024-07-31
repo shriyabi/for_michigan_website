@@ -75,6 +75,7 @@ function changeBackgroundColor2() {
     header.style.backgroundColor = boxcolors[currentIndex];
     //contact.style.backgroundColor = boxcolors[currentIndex];
     whoweare.style.backgroundColor = backgroundcolors[currentIndex];
+    var phonehead = document.querySelector('.dropdown-toggle-phone'); 
     staff.forEach(function (staff) {
         staff.style.backgroundColor = boxcolors[currentIndex];
         staff.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
@@ -111,6 +112,7 @@ function changeBackgroundColor2() {
     staffCont2.forEach(function (staffCont) {
         staffCont.style.backgroundColor = titlecolors[currentIndex];
     });
+    phonehead.style.backgroundColor = titlecolors[currentIndex]; 
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
 }
@@ -121,7 +123,7 @@ function changeBackgroundColor4() {
     var button = document.querySelector('button');
     var sub = document.querySelectorAll('.submit');
     var header = document.querySelector(".wwa-header");
-var link = document.querySelectorAll('a');
+    var link = document.querySelectorAll('a');
      var dropbtnhover = document.querySelectorAll('.dropbtn');
      //issue w contact
      var contact = document.querySelectorAll('.contact-box');
@@ -196,6 +198,7 @@ function changeBackgroundColor3() {
     var staffCont = document.querySelectorAll('.staff-content');
     var dpvr = document.querySelectorAll('.dp-vr'); 
     //var contact = document.querySelector('.contact-box');
+    var phonehead = document.querySelector('.dropdown-toggle-phone'); 
     var want = document.querySelector('.want');
     var homeCollegeBox = document.querySelector(".home-college-box");
     var colleges = document.querySelectorAll('.colleges');
@@ -250,6 +253,7 @@ function changeBackgroundColor3() {
      dpbox.forEach((box)=>{
          box.style.backgroundColor = titlecolors[currentIndex]; 
      });
+     phonehead.style.backgroundColor = titlecolors[currentIndex]; 
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length; 
 }

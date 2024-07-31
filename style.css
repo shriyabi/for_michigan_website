@@ -26,10 +26,6 @@ body:hover {
     color: gray;
 }
 
-.name7{
-    font-size: 3.5em; 
-}
-
 label {
     display: inline-block;
     cursor: pointer;
@@ -40,10 +36,6 @@ label {
 
 .form {
     font-size: 1.5em;
-}
-
-.link-color-header{
-    color: black;
 }
 
 #ch,
@@ -159,7 +151,6 @@ label {
     overflow: hidden;
     width: 100%;
     position: relative;
-    font-size: 1.5em;
 }
 
 .ticker-item {
@@ -167,13 +158,11 @@ label {
     padding-left: 100%;
     animation: ticker 60s linear infinite;
     white-space: nowrap;
-    font-size: 1em;
 }
-
 .ticker-item2 {
     display: inline-block;
     padding-left: 100%;
-    animation-delay: 20s;
+    animation-delay: 20s; 
     animation: ticker 20s linear infinite;
     white-space: nowrap;
 }
@@ -182,7 +171,6 @@ label {
     0% {
         transform: translateX(100);
     }
-
     100% {
         transform: translateX(-100%);
     }
@@ -210,7 +198,7 @@ label {
 
 /*Color-Change Button*/
 .color-change-button {
-    font-size: 1em;
+    font-size: 16px;
     cursor: pointer;
     justify-content: center;
     margin: auto;
@@ -218,14 +206,12 @@ label {
     background-color: #A98F92;
     position: fixed;
     bottom: 0;
-    left: 3%; 
-    width: 3em;
+    left: 97%;
     transform: translateX(-50%);
-    z-index:1; 
 }
 
 .submit {
-    font-size: 1.5em;
+    font-size: 1em;
     background-color: #A98F92;
     color: #DDA8A1;
 }
@@ -239,7 +225,6 @@ label {
     margin-left: 1em;
     vertical-align: middle;
 }
-
 
 h1,
 h2,
@@ -276,7 +261,7 @@ p,
 .tab-fsu button,
 .tab-gvsu button,
 .tab-grcc button,
-.tab-aq button, a {
+.tab-aq button {
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -405,6 +390,7 @@ ul {
     padding: 0;
 }
 
+/*DROPDOWN*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -417,7 +403,7 @@ ul {
 .nested-dropdown-content {
     display: none;
     position: relative;
-    /*box-shadow: 0 0 0em rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
 }
 .nested-dropdown-content{
     /*position:absolute; */
@@ -433,7 +419,6 @@ ul {
 .nested-dropdown:hover .nested-dropdown-content {
     display: block;
 }
-
 
 .dropbtn {
     border: none;
@@ -515,61 +500,48 @@ ul {
     background-color: #4bb582;
 }
 
-.box-emu {
+.box-emu{
     background-color: #23e085;
 }
-
-.box-mccc {
-    background-color: rgb(181, 106, 106);
-}
-
-.box-alm {
-    background-color: #9d4551;
-}
-
-.box-ket {
-    background-color: #323793;
-}
-
-.box-macc {
-    background-color: #3a87b7;
-}
-
-.box-det {
-    background-color: #2862b8;
-}
-
-.box-ou {
-    background-color: #e1b374;
-}
-
-.box-occ {
-    background-color: #2f9d68;
-}
-
-.box-mcc {
-    background-color: #e1cd74;
-}
-
-.box-ltu {
-    background-color: #74a0e1;
-}
-
-.box-fsu {
-    background-color: #e83d5f;
-}
-
-.box-gvsu {
-    background-color: #2e66df;
-}
-
-.box-grcc {
-    background-color: #247df0;
-}
-
-.box-aq {
-    background-color: #ce434e;
-}
+    .box-mccc{
+        background-color: rgb(181, 106, 106);
+    }
+    .box-alm{
+        background-color: #9d4551;
+    }
+    .box-ket{
+        background-color: #323793;
+    }
+    .box-macc{
+        background-color: #3a87b7;
+    }
+    .box-det{
+        background-color: #2862b8;
+    }
+    .box-ou{
+        background-color: #e1b374;
+    }
+    .box-occ{
+        background-color: #2f9d68;
+    }
+    .box-mcc{
+        background-color: #e1cd74;
+    }
+    .box-ltu{
+        background-color: #74a0e1;
+    }
+    .box-fsu{
+        background-color: #e83d5f;
+    }
+    .box-gvsu{
+        background-color: #2e66df;
+    }
+    .box-grcc{
+        background-color: #247df0;
+    }
+    .box-aq{
+        background-color: #ce434e;
+    }
 
 .box-main {
     background-color: #A98F92;
@@ -590,21 +562,8 @@ ul {
     position: relative;
     align-self: center;
     border: solid;
-    z-index: 1;
+    z-index: 1; 
 }
-
-/*.wwa-header {
-    position: relative;
-    display: flex;
-    top: 0;
-    background-color: #DDA8A1;
-    z-index: 3;
-    border-bottom-color: #000000;
-    border-bottom-width: 0.5em;
-    border-bottom-style: solid;
-    vertical-align: middle;
-    overflow-y: visible;
-} */
 
 .wwa-header {
     position: fixed;
@@ -615,18 +574,12 @@ ul {
     border-bottom-color: #000000;
     border-bottom-width: 0.5em;
     border-bottom-style: solid;
-    vertical-align: middle;
-    text-align: center; 
-    overflow-y: visible;
+    align-items: left;
 }
-
 
 .contact-box {
     background-color: #DDA8A1;
     bottom: 0;
-    max-width: 100vw;
-    overflow-wrap: break-word;
-    padding-right: 1em;
 }
 
 .staff {
@@ -692,23 +645,22 @@ ul {
     width: 100vw;
     border-top-color: #000000;
     border-top-style: solid;
-    z-index: 0;
-    padding: auto;
+    z-index: 0; 
+    padding:auto; 
     min-height: 100vh;
     height: auto;
     flex-direction: row;
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom:3em; 
 }
 
 .gi-body-img {
-    padding-top: 8em;
+    padding-top: 6em;
     padding-bottom: 3em;
 }
-
-.job-body-img {
-    padding-top: 10em;
-    padding-bottom: 7em;
+.job-body-img{
+    padding-top:10em;
+    padding-bottom:7em; 
 }
 
 .counter {
@@ -899,67 +851,54 @@ ul {
     color: #000000;
     background-color: transparent;
 }
-
 .emu-header-color:hover {
     color: #ffffff;
     background-color: transparent;
 }
-
 .mccc-header-color {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .mccc-header-color:hover {
     color: red;
     background-color: transparent;
 }
-
 .alm-header-color {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .alm-header-color:hover {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .ket-header-color {
     color: #ffe100;
     background-color: transparent;
 }
-
 .ket-header-color:hover {
     color: #e8e8e8;
     background-color: transparent;
 }
-
 .det-header-color {
     color: #ce434e;
     background-color: transparent;
 }
-
 .det-header-color:hover {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .occ-header-color {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .occ-header-color:hover {
     color: #000000;
     background-color: transparent;
 }
-
 .ou-header-color {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .ou-header-color:hover {
     color: #000000;
     background-color: transparent;
@@ -969,7 +908,6 @@ ul {
     color: #000000;
     background-color: transparent;
 }
-
 .macc-header-color {
     color: #FFFFFF;
     background-color: transparent;
@@ -979,47 +917,38 @@ ul {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .ltu-header-color:hover {
     color: #b9b9b9;
     background-color: transparent;
 }
-
 .grcc-header-color {
     color: #f7d177;
     background-color: transparent;
 }
-
 .grcc-header-color:hover {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .aq-header-color {
     color: #9B9E72;
     background-color: transparent;
 }
-
 .aq-header-color:hover {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .mcc-header-color {
     color: #fad900;
     background-color: transparent;
 }
-
 .mcc-header-color:hover {
     color: #FFFFFF;
     background-color: transparent;
 }
-
 .fsu-header-color {
     color: #fad000;
     background-color: transparent;
 }
-
 .fsu-header-color:hover {
     color: #e8e8e8;
     background-color: transparent;
@@ -1228,7 +1157,7 @@ ul {
     background-color: #6286c1;
 }
 
-.tab-alm button:hover {
+.tab-alm button:hover{
     background-color: #be5581;
 }
 
@@ -1239,23 +1168,18 @@ ul {
 .tab-emu button:hover {
     background-color: #7effc1;
 }
-
 .tab-det button:hover {
     background-color: #2879f1;
 }
-
 .tab-occ button:hover {
     background-color: #05d36f;
 }
-
 .tab-ou button:hover {
     background-color: #f9d097;
 }
-
 .tab-ltu button:hover {
     background-color: #90c4ff;
 }
-
 .tab-fsu button:hover {
     background-color: #ff6181;
 }
@@ -1263,23 +1187,18 @@ ul {
 .tab-gvsu button:hover {
     background-color: #6896fb;
 }
-
 .tab-grcc button:hover {
     background-color: #87bbff;
 }
-
 .tab-aq button:hover {
     background-color: #ff7b86;
 }
-
 .tab-mccc button:hover {
     background-color: #f2768a;
 }
-
 .tab-ket button:hover {
     background-color: #6b7fd6;
 }
-
 .tab-mcc button:hover {
     background-color: #c9c9c9;
 }
@@ -1424,17 +1343,14 @@ ul {
     border-color: #FFC845;
     background-color: #4B306A;
 }
-
 .tab-alm {
     border-color: #060909;
     background-color: #900C42;
 }
-
 .tab-macc {
     border-color: #000000;
     background-color: #003a74;
 }
-
 .tab-wcc button {
     border-color: #97D700;
     background-color: #046A38;
@@ -1444,61 +1360,50 @@ ul {
     border-color: #000000;
     background-color: #046A38;
 }
-
 .tab-det button {
     border-color: #A6093D;
     background-color: #002D72;
 }
-
 .tab-occ button {
     border-color: #7ac695;
     background-color: #046a38;
 }
-
 .tab-ltu button {
     border-color: #a4a4a4;
     background-color: #3990fa;
 }
-
 .tab-ou button {
     border-color: #000000;
     background-color: #BC945B;
 }
-
 .tab-fsu button {
     border-color: #FFD043;
     background-color: #BA0C2F;
 }
-
 .tab-gvsu button {
     border-color: #000000;
     background-color: #0032A0;
 }
-
 .tab-grcc button {
     border-color: #f7d117;
     background-color: #003882;
 }
-
 .tab-aq button {
     border-color: #9B9E72;
     background-color: #7C2128;
 }
-
 .tab-mccc button {
     border-color: #525252;
     background-color: #a32136;
 }
-
 .tab-ket button {
     border-color: #f9d400;
     background-color: #0f2595;
 }
-
 .tab-mcc button {
     border-color: #ffe600;
     background-color: #000000;
-    color: white;
+    color:white; 
 }
 
 /*.tab-emu button, 
@@ -1621,12 +1526,12 @@ ul {
     color: white;
 }
 
-.tab-macc button.active {
+.tab-macc button.active{
     background-color: #3175e3;
     color: white;
 }
 
-.tab-alm button.active {
+.tab-alm button.active{
     background-color: #e31a6e;
     color: white;
 }
@@ -1636,75 +1541,62 @@ ul {
     background-color: #468265;
 }
 
-.tab-emu button.active {
-    color: black;
+.tab-emu button.active{
+    color:black; 
     background-color: #6cad97;
 }
-
-.tab-mccc button.active {
-    color: white;
+    .tab-mccc button.active{
+        color: white;
     background-color: rgb(181, 106, 106);
-}
-
-.tab-alm button.active {
-    color: white;
-    background-color: #973b61;
-}
-
-.tab-ket button.active {
-    color: white;
-    background-color: #323793;
-}
-
-.tab-mcc button.active {
-    color: white;
-    background-color: #e1cd74;
-}
-
-.tab-det button.active {
-    color: white;
-    background-color: #2862b8;
-}
-
-.tab-ou button.active {
-    color: white;
-    background-color: #e1b374;
-}
-
-.tab-occ button.active {
-    color: white;
-    background-color: #2f9d68;
-}
-
-.tab-macc button.active {
-    color: white;
-    background-color: #3b5f8f;
-}
-
-.tab-ltu button.active {
-    color: white;
-    background-color: #74a0e1;
-}
-
-.tab-fsu button.active {
-    color: white;
-    background-color: #e83d5f;
-}
-
-.tab-gvsu button.active {
-    color: white;
-    background-color: #2e66df;
-}
-
-.tab-grcc button.active {
-    color: white;
-    background-color: #247df0;
-}
-
-.tab-aq button.active {
-    color: white;
-    background-color: #ce434e;
-}
+    }
+    .tab-alm button.active{
+        color: white;
+        background-color: #973b61;
+    }
+    .tab-ket button.active{
+        color: white;
+        background-color: #323793;
+    }
+    .tab-mcc button.active{
+        color: white;
+        background-color: #e1cd74;
+    }
+    .tab-det button.active{
+        color: white;
+        background-color: #2862b8;
+    }
+    .tab-ou button.active{
+        color: white;
+        background-color: #e1b374;
+    }
+    .tab-occ button.active{
+        color: white;
+        background-color: #2f9d68;
+    }
+    .tab-macc button.active{
+        color: white;
+        background-color: #3b5f8f;
+    }
+    .tab-ltu button.active{
+        color: white;
+        background-color: #74a0e1;
+    }
+    .tab-fsu button.active{
+        color: white;
+        background-color: #e83d5f;
+    }
+    .tab-gvsu button.active{
+        color: white;
+        background-color: #2e66df;
+    }
+    .tab-grcc button.active{
+        color: white;
+        background-color: #247df0;
+    }
+    .tab-aq button.active{
+        color: white;
+        background-color: #ce434e;
+    }
 
 .tabcontent {
     justify-content: center;
@@ -1723,64 +1615,15 @@ ul {
     width: 70vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    padding: 7em; padding-top: 5em;
 }
 
 .event-logo {
     width: 5em;
     height: auto;
-    margin-bottom: 1em;
+    margin-bottom: 0;
 }
-
-.event-logo:hover {
-    animation: heartBeat;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-.dropdown-phone {
-    display: none; 
-    position: absolute; /* Make sure the dropdown content is positioned relative to this container */
-    z-index: 10; 
-    right: 0; 
-    width: auto;
-    height: auto; 
-    
-}
-
-/* Dropdown content styling */
-.dropdown-content-phone {
-    display: none; /* Initially hidden */
-    position: relative; /* Ensure it overflows the header */
-   
-    background-color: #e6d2bb;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
-    width: auto; 
-    text-align: end;
-    justify-content: flex-end;
-    padding: 0; 
-    height: auto; 
-}
-
-/* Dropdown links styling */
-.dropdown-content-phone a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Hover effect for dropdown links */
-.dropdown-content-phone a:hover {
-    background-color: #ddd;
-}
-
 
 @media only screen and (max-width: 737px) {
-
-
-
     .body-img {
         margin-top: 5vh;
         height: 100vh;
@@ -1831,10 +1674,6 @@ ul {
 
     .name4 {
         font-size: 0.8em;
-    }
-
-    .name7{
-        font-size: 1em; 
     }
 
     .read {
@@ -1921,110 +1760,15 @@ ul {
         height: 90%;
     }
 
-    .events {
-        background-color: #DDA8A1;
-        color: black;
-        padding: 2rem;
-        border-radius: 0em;
-        background-image: url(PrideBackgroundOpaque.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 60%;
-        width: 45%;
-    }
-
-    .pride,
-    .flip-card-front {
+    .pride {
         position: relative;
-        width: 35vw;
-        height: 25vh;
+        width: 30vw;
+        height: 20vh;
         border-radius: 0.5em;
         margin: 0.8em;
         padding: 0.3em;
         border-width: 1em;
-        background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 166, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        overflow: hidden;
-        overflow-y: hidden;
-
-    }
-
-    .link-color-header{
-        color: transparent;
-    }
-
-    .pride:hover {
-        margin: 1em;
-        width: 16vw;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .flip-card {
-        background-color: transparent;
-        width: 30vw;
-        height: 25vh;
-        perspective: 1000px;
-        padding: 1em;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .flip-card-front {
-        background: transparent;
-    }
-
-    .flip-card-back {
-        background-color: rgba(255, 255, 255, 0.595);
-        color: black;
-        box-shadow: 1em 1em rgba(0, 0, 0, 0.257);
-        transform: rotateY(180deg);
-        border: 0.1em solid black;
-        border-radius: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 1rem;
-        height: 80%;
-        width: 80%;
-        overflow: hidden;
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
+        background: linear-gradient(to right, rgba(255, 0, 0, 1.0), rgba(255, 166, 0, 1.0), rgba(255, 255, 0, 1.0), rgba(0, 128, 0, 1.0), rgba(0, 0, 255, 1.0), rgba(128, 0, 128, 1.0));
     }
 
     .umich {
@@ -2150,8 +1894,7 @@ ul {
     .box-gvsu,
     .box-grcc,
     .box-aq,
-    .box-wcc,
-    .dp-vr,
+    .box-wcc, .dp-vr,
     .box-main {
         height: 2em;
         width: auto;
@@ -2167,7 +1910,6 @@ ul {
 
     .dropdown {
         display: inline;
-        position: absolute; 
     }
 
     .dropbtn {
@@ -2189,7 +1931,7 @@ ul {
 
     .gi-body-img {
         min-height: 85vh;
-    }
+    } 
 
 
     .vr-body-img {
@@ -2197,12 +1939,8 @@ ul {
     }
 
     .wwa-header {
-        height: 7vh;
+        height: 6vh;
         width: 100%;
-        display: flex;
-        overflow-y: visible;
-        max-width: 100vw;
-        padding-top: 1vh; 
     }
 
     .go-up {
@@ -2255,7 +1993,7 @@ ul {
     }
 
     .boxes-college-page {
-        width: 70vw;
+        /*width:70vw; */
         height: 35vh;
         justify-content: center;
         border-width: medium;
@@ -2263,19 +2001,13 @@ ul {
         border: 0.25em solid;
         position: relative;
         flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
         margin-bottom: 1em;
     }
 
     .sm {
-        width: 30vw;
-        height: 30vh;
-        padding:none;
-    }
-    
-    .schdrp{
-        font-size: 1em;
+        width: 100vw;
     }
 
     .boxes-event {
@@ -2385,7 +2117,6 @@ ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 95%;
     }
 
     .contact-us2 {
@@ -2408,10 +2139,6 @@ ul {
     .return-home {
         margin-top: 0.2em;
         margin-bottom: 0.2em;
-    }
-
-    .phone{
-        flex-direction: column;
     }
 
     .tab-umich,
@@ -2447,6 +2174,10 @@ ul {
         width: 20%;
         display: flex;
         flex-direction: column;
+    }
+
+    .abs{
+        position: absolute;
     }
 
     .tab-umich button,
@@ -2535,11 +2266,11 @@ ul {
         border: 0.5em solid #FFC845;
     }
 
-    .tab-macc button {
+    .tab-macc button{
         border: 0.5em solid #000000;
     }
 
-    .tab-alm button {
+    .tab-alm button{
         border: 0.5em solid #060A0A;
     }
 
@@ -2616,7 +2347,7 @@ ul {
         top: 80%;
         left: 65%;
         /*background-color: #004d9569;*/
-    }
+    } 
 
     .east {
         height: 9%;
@@ -2657,36 +2388,6 @@ ul {
         justify-content: center;
         align-items: center;
     }
-
-    .temp-inline {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .dropdown-phone {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;  
-        background-color: #e6d2bb;
-    }
-
-    .al-right{
-        display: flex;
-        justify-content: end;
-    }
-
-    .hide{
-        display: none;
-    }
-
-    .dropdown-toggle-phone{
-        background-color: #e6d2bb;
-        width: 3em;
-        align-self: flex-end;
-    }
-
 }
 
 @media only screen and (min-width: 738px) and (max-width: 1200px) {
@@ -2699,9 +2400,7 @@ ul {
         height: 100vh;
     }
 
-    .dropdown-toggle-phone {
-        display: none;
-    }
+   
 
     .body-swirl {
         height: 100vh;
@@ -2730,10 +2429,6 @@ ul {
     }
 
     .name {
-        font-size: 1.5em;
-    }
-
-    .name2 {
         font-size: 0.9em;
     }
 
@@ -2754,10 +2449,6 @@ ul {
         margin-top: 0vh;
         margin-bottom: 7vh;
         ;
-    }
-
-    .name3 {
-        font-size: 1em;
     }
 
     .scrolling-images {
@@ -2816,101 +2507,18 @@ ul {
         margin: 2em;
         object-fit: contain;
         border-radius: 1em;*/
-        height: 60%;
-        width: 60%;
+        height: 70%;
     }
 
-    .pride,
-    .flip-card-front {
+    .pride {
         position: relative;
         width: 20vw;
-        height: 18vh;
+        height: 15vh;
         border-radius: 0.5em;
         margin: 1em;
         padding: 0.3em;
         border-width: 1em;
         background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 166, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        overflow: hidden;
-        overflow-y: hidden;
-
-    }
-
-    .pride:hover {
-        margin: 1em;
-        width: 16vw;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .flip-card {
-        background-color: transparent;
-        width: 20vw;
-        height: 17vh;
-        perspective: 1000px;
-        padding: 1.5em;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .flip-card-front {
-        background: transparent;
-    }
-
-    .flip-card-back {
-        background-color: rgba(255, 255, 255, 0.595);
-        color: black;
-        box-shadow: 1em 1em rgba(0, 0, 0, 0.257);
-        transform: rotateY(180deg);
-        border: 0.1em solid black;
-        border-radius: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 1rem;
-        height: 90%;
-        width: 80%;
-        overflow: hidden;
-    }
-
-    .name7{
-        font-size: 1.5em;
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
     }
 
     .umich {
@@ -3002,14 +2610,6 @@ ul {
         padding: 0.5em;
     }
 
-    .schdrp{
-        font-size: 1.5em;
-    }
-
-    .phone{
-        flex-direction: row;
-    }
-
     /*DROP DOWN*/
     .box-umich,
     .box-msu,
@@ -3076,7 +2676,7 @@ ul {
         height: 100vh;
     }
 
-
+  
 
     .vr-body-img {
         height: 300vh;
@@ -3085,7 +2685,7 @@ ul {
     .wwa-header {
         height: 8vh;
         width: 100%;
-        padding-top: 1vh;
+        padding-top: 0.3em;
     }
 
     .staff {
@@ -3146,7 +2746,6 @@ ul {
         object-fit: contain;
         margin: 1em;
         border: 0.3em solid;
-        margin: auto;
     }
 
     .boxes-event {
@@ -3416,58 +3015,47 @@ ul {
         border: 0.2em solid #97D700;
     }
 
-    .tab-macc button {
+    .tab-macc button{
         border: 0.2em solid #000000;
     }
-
-    .tab-alm button {
+    
+    .tab-alm button{
         border: 0.2em solid #060A0A;
     }
 
     .tab-mcc button {
         border: 0.2em solid #ffee00;
     }
-
     .tab-ket button {
         border: 0.2em solid #fbd502;
     }
-
     .tab-mccc button {
         border: 0.2em solid #525252;
     }
-
     .tab-aq button {
         border: 0.2em solid #9B9E72;
     }
-
     .tab-grcc button {
         border: 0.2em solid #f7d117;
     }
-
     .tab-gvsu button {
         border: 0.2em solid #000000;
     }
-
     .tab-fsu button {
         border: 0.2em solid #FFD043;
     }
-
     .tab-ltu button {
         border: 0.2em solid #7d7d7d;
     }
-
     .tab-ou button {
         border: 0.2em solid #000000;
     }
-
     .tab-occ button {
         border: 0.2em solid #000000;
     }
-
     .tab-det button {
         border: 0.2em solid #A6093D;
     }
-
     .tab-emu button {
         border: 0.2em solid #000000;
     }
@@ -3585,13 +3173,12 @@ ul {
         border-top-width: 0.7em;
     }
 
-    .nested-dropdown-content {
-        position: absolute;
-        width: 95%;
+    .nested-dropdown-content{
+        position:absolute; 
+        width:95%;
         align-self: center;
-        margin: auto;
+        margin:auto;
         filter: drop-shadow(1em 1em rgba(0, 0, 0, 0.377));
-        padding: 0; 
     }
 
     .body-swirl {
@@ -3613,26 +3200,23 @@ ul {
     }
 
     h4 {
-        font-size: 2em;
+        font-size: 1.25em;
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .name {
-        font-size: 2em;
-    }
-    .name2{
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 
     .name5 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .read {
-        font-size: 1em;
+        font-size: 0.75em;
     }
 
     /*IMAGES*/
@@ -3894,7 +3478,7 @@ ul {
         border-bottom-width: 0.7em;
     }
 
-
+    
 
     .vr-body-img {
         height: 100vh;
@@ -3904,10 +3488,6 @@ ul {
         height: 13vh;
         width: 100%;
         padding-top: 0.5em;
-    }
-
-    .schdrp{
-        font-size: 2em;
     }
 
     .staff {
@@ -3948,10 +3528,6 @@ ul {
         z-index: -1;
         border-bottom-width: 0.7em;
     }
-
-    .phone{
-        flex-direction: row;
-    } 
 
     .counter {
         margin-top: 12vh;
@@ -4025,7 +3601,7 @@ ul {
     .vote-logo {
         height: 10vh;
         width: auto;
-        margin-bottom: -3vh;
+        margin-bottom: -6vh;
         opacity: 100%;
     }
 
@@ -4069,10 +3645,6 @@ ul {
         right: 30%;
         opacity: 0.5;
         width: 55%;
-    }
-
-    .name4{
-        font-size: 30px;
     }
 
     .contact-us1 {
@@ -4216,11 +3788,11 @@ ul {
         border: 0.3em solid #FFC845;
     }
 
-    .tab-macc button {
+    .tab-macc button{
         border: 0.3em solid #000000;
     }
-
-    .tab-alm button {
+    
+    .tab-alm button{
         border: 0.3em solid #060A0A;
     }
 
@@ -4231,47 +3803,36 @@ ul {
     .tab-mcc button {
         border: 0.3em solid #ffee00;
     }
-
     .tab-ket button {
         border: 0.3em solid #fbd502;
     }
-
     .tab-mccc button {
         border: 0.3em solid #525252;
     }
-
     .tab-aq button {
         border: 0.3em solid #9B9E72;
     }
-
     .tab-grcc button {
         border: 0.3em solid #f7d117;
     }
-
     .tab-gvsu button {
         border: 0.3em solid #000000;
     }
-
     .tab-fsu button {
         border: 0.3em solid #FFD043;
     }
-
     .tab-ltu button {
         border: 0.3em solid #7d7d7d;
     }
-
     .tab-ou button {
         border: 0.3em solid #000000;
     }
-
     .tab-occ button {
         border: 0.3em solid #000000;
     }
-
     .tab-det button {
         border: 0.3em solid #A6093D;
     }
-
     .tab-emu button {
         border: 0.3em solid #000000;
     }
@@ -4331,13 +3892,9 @@ ul {
         margin-right: 15vw;
     }
 
-    a{
-        padding: 0; 
-    }
-
     input,
     textarea {
-        font-size: 2em;
+        font-size: 1.4em;
         width: 30vw;
         margin-top: 0.5em;
         display: inline-flex;
@@ -4350,7 +3907,6 @@ ul {
         font-size: 1.4em;
     }
 
-
     .events {
         background-color: #DDA8A1;
         color: black;
@@ -4360,31 +3916,18 @@ ul {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 70%;
-        width: 70%;
+        height: 75%;
     }
 
-    .pride,
-    .flip-card-front {
+    .pride {
         position: relative;
         width: 15vw;
         height: 25vh;
         border-radius: 0.5em;
-        margin: 1em;
-        padding: 0.3em;
+        margin: 2em;
+        padding: 0.6em;
         border-width: 1em;
         background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 166, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        overflow: hidden;
-        overflow-y: hidden;
-
-    }
-
-    .name2 {
-        font-size: 3em;
     }
 
     .pride:hover {
@@ -4393,82 +3936,11 @@ ul {
         transition: all 0.2s ease-in-out;
     }
 
-    .flip-card {
-        background-color: transparent;
-        width: 15vw;
-        height: 25vh;
-        perspective: 1000px;
-        padding: 2em;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-
+    .event-logo:hover {
+        animation: heartBeat;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
-
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .flip-card-front {
-        background: transparent;
-    }
-
-    .flip-card-back {
-        background-color: rgba(255, 255, 255, 0.253);
-        color: black;
-        box-shadow: 1em 1em rgba(0, 0, 0, 0.257);
-        transform: rotateY(180deg);
-        border: 0.1em solid rgba(0, 0, 0, 0.273);
-        border-radius: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 1rem;
-        height: 80%;
-        width: 80%;
-        overflow: hidden;
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    /*button.learn-more {
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: #28a745;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-    
-    button.learn-more:hover {
-        background-color: #218838;
-    } */
 
     .south {
         height: 7%;
@@ -4513,14 +3985,6 @@ ul {
         left: 60%;
         /*background-color: #14950069;*/
     }
-
-    .gi-body-img {
-        padding-top: 15em;
-    }
-
-    .dropdown-toggle-phone {
-        display: none;
-    }
 }
 
 @media only screen and (min-resolution: 192dpi) {}
@@ -4532,15 +3996,11 @@ ul {
         max-width: 1200px;
     }
 
-    .dropdown-toggle-phone {
-        display: none;
-    }
-
-    .nested-dropdown-content {
-        position: absolute;
-        width: 95%;
+    .nested-dropdown-content{
+        position:absolute; 
+        width:95%;
         align-self: center;
-        margin: auto;
+        margin:auto;
         filter: drop-shadow(1em 1em rgba(0, 0, 0, 0.377));
     }
 
@@ -4708,9 +4168,7 @@ ul {
         box-shadow: 0 0 5em #0084f7;
     }
 
-    .phone{
-        flex-direction: row;
-    }
+
 
     .college-image {
         margin: auto;
@@ -5069,11 +4527,11 @@ ul {
         border: 0.3em solid #FFC845;
     }
 
-    .tab-macc button {
+    .tab-macc button{
         border: 0.3em solid #000000;
     }
-
-    .tab-alm button {
+    
+    .tab-alm button{
         border: 0.3em solid #060A0A;
     }
 
@@ -5084,52 +4542,41 @@ ul {
     .tab-mcc button {
         border: 0.3em solid #ffee00;
     }
-
     .tab-ket button {
         border: 0.3em solid #fbd502;
     }
-
     .tab-mccc button {
         border: 0.3em solid #525252;
     }
-
     .tab-aq button {
         border: 0.3em solid #9B9E72;
     }
-
     .tab-grcc button {
         border: 0.3em solid #f7d117;
     }
-
     .tab-gvsu button {
         border: 0.3em solid #000000;
     }
-
     .tab-fsu button {
         border: 0.3em solid #FFD043;
     }
-
     .tab-ltu button {
         border: 0.3em solid #7d7d7d;
     }
-
     .tab-ou button {
         border: 0.3em solid #000000;
     }
-
     .tab-occ button {
         border: 0.3em solid #000000;
     }
-
     .tab-det button {
         border: 0.3em solid #A6093D;
     }
-
     .tab-emu button {
         border: 0.3em solid #000000;
     }
 
-
+    
 
     .tab-umich button.active,
     .tab-msu button.active,

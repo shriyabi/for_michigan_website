@@ -222,6 +222,7 @@ label {
     width: 3em;
     transform: translateX(-50%);
     z-index:1; 
+    color:black; 
 }
 
 .submit {
@@ -1083,6 +1084,10 @@ ul {
     text-decoration: none;
 }
 
+.link-color-header{
+    color:black; 
+}
+
 .prev,
 .next {
     cursor: pointer;
@@ -1648,11 +1653,6 @@ ul {
 .tab-mccc button.active {
     color: white;
     background-color: rgb(181, 106, 106);
-}
-
-.tab-alm button.active {
-    color: white;
-    background-color: #973b61;
 }
 
 .tab-ket button.active {

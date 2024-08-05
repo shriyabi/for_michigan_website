@@ -305,7 +305,8 @@ function openCity(evt, cityName) {
 
 function countDown() {
     //change to election day when time comes
-    var countDownDate = new Date("Aug 6, 2024 00:00:00").getTime();
+    //var countDownDate = new Date("Aug 7, 2024 00:00:00").getTime();
+    var countDownDate = new Date(Date.UTC(2024, 7, 6, 20, 0, 0)).getTime();
     var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;

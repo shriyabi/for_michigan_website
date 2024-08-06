@@ -2946,6 +2946,7 @@ ul {
     .dropdown-toggle-phone {
         background-color: #e6d2bb;
         font-size: 1.5em;
+        padding: 0; 
         align-self: flex-end;
     }
 

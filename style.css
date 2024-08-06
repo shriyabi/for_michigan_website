@@ -596,6 +596,22 @@ ul {
     background-color: #ce434e;
 }
 
+.box-dave{
+    background-color: #e7918a;
+}
+
+.box-and{
+    background-color: #0c81d5; 
+}
+    /*.box-and, 
+    .box-hope, 
+    .box-lake, 
+    .box-school, 
+    .box-mad, 
+    .box-hen, 
+    .box-nmu, 
+    .box-bay, */
+
 .box-main {
     background-color: #A98F92;
     border-bottom: 1px solid gray;
@@ -1050,6 +1066,20 @@ ul {
     background-color: transparent;
 }
 
+.dave-header-color:hover{
+    color:#C8C7C7; 
+    background-color: transparent;
+}
+
+.and-header-color{
+    color:#CBB677; 
+    background-color: transparent;
+}
+.and-header-color:hover{
+    color: white; 
+    background-color: transparent;
+}
+
 
 .background-container {
     position: absolute;
@@ -1323,39 +1353,39 @@ ul {
 }
 
 .tab-hope button:hover {
-    background-color: #c9c9c9;
+    background-color: #e8ac8b;
 }
 
 .tab-and button:hover {
-    background-color: #c9c9c9;
+    background-color: #3a84b9;
 }
 
 .tab-dave button:hover {
-    background-color: #c9c9c9;
+    background-color: #e9a39e;
 }
 
 .tab-lake button:hover {
-    background-color: #c9c9c9;
+    background-color: #e08781;
 }
 
 .tab-school button:hover {
-    background-color: #c9c9c9;
+    background-color: #5696cb;
 }
 
 .tab-mad button:hover {
-    background-color: #c9c9c9;
+    background-color: #5f99d7;
 }
 
 .tab-hen button:hover {
-    background-color: #c9c9c9;
+    background-color: #7ab6f2;
 }
 
 .tab-nmu button:hover {
-    background-color: #c9c9c9;
+    background-color: #80cbb0;
 }
 
 .tab-bay button:hover {
-    background-color: #c9c9c9;
+    background-color: rgb(118, 159, 118);
 }
 
 .tab-umich,
@@ -1594,56 +1624,56 @@ ul {
 }
 
 .tab-hope button {
-    border-color: #ffe600;
-    background-color: #000000;
+    border-color: #002244;
+    background-color: #F46A1F;
     color: white;
 }
 
 .tab-and button {
-    border-color: #ffe600;
-    background-color: #000000;
+    border-color: #CBB677;
+    background-color: #004a80;
     color: white;
 }
 
 .tab-dave button {
-    border-color: #ffe600;
-    background-color: #000000;
-    color: white;
+    border-color: #2d2a26;
+    background-color: #ee3124;
+    color: #C8C7C7;
 }
 
 .tab-lake button {
-    border-color: #ffe600;
-    background-color: #000000;
+    border-color: black;
+    background-color: rgb(217, 23, 23);
     color: white;
 }
 
 .tab-school button {
-    border-color: #ffe600;
-    background-color: #000000;
+    border-color: #ebab21;
+    background-color: #00447c;
     color: white;
 }
 
 .tab-mad button {
-    border-color: #ffe600;
-    background-color: #000000;
+    border-color: #FFD200;
+    background-color: #0E4C90;
     color: white;
 }
 
 .tab-hen button {
-    border-color: #ffe600;
-    background-color: #000000;
+    border-color: #777779;
+    background-color: #0054A6;
     color: white;
 }
 
 .tab-nmu button {
-    border-color: #ffe600;
-    background-color: #000000;
+    border-color: #ffc425;
+    background-color: #095339;
     color: white;
 }
 
 .tab-bay button {
-    border-color: #ffe600;
-    background-color: #000000;
+    border-color: rgb(0, 64, 193);
+    background-color: rgb(15, 96, 55);
     color: white;
 }
 
@@ -1858,47 +1888,47 @@ ul {
 
 .tab-hope button.active {
     color: black;
-    background-color: black;
+    background-color: #ff955c;
 }
 
 .tab-and button.active {
     color: black;
-    background-color: black;
-}
-
-.tab-dave button.active {
-    color: black;
-    background-color: black;
+    background-color: #1b7ec4;
 }
 
 .tab-lake button.active {
     color: black;
-    background-color: black;
+    background-color: rgb(217, 135, 135);
+}
+
+.tab-dave button.active {
+    color: black;
+    background-color: #d65f57;
 }
 
 .tab-school button.active {
-    color: black;
-    background-color: black;
+    color: white;
+    background-color: #0d72c5;
 }
 
 .tab-mad button.active {
-    color: black;
-    background-color: black;
+    color: white;
+    background-color: #1d8aff;
 }
 
 .tab-hen button.active {
-    color: black;
-    background-color: black;
+    color: white;
+    background-color: #0080ff;
 }
 
 .tab-nmu button.active {
-    color: black;
-    background-color: black;
+    color: white;
+    background-color: #1bb982;
 }
 
 .tab-bay button.active {
     color: black;
-    background-color: black;
+    background-color: rgb(18, 171, 74);
 }
 
 .tabcontent {
@@ -2350,6 +2380,15 @@ ul {
     .box-grcc,
     .box-aq,
     .box-wcc,
+    .box-hope,
+    .box-and, 
+    .box-dave, 
+    .box-lake, 
+    .box-school, 
+    .box-mad, 
+    .box-hen, 
+    .box-nmu, 
+    .box-bay,
     .dp-vr,
     .box-main {
         height: 2em;
@@ -2765,39 +2804,39 @@ ul {
     }
 
     .tab-hope button {
-        border: 0.5em solid #97D700;
+        border: 0.5em solid #002244;
     }
 
     .tab-and button {
-        border: 0.5em solid #97D700;
+        border: 0.5em solid #CBB677;
     }
 
     .tab-dave button {
-        border: 0.5em solid #97D700;
+        border: 0.5em solid #2d2a26;
     }
 
     .tab-lake button {
-        border: 0.5em solid #97D700;
+        border: 0.5em solid #000000;
     }
 
     .tab-school button {
-        border: 0.5em solid #97D700;
+        border: 0.5em solid #ebab21;
     }
 
     .tab-mad button {
-        border: 0.5em solid #97D700;
+        border: 0.5em solid #FFD200;
     }
 
     .tab-hen button {
-        border: 0.5em solid #97D700;
+        border: 0.5em solid #777779;
     }
 
     .tab-nmu button {
-        border: 0.5em solid #97D700;
+        border: 0.5em solid #ffc425;
     }
 
     .tab-bay button {
-        border: 0.5em solid #97D700;
+        border: 0.5em solid rgb(0, 64, 193);
     }
 
     .tab-umich button.active,
@@ -3302,6 +3341,15 @@ ul {
     .box-gvsu,
     .box-grcc,
     .box-aq,
+    .box-hope,
+    .box-and, 
+    .box-dave, 
+    .box-lake, 
+    .box-school, 
+    .box-mad, 
+    .box-hen, 
+    .box-nmu, 
+    .box-bay,
     .box-main {
         height: 3em;
         width: auto;
@@ -3751,39 +3799,39 @@ ul {
     }
 
     .tab-hope button {
-        border: 0.2em solid #97D700;
+        border: 0.2em solid #002244;
     }
 
     .tab-and button {
-        border: 0.2em solid #97D700;
+        border: 0.2em solid #002244;
     }
 
     .tab-dave button {
-        border: 0.2em solid #97D700;
+        border: 0.2em solid #2d2a26;
     }
 
     .tab-lake button {
-        border: 0.2em solid #97D700;
+        border: 0.2em solid #000000;
     }
 
     .tab-school button {
-        border: 0.2em solid #97D700;
+        border: 0.2em solid #ebab21;
     }
 
     .tab-mad button {
-        border: 0.2em solid #97D700;
+        border: 0.2em solid #FFD200;
     }
 
     .tab-hen button {
-        border: 0.2em solid #97D700;
+        border: 0.2em solid #777779;
     }
 
     .tab-nmu button {
-        border: 0.2em solid #97D700;
+        border: 0.2em solid #ffc425;
     }
 
     .tab-bay button {
-        border: 0.2em solid #97D700;
+        border: 0.2em solid rgb(0, 64, 193);
     }
 
     .tab-umich button.active,
@@ -4181,6 +4229,15 @@ ul {
     .box-gvsu,
     .box-grcc,
     .box-aq,
+    .box-hope,
+    .box-and, 
+    .box-dave, 
+    .box-lake, 
+    .box-school, 
+    .box-mad, 
+    .box-hen, 
+    .box-nmu, 
+    .box-bay,
     .dp-vr,
     .box-main {
         height: 3em;
@@ -4623,39 +4680,39 @@ ul {
     }
 
     .tab-hope button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #002244;
     }
 
     .tab-and button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #002244;
     }
 
     .tab-dave button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #2d2a26;
     }
 
     .tab-lake button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #000000;
     }
 
     .tab-school button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #ebab21;
     }
 
     .tab-mad button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #FFD200;
     }
 
     .tab-hen button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #777779;
     }
 
     .tab-nmu button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #ffc425;
     }
 
     .tab-bay button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid rgb(0, 64, 193);
     }
 
     .tab-umich button.active,
@@ -5142,6 +5199,15 @@ ul {
     .box-gvsu,
     .box-grcc,
     .box-aq,
+    .box-hope,
+    .box-and, 
+    .box-dave, 
+    .box-lake, 
+    .box-school, 
+    .box-mad, 
+    .box-hen, 
+    .box-nmu, 
+    .box-bay,
     .dp-vr,
     .box-main {
         height: 3em;
@@ -5539,39 +5605,39 @@ ul {
     }
 
     .tab-hope button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #002244;
     }
 
     .tab-and button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #002244;
     }
 
     .tab-dave button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #2d2a26;
     }
 
     .tab-lake button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #000000;
     }
 
     .tab-school button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #ebab21;
     }
 
     .tab-mad button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #FFD200;
     }
 
     .tab-hen button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #777779;
     }
 
     .tab-nmu button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid #ffc425;
     }
 
     .tab-bay button {
-        border: 0.3em solid #97D700;
+        border: 0.3em solid rgb(0, 64, 193);
     }
 
 

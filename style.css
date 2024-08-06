@@ -26,8 +26,8 @@ body:hover {
     color: gray;
 }
 
-.name7{
-    font-size: 3.5em; 
+.name7 {
+    font-size: 3.5em;
 }
 
 label {
@@ -42,7 +42,7 @@ label {
     font-size: 1.5em;
 }
 
-.link-color-header{
+.link-color-header {
     color: black;
 }
 
@@ -218,11 +218,11 @@ label {
     background-color: #A98F92;
     position: fixed;
     bottom: 0;
-    left: 5%; 
+    left: 5%;
     width: 3em;
     transform: translateX(-50%);
-    z-index:1; 
-    color:black; 
+    z-index: 1;
+    color: black;
 }
 
 .submit {
@@ -277,7 +277,17 @@ p,
 .tab-fsu button,
 .tab-gvsu button,
 .tab-grcc button,
-.tab-aq button, a {
+.tab-aq button,
+.tab-hope button,
+.tab-and button,
+.tab-dave button,
+.tab-lake button,
+.tab-school button,
+.tab-mad button,
+.tab-hen button,
+.tab-nmu button,
+.tab-bay button,
+a {
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -287,7 +297,7 @@ p,
     padding: 0.5em;
 }
 
-a{
+a {
     padding: 0;
 }
 
@@ -319,7 +329,16 @@ a{
 .tab-fsu button,
 .tab-gvsu button,
 .tab-grcc button,
-.tab-aq button {
+.tab-aq button,
+.tab-hope button,
+.tab-and button,
+.tab-dave button,
+.tab-lake button,
+.tab-school button,
+.tab-mad button,
+.tab-hen button,
+.tab-nmu button,
+.tab-bay button {
     font-weight: 500;
 }
 
@@ -424,11 +443,12 @@ ul {
     position: relative;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
 }
-.nested-dropdown-content{
+
+.nested-dropdown-content {
     /*position:absolute; */
-    width:100%;
+    width: 100%;
     align-self: center;
-    margin:auto;
+    margin: auto;
 }
 
 .dropdown-content .box {
@@ -621,7 +641,7 @@ ul {
     border-bottom-width: 0.5em;
     border-bottom-style: solid;
     vertical-align: middle;
-    text-align: center; 
+    text-align: center;
     overflow-y: visible;
 }
 
@@ -1084,8 +1104,8 @@ ul {
     text-decoration: none;
 }
 
-.link-color-header{
-    color:black; 
+.link-color-header {
+    color: black;
 }
 
 .prev,
@@ -1179,7 +1199,16 @@ ul {
 .tab-fsu button:hover,
 .tab-gvsu button:hover,
 .tab-grcc button:hover,
-.tab-aq button:hover {
+.tab-aq button:hover,
+.tab-hope button:hover,
+.tab-and button:hover,
+.tab-dave button:hover,
+.tab-lake button:hover,
+.tab-school button:hover,
+.tab-mad button:hover,
+.tab-hen button:hover,
+.tab-nmu button:hover,
+.tab-bay button:hover {
     background-color: #ffcd0539;
     color: #000000;
     font-family: "Fira Sans", sans-serif;
@@ -1293,6 +1322,42 @@ ul {
     background-color: #c9c9c9;
 }
 
+.tab-hope button:hover {
+    background-color: #c9c9c9;
+}
+
+.tab-and button:hover {
+    background-color: #c9c9c9;
+}
+
+.tab-dave button:hover {
+    background-color: #c9c9c9;
+}
+
+.tab-lake button:hover {
+    background-color: #c9c9c9;
+}
+
+.tab-school button:hover {
+    background-color: #c9c9c9;
+}
+
+.tab-mad button:hover {
+    background-color: #c9c9c9;
+}
+
+.tab-hen button:hover {
+    background-color: #c9c9c9;
+}
+
+.tab-nmu button:hover {
+    background-color: #c9c9c9;
+}
+
+.tab-bay button:hover {
+    background-color: #c9c9c9;
+}
+
 .tab-umich,
 .tab-msu,
 .tab-cmu,
@@ -1323,7 +1388,16 @@ ul {
 .tab-fsu,
 .tab-gvsu,
 .tab-grcc,
-.tab-aq {
+.tab-aq,
+.tab-hope,
+.tab-and,
+.tab-dave,
+.tab-lake,
+.tab-school,
+.tab-mad,
+.tab-hen,
+.tab-nmu,
+.tab-bay {
     display: inline;
     background-color: transparent;
 }
@@ -1357,7 +1431,16 @@ ul {
 .tab-fsu button,
 .tab-gvsu button,
 .tab-grcc button,
-.tab-aq button {
+.tab-aq button,
+.tab-hope button,
+.tab-and button,
+.tab-dave button,
+.tab-lake button,
+.tab-school button,
+.tab-mad button,
+.tab-hen button,
+.tab-nmu button,
+.tab-bay button {
     display: block;
     color: white;
     width: 100%;
@@ -1510,6 +1593,60 @@ ul {
     color: white;
 }
 
+.tab-hope button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color: white;
+}
+
+.tab-and button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color: white;
+}
+
+.tab-dave button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color: white;
+}
+
+.tab-lake button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color: white;
+}
+
+.tab-school button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color: white;
+}
+
+.tab-mad button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color: white;
+}
+
+.tab-hen button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color: white;
+}
+
+.tab-nmu button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color: white;
+}
+
+.tab-bay button {
+    border-color: #ffe600;
+    background-color: #000000;
+    color: white;
+}
+
 /*.tab-emu button, 
 .tab-mccc button, 
 .tab-alm button, 
@@ -1555,7 +1692,16 @@ ul {
 .tab-fsu button.active,
 .tab-gvsu button.active,
 .tab-grcc button.active,
-.tab-aq button.active {
+.tab-aq button.active,
+.tab-hope button.active,
+.tab-and button.active,
+.tab-dave button.active,
+.tab-lake button.active,
+.tab-school button.active,
+.tab-mad button.active,
+.tab-hen button.active,
+.tab-nmu button.active,
+.tab-bay button.active {
     background-color: #004d95;
     color: white;
 }
@@ -1710,6 +1856,51 @@ ul {
     background-color: #ce434e;
 }
 
+.tab-hope button.active {
+    color: black;
+    background-color: black;
+}
+
+.tab-and button.active {
+    color: black;
+    background-color: black;
+}
+
+.tab-dave button.active {
+    color: black;
+    background-color: black;
+}
+
+.tab-lake button.active {
+    color: black;
+    background-color: black;
+}
+
+.tab-school button.active {
+    color: black;
+    background-color: black;
+}
+
+.tab-mad button.active {
+    color: black;
+    background-color: black;
+}
+
+.tab-hen button.active {
+    color: black;
+    background-color: black;
+}
+
+.tab-nmu button.active {
+    color: black;
+    background-color: black;
+}
+
+.tab-bay button.active {
+    color: black;
+    background-color: black;
+}
+
 .tabcontent {
     justify-content: center;
     align-items: center;
@@ -1727,7 +1918,8 @@ ul {
     width: 70vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    padding: 7em; padding-top: 5em;
+    padding: 7em;
+    padding-top: 5em;
 }
 
 .event-logo {
@@ -1743,28 +1935,31 @@ ul {
 }
 
 .dropdown-phone {
-    display: none; 
-    position: absolute; /* Make sure the dropdown content is positioned relative to this container */
-    z-index: 10; 
-    right: 0; 
+    display: none;
+    position: absolute;
+    /* Make sure the dropdown content is positioned relative to this container */
+    z-index: 10;
+    right: 0;
     width: auto;
-    height: auto; 
-    
+    height: auto;
+
 }
 
 /* Dropdown content styling */
 .dropdown-content-phone {
-    display: none; /* Initially hidden */
-    position: relative; /* Ensure it overflows the header */
-   
+    display: none;
+    /* Initially hidden */
+    position: relative;
+    /* Ensure it overflows the header */
+
     background-color: #e6d2bb;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10;
-    width: auto; 
+    width: auto;
     text-align: end;
     justify-content: flex-end;
-    padding: 0; 
-    height: auto; 
+    padding: 0;
+    height: auto;
 }
 
 /* Dropdown links styling */
@@ -1837,8 +2032,8 @@ ul {
         font-size: 0.8em;
     }
 
-    .name7{
-        font-size: 1em; 
+    .name7 {
+        font-size: 1em;
     }
 
     .read {
@@ -1957,7 +2152,7 @@ ul {
 
     }
 
-    .link-color-header{
+    .link-color-header {
         color: transparent;
     }
 
@@ -2171,7 +2366,7 @@ ul {
 
     .dropdown {
         display: inline;
-        position: relative; 
+        position: relative;
     }
 
     .dropbtn {
@@ -2206,7 +2401,7 @@ ul {
         display: flex;
         overflow-y: visible;
         max-width: 100vw;
-        padding-top: 1vh; 
+        padding-top: 1vh;
     }
 
     .go-up {
@@ -2275,10 +2470,10 @@ ul {
     .sm {
         width: 30vw;
         height: 30vh;
-        padding:none;
+        padding: none;
     }
-    
-    .schdrp{
+
+    .schdrp {
         font-size: 1em;
     }
 
@@ -2414,7 +2609,7 @@ ul {
         margin-bottom: 0.2em;
     }
 
-    .phone{
+    .phone {
         flex-direction: column;
     }
 
@@ -2447,7 +2642,16 @@ ul {
     .tab-fsu,
     .tab-gvsu,
     .tab-grcc,
-    .tab-aq {
+    .tab-aq,
+    .tab-hope,
+    .tab-and,
+    .tab-dave,
+    .tab-lake,
+    .tab-school,
+    .tab-mad,
+    .tab-hen,
+    .tab-nmu,
+    .tab-bay {
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -2482,7 +2686,16 @@ ul {
     .tab-fsu button,
     .tab-gvsu button,
     .tab-grcc button,
-    .tab-aq button {
+    .tab-aq button,
+    .tab-hope button,
+    .tab-and button,
+    .tab-dave button,
+    .tab-lake button,
+    .tab-school button,
+    .tab-mad button,
+    .tab-hen button,
+    .tab-nmu button,
+    .tab-bay button {
         border: 0.5em solid #FFCB05;
         font-size: 0.05em;
     }
@@ -2551,6 +2764,42 @@ ul {
         border: 0.5em solid #97D700;
     }
 
+    .tab-hope button {
+        border: 0.5em solid #97D700;
+    }
+
+    .tab-and button {
+        border: 0.5em solid #97D700;
+    }
+
+    .tab-dave button {
+        border: 0.5em solid #97D700;
+    }
+
+    .tab-lake button {
+        border: 0.5em solid #97D700;
+    }
+
+    .tab-school button {
+        border: 0.5em solid #97D700;
+    }
+
+    .tab-mad button {
+        border: 0.5em solid #97D700;
+    }
+
+    .tab-hen button {
+        border: 0.5em solid #97D700;
+    }
+
+    .tab-nmu button {
+        border: 0.5em solid #97D700;
+    }
+
+    .tab-bay button {
+        border: 0.5em solid #97D700;
+    }
+
     .tab-umich button.active,
     .tab-msu button.active,
     .tab-cmu button.active,
@@ -2581,7 +2830,16 @@ ul {
     .tab-fsu button.active,
     .tab-gvsu button.active,
     .tab-grcc button.active,
-    .tab-aq button.active {
+    .tab-aq button.active,
+    .tab-hope button.active,
+    .tab-and button.active,
+    .tab-dave button.active,
+    .tab-lake button.active,
+    .tab-school button.active,
+    .tab-mad button.active,
+    .tab-hen button.active,
+    .tab-nmu button.active,
+    .tab-bay button.active {
         border: 0.3em solid white;
     }
 
@@ -2672,20 +2930,20 @@ ul {
     .dropdown-phone {
         display: flex;
         flex-direction: column;
-        justify-content: end;  
+        justify-content: end;
         background-color: transparent;
     }
 
-    .al-right{
+    .al-right {
         display: flex;
         justify-content: end;
     }
 
-    .hide{
+    .hide {
         display: none;
     }
 
-    .dropdown-toggle-phone{
+    .dropdown-toggle-phone {
         background-color: #e6d2bb;
         font-size: 1.5em;
         align-self: flex-end;
@@ -2897,7 +3155,7 @@ ul {
         overflow: hidden;
     }
 
-    .name7{
+    .name7 {
         font-size: 1.5em;
     }
 
@@ -2998,15 +3256,16 @@ ul {
         padding: 0.5em;
     }
 
-    .schdrp{
+    .schdrp {
         font-size: 1.25em;
     }
 
-    .hide{
-        justify-content: center; display: flex;
+    .hide {
+        justify-content: center;
+        display: flex;
     }
 
-    .phone{
+    .phone {
         flex-direction: row;
     }
 
@@ -3321,7 +3580,16 @@ ul {
     .tab-fsu,
     .tab-gvsu,
     .tab-grcc,
-    .tab-aq {
+    .tab-aq,
+    .tab-hope,
+    .tab-and,
+    .tab-dave,
+    .tab-lake,
+    .tab-school,
+    .tab-mad,
+    .tab-hen,
+    .tab-nmu,
+    .tab-bay {
         width: 20%;
     }
 
@@ -3355,7 +3623,16 @@ ul {
     .tab-fsu button,
     .tab-gvsu button,
     .tab-grcc button,
-    .tab-aq button {
+    .tab-aq button,
+    .tab-hope button,
+    .tab-and button,
+    .tab-dave button,
+    .tab-lake button,
+    .tab-school button,
+    .tab-mad button,
+    .tab-hen button,
+    .tab-nmu button,
+    .tab-bay button {
         border: 0.2em solid #FFCB05;
         font-size: 1.1em;
     }
@@ -3472,6 +3749,42 @@ ul {
         border: 0.2em solid #000000;
     }
 
+    .tab-hope button {
+        border: 0.2em solid #97D700;
+    }
+
+    .tab-and button {
+        border: 0.2em solid #97D700;
+    }
+
+    .tab-dave button {
+        border: 0.2em solid #97D700;
+    }
+
+    .tab-lake button {
+        border: 0.2em solid #97D700;
+    }
+
+    .tab-school button {
+        border: 0.2em solid #97D700;
+    }
+
+    .tab-mad button {
+        border: 0.2em solid #97D700;
+    }
+
+    .tab-hen button {
+        border: 0.2em solid #97D700;
+    }
+
+    .tab-nmu button {
+        border: 0.2em solid #97D700;
+    }
+
+    .tab-bay button {
+        border: 0.2em solid #97D700;
+    }
+
     .tab-umich button.active,
     .tab-msu button.active,
     .tab-cmu button.active,
@@ -3502,7 +3815,16 @@ ul {
     .tab-fsu button.active,
     .tab-gvsu button.active,
     .tab-grcc button.active,
-    .tab-aq button.active {
+    .tab-aq button.active,
+    .tab-hope button.active,
+    .tab-and button.active,
+    .tab-dave button.active,
+    .tab-lake button.active,
+    .tab-school button.active,
+    .tab-mad button.active,
+    .tab-hen button.active,
+    .tab-nmu button.active,
+    .tab-bay button.active {
         border: 0.3em solid white;
     }
 
@@ -3591,7 +3913,7 @@ ul {
         align-self: center;
         margin: auto;
         filter: drop-shadow(1em 1em rgba(0, 0, 0, 0.377));
-        padding: 0; 
+        padding: 0;
     }
 
     .body-swirl {
@@ -3906,12 +4228,13 @@ ul {
         padding-top: 0.5em;
     }
 
-    .schdrp{
+    .schdrp {
         font-size: 1.5em;
     }
 
-    .hide{
-        justify-content: center; display: flex;
+    .hide {
+        justify-content: center;
+        display: flex;
     }
 
     .staff {
@@ -3953,9 +4276,9 @@ ul {
         border-bottom-width: 0.7em;
     }
 
-    .phone{
+    .phone {
         flex-direction: row;
-    } 
+    }
 
     .counter {
         margin-top: 12vh;
@@ -4125,7 +4448,16 @@ ul {
     .tab-fsu,
     .tab-gvsu,
     .tab-grcc,
-    .tab-aq {
+    .tab-aq,
+    .tab-hope,
+    .tab-and,
+    .tab-dave,
+    .tab-lake,
+    .tab-school,
+    .tab-mad,
+    .tab-hen,
+    .tab-nmu,
+    .tab-bay {
         width: 20%;
     }
 
@@ -4159,7 +4491,16 @@ ul {
     .tab-fsu button,
     .tab-gvsu button,
     .tab-grcc button,
-    .tab-aq button {
+    .tab-aq button,
+    .tab-hope button,
+    .tab-and button,
+    .tab-dave button,
+    .tab-lake button,
+    .tab-school button,
+    .tab-mad button,
+    .tab-hen button,
+    .tab-nmu button,
+    .tab-bay button {
         border: 0.3em solid #FFCB05;
         font-size: 1.5em;
     }
@@ -4280,6 +4621,42 @@ ul {
         border: 0.3em solid #000000;
     }
 
+    .tab-hope button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-and button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-dave button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-lake button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-school button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-mad button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-hen button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-nmu button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-bay button {
+        border: 0.3em solid #97D700;
+    }
+
     .tab-umich button.active,
     .tab-msu button.active,
     .tab-cmu button.active,
@@ -4310,7 +4687,16 @@ ul {
     .tab-fsu button.active,
     .tab-gvsu button.active,
     .tab-grcc button.active,
-    .tab-aq button.active {
+    .tab-aq button.active,
+    .tab-hope button.active,
+    .tab-and button.active,
+    .tab-dave button.active,
+    .tab-lake button.active,
+    .tab-school button.active,
+    .tab-mad button.active,
+    .tab-hen button.active,
+    .tab-nmu button.active,
+    .tab-bay button.active {
         border: 0.2em solid white;
     }
 
@@ -4335,8 +4721,8 @@ ul {
         margin-right: 15vw;
     }
 
-    a{
-        padding: 0; 
+    a {
+        padding: 0;
     }
 
     input,
@@ -4712,7 +5098,7 @@ ul {
         box-shadow: 0 0 5em #0084f7;
     }
 
-    .phone{
+    .phone {
         flex-direction: row;
     }
 
@@ -4983,7 +5369,16 @@ ul {
     .tab-fsu,
     .tab-gvsu,
     .tab-grcc,
-    .tab-aq {
+    .tab-aq,
+    .tab-hope,
+    .tab-and,
+    .tab-dave,
+    .tab-lake,
+    .tab-school,
+    .tab-mad,
+    .tab-hen,
+    .tab-nmu,
+    .tab-bay {
         width: 20%;
     }
 
@@ -5016,7 +5411,16 @@ ul {
     .tab-fsu button,
     .tab-gvsu button,
     .tab-grcc button,
-    .tab-aq button {
+    .tab-aq button,
+    .tab-hope button,
+    .tab-and button,
+    .tab-dave button,
+    .tab-lake button,
+    .tab-school button,
+    .tab-mad button,
+    .tab-hen button,
+    .tab-nmu button,
+    .tab-bay button {
         border: 0.3em solid #FFCB05;
         font-size: 1em;
     }
@@ -5133,6 +5537,42 @@ ul {
         border: 0.3em solid #000000;
     }
 
+    .tab-hope button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-and button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-dave button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-lake button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-school button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-mad button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-hen button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-nmu button {
+        border: 0.3em solid #97D700;
+    }
+
+    .tab-bay button {
+        border: 0.3em solid #97D700;
+    }
+
 
 
     .tab-umich button.active,
@@ -5164,7 +5604,16 @@ ul {
     .tab-fsu button.active,
     .tab-gvsu button.active,
     .tab-grcc button.active,
-    .tab-aq button.active {
+    .tab-aq button.active,
+    .tab-hope button.active,
+    .tab-and button.active,
+    .tab-dave button.active,
+    .tab-lake button.active,
+    .tab-school button.active,
+    .tab-mad button.active,
+    .tab-hen button.active,
+    .tab-nmu button.active,
+    .tab-bay button.active {
         border: 0.2em solid white;
     }
 

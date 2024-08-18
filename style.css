@@ -603,6 +603,27 @@ ul {
 .box-and{
     background-color: #0c81d5; 
 }
+
+.box-hope{
+    background-color: #2064a8;
+}
+.box-hen{
+    background-color: #3486d9;
+}
+.box-lake{
+    background-color: rgb(236, 135, 135);
+}
+.box-mad{
+    background-color: #5193db;
+}
+.box-school{
+    background-color: #0e4b7c ;
+    color:white; 
+}
+
+.box-bay{
+    background-color: #5193db;
+}
     /*.box-and, 
     .box-hope, 
     .box-lake, 
@@ -1080,6 +1101,68 @@ ul {
     background-color: transparent;
 }
 
+.hen-header-color{
+    color: white; 
+    background-color: transparent;
+}
+.hen-header-color:hover{
+    color: gray; 
+    background-color: transparent;
+}
+
+.hope-header-color{
+    color: #F46A1F; 
+    background-color: transparent;
+}
+.hope-header-color:hover{
+    color: white; 
+    background-color: transparent;
+}
+
+.school-header-color{
+    color: #ebab21; 
+    background-color: transparent;
+}
+.school-header-color:hover{
+    color: white; 
+    background-color: transparent;
+}
+
+.bay-header-color{
+    color: #ebab21; 
+    background-color: transparent;
+}
+.bay-header-color:hover{
+    color: white; 
+    background-color: transparent;
+}
+
+.lake-header-color{
+    color: #000000; 
+    background-color: transparent;
+}
+.lake-header-color:hover{
+    color: white; 
+    background-color: transparent;
+}
+
+.mad-header-color{
+    color: #FFD200; 
+    background-color: transparent;
+}
+.mad-header-color:hover{
+    color: white; 
+    background-color: transparent;
+}
+
+.school-header-color{
+    color: #F46A1F; 
+    background-color: transparent;
+}
+.school-header-color:hover{
+    color: white; 
+    background-color: transparent;
+}
 
 .background-container {
     position: absolute;
@@ -1624,8 +1707,8 @@ ul {
 }
 
 .tab-hope button {
-    border-color: #002244;
-    background-color: #F46A1F;
+    border-color: #F46A1F; 
+    background-color: #002244;
     color: white;
 }
 

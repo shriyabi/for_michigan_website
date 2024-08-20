@@ -616,8 +616,9 @@ ul {
 .box-mad{
     background-color: #5193db;
 }
+
 .box-school{
-    background-color: #0e4b7c ;
+    background-color: #2893eb ;
     color:white; 
 }
 
@@ -1128,14 +1129,6 @@ ul {
     background-color: transparent;
 }
 
-.bay-header-color{
-    color: #ebab21; 
-    background-color: transparent;
-}
-.bay-header-color:hover{
-    color: white; 
-    background-color: transparent;
-}
 
 .lake-header-color{
     color: #000000; 
@@ -1155,12 +1148,12 @@ ul {
     background-color: transparent;
 }
 
-.school-header-color{
-    color: #F46A1F; 
+.bay-header-color{
+    color: white; 
     background-color: transparent;
 }
-.school-header-color:hover{
-    color: white; 
+.bay-header-color:hover{
+    color: rgb(0, 64, 193); 
     background-color: transparent;
 }
 
@@ -2991,13 +2984,24 @@ ul {
         font-family: "Fira Sans", sans-serif;
     }
 
+    .north{
+        height: 40%; 
+        width:80%;
+        border: 0.2em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 25%;
+        left: 10%;
+        /*background-color: #955c0069;*/
+    }
+
     .south {
-        height: 7%;
+        height: 8%;
         width: 20%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 78%;
+        top: 87%;
         left: 65%;
         /*background-color: #004d9569;*/
     }
@@ -3008,18 +3012,18 @@ ul {
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 72%;
-        left: 81%;
+        top: 80%;
+        left: 80%;
         /*background-color: #95000069;*/
     }
 
     .west {
-        height: 9%;
+        height: 17%;
         width: 20%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 75%;
+        top: 80%;
         left: 45%;
         /*background-color: #95920069;*/
     }
@@ -3030,9 +3034,9 @@ ul {
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 62%;
+        top: 70%;
         left: 60%;
-        /*background-color: #14950069;*/
+       /* background-color: #14950069;*/
     }
 
     .main-contact {
@@ -3988,15 +3992,26 @@ ul {
         font-family: "Fira Sans", sans-serif;
     }
 
+    .north{
+        height: 40%; 
+        width:80%;
+        border: 0.2em solid none;
+        position: absolute;
+        z-index: 2;
+        top: 25%;
+        left: 10%;
+        /*background-color: #955c0069;*/
+    }
+
     .south {
-        height: 8%;
+        height: 10%;
         width: 20%;
         border: 0.5em solid none;
         position: absolute;
         z-index: 2;
-        top: 78%;
+        top: 86%;
         left: 65%;
-        background-color: #004d9569;
+        /*background-color: #004d9569;*/
     }
 
     .east {
@@ -4005,20 +4020,20 @@ ul {
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 72%;
-        left: 82%;
-        background-color: #95000069;
+        top: 78%;
+        left: 78%;
+        /*background-color: #95000069;*/
     }
 
     .west {
-        height: 10%;
+        height: 20%;
         width: 20%;
         border: 0.5em solid none;
         position: absolute;
         z-index: 2;
-        top: 74%;
+        top: 78%;
         left: 45%;
-        background-color: #95920069;
+        /*background-color: #95920069;*/
     }
 
     .central {
@@ -4027,9 +4042,9 @@ ul {
         border: 0.5em solid none;
         position: absolute;
         z-index: 2;
-        top: 64%;
+        top: 70%;
         left: 60%;
-        background-color: #14950069;
+       /* background-color: #14950069; */
     }
 }
 

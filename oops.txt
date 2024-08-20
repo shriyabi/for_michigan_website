@@ -1,0 +1,7 @@
+//find the leftmost nonzero number
+//if there is none then end the algorithm
+//if there is then make that x
+//deduct x from all the elements (if you reach an element that is strictly less than x then just add x to the result in break)
+//add x to the result
+//repeat the algorithm
+

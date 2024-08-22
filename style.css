@@ -617,6 +617,10 @@ ul {
     background-color: #5193db;
 }
 
+.box-nmu{
+    background-color: #18c98b;
+}
+
 .box-school{
     background-color: #2893eb ;
     color:white; 
@@ -1129,6 +1133,14 @@ ul {
     background-color: transparent;
 }
 
+.nmu-header-color:hover{
+    color: white; 
+    background-color: transparent;
+}
+.nmu-header-color{
+    color: #ffc425; 
+    background-color: transparent;
+}
 
 .lake-header-color{
     color: #000000; 

@@ -2190,6 +2190,18 @@ ul {
         height: auto;
         width: 94vw;
         border-width: 0.2em;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+    }
+
+    .home-job-cont{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        vertical-align: middle;
     }
 
     /*.college-div {
@@ -2537,7 +2549,7 @@ ul {
     }
 
     .staff {
-        width: 100vw;
+        width: 90vw;
         height: auto;
         justify-content: center;
         border-width: 1em;
@@ -3182,6 +3194,18 @@ ul {
     .home-college-box {
         height: auto;
         width: 80vw;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+    }
+
+    .home-job-cont{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        vertical-align: middle;
     }
 
     .colleges {
@@ -4150,6 +4174,14 @@ ul {
         width: 70vw;
         padding-bottom: 5em;
         border-width: 0.5em;
+    }
+
+    .home-job-cont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        vertical-align: middle;
     }
 
     .colleges {

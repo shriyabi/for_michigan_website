@@ -2985,58 +2985,58 @@ ul {
     }
 
     .north{
-        height: 40%; 
-        width:80%;
+        height: 15%; 
+        width:50%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 25%;
-        left: 10%;
-        /*background-color: #955c0069;*/
+        top: 30%;
+        left: 20%;
+        background-color: #955c0069;
     }
 
     .south {
-        height: 8%;
+        height: 7%;
         width: 20%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 87%;
+        top: 80%;
         left: 65%;
-        /*background-color: #004d9569;*/
+        background-color: #004d9569;
     }
 
     .east {
-        height: 9%;
+        height: 11%;
         width: 20%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 80%;
-        left: 80%;
-        /*background-color: #95000069;*/
+        top: 72%;
+        left: 78%;
+        background-color: #95000069;
     }
 
     .west {
-        height: 17%;
+        height: 15%;
         width: 20%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 80%;
+        top: 75%;
         left: 45%;
-        /*background-color: #95920069;*/
+        background-color: #95920069;
     }
 
     .central {
         height: 14%;
-        width: 22%;
+        width: 18%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 70%;
+        top: 65%;
         left: 60%;
-       /* background-color: #14950069;*/
+        background-color: #14950069;
     }
 
     .main-contact {

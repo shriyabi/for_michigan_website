@@ -4516,7 +4516,7 @@ ul {
 
     .college-body-img {
         background-image: url(BackgroundImg.png);
-        height: 100vh;
+        min-height: 100vh;
         z-index: -1;
         border-bottom-width: 0.7em;
     }

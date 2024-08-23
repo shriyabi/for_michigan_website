@@ -287,6 +287,7 @@ p,
 .tab-hen button,
 .tab-nmu button,
 .tab-bay button,
+.tab-main button,
 a {
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
@@ -295,6 +296,11 @@ a {
     color: #000000;
     word-wrap: break-word;
     padding: 0.5em;
+}
+
+.tablinks{
+    background-color: #e6d2bb;
+    color:white; 
 }
 
 a {
@@ -338,7 +344,8 @@ a {
 .tab-mad button,
 .tab-hen button,
 .tab-nmu button,
-.tab-bay button {
+.tab-bay button,
+.tab-main button {
     font-weight: 500;
 }
 
@@ -1326,7 +1333,8 @@ ul {
 .tab-mad button:hover,
 .tab-hen button:hover,
 .tab-nmu button:hover,
-.tab-bay button:hover {
+.tab-bay button:hover,
+.tab-main button:hover {
     background-color: #ffcd0539;
     color: #000000;
     font-family: "Fira Sans", sans-serif;
@@ -1476,6 +1484,10 @@ ul {
     background-color: rgb(118, 159, 118);
 }
 
+.tab-main button:hover{
+    background-color: #e6d2bb;
+}
+
 .tab-umich,
 .tab-msu,
 .tab-cmu,
@@ -1515,7 +1527,7 @@ ul {
 .tab-mad,
 .tab-hen,
 .tab-nmu,
-.tab-bay {
+.tab-main  {
     display: inline;
     background-color: transparent;
 }
@@ -1558,7 +1570,8 @@ ul {
 .tab-mad button,
 .tab-hen button,
 .tab-nmu button,
-.tab-bay button {
+.tab-bay button,
+.tab-main button {
     display: block;
     color: white;
     width: 100%;
@@ -1765,6 +1778,12 @@ ul {
     color: white;
 }
 
+.tab-main button{
+    border-color:black; 
+    background-color: #e6d2bb;
+    color:black; 
+}
+
 /*.tab-emu button, 
 .tab-mccc button, 
 .tab-alm button, 
@@ -1819,7 +1838,8 @@ ul {
 .tab-mad button.active,
 .tab-hen button.active,
 .tab-nmu button.active,
-.tab-bay button.active {
+.tab-bay button.active,
+.tab-main button.active {
     background-color: #004d95;
     color: white;
 }
@@ -2017,6 +2037,11 @@ ul {
 .tab-bay button.active {
     color: black;
     background-color: rgb(18, 171, 74);
+}
+
+.tab-main button.active{
+    color:black; 
+    background-color: #DDA8A1;
 }
 
 .tabcontent {
@@ -2790,7 +2815,8 @@ ul {
     .tab-mad,
     .tab-hen,
     .tab-nmu,
-    .tab-bay {
+    .tab-bay,
+    .tab-main  {
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -2939,6 +2965,10 @@ ul {
         border: 0.5em solid rgb(0, 64, 193);
     }
 
+    .tab-main button{
+        border: 0.5em solid black;
+    }
+
     .tab-umich button.active,
     .tab-msu button.active,
     .tab-cmu button.active,
@@ -3008,6 +3038,10 @@ ul {
         font-family: "Fira Sans", sans-serif;
     }
 
+    .campus{
+        width: 90%;
+    }
+
     .north{
         height: 15%; 
         width:50%;
@@ -3016,7 +3050,7 @@ ul {
         z-index: 2;
         top: 30%;
         left: 20%;
-        /*background-color: #955c0069;*/
+        background-color: #955c0069;
     }
 
     .south {
@@ -3027,7 +3061,7 @@ ul {
         z-index: 2;
         top: 80%;
         left: 65%;
-        /*background-color: #004d9569;*/
+        background-color: #004d9569;
     }
 
     .east {
@@ -3038,7 +3072,7 @@ ul {
         z-index: 2;
         top: 72%;
         left: 78%;
-        /*background-color: #95000069;*/
+        background-color: #95000069;
     }
 
     .west {
@@ -3049,7 +3083,7 @@ ul {
         z-index: 2;
         top: 75%;
         left: 45%;
-        /*background-color: #95920069;*/
+        background-color: #95920069;
     }
 
     .central {
@@ -3060,7 +3094,7 @@ ul {
         z-index: 2;
         top: 65%;
         left: 60%;
-        /*background-color: #14950069;*/
+        background-color: #14950069;
     }
 
     .main-contact {
@@ -3198,6 +3232,7 @@ ul {
         flex-direction: column;
         justify-content: center;
         vertical-align: middle;
+        align-items: center;
     }
 
     .home-job-cont{
@@ -3761,7 +3796,8 @@ ul {
     .tab-mad,
     .tab-hen,
     .tab-nmu,
-    .tab-bay {
+    .tab-bay,
+    .tab-main {
         width: 20%;
     }
 
@@ -3804,7 +3840,8 @@ ul {
     .tab-mad button,
     .tab-hen button,
     .tab-nmu button,
-    .tab-bay button {
+    .tab-bay button,
+    .tab-main button {
         border: 0.2em solid #FFCB05;
         font-size: 1.1em;
     }
@@ -3957,6 +3994,10 @@ ul {
         border: 0.2em solid rgb(0, 64, 193);
     }
 
+    .tab-main button{
+        border: 0.2em solid black;
+    }
+
     .tab-umich button.active,
     .tab-msu button.active,
     .tab-cmu button.active,
@@ -3996,7 +4037,8 @@ ul {
     .tab-mad button.active,
     .tab-hen button.active,
     .tab-nmu button.active,
-    .tab-bay button.active {
+    .tab-bay button.active, 
+    .tab-main button.active {
         border: 0.3em solid white;
     }
 
@@ -4026,6 +4068,10 @@ ul {
         width: 60vw;
         margin-top: 0.5em;
         font-family: "Fira Sans", sans-serif;
+    }
+
+    .campus{
+        width: 90%;
     }
 
     .north{
@@ -4172,7 +4218,6 @@ ul {
     .home-college-box {
         height: auto;
         width: 70vw;
-        padding-bottom: 5em;
         border-width: 0.5em;
     }
 
@@ -4657,7 +4702,8 @@ ul {
     .tab-mad,
     .tab-hen,
     .tab-nmu,
-    .tab-bay {
+    .tab-bay,
+    .tab-main {
         width: 20%;
     }
 
@@ -4700,7 +4746,8 @@ ul {
     .tab-mad button,
     .tab-hen button,
     .tab-nmu button,
-    .tab-bay button {
+    .tab-bay button,
+    .tab-main button {
         border: 0.3em solid #FFCB05;
         font-size: 1.5em;
     }
@@ -4856,6 +4903,9 @@ ul {
     .tab-bay button {
         border: 0.3em solid rgb(0, 64, 193);
     }
+    .tab-main button{
+        border: 0.3em solid black;
+    }
 
     .tab-umich button.active,
     .tab-msu button.active,
@@ -4896,7 +4946,8 @@ ul {
     .tab-mad button.active,
     .tab-hen button.active,
     .tab-nmu button.active,
-    .tab-bay button.active {
+    .tab-bay button.active,
+    .tab-main button.active {
         border: 0.2em solid white;
     }
 
@@ -5060,61 +5111,65 @@ ul {
         background-color: #218838;
     } */
 
+    .campus{
+        width: 50%;
+    }
+
     .north{
         height: 15%; 
         width:50%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 24%;
+        top: 30%;
         left: 20%;
-        /*background-color: #955c0069;*/
+        /*background-color: #955c0069; */
     }
 
     .south {
         height: 7%;
-        width: 22%;
+        width: 10%;
         border: 0.5em solid none;
         position: absolute;
         z-index: 1;
-        top: 75%;
-        left: 65%;
-        /*background-color: #004d9569;*/
+        top: 80%;
+        left: 59%;
+        /*background-color: #004d9569; */
     }
 
     
 
     .west {
-        height: 12%;
-        width: 17%;
+        height: 15%;
+        width: 10%;
         border: 0.5em solid none;
         position: absolute;
         z-index: 2;
-        top: 72%;
+        top: 75%;
         left: 48%;
         /*background-color: #95920069;*/
     }
 
     .east {
-        height: 12%;
-        width: 20%;
+        height: 10%;
+        width: 10%;
         border: 0.2em solid none;
         position: absolute;
         z-index: 2;
-        top: 65%;
-        left: 78%;
+        top: 73%;
+        left: 65%;
         /*background-color: #95000069;*/
     }
 
     .central {
-        height: 15%;
-        width: 22%;
+        height: 12%;
+        width: 10%;
         border: 0.5em solid none;
         position: absolute;
         z-index: 2;
-        top: 58%;
-        left: 60%;
-        /*background-color: #14950069;*/
+        top: 67%;
+        left: 55%;
+        /*background-color: #14950069; */
     }
 
     .gi-body-img {
@@ -5600,7 +5655,7 @@ ul {
     .tab-mad,
     .tab-hen,
     .tab-nmu,
-    .tab-bay {
+    .tab-main {
         width: 20%;
     }
 
@@ -5642,7 +5697,8 @@ ul {
     .tab-mad button,
     .tab-hen button,
     .tab-nmu button,
-    .tab-bay button {
+    .tab-bay button,
+    .tab-main button {
         border: 0.3em solid #FFCB05;
         font-size: 1em;
     }
@@ -5795,6 +5851,9 @@ ul {
         border: 0.3em solid rgb(0, 64, 193);
     }
 
+    .tab-main button{
+        border: 0.3em solid black;
+    }
 
 
     .tab-umich button.active,
@@ -5835,7 +5894,8 @@ ul {
     .tab-mad button.active,
     .tab-hen button.active,
     .tab-nmu button.active,
-    .tab-bay button.active {
+    .tab-bay button.active,
+    .tab-main button.active {
         border: 0.2em solid white;
     }
 

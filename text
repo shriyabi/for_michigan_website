@@ -1,0 +1,498 @@
+
+
+h1,
+h2,
+h3,
+h4,
+p,
+.name,
+.read,
+.tab-umich button,
+.tab-msu button,
+.tab-mtu button,
+.tab-cmu button,
+.tab-svsu button,
+.tab-wsu button,
+.tab-wmu button,
+.tab-del button,
+.tab-mm button,
+.tab-jc button,
+.tab-kvcc button,
+.tab-kc button,
+.tab-lcc button,
+.tab-alb button,
+.tab-wcc button,
+.tab-emu button,
+.tab-mccc button,
+.tab-alm button,
+.tab-ket button,
+.tab-mcc button,
+.tab-det button,
+.tab-ou button,
+.tab-occ button,
+.tab-macc button,
+.tab-ltu button,
+.tab-fsu button,
+.tab-gvsu button,
+.tab-grcc button,
+.tab-aq button,
+.tab-hope button,
+.tab-and button,
+.tab-dave button,
+.tab-lake button,
+.tab-school button,
+.tab-mad button,
+.tab-hen button,
+.tab-nmu button,
+.tab-bay button,
+.tab-main button,
+a {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    word-wrap: break-word;
+    padding: 0.5em;
+}
+
+a {
+    padding: 0;
+}
+
+.tab-umich button,
+.tab-msu button,
+.tab-mtu button,
+.tab-cmu button,
+.tab-svsu button,
+.tab-wsu button,
+.tab-wmu button,
+.tab-del button,
+.tab-mm button,
+.tab-jc button,
+.tab-kvcc button,
+.tab-kc button,
+.tab-lcc button,
+.tab-alb button,
+.tab-wcc button,
+.tab-emu button,
+.tab-mccc button,
+.tab-alm button,
+.tab-ket button,
+.tab-mcc button,
+.tab-det button,
+.tab-ou button,
+.tab-occ button,
+.tab-macc button,
+.tab-ltu button,
+.tab-fsu button,
+.tab-gvsu button,
+.tab-grcc button,
+.tab-aq button,
+.tab-hope button,
+.tab-and button,
+.tab-dave button,
+.tab-lake button,
+.tab-school button,
+.tab-mad button,
+.tab-hen button,
+.tab-nmu button,
+.tab-bay button,
+.tab-main button {
+    font-weight: 500;
+}
+
+.tab-umich button:hover,
+.tab-msu button:hover,
+.tab-cmu button:hover,
+.tab-gvsu button:hover,
+.tab-mtu button:hover,
+.tab-wmu button:hover,
+.tab-wsu button:hover,
+.tab-svsu button:hover,
+.tab-wsu button:hover,
+.tab-del button:hover,
+.tab-mm button:hover,
+.tab-jc button:hover,
+.tab-kvcc button:hover,
+.tab-kc button:hover,
+.tab-lcc button:hover,
+.tab-alb button:hover,
+.tab-wcc button:hover,
+.tab-emu button:hover,
+.tab-mccc button:hover,
+.tab-alm button:hover,
+.tab-ket button:hover,
+.tab-mcc button:hover,
+.tab-det button:hover,
+.tab-ou button:hover,
+.tab-occ button:hover,
+.tab-macc button:hover,
+.tab-ltu button:hover,
+.tab-fsu button:hover,
+.tab-gvsu button:hover,
+.tab-grcc button:hover,
+.tab-aq button:hover,
+.tab-hope button:hover,
+.tab-and button:hover,
+.tab-dave button:hover,
+.tab-lake button:hover,
+.tab-school button:hover,
+.tab-mad button:hover,
+.tab-hen button:hover,
+.tab-nmu button:hover,
+.tab-bay button:hover,
+.tab-main button:hover {
+    background-color: #ffcd0539;
+    color: #000000;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.tab-main button:hover{
+    background-color: #e6d2bb;
+}
+
+.tab-umich,
+.tab-msu,
+.tab-cmu,
+.tab-gvsu,
+.tab-mtu,
+.tab-wmu,
+.tab-wsu,
+.tab-svsu,
+.tab-wsu,
+.tab-del,
+.tab-mm,
+.tab-jc,
+.tab-kvcc,
+.tab-kc,
+.tab-lcc,
+.tab-alb,
+.tab-wcc,
+.tab-emu,
+.tab-mccc,
+.tab-alm,
+.tab-ket,
+.tab-mcc,
+.tab-det,
+.tab-ou,
+.tab-occ,
+.tab-macc,
+.tab-ltu,
+.tab-fsu,
+.tab-gvsu,
+.tab-grcc,
+.tab-aq,
+.tab-hope,
+.tab-and,
+.tab-dave,
+.tab-lake,
+.tab-school,
+.tab-mad,
+.tab-hen,
+.tab-nmu,
+.tab-main  {
+    display: inline;
+    background-color: transparent;
+}
+
+.tab-umich button,
+.tab-msu button,
+.tab-cmu button,
+.tab-gvsu button,
+.tab-mtu button,
+.tab-wmu button,
+.tab-wsu button,
+.tab-svsu button,
+.tab-del button,
+.tab-mm button,
+.tab-jc button,
+.tab-kvcc button,
+.tab-kc button,
+.tab-lcc button,
+.tab-alb button,
+.tab-wcc button,
+.tab-emu button,
+.tab-mccc button,
+.tab-alm button,
+.tab-ket button,
+.tab-mcc button,
+.tab-det button,
+.tab-ou button,
+.tab-occ button,
+.tab-macc button,
+.tab-ltu button,
+.tab-fsu button,
+.tab-gvsu button,
+.tab-grcc button,
+.tab-aq button,
+.tab-hope button,
+.tab-and button,
+.tab-dave button,
+.tab-lake button,
+.tab-school button,
+.tab-mad button,
+.tab-hen button,
+.tab-nmu button,
+.tab-bay button,
+.tab-main button {
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #00274C;
+    border-color: #FFCB05;
+    text-align: center;
+}
+
+.tab-main button{
+    border-color:black; 
+    background-color: #e6d2bb;
+    color:black; 
+}
+
+.tab-umich button.active,
+.tab-msu button.active,
+.tab-cmu button.active,
+.tab-gvsu button.active,
+.tab-mtu button.active,
+.tab-wmu button.active,
+.tab-wsu button.active,
+.tab-svsu button.active,
+.tab-del button.active,
+.tab-mm button.active,
+.tab-jc button.active,
+.tab-kvcc button.active,
+.tab-kc button.active,
+.tab-lcc button.active,
+.tab-alb button.active,
+.tab-wcc button.active,
+.tab-emu button.active,
+.tab-mccc button.active,
+.tab-alm button.active,
+.tab-ket button.active,
+.tab-mcc button.active,
+.tab-det button.active,
+.tab-ou button.active,
+.tab-occ button.active,
+.tab-macc button.active,
+.tab-ltu button.active,
+.tab-fsu button.active,
+.tab-gvsu button.active,
+.tab-grcc button.active,
+.tab-aq button.active,
+.tab-hope button.active,
+.tab-and button.active,
+.tab-dave button.active,
+.tab-lake button.active,
+.tab-school button.active,
+.tab-mad button.active,
+.tab-hen button.active,
+.tab-nmu button.active,
+.tab-bay button.active,
+.tab-main button.active {
+    background-color: #004d95;
+    color: white;
+}
+
+.tab-msu button.active {
+    background-color: #367668;
+    color: white;
+    border-color: #18453B;
+}
+
+.tab-mtu button.active {
+    background-color: #c2c2c2;
+    color: black;
+    border-color: #000000;
+}
+
+.tab-cmu button.active {
+    background-color: #724259;
+    color: white;
+    border-color: #6A0032;
+}
+
+.tab-svsu button.active {
+    background-color: rgb(178, 85, 102);
+    color: white;
+    border-color: rgb(179, 23, 52);
+}
+
+.tab-wsu button.active {
+    background-color: #14a28d;
+    color: black;
+}
+
+.tab-wmu button.active {
+    background-color: #ab5e40;
+}
+
+.tab-del button.active {
+    background-color: #00b478;
+    color: black;
+}
+
+.tab-mm button.active {
+    background-color: #00559f;
+}
+
+.tab-wsu button.active {
+    background-color: #14a28d;
+    color: black;
+}
+
+.tab-jc button.active {
+    background-color: #774a61;
+}
+
+.tab-kc button.active {
+    color: white;
+    background-color: #484848;
+}
+
+.tab-kvcc button.active {
+    background-color: #5192ac;
+}
+
+.tab-lcc button.active {
+    color: white;
+    background-color: #344a7d;
+}
+
+.tab-alb button.active {
+    background-color: #8c64ba;
+    color: white;
+}
+
+.tab-macc button.active {
+    background-color: #3175e3;
+    color: white;
+}
+
+.tab-alm button.active {
+    background-color: #e31a6e;
+    color: white;
+}
+
+.tab-wcc button.active {
+    color: white;
+    background-color: #468265;
+}
+
+.tab-emu button.active {
+    color: black;
+    background-color: #6cad97;
+}
+
+.tab-mccc button.active {
+    color: white;
+    background-color: rgb(181, 106, 106);
+}
+
+.tab-ket button.active {
+    color: white;
+    background-color: #323793;
+}
+
+.tab-mcc button.active {
+    color: white;
+    background-color: #e1cd74;
+}
+
+.tab-det button.active {
+    color: white;
+    background-color: #2862b8;
+}
+
+.tab-ou button.active {
+    color: white;
+    background-color: #e1b374;
+}
+
+.tab-occ button.active {
+    color: white;
+    background-color: #2f9d68;
+}
+
+.tab-macc button.active {
+    color: white;
+    background-color: #3b5f8f;
+}
+
+.tab-ltu button.active {
+    color: white;
+    background-color: #74a0e1;
+}
+
+.tab-fsu button.active {
+    color: white;
+    background-color: #e83d5f;
+}
+
+.tab-gvsu button.active {
+    color: white;
+    background-color: #2e66df;
+}
+
+.tab-grcc button.active {
+    color: white;
+    background-color: #247df0;
+}
+
+.tab-aq button.active {
+    color: white;
+    background-color: #ce434e;
+}
+
+.tab-hope button.active {
+    color: black;
+    background-color: #ff955c;
+}
+
+.tab-and button.active {
+    color: black;
+    background-color: #1b7ec4;
+}
+
+.tab-lake button.active {
+    color: black;
+    background-color: rgb(217, 135, 135);
+}
+
+.tab-dave button.active {
+    color: black;
+    background-color: #d65f57;
+}
+
+.tab-school button.active {
+    color: white;
+    background-color: #0d72c5;
+}
+
+.tab-mad button.active {
+    color: white;
+    background-color: #1d8aff;
+}
+
+.tab-hen button.active {
+    color: white;
+    background-color: #0080ff;
+}
+
+.tab-nmu button.active {
+    color: white;
+    background-color: #1bb982;
+}
+
+.tab-bay button.active {
+    color: black;
+    background-color: rgb(18, 171, 74);
+}
+
+.tab-main button.active{
+    color:black; 
+    background-color: #DDA8A1;
+}

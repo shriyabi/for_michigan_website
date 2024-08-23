@@ -1485,7 +1485,7 @@ ul {
 }
 
 .tab-main button:hover{
-    background-color: #e6d2bb;
+    background-color: #fffffff3;
 }
 
 .tab-umich,
@@ -1780,7 +1780,7 @@ ul {
 
 .tab-main button{
     border-color:black; 
-    background-color: #e6d2bb;
+    background-color: #ffffff60;
     color:black; 
 }
 
@@ -2041,7 +2041,7 @@ ul {
 
 .tab-main button.active{
     color:black; 
-    background-color: #DDA8A1;
+    background-color: #ffffffbe;
 }
 
 .tabcontent {

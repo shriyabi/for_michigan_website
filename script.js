@@ -345,7 +345,7 @@ function changeBackgroundColor5() {
         cont.style.backgroundColor = titlecolors2[currentIndex];
     });
     boxesOther.forEach((bxs) => {
-        bxs.style.backgroundColor = boxcolors[currentIndex];
+        //bxs.style.backgroundColor = "#aab0b592";
         bxs.style.borderColor = titlecolors[currentIndex];
     });
     /*button.forEach((press) => {

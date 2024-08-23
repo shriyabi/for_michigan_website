@@ -3050,7 +3050,7 @@ ul {
         z-index: 2;
         top: 30%;
         left: 20%;
-        background-color: #955c0069;
+        /*background-color: #955c0069;*/
     }
 
     .south {
@@ -3061,7 +3061,7 @@ ul {
         z-index: 2;
         top: 80%;
         left: 65%;
-        background-color: #004d9569;
+        /*background-color: #004d9569;*/
     }
 
     .east {
@@ -3072,7 +3072,7 @@ ul {
         z-index: 2;
         top: 72%;
         left: 78%;
-        background-color: #95000069;
+        /*background-color: #95000069;*/
     }
 
     .west {
@@ -3083,7 +3083,7 @@ ul {
         z-index: 2;
         top: 75%;
         left: 45%;
-        background-color: #95920069;
+        /*background-color: #95920069;*/
     }
 
     .central {
@@ -3094,7 +3094,7 @@ ul {
         z-index: 2;
         top: 65%;
         left: 60%;
-        background-color: #14950069;
+        /*background-color: #14950069;*/
     }
 
     .main-contact {

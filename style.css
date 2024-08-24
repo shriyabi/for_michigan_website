@@ -12,6 +12,11 @@ body:hover {
     cursor: url(Cursor.png), auto;
 }
 
+.text-box{
+    background-color: #DDA8A1;
+    padding: 1em;
+}
+
 .fa-envelope,
 .fa-instagram,
 .fa-location-dot,
@@ -2777,6 +2782,12 @@ ul {
         flex-direction: column;
     }
 
+    .content-box{
+        width: 90%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
     .tab-umich,
     .tab-msu,
     .tab-cmu,
@@ -3465,6 +3476,10 @@ ul {
 
     .phone {
         flex-direction: row;
+    }
+
+    .content-box{
+        width: 30%;
     }
 
     /*DROP DOWN*/
@@ -4523,6 +4538,10 @@ ul {
 
     .phone {
         flex-direction: row;
+    }
+
+    .content-box{
+        width: 30%;
     }
 
     .counter {

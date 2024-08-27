@@ -415,12 +415,12 @@ function changeBackgroundColor6() {
     var staffCont2 = document.querySelectorAll('.dp-vr');
     var dropbtnhover = document.querySelectorAll('.dropbtn');
     var staffCont = document.querySelectorAll('.text-box');
-    //var contact = document.querySelector('.contact-box');
+    var contact = document.querySelector('.contact-form1');
     var dpbox = document.querySelectorAll('.box-main');
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
     header.style.backgroundColor = boxcolors[currentIndex];
-    //contact.style.backgroundColor = boxcolors[currentIndex];
+    contact.style.backgroundColor = boxcolors[currentIndex];
     whoweare.style.backgroundColor = backgroundcolors[currentIndex];
     var phonehead = document.querySelector('.dropdown-toggle-phone'); 
     staff.forEach(function (staff) {

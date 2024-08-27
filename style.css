@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     background-color: #e6d2bb;
     transition: background-color 0.5 ease;
@@ -691,6 +695,19 @@ ul {
     top: 0;
     background-color: #DDA8A1;
     z-index: 3;
+    border-bottom-color: #000000;
+    border-bottom-width: 0.5em;
+    border-bottom-style: solid;
+    vertical-align: middle;
+    text-align: center;
+    overflow-y: visible;
+}
+
+.push-header{
+    display: flex;
+    top: 0;
+    background-color: #DDA8A1;
+    z-index: 0;
     border-bottom-color: #000000;
     border-bottom-width: 0.5em;
     border-bottom-style: solid;
@@ -2564,7 +2581,7 @@ ul {
         height: 300vh;
     }
 
-    .wwa-header {
+    .wwa-header, .push-header {
         height: 6vh;
         width: 100%;
         display: flex;
@@ -3563,7 +3580,7 @@ ul {
         height: 300vh;
     }
 
-    .wwa-header {
+    .wwa-header, .push-header {
         height: 8vh;
         width: 100%;
         padding-top: 1vh;
@@ -4482,7 +4499,7 @@ ul {
         height: 100vh;
     }
 
-    .wwa-header {
+    .wwa-header, .push-header {
         height: 13vh;
         width: 100%;
         padding-top: 0.5em;
@@ -5480,7 +5497,7 @@ ul {
         height: 100vh;
     }
 
-    .wwa-header {
+    .wwa-header, .push-header {
         height: 10vh;
         width: 100%;
     }

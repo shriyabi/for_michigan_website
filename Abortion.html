@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Michigan: Abortion </title>
     <link rel="icon" type="image/png" href="FavIcon.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="output.css">
     <script src="script.js"> </script>
     <script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>
     <!-- FONTS -->
@@ -19,23 +19,6 @@
 
 </head>
 
-<style>
-    .fact{
-        width: 100vw; 
-        justify-content: center;
-        display: flex; 
-        align-items: center;
-    }
-
-    .statement{
-        width: 55%;
-    }
-
-    .photo{
-        width: 30%; 
-    }
-
-</style>
 
 <body onclick="changeBackgroundColor6()" style="cursor: url(Cursor.png), auto;">
     <button class="color-change-button" onclick="changeBackgroundColor6()"> Click Me </button>
@@ -284,102 +267,85 @@
     </div>
     </div>
 
-    <div class="min-height: 100vh">
-        <div
-            style="height: 50vh; background-color: red; background-image: url(BackgroundImg.png); display: flex; justify-content: center; align-items:flex-end; z-index: 0; position: relative;">
-            <div class="mission" style="width:90vw; z-index: 4; position: relative;">
-                <h2 style="text-decoration: underline;"> Housing </h2>
+    <div class="min-h-screen w-screen">
+        <div class="flex items-center justify-center flex-col min-h-[30vh] p-0">
+            <div class="push-header" style="z-index:-1;">
+                test
+            </div>
+            <div class="flex justify-center items-center w-screen min-h-[20vh] "
+                style="background-image: url(BackgroundImg.png);">
+                <div class="mission">
+                    <h2 class="md:text-2xl lg:text-4xl">Abortion </h2>
+                </div>
+            </div>
+            <div class="w-screen flex flex-col justify-start px-10 mx-5">
+                <div
+                    class="w-full mx-3 my-5 flex flex-col md:flex-row items-center justify-center min-h-[40vh] animate__animated animate__backInLeft">
+                    <div class="w-full md:w-1/2 md:mr-10">
+                        <h3 class="md:text-base lg:text-lg font-normal text-start p-0">
+                            <ul>
+                                <h3 class="text-xl md:text-3xl overline text-center md:text-start mb-0"> Advocacy and Leadership on Abortion
+                                    Rights </h3>
+                                <li class="text-center md:text-start">Kamala Harris is the leading voice in the Biden Aministration to restore abortion
+                                rights. She strongly opposes the Supreme Court’s decision to overturn Roe v. Wade,
+                                allowing states to ban abortion. Harris called on Congress to restore the protections of
+                                Roe v. Wade in federal law.<br>
+                                Harris helped organize a White House executive action to protect abortion and has
+                                campigned in 20 states calling on women to vote to protect their rights from government
+                                interference and called on Congress to pass a national law to protect abortion access.
+                                On her cross country protect reproductive freedom tour, she became the first Vice
+                                President to visit an abortion clinic.
+                                <br> </li>
+                                <li class="text-center md:text-start">Kamala is a better messenger on abortion than Biden is by 15 points. Among swing
+                                    voters that gap is even larger.</li>
+                                <li> </li>
+                            </ul>
+                        </h3>
+                    </div>
+                    <div class="w-full md:w-1/2 h-[30vh] flex items-center justify-center">
+                        <img src="Kamala.jpg" class="w-auto h-full"> 
+                    </div>
+                </div>
+                <div
+                    class="w-full mx-3 my-5 flex flex-col md:flex-row items-center justify-center min-h-[40vh] animate__animated animate__backInRight">
+                    <div class="w-full md:w-1/2 min-h-[30vh] flex items-center justify-center">
+                        <img src="AbortionProtest.jpg" class="w-full h-full"> 
+                    </div>
+                    
+                    <div class="w-full md:w-1/2">
+
+                        <h3 class="text-xl md:text-3xl overline"> Policy on Healthcare Access </h3>
+                     <h3 class="md:text-base lg:text-lg font-normal text-center md:text-start">
+                            <ul>
+                                As Vice President, Kamala Harris established an Interagency Task Force on Reproductive Healthcare Access and issued strong guidance from HHS to ensure women are entitled to emergency care, even in states with extreme abortion bans. She defended the FDA's approval of safe and effective medication abortion and supported a woman's right to travel to another state for the care she needs. Harris also worked to strengthen access to affordable contraception, approved the first daily oral contraceptive for over-the-counter use, and supported access to fertility services. Additionally, she developed new resources through HHS and DOJ to provide timely and accurate information about reproductive health care and patients' rights, and strengthened privacy protections for patients and students. </ul>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="min-h-[35vh] w-full bg-green-400 border-t-4 border-black flex justify-center items-center mt-5"
+                style="background-image: url(BackgroundImg.png);">
+                <div class="contact-form1 min-h-[25vh] bg-red-300"
+                    style="display: flex; justify-content: center; align-items: center; padding: 1em; flex-direction: column;">
+                    <h2>CONTACT US</h2>
+                    <script src="script.js"> </script>
+                    <form id="my-form"
+                        action="https://script.google.com/macros/s/AKfycbzQe693nK0A4x9iZY9Hpq_PbOss3SyaDWvp-VWoL6_U4o2V9e9GaqdSHf1-EQK0RPW_/exec"
+                        method="POST" style="text-align: center">
+                        <input type="email" name="Email" placeholder="Email" style="display:inline-block;" required>
+                        <input type="text" name="Name" placeholder="Name" style="display:inline-block;" required>
+                        <br>
+                        <textarea type="text" name="Subject" placeholder="Subject" required></textarea>
+                        <br>
+                        <br>
+                        <button type="submit" class="submit h-auto w-auto"> SUBMIT </button>
+                    </form>
+                    <div id="success-message" class="success-message" style="display:none;">Thank you for contacting us!
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
 
-        <!-- Left and right and add respective image on stuff she did-->
-
-        <div class="fact phone">
-            <div class="statement"> 
-                ihiorejhgoerhgoiwhrgoiwer
-            </div>
-            <img class="photo" src="AlmLogo.webp">
-        </div>
-        <!--<div class="animate__animated animate__backInLeft phone"
-            style="width: 100%; background-color: none; display: flex; justify-content: center; align-items: center;">
-            
-            
-            <div class="content-box" style="margin-right: 3%; padding: 3%; display:flex; flex-direction: column; flex:1;">
-                <h3 style="text-decoration: overline;"> Rent </h3>
-                <div class="image-box"
-                    style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                    <img src="House.png"
-                        style="height: 100%; max-height: 200px; filter: drop-shadow(0 1em 1em rgb(255, 0, 0))">
-                </div>
-                <div class="text-box"
-                    style="width: 100%; border: 0.3em solid black; flex:1; border-radius: 1.5em; height: 100%;">
-                    <p>The Biden-Harris Administration knows rent is sky high and buying a home is out of reach for too
-                        many young people and hardworking Americans.</p>
-                    <p>Biden-Harris are taking action to turn that around:</p>
-                    <ul style="font-family: 'Fira Sans', sans-serif;">
-                        <li>Sending a clear message to corporate landlords by capping rents at 5%.</li>
-                        <li>Repurposing public land to build more affordable homes.</li>
-                        <li>Investing $325 million to build thousands of homes across the country.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="content-box" style="margin-right: 3%; padding: 3%; display:flex; flex-direction:column; flex:1;">
-                <h3 style="text-decoration: overline;"> Monetary Relief </h3>
-                <div class="image-box"
-                    style="width: 100%; height: 100%; display: flex; flex:1; justify-content: center; align-items: center;">
-                    <img src="Money.png"
-                        style="height: 100%; max-height: 200px; filter: drop-shadow(0 1em 1em rgb(255, 0, 0))">
-                </div>
-                <div class="text-box"
-                    style="width: 100%; border: 0.3em solid black; border-radius: 1.5em; flex:1; height: 100%;">
-                    <p>Fighting to take away valuable tax breaks from corporate landlords that raise rent by more than
-                        5%, while also providing $10,000 in mortgage relief to unlock homeownership for young Americans
-                        looking to buy their first home.</p>
-                </div>
-            </div>
-
-            <div class="content-box" style="padding: 3%; display:flex; flex-direction:column; flex:1;">
-                <h3 style="text-decoration: overline;"> Rental Assistance </h3>
-                <div class="image-box"
-                    style="width: 100%; height: 100%; display: flex; flex:1; justify-content: center; align-items: center;">
-                    <img src="Fam.png"
-                        style="height: 100%; max-height: 200px; filter: drop-shadow(0 1em 1em rgb(255, 0, 0))">
-                </div>
-                <div class="text-box"
-                    style="width: 100%; border: 0.3em solid black; border-radius: 1.5em; flex:1; height: 100%;">
-                    <p>Providing rental assistance to more than 5 million households, including an additional 100,000
-                        low-income families, and called on Congress to extend assistance. Leading a crackdown on rental
-                        housing junk fees, including surprise "convenience fees." Implementing a Housing Supply Action
-                        Plan to build more housing across the country. Provided rental assistance to 8 million renters
-                        during the COVID-19 pandemic. Called on Congress to pass the Biden-Harris Housing Plan, which
-                        would build 2 million homes and lower costs for millions of young Americans.</p>
-                </div>
-            </div>
-    </div>
-</div> -->
-
-    </div>
-    <div class="body-img" style="height: 100vh; flex-direction: column; border-top: 0.5em solid #000000;">
-        <div class="contact-form1"
-            style="display: flex; justify-content: center; align-items: center; padding: 1em; flex-direction: column;">
-            <h2>CONTACT US</h2>
-            <script src="script.js"> </script>
-            <form id="my-form"
-                action="https://script.google.com/macros/s/AKfycbzQe693nK0A4x9iZY9Hpq_PbOss3SyaDWvp-VWoL6_U4o2V9e9GaqdSHf1-EQK0RPW_/exec"
-                method="POST" style="text-align: center">
-                <input type="email" name="Email" placeholder="Email" style="display:inline-block;" required>
-                <input type="text" name="Name" placeholder="Name" style="display:inline-block;" required>
-                <br>
-                <textarea type="text" name="Subject" placeholder="Subject" required></textarea>
-                <br>
-                <br>
-                <button type="submit" class="submit">Submit</button>
-            </form>
-            <div id="success-message" class="success-message" style="display:none;">Thank you for contacting us!
-            </div>
-        </div>
-        <br>
     </div>
 
     <div style="border-top: 1em solid black; background-color: transparent; width: 100%;">

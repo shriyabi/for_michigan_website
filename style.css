@@ -15,10 +15,15 @@ body {
 body:hover {
     cursor: url(Cursor.png), auto;
 }
-
+.web-form {
+    background-color: #e6d2bb;
+}
 .text-box{
     background-color: #DDA8A1;
     padding: 1em;
+}
+.form-out{
+    box-shadow: 0 0 1.5em #A98F92;
 }
 
 .fa-envelope,
@@ -3065,6 +3070,7 @@ ul {
         margin-top: 0.5em;
         font-family: "Fira Sans", sans-serif;
     }
+
 
     .campus{
         width: 90%;

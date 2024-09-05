@@ -4,6 +4,8 @@ var fontcolors = ['#A98F92', '#E6D2BB', '#E6D2BB', '#E6D2BB', '#DD3AA6', '#E6D2B
 var titlecolors = ['#5363F2', '#A9992E', '#FF001F', '#DD3AA6', '#A98F92'];
 var boxcolors = ['#E6D2BB', '#E6D2BB', '#E6D2BB', '#D1A5D7', '#DDA8A1'];
 var bodyswirls = ['BlueSwirl.png', 'GreenSwirl.png', 'RedSwirl.png', 'PurpleSwirl.png', 'BeigeSwirl.png'];
+var backgroundcolors2 = ['#4BABF192', '#06BD9192', '#F4417A92', '#A992E092', '#A98F9292'];
+var titlecolors2 = ['#5363F292', '#A9992E92', '#FF001F92', '#DD3AA692', '#A98F9292'];
 var currentIndex = 0;
 var currentIndex1 = -1;
 function changeBackgroundColor() {
@@ -132,7 +134,10 @@ function changeBackgroundColor4() {
     var events = document.querySelectorAll(".events");
      var volun = document.querySelector(".want");
     var dpbox = document.querySelectorAll('.box-main'); 
+    var bx = document.querySelector('.web-form'); 
     var phonehead = document.querySelector('.dropdown-toggle-phone'); 
+    var shad = document.querySelectorAll('.form-out'); 
+
     volun.style.backgroundColor = titlecolors[currentIndex]; 
     body.style.backgroundColor = backgroundcolors[currentIndex];
 //     /*button.forEach((press)=>{
@@ -180,6 +185,11 @@ function changeBackgroundColor4() {
      contactForm1.forEach(function (contactForm1) {
          contactForm1.style.backgroundColor = boxcolors[currentIndex];
     });
+    const shadowValue = `0 0 1.5em ${titlecolors[currentIndex]}`; // Add the shadow dimensions
+    shad.forEach(function (shad) {
+    shad.style.boxShadow = shadowValue;
+    });
+    bx.style.backgroundColor = backgroundcolors[currentIndex];
      events.forEach((event) => {
         event.style.backgroundColor = boxcolors[currentIndex];
     });
@@ -320,8 +330,7 @@ function changeBackgroundColor2() {
 }
 
 var currentIndex1 = -1;
-var backgroundcolors2 = ['#4BABF192', '#06BD9192', '#F4417A92', '#A992E092', '#A98F9292'];
-var titlecolors2 = ['#5363F292', '#A9992E92', '#FF001F92', '#DD3AA692', '#A98F9292'];
+
 function changeBackgroundColor5() {
     var body = document.body;
     var button = document.querySelector('button');

@@ -30,8 +30,11 @@
                 <h3 class="name3" style="display: inline;"><a href="index" class="link-color-header"
                         style="margin-right: 2rem;"> HOME </a>
                 </h3>
+                <h3 class="name3" style="display: inline;"><a href="Voter-Information" class="link-color-header"
+                    style="margin-right: 2rem;"> VOTER INFORMATION </a>
+            </h3>
             </div>
-            <div class="dropdown abs" style="margin-right: 1rem;">
+            <!--<div class="dropdown abs" style="margin-right: 1rem;">
                 <h3 class="name3"><button class="dropbtn"> VOTING INFORMATION </button> </h3>
                 <ul class="dropdown-content">
                     <li class="nested-dropdown">
@@ -212,11 +215,16 @@
                     </li>
                 </ul>
                 </li>
-            </div>
+            </div>-->
             <div class="hide">
                 <div class="dropdown" style="margin-right: 1rem;">
                     <h3 class="name3"><button class="dropbtn"> GET INVOLVED </button> </h3>
                     <div class="dropdown-content">
+                        <a href="Get-Involved" class="link-color" style="background-color: none; padding: 0;">
+                            <div class="dp-vr">
+                                <h4> Pledge to Vote </h4>
+                            </div>
+                        </a>
                         <a href="Jobs" class="link-color" style="background-color: none; padding: 0;">
                             <div class="dp-vr">
                                 <h4> Join our Team </h4>
@@ -326,19 +334,29 @@
                 style="background-image: url(BackgroundImg.png);">
                 <div class="contact-form1 min-h-[25vh] bg-red-300"
                     style="display: flex; justify-content: center; align-items: center; padding: 1em; flex-direction: column;">
-                    <h2>CONTACT US</h2>
+                    <h2>GET INVOLVED</h2>
                     <script src="script.js"> </script>
                     <form id="my-form"
-                        action="https://script.google.com/macros/s/AKfycbzQe693nK0A4x9iZY9Hpq_PbOss3SyaDWvp-VWoL6_U4o2V9e9GaqdSHf1-EQK0RPW_/exec"
+                        action="https://script.google.com/macros/s/AKfycbz9pP_YdvPllCAnjhjo0dRnIvxikEXPQuo3pnuc7RJNdUwZv5QYBmMnComf__RuSp2S/exec"
                         method="POST" style="text-align: center">
-                        <input type="email" name="Email" placeholder="Email" style="display:inline-block;" required>
-                        <input type="text" name="Name" placeholder="Name" style="display:inline-block;" required>
+                        <input type="email" class="form-out rounded px-2" name="Email" placeholder="Email" style="display:inline-block;" required>
+                        <input type="text" class="form-out rounded px-2" name="Name" placeholder="Name" style="display:inline-block;" required>
                         <br>
-                        <textarea type="text" name="Subject" placeholder="Subject" required></textarea>
+                        <label for="volunteeringInterest"> <h3 class="text-xs md:text-base overline">Interested in Volunteering for For Michigan:</h3></label>
+                    <select id="volunteeringInterest" name="Interest in Volunteering for For Michigan"
+                        style="display:inline-block;"  class="w-1/2 rounded p-1 text-base md:text-lg form-out" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br>
+
+                        <label class="mt-5 overline text-base font-semibold"> <h3 class="text-xs md:text-base overline">Interested in Paid Opportunities at For Michigan? Submit a Statement of Interest! </h3></label>
+                        <textarea type="text" class="form-out h-[25vh] rounded px-2" name="Interest in Paid Opportunities: Statement of Interest" placeholder="Statement of Interest" required></textarea>
                         <br>
                         <br>
                         <button type="submit" class="submit h-auto w-auto"> SUBMIT </button>
                     </form>
+                    <p> * For paid opportunities, we may ask for your resume prior to interviews. </p>
                     <div id="success-message" class="success-message" style="display:none;">Thank you for contacting us!
                     </div>
                 </div>
@@ -375,7 +393,7 @@
         <br>
         <br>
         <p style="color: black; "> For Michigan is a 501(c)(4) Organization </p>
-        <p style="color: black; font-family:Arial, Helvetica, sans-serif"> &copy For Michigan | All
+       <p style="color: black; font-family:Arial, Helvetica, sans-serif"> Paid for by For Michigan Action Fund and not authorized by any candidate or candidate's committee  <br> All
             Rights Reserved</p>
     </div>
 </body>

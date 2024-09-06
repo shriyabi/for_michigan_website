@@ -617,10 +617,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
 .mt-0 {
   margin-top: 0px;
 }
@@ -665,10 +661,6 @@ video {
   height: 80%;
 }
 
-.h-\[1\.5em\] {
-  height: 1.5em;
-}
-
 .h-\[15em\] {
   height: 15em;
 }
@@ -687,6 +679,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[25vh\] {
+  height: 25vh;
 }
 
 .min-h-\[20vh\] {
@@ -844,6 +844,11 @@ video {
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
 .bg-red-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
@@ -939,6 +944,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .italic {
@@ -3287,15 +3296,15 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 60%;
-    width: 45%;
+    height: 100%;
+    width: 100%;
   }
 
   .pride,
     .flip-card-front {
     position: relative;
-    width: 35vw;
-    height: 25vh;
+    width: 80vw;
+    height: 50vh;
     border-radius: 0.5em;
     margin: 0.8em;
     padding: 0.3em;
@@ -3307,6 +3316,7 @@ ul {
     margin: auto;
     overflow: hidden;
     overflow-y: hidden;
+    border-color: transparent;
   }
 
   .link-color-header {
@@ -3321,8 +3331,8 @@ ul {
 
   .flip-card {
     background-color: transparent;
-    width: 30vw;
-    height: 25vh;
+    width: 80vw;
+    height: 40vh;
     perspective: 1000px;
     padding: 1em;
     display: inline-flex;
@@ -4275,15 +4285,15 @@ ul {
         margin: 2em;
         object-fit: contain;
         border-radius: 1em;*/
-    height: 60%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
   }
 
   .pride,
     .flip-card-front {
     position: relative;
-    width: 20vw;
-    height: 18vh;
+    width: 40vw;
+    height: 40vh;
     border-radius: 0.5em;
     margin: 1em;
     padding: 0.3em;
@@ -4295,6 +4305,7 @@ ul {
     margin: auto;
     overflow: hidden;
     overflow-y: hidden;
+    border-color: transparent;
   }
 
   .pride:hover {
@@ -4305,8 +4316,8 @@ ul {
 
   .flip-card {
     background-color: transparent;
-    width: 20vw;
-    height: 17vh;
+    width: 40vw;
+    height: 40vh;
     perspective: 1000px;
     padding: 1.5em;
     display: inline-flex;
@@ -6013,15 +6024,15 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 70%;
-    width: 70%;
+    height: 100%;
+    width: 100%;
   }
 
   .pride,
     .flip-card-front {
     position: relative;
-    width: 15vw;
-    height: 25vh;
+    width: 30vw;
+    height: 40vh;
     border-radius: 0.5em;
     margin: 1em;
     padding: 0.3em;
@@ -6033,6 +6044,7 @@ ul {
     margin: auto;
     overflow: hidden;
     overflow-y: hidden;
+    border-color: transparent;
   }
 
   /*.name2 {
@@ -6047,8 +6059,8 @@ ul {
 
   .flip-card {
     background-color: transparent;
-    width: 15vw;
-    height: 25vh;
+    width: 30vw;
+    height: 40vh;
     perspective: 1000px;
     padding: 2em;
     display: inline-flex;
@@ -6997,11 +7009,6 @@ ul {
     padding-right: 1rem;
   }
 
-  .md\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
   .md\:text-start {
     text-align: start;
   }
@@ -7063,12 +7070,24 @@ ul {
     height: 100%;
   }
 
+  .lg\:h-\[50vh\] {
+    height: 50vh;
+  }
+
   .lg\:max-h-\[35vh\] {
     max-height: 35vh;
   }
 
+  .lg\:max-h-\[50vh\] {
+    max-height: 50vh;
+  }
+
   .lg\:min-h-\[70vh\] {
     min-height: 70vh;
+  }
+
+  .lg\:min-h-\[50vh\] {
+    min-height: 50vh;
   }
 
   .lg\:w-1\/2 {

@@ -2311,15 +2311,15 @@ ul {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 60%;
-        width: 45%;
+        height: 100%;
+        width: 100%;
     }
 
     .pride,
     .flip-card-front {
         position: relative;
-        width: 35vw;
-        height: 25vh;
+        width: 80vw;
+        height: 50vh;
         border-radius: 0.5em;
         margin: 0.8em;
         padding: 0.3em;
@@ -2331,6 +2331,7 @@ ul {
         margin: auto;
         overflow: hidden;
         overflow-y: hidden;
+        border-color: transparent;
 
     }
 
@@ -2346,8 +2347,8 @@ ul {
 
     .flip-card {
         background-color: transparent;
-        width: 30vw;
-        height: 25vh;
+        width: 80vw;
+        height: 40vh;
         perspective: 1000px;
         padding: 1em;
         display: inline-flex;
@@ -3302,15 +3303,15 @@ ul {
         margin: 2em;
         object-fit: contain;
         border-radius: 1em;*/
-        height: 60%;
-        width: 60%;
+        height: 100%;
+        width: 100%;
     }
 
     .pride,
     .flip-card-front {
         position: relative;
-        width: 20vw;
-        height: 18vh;
+        width: 40vw;
+        height: 40vh;
         border-radius: 0.5em;
         margin: 1em;
         padding: 0.3em;
@@ -3322,6 +3323,7 @@ ul {
         margin: auto;
         overflow: hidden;
         overflow-y: hidden;
+        border-color: transparent;
 
     }
 
@@ -3333,8 +3335,8 @@ ul {
 
     .flip-card {
         background-color: transparent;
-        width: 20vw;
-        height: 17vh;
+        width: 40vw;
+        height: 40vh;
         perspective: 1000px;
         padding: 1.5em;
         display: inline-flex;
@@ -5043,15 +5045,15 @@ ul {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 70%;
-        width: 70%;
+        height: 100%;
+        width: 100%;
     }
 
     .pride,
     .flip-card-front {
         position: relative;
-        width: 15vw;
-        height: 25vh;
+        width: 30vw;
+        height: 40vh;
         border-radius: 0.5em;
         margin: 1em;
         padding: 0.3em;
@@ -5063,6 +5065,7 @@ ul {
         margin: auto;
         overflow: hidden;
         overflow-y: hidden;
+        border-color: transparent;
 
     }
 
@@ -5078,8 +5081,8 @@ ul {
 
     .flip-card {
         background-color: transparent;
-        width: 15vw;
-        height: 25vh;
+        width: 30vw;
+        height: 40vh;
         perspective: 1000px;
         padding: 2em;
         display: inline-flex;

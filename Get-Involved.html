@@ -287,8 +287,8 @@
     </div>
 
 
-    <div class="flex flex-col md:flex-row w-full justify-start items-start">
-        <div class="flex flex-col w-full md:w-1/2 justify-start items-start mx-7 md:mx-3">
+    <div class="flex flex-col lg:flex-row w-full justify-start items-start ">
+        <div class="flex flex-col w-full md:w-1/2 justify-start items-start bg-green-300 px-3">
                     <label for="schoolAttending"><h3 class="text-base overline">School Attending (if Applicable): </h3> </label>
                     <select id="schoolAttending" name="School Attending (if Applicable)" style="display:inline-block;" class="w-full rounded p-1 text-base md:text-lg form-out"
                         required>
@@ -321,21 +321,23 @@
                             <option value="University of Detriot Mercy">University of Detriot Mercy</option>
                             <option value="University of Michigan - Ann Arbor">University of Michigan - Ann Arbor
                             </option>
+                            <option value="University of Michigan - Dearborn"> University of Michigan - Dearborn
+                            </option>
                             <option value="University of Michigan - Flint">University of Michigan - Flint</option>
                             <option value="Wayne State University">Wayne State University</option>
                             <option value="Other">Other</option>
                     </select><br>
         </div>
-        <div class="flex flex-col w-full md:w-1/2 justify-start items-start mx-7 md:mx-3">
+        <div class="flex flex-col w-full lg:w-1/2 justify-start items-start bg-green-300">
                     <label for="volunteeringInterest"> <h3 class="text-xs md:text-base overline">Interest in Volunteering for For Michigan:</h3></label>
                     <select id="volunteeringInterest" name="Interest in Volunteering for For Michigan"
-                        style="display:inline-block;"  class="w-1/2 rounded p-1 text-base md:text-lg form-out" required>
+                        style="display:inline-block;"  class="w-full md:w-1/2 lg:w-full rounded p-1 text-base md:text-lg form-out" required>
                         <option value="" disabled selected>Select an option</option>
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                     </select><br>
-                </div>
-            </div>
+        </div>
+</div>
 
             <label for="statementOfInterest"> <h3 class="text-base">Interested in Paid Opportunities at For Michigan? Submit a Statement of Interest Below:</h3></label>
             <textarea type="text" id="statementOfInterest" name="Interest in Paid Opportunities for For Michigan: Statement of Interest" placeholder="Statement of Interest" style="display:inline-block;" class="w-full h-[30vh] rounded px-1 text-base md:text-lg form-out" required></textarea>

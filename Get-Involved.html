@@ -288,7 +288,7 @@
 
 
     <div class="flex flex-col lg:flex-row w-full justify-start items-start ">
-        <div class="flex flex-col w-full md:w-1/2 justify-start items-start bg-green-300 px-3">
+        <div class="flex flex-col w-full md:w-1/3 justify-start items-start bg-green-300 px-3">
                     <label for="schoolAttending"><h3 class="text-base overline">School Attending (if Applicable): </h3> </label>
                     <select id="schoolAttending" name="School Attending (if Applicable)" style="display:inline-block;" class="w-full rounded p-1 text-base md:text-lg form-out"
                         required>
@@ -328,14 +328,23 @@
                             <option value="Other">Other</option>
                     </select><br>
         </div>
-        <div class="flex flex-col w-full lg:w-1/2 justify-start items-start bg-green-300">
+        <div class="flex flex-col w-full lg:w-1/3 justify-start items-start bg-green-300 px-3">
                     <label for="volunteeringInterest"> <h3 class="text-xs md:text-base overline">Interest in Volunteering for For Michigan:</h3></label>
                     <select id="volunteeringInterest" name="Interest in Volunteering for For Michigan"
-                        style="display:inline-block;"  class="w-full md:w-1/2 lg:w-full rounded p-1 text-base md:text-lg form-out" required>
+                        style="display:inline-block;"  class="w-full rounded p-1 text-base md:text-lg form-out" required>
                         <option value="" disabled selected>Select an option</option>
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                     </select><br>
+        </div>
+        <div class="flex flex-col w-full lg:w-1/3 justify-start items-start bg-green-300 px-3">
+            <label for="volunteeringInterest"> <h3 class="text-xs md:text-base overline">Interested in Paid Opportunities at For Michigan:</h3></label>
+            <select id="volunteeringInterest" name="Interest in Paid Opportunities for For Michigan: Statement of Interest"
+                style="display:inline-block;"  class="w-full rounded p-1 text-base md:text-lg form-out" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br>
         </div>
 </div>
 

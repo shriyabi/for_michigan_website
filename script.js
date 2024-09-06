@@ -131,14 +131,14 @@ function changeBackgroundColor4() {
      var contact = document.querySelectorAll('.contact-box');
      var homeCollegeBox = document.querySelector(".home-college-box");
      var contactForm1 = document.querySelectorAll(".contact-form1");
-    var events = document.querySelectorAll(".events");
-     var volun = document.querySelector(".want");
+    var events = document.querySelector(".events");
+     //var volun = document.querySelector(".want");
     var dpbox = document.querySelectorAll('.box-main'); 
     var bx = document.querySelector('.web-form'); 
     var phonehead = document.querySelector('.dropdown-toggle-phone'); 
     var shad = document.querySelectorAll('.form-out'); 
 
-    volun.style.backgroundColor = titlecolors[currentIndex]; 
+    //volun.style.backgroundColor = titlecolors[currentIndex]; 
     body.style.backgroundColor = backgroundcolors[currentIndex];
 //     /*button.forEach((press)=>{
 //         press.style.backgroundColor = titlecolors[currentIndex];
@@ -190,9 +190,10 @@ function changeBackgroundColor4() {
     shad.style.boxShadow = shadowValue;
     });
     bx.style.backgroundColor = backgroundcolors[currentIndex];
-     events.forEach((event) => {
+     /*events.forEach((event) => {
         event.style.backgroundColor = boxcolors[currentIndex];
-    });
+    }); */
+    events.style.backgroundColor = boxcolors[currentIndex];
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
 }

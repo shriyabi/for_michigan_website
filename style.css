@@ -837,7 +837,7 @@ ul {
 }
 
 .umich-header-color {
-    color: #FFCB05;
+    color: #f4cb27;
     background-color: transparent;
 }
 
@@ -1605,8 +1605,8 @@ ul {
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
-    background-color: #00274C;
-    border-color: #FFCB05;
+    background-color: #001c37;
+    border-color: #f4cb27;
     text-align: center;
 }
 
@@ -2895,7 +2895,7 @@ ul {
     .tab-hen button,
     .tab-nmu button,
     .tab-bay button {
-        border: 0.5em solid #FFCB05;
+        border: 0.5em solid #f4cb27;
         font-size: 0.05em;
     }
 
@@ -3882,7 +3882,7 @@ ul {
     .tab-nmu button,
     .tab-bay button,
     .tab-main button {
-        border: 0.2em solid #FFCB05;
+        border: 0.2em solid #f4cb27;
         font-size: 1.1em;
     }
 
@@ -4792,7 +4792,7 @@ ul {
     .tab-nmu button,
     .tab-bay button,
     .tab-main button {
-        border: 0.3em solid #FFCB05;
+        border: 0.3em solid #f4cb27;
         font-size: 1.5em;
     }
 
@@ -5744,7 +5744,7 @@ ul {
     .tab-nmu button,
     .tab-bay button,
     .tab-main button {
-        border: 0.3em solid #FFCB05;
+        border: 0.3em solid #f4cb27;
         font-size: 1em;
     }
 

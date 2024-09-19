@@ -475,6 +475,68 @@ function changeBackgroundColor6() {
 }
 
 var currentIndex1 = -1;
+function changeBackgroundColor9() {
+    var body = document.body;
+    var button = document.querySelector('button');
+    var header = document.querySelector(".wwa-header");
+    var whoweare = document.querySelector(".mission");
+    var staff = document.querySelectorAll('.staff');
+    var link = document.querySelectorAll('a');
+    var staffCont2 = document.querySelectorAll('.dp-vr');
+    var dropbtnhover = document.querySelectorAll('.dropbtn');
+    var staffCont = document.querySelectorAll('.text-box');
+    var contact = document.querySelector('.contact-form1');
+    var dpbox = document.querySelectorAll('.box-main');
+    var want = document.querySelector('.want'); 
+    body.style.backgroundColor = backgroundcolors[currentIndex];
+    button.style.backgroundColor = titlecolors[currentIndex];
+    want.style.backgroundColor = titlecolors[currentIndex]; 
+    header.style.backgroundColor = boxcolors[currentIndex];
+    contact.style.backgroundColor = boxcolors[currentIndex];
+    whoweare.style.backgroundColor = backgroundcolors[currentIndex];
+    var phonehead = document.querySelector('.dropdown-toggle-phone'); 
+    staff.forEach(function (staff) {
+        staff.style.backgroundColor = boxcolors[currentIndex];
+        staff.style.backgroundImage = 'url(' + bodyswirls[currentIndex] + ')';
+        staff.style.boxShadowColor = boxcolors[currentIndex - 1];
+    });
+    staffCont.forEach(function (staffCont) {
+        staffCont.style.backgroundColor = boxcolors[currentIndex];
+    });
+    dpbox.forEach((box)=>{
+        box.style.backgroundColor = titlecolors[currentIndex]; 
+    });
+    dropbtnhover.forEach(function (dropbtnhover) {
+        dropbtnhover.addEventListener('mouseenter', function () {
+            if (currentIndex1 >= 0) {
+                dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
+            }
+            dropbtnhover.style.color = fontcolors[currentIndex];
+        });
+        dropbtnhover.addEventListener('mouseleave', function () {
+            dropbtnhover.style.color = '#000000';
+            dropbtnhover.style.backgroundColor = 'transparent';
+        });
+    });
+    link.forEach(function (link) {
+        link.addEventListener('mouseenter', function () {
+            link.style.color = fontcolors[currentIndex];
+            link.style.backgroundColor = backgroundcolors2[currentIndex1];
+        });
+        link.addEventListener('mouseleave', function () {
+            link.style.color = '#000000';
+            link.style.backgroundColor = 'transparent';
+        });
+    });
+    staffCont2.forEach(function (staffCont) {
+        staffCont.style.backgroundColor = titlecolors[currentIndex];
+    });
+    phonehead.style.backgroundColor = titlecolors[currentIndex]; 
+    currentIndex = (currentIndex + 1) % backgroundcolors.length;
+    currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
+}
+
+var currentIndex1 = -1;
 function changeBackgroundColor7() {
     var body = document.body;
     var button = document.querySelector('button');

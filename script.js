@@ -659,6 +659,70 @@ function changeBackgroundColor8() {
     currentIndex = (currentIndex + 1) % backgroundcolors.length;
     currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
 }
+var currentIndex1 = -1;
+function changeBackgroundColor12() {
+    var body = document.body;
+    var button = document.querySelector('button');
+    var sub = document.querySelectorAll('.submit');
+    var header = document.querySelector(".wwa-header");
+    var link = document.querySelectorAll('a');
+     var dropbtnhover = document.querySelectorAll('.dropbtn');
+     var staffCont = document.querySelectorAll('.text-box');
+    
+     //issue w contact
+    
+     //var volun = document.querySelector(".want");
+    var bx = document.querySelector('.web-form'); 
+    var phonehead = document.querySelector('.dropdown-toggle-phone'); 
+    var shad = document.querySelectorAll('.form-out'); 
+
+    //volun.style.backgroundColor = titlecolors[currentIndex]; 
+    body.style.backgroundColor = backgroundcolors[currentIndex];
+//     /*button.forEach((press)=>{
+//         press.style.backgroundColor = titlecolors[currentIndex];
+//     }); */
+     button.style.backgroundColor = titlecolors[currentIndex]; 
+     phonehead.style.backgroundColor = titlecolors[currentIndex]; 
+    sub.forEach((sub)=>{
+        sub.style.backgroundColor = titlecolors[currentIndex];
+        sub.style.color = boxcolors[currentIndex];
+    });     
+    staffCont.forEach(function (staffCont) {
+        staffCont.style.backgroundColor = titlecolors2[currentIndex];
+    });
+    header.style.backgroundColor = boxcolors[currentIndex];
+    
+     link.forEach(function (link) {
+         link.addEventListener('mouseenter', function () {
+             link.style.color = fontcolors[currentIndex];
+             link.style.backgroundColor = backgroundcolors2[currentIndex1];
+         });
+         link.addEventListener('mouseleave', function () {
+             link.style.color = '#000000';
+             link.style.backgroundColor = 'transparent';
+         });
+     });
+    dropbtnhover.forEach(function (dropbtnhover) {
+         dropbtnhover.addEventListener('mouseenter', function () {
+             if (currentIndex1 >= 0) {
+                 dropbtnhover.style.backgroundColor = backgroundcolors[currentIndex1];
+             }
+             dropbtnhover.style.color = fontcolors[currentIndex];
+         });
+         dropbtnhover.addEventListener('mouseleave', function () {
+             dropbtnhover.style.color = '#000000';
+             dropbtnhover.style.backgroundColor = 'transparent';
+         });
+     });
+
+    const shadowValue = `0 0 1.5em ${titlecolors[currentIndex]}`; // Add the shadow dimensions
+    shad.forEach(function (shad) {
+    shad.style.boxShadow = shadowValue;
+    });
+    bx.style.backgroundColor = backgroundcolors[currentIndex]; 
+    currentIndex = (currentIndex + 1) % backgroundcolors.length;
+    currentIndex1 = (currentIndex1 + 1) % backgroundcolors2.length;
+}
 
 var currentIndex1 = -1;
 function changeBackgroundColor3() {

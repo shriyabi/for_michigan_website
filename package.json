@@ -1,5 +1,10 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "formdata-polyfill": "^4.0.10",
+    "promise-polyfill": "^8.3.0",
+    "whatwg-fetch": "^3.6.20"
   }
 }

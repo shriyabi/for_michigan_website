@@ -343,6 +343,29 @@
        <p style="color: black; font-family:Arial, Helvetica, sans-serif"> Paid for by For Michigan Action Fund and not authorized by any candidate or candidate's committee  <br> All
             Rights Reserved</p>
     </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9pP_YdvPllCAnjhjo0dRnIvxikEXPQuo3pnuc7RJNdUwZv5QYBmMnComf__RuSp2S/exec';
+        const formy = document.getElementById('my-form');
+        formy.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(formy)
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Redirect to another page after successful submission
+                    window.location.href = 'Get-Involved-at-For-Michigan-Success'; // Replace with your desired redirect URL
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
+    //});
+      </script>
 </body>
 
 </html>

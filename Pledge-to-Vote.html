@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="FavIcon.png">
     <link rel="stylesheet" type="text/css" href="output.css">
     <script src="script.js"> </script>
-    <script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>-->
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -220,6 +220,8 @@
                     <p> ** For paid opportunities, we may ask for your resume prior to interviews. </p>
                 </div>
             </form>
+            <div id="success-message" class="success" style="display:none;"></div>
+
             <div id="success-message" class="success-message" style="display:none;">Thank you for contacting us!
             </div>
         </div>
@@ -258,6 +260,29 @@
             Rights Reserved</p>
     </div>
 
+ 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxMCRV1y9FvH94q2vSeDaIPnaupLRq5Zy5_5i1iW7QpkoECr6BDi-_p2t-1TGoBxKYi/exec';
+        const formy = document.getElementById('my-form');
+        formy.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(formy)
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Redirect to another page after successful submission
+                    window.location.href = 'Pledging-to-Vote-Success'; // Replace with your desired redirect URL
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
+    //});
+      </script>
 
 
 </body>

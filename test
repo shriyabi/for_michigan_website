@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Michigan: Pledge to Vote</title>
+    <link rel="icon" type="image/png" href="FavIcon.png">
+    <link rel="stylesheet" type="text/css" href="output.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="changeBackgroundColor8()" style="cursor: url(Cursor.png), auto; overflow-x:hidden">
+    <button class="color-change-button" onclick="changeBackgroundColor8()"> Click Me </button>
+    <div class="wwa-header" id="welp">
+        <img src="4MichBlack.png" class="return-home">
+        <div style="display: flex; justify-content: start; align-items: start; flex-direction: row; vertical-align: middle;">
+            <!-- Navigation elements here -->
+        </div>
+    </div>
+
+    <div class="gi-body-img" style="border-bottom: 0.5em solid black; margin:0;">
+        <div class="w-4/5 h-auto web-form" style="display: flex; justify-content: start; align-items: center; padding: 1em; flex-direction: column;">
+            <h2 class="underline"> Pledge to Vote! </h2>
+            <form id="my-form" action="https://script.google.com/macros/s/AKfycbxMCRV1y9FvH94q2vSeDaIPnaupLRq5Zy5_5i1iW7QpkoECr6BDi-_p2t-1TGoBxKYi/exec" method="POST" style="text-align: center" class="w-full" enctype="multipart/form-data">
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" required>
+
+                <label for="address">Address:</label>
+                <input type="text" name="address" required>
+
+                <label for="school">School Attending (if Applicable):</label>
+                <input type="text" name="school">
+
+                <label for="interest-volunteering">Interest in Volunteering for For Michigan:</label>
+                <input type="text" name="interest-volunteering">
+
+                <label for="interest-paid">Interest in Paid Opportunities with For Michigan? (Email resume and statement of interest to info@4mich.org):</label>
+                <input type="text" name="interest-paid">
+
+                <label for="resume">Resume (link):</label>
+                <input type="url" name="resume" required>
+
+                <button type="submit" class="border-black border-2 submit px-2 py-1 text-base"> Pledge to Vote! </button>
+                <p> * Texts will be sent on behalf of For Michigan Action Fund...</p>
+                <p> ** For paid opportunities, we may ask for your resume prior to interviews. </p>
+            </form>
+            <div id="success-message" class="success" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('my-form').onsubmit = function(event) {
+            event.preventDefault(); // Prevent default form submission
+            const form = this;
+
+            // Use Fetch API to submit the form
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) { // Check for success response
+                    // Redirect to the new page
+                    window.location.href = "success.html"; // Change this to your success page URL
+                } else {
+                    // Handle error case
+                    const successMessage = document.getElementById('success-message');
+                    successMessage.textContent = "Submission failed. Please try again.";
+                    successMessage.style.display = "block";
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                const successMessage = document.getElementById('success-message');
+                successMessage.textContent = "There was an error with your submission.";
+                successMessage.style.display = "block";
+            });
+        };
+    </script>
+</body>
+</html>

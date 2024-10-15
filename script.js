@@ -736,7 +736,7 @@ function changeBackgroundColor3() {
     var dpvr = document.querySelectorAll('.dp-vr'); 
     //var contact = document.querySelector('.contact-box');
     var phonehead = document.querySelector('.dropdown-toggle-phone'); 
-    var want = document.querySelector('.want');
+    //var want = document.querySelector('.want');
     var homeCollegeBox = document.querySelector(".home-college-box");
     var colleges = document.querySelectorAll('.colleges');
      var dropbtnhover = document.querySelectorAll('.dropbtn');
@@ -745,7 +745,7 @@ function changeBackgroundColor3() {
     body.style.backgroundColor = backgroundcolors[currentIndex];
     button.style.backgroundColor = titlecolors[currentIndex];
     header.style.backgroundColor = boxcolors[currentIndex];
-    want.style.backgroundColor = titlecolors[currentIndex];
+    //want.style.backgroundColor = titlecolors[currentIndex];
     //contact is culpirt
     //contact.style.backgroundColor = boxcolors[currentIndex];
      whoweare.forEach(function (who) {

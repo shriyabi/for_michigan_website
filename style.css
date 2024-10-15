@@ -5218,7 +5218,9 @@ ul {
     }
 
     .gi-body-img {
-        padding-top: 15em;
+        min-height: auto;
+        padding-top: 20vh;
+        padding-bottom: 5em;
     }
 
     .dropdown-toggle-phone {
@@ -5499,7 +5501,8 @@ ul {
     }
 
     .gi-body-img {
-        height: 300vh;
+        padding-top: 10em;
+        padding-bottom: 5em;
     }
 
     .vr-body-img {

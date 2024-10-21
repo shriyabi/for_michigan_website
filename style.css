@@ -160,6 +160,7 @@ label {
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     margin-bottom: 1em;
+    justify-content: center;
 }
 
 .static-text {

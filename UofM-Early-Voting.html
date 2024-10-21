@@ -1,221 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UofM Early Voting Information</title>
-    <link rel="icon" type="image/png" href="FavIcon.png">
-    <link rel="stylesheet" type="text/css" href="output.css">
-    <script src="script.js"> </script>
-    <!--<script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>-->
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>
+    <title> Vote </title>
+    <style>
+        /* Remove default margins and padding */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensure body takes full height */
+        }
+
+        /* Style for the iframe */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove border */
+        }
+    </style>
 </head>
-
-<body onclick="changeBackgroundColor12()" style="cursor: url(Cursor.png), auto; overflow-x:hidden">
-    <button class="color-change-button" onclick="changeBackgroundColor12()"> Click Me </button>
-    <div class="wwa-header" id="welp">
-        <img src="4MichBlack.png" class="return-home">
-        <div
-            style="display: flex; justify-content: start; align-items: start; flex-direction: row; vertical-align: middle;">
-            <div class="hide">
-                <h3 class="text-xl" style="display: inline;"><a href="index" class="link-color-header"
-                        style="margin-right: 2rem;"> HOME </a>
-                </h3>
-                <h3 class="text-xl" style="display: inline;">
-                    <a href="Who-Are-We" class="link-color-header" style="margin-right: 2rem;"> WHO
-                        WE ARE </a>
-                </h3>
-            </div>
-
-            <div class="hide">
-                <div class="dropdown" style="margin-right: 1rem;">
-                    <h3 class = "text-xl"><button class="dropbtn"> VOTER INFORMATION </button> </h3>
-                    <div class="dropdown-content">
-                        <a
-                        href="UofM-Early-Voting" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                            <h4> UoM Early Voting  </h4>
-                        </div></a>
-                        <a
-                        href="earlyvote" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                            <h4> Early Voting  </h4>
-                        </div></a>
-                        <a
-                        href="vote" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                            <h4> Vote  </h4>
-                        </div></a>
-                    </div>
-                </div></div>
-
-            <div class="dropdown-phone">
-                <button class="dropdown-toggle-phone" onclick="toggleDropdown()">☰</button>
-                <div class="dropdown-content-phone" id="dropdown-content-phone">
-                    <a href="index">HOME</a>
-                    <a href="Who-Are-We">WHO WE ARE</a>
-                    <div class="dropdown">
-                        <h3><button class="dropbtn"> VOTER INFORMATION </button> </h3>
-                        <div class="dropdown-content">
-                            <a href = "UofM-Early-Voting" style="padding: 0"><div class="dp-vr">
-                                <h4> UofM Early Voting </h4>
-                            </div></a>
-                            <a href = "earlyvote" style="padding: 0"><div class="dp-vr">
-                                <h4> Early Voting </h4>
-                            </div></a>
-                            <a
-                            href="vote" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                                <h4> Voting </h4>
-                            </div></a>
-                        </div>
-                    </div>
-                    <div class="dropdown" style="margin-right: 1rem; margin-bottom: 0;">
-                        <h3><button class="dropbtn"> GET INVOLVED </button> </h3>
-                        <div class="dropdown-content">
-                            <a href = "Pledge-to-Vote" style="padding: 0"><div class="dp-vr">
-                                <h4> Pledge to Vote </h4>
-                            </div></a>
-                            <a
-                            href="Jobs" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                                <h4> Jobs </h4>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hide">
-            <div class="dropdown" style="margin-right: 1rem;">
-                <h3 class = "text-xl"><button class="dropbtn"> GET INVOLVED </button> </h3>
-                <div class="dropdown-content">
-                    <a
-                    href="Jobs" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                        <h4> Jobs </h4>
-                    </div></a>
-                    <a
-                    href="Pledge-to-Vote" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                        <h4> Pledge to Vote </h4>
-                    </div></a>
-                </div>
-            </div></div>
-    </div>
-
- 
-    <div class="gi-body-img">
-        <div class="w-4/5 h-auto web-form"
-            style="display: flex; justify-content: start; align-items: center; padding: 1em; flex-direction: column;">
-            <script src="script.js"> </script>
-            <h2> U-M STUDENT VOTING </h2>
-            <h3 class="flex text-lg flex-col"> You have options for how—and when—you can vote!</h3>
-            <h2 class="text-xl">In Michigan, you can vote before Election Day! Starting 40 days before the election, 
-                you can vote with an absentee ballot. Starting October 26th, you can take advantage of the 9 days of Early Voting.</h2>
-
-            <h2 class="text-lg"> For more information, visit the <a href="https://www.govote.umich.edu/vote/" style="color:blue;"> UMich Votes webpage</a>.</h2>
-        
-            <div class="w-full flex flex-col md:flex-row justify-center align-items">
-                <!--<div class="w-full my-[1em] flex-col md:w-1/2 text-left p-3 justify-center flex items-center border-4 border-solid rounded-lg border-black text-box" style="margin-right: 1em;">
-                    </div> -->
-                <div class="w-full text-left p-3 justify-center flex items-center flex-col border-4 border-solid rounded-lg border-black text-box" style="margin-right: 1em;">
-                    <h2 class="text-xl"> You can vote early at one of the two Campus Voting Hubs! </h2>
-                    <ul class="w-full">
-                        <li class="underline"> Before October 25th </li>
-                        <li> You can vote early at one of the two Campus Voting Hubs!                        </li>
-                        <li> You can pick up an absentee ballot and either vote it on site or take it home to vote and then return it. </li>
-                    </ul>
-                    <br>
-                    <ul class="w-full">
-                        <li class="underline"> September 24 – October 25 </li>
-                        <li class="italic"> 12–6pm, Monday–Friday </li>
-                        <li style="font-weight: 700;"> UMMA: 525 S. State Street</li>
-                    </ul>
-                    <br>
-                    <ul class="w-full">
-                        <li class="underline"> October 21 – 25 </li>
-                        <li class="italic"> 12–6pm, Monday–Friday </li>
-                        <li style="font-weight: 700;"> Duderstadt Center Gallery: 2281 Bonisteel Blvd </li>
-                    </ul>
-                    <br>
-                    <ul class="w-full">
-                        <li class="underline"> October 26 - Early Voting Election Day </li>
-                        <li class="italic">  Come to Campus Voting Hubs! </li>
-                        <li style="font-weight: 600;"> Avoid Election Day lines and be a part of Michigan’s new 9 Days of Early Voting!
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="w-full">
-                        <li class="underline"> October 26 - November 3 </li>
-                        <li class="italic"> 11am–7pm, every day, including Saturdays and Sundays</li>
-                        <li style="font-weight: 700;">  UMMA: 525 S. State Street</li>
-                        <li style="font-weight: 700;">  Duderstadt Center Gallery: 2281 Bonisteel Blvd </li>
-                        <li class="text-sm"> You can still register and vote in Ann Arbor, up to and including on Election Day.
-                            If you want to vote in Ann Arbor on Election Day — make sure you register in advance so that you can go to your <a href="https://mvic.sos.state.mi.us/Voter/Index" style="color: blue"> polling location </a> on November 5th! </li>
-                    </ul>
-                    <br>
-                    <ul class="w-full">
-                        <li class="underline"> Monday, November 4 </li>
-                        <li class="italic"> 11am–4pm, every day, including Saturdays and Sundays</li>
-                        <li style="font-weight: 700;">  UMMA: 525 S. State Street</li>
-                        <li style="font-weight: 700;">  Duderstadt Center Gallery: 2281 Bonisteel Blvd </li>
-                    </ul>
-                    <br>
-                    <ul class="w-full">
-                        <li class="underline"> Tuesday, November 5: Election Day </li>
-                        <li class="italic font-weight-600"> 7am–8pm</li>
-                        <li style="font-weight: 700;">  UMMA: 525 S. State Street</li>
-                        <li style="font-weight: 700;">  Duderstadt Center Gallery: 2281 Bonisteel Blvd </li>
-                        <li style="font-weight:600; color:rgb(168, 0, 0)">  The Campus Voting Hubs will be open 7am–8pm, ONLY for people who still need to register and vote in Ann Arbor. If you’re registered, find your polling location polling location <a href="https://mvic.sos.state.mi.us/Voter/Index" style="color: blue"> here </a>. </li>
-                    </ul>
-                    <br>
-                    <h2 class="text-lg">You can pick up an absentee ballot and either vote it on site or take it home to vote and then return it.</h2>
-                </div>
-            </div>
-
-
-            
-        </div>
-        <br>
-
-        
-    </div>
-    <div style="border-top: 1em solid black; background-color: transparent; width: 100%;">
-        <div class="main-contact">
-            <div class="contact-us1"><img src="4MichBlack.png" class="logo"> </div>
-            <div class="contact-us2">
-                <a href="https://www.instagram.com/formichigan/"><i class="fa-brands fa-instagram fa-2x"
-                        style="display: inline; color: black;"></i></a>
-                <h4 style="display: inline; margin-bottom: 0; color: black;"> @formichigan
-                    <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-                </h4>
-                <a href="https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x"
-                        style="display: inline; color: black;"></i></a>
-                <a href="https://www.linkedin.com/company/for-michigan/about/">
-                    <h4 style="display: inline; color: black;"> @formichigan <span>&nbsp;&nbsp;&nbsp;
-                            |&nbsp;&nbsp;&nbsp;</span> </h4>
-                </a>
-                <a href="https://www.tiktok.com/@formichigan">
-                    <i class="fa-brands fa-tiktok fa-2x" style="display: inline; color: black;"></i> 
-                </a>
-                <a href="https://www.tiktok.com/@formichigan">
-                         <h4 style="display: inline; color: black;"> @formichigan <span>&nbsp;&nbsp;&nbsp;
-                        |&nbsp;&nbsp;&nbsp;</span>
-                </h4></a>
-                <a href="mailto:info@4mich.org"><i class="fa-regular fa-envelope fa-2x"
-                        style="display: inline; color: black;"></i></a>
-                <h4 style="display: inline; margin-bottom: 0; color: black;"> info@4mich.org </h4>
-            </div>
-        </div>
-        <br>
-        <br>
-        <p style="color: black; "> For Michigan is a 501(c)(4) Organization </p>
-        <p style="color: black; font-family:Arial, Helvetica, sans-serif"> Paid for by For Michigan Action Fund and not authorized by any candidate or candidate's committee  <br> All
-            Rights Reserved</p>
-    </div>
+<body>
+    <iframe src="https://www.mistudentsvote.com" title="MI Students Vote"></iframe>
 </body>
-
 </html>

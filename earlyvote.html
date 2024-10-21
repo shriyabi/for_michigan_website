@@ -1,204 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Early Voting</title>
-    <link rel="icon" type="image/png" href="FavIcon.png">
-    <link rel="stylesheet" type="text/css" href="output.css">
-    <script src="script.js"> </script>
-    <!--<script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>-->
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/fa913dc807.js" crossorigin="anonymous"></script>
+    <title> Vote </title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
-
-<body onclick="changeBackgroundColor8()" style="cursor: url(Cursor.png), auto; overflow-x:hidden">
-    <button class="color-change-button" onclick="changeBackgroundColor8()"> Click Me </button>
-    <div class="wwa-header" id="welp">
-        <img src="4MichBlack.png" class="return-home">
-        <div
-            style="display: flex; justify-content: start; align-items: start; flex-direction: row; vertical-align: middle;">
-            <div class="hide">
-                <h3 class="text-xl" style="display: inline;"><a href="index" class="link-color-header"
-                        style="margin-right: 2rem;"> HOME </a>
-                </h3>
-                <h3 class="text-xl" style="display: inline;">
-                    <a href="Who-Are-We" class="link-color-header" style="margin-right: 2rem;"> WHO
-                        WE ARE </a>
-                </h3>
-            </div>
-            <div class="hide">
-                <div class="dropdown" style="margin-right: 1rem;">
-                    <h3 class = "text-xl"><button class="dropbtn"> VOTER INFORMATION </button> </h3>
-                    <div class="dropdown-content">
-                        <a
-                        href="UofM-Early-Voting" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                            <h4> UoM Early Voting  </h4>
-                        </div></a>
-                        <a
-                        href="earlyvote" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                            <h4> Early Voting  </h4>
-                        </div></a>
-                        <a
-                        href="vote" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                            <h4> Vote  </h4>
-                        </div></a>
-                    </div>
-                </div></div>
-
-            <div class="dropdown-phone">
-                <button class="dropdown-toggle-phone" onclick="toggleDropdown()">☰</button>
-                <div class="dropdown-content-phone" id="dropdown-content-phone">
-                    <a href="index">HOME</a>
-                    <a href="Who-Are-We">WHO WE ARE</a>
-                    <div class="dropdown">
-                        <h3><button class="dropbtn"> VOTER INFORMATION </button> </h3>
-                        <div class="dropdown-content">
-                            <a href = "UofM-Early-Voting" style="padding: 0"><div class="dp-vr">
-                                <h4> UofM Early Voting </h4>
-                            </div></a>
-                            <a href = "earlyvote" style="padding: 0"><div class="dp-vr">
-                                <h4> Early Voting </h4>
-                            </div></a>
-                            <a
-                            href="vote" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                                <h4> Voting </h4>
-                            </div></a>
-                        </div>
-                    </div>
-                    <div class="dropdown" style="margin-right: 1rem; margin-bottom: 0;">
-                        <h3><button class="dropbtn"> GET INVOLVED </button> </h3>
-                        <div class="dropdown-content">
-                            <a href = "Pledge-to-Vote" style="padding: 0"><div class="dp-vr">
-                                <h4> Pledge to Vote </h4>
-                            </div></a>
-                            <a
-                            href="Jobs" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                                <h4> Jobs </h4>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hide">
-            <div class="dropdown" style="margin-right: 1rem;">
-                <h3 class = "text-xl"><button class="dropbtn"> GET INVOLVED </button> </h3>
-                <div class="dropdown-content">
-                    <a
-                    href="Jobs" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                        <h4> Jobs </h4>
-                    </div></a>
-                    <a
-                    href="Pledge-to-Vote" class = "link-color" style = "background-color: none; padding: 0;"><div class="dp-vr">
-                        <h4> Pledge to Vote </h4>
-                    </div></a>
-                </div>
-            </div></div>
-    </div>
-
- 
-    <div class="gi-body-img" style="border-bottom: 0.5em solid black; margin:0; ">
-        <div class="w-4/5 h-auto web-form"
-            style="display: flex; justify-content: start; align-items: center; padding: 1em; flex-direction: column;">
-            <script src="script.js"> </script>
-            <h2> Check out <a href="https://mvic.sos.state.mi.us/Voter/Index" style="color: blue"> the State of Michigan's Voter Information</a> for more information! </h2>
-
-            
-        </div>
-        <br>
-
-        
-    </div>
-    <div style="border-top: 1em solid black; background-color: transparent; width: 100%;">
-        <div class="main-contact">
-            <div class="contact-us1"><img src="4MichBlack.png" class="logo"> </div>
-            <div class="contact-us2">
-                <a href="https://www.instagram.com/formichigan/"><i class="fa-brands fa-instagram fa-2x"
-                        style="display: inline; color: black;"></i></a>
-                <h4 style="display: inline; margin-bottom: 0; color: black;"> @formichigan
-                    <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-                </h4>
-                <a href="https://www.linkedin.com/company/for-michigan/about/"><i class="fa-brands fa-linkedin fa-2x"
-                        style="display: inline; color: black;"></i></a>
-                <a href="https://www.linkedin.com/company/for-michigan/about/">
-                    <h4 style="display: inline; color: black;"> @formichigan <span>&nbsp;&nbsp;&nbsp;
-                            |&nbsp;&nbsp;&nbsp;</span> </h4>
-                </a>
-                <a href="https://www.tiktok.com/@formichigan">
-                    <i class="fa-brands fa-tiktok fa-2x" style="display: inline; color: black;"></i> 
-                </a>
-                <a href="https://www.tiktok.com/@formichigan">
-                         <h4 style="display: inline; color: black;"> @formichigan <span>&nbsp;&nbsp;&nbsp;
-                        |&nbsp;&nbsp;&nbsp;</span>
-                </h4></a>
-                <a href="mailto:info@4mich.org"><i class="fa-regular fa-envelope fa-2x"
-                        style="display: inline; color: black;"></i></a>
-                <h4 style="display: inline; margin-bottom: 0; color: black;"> info@4mich.org </h4>
-            </div>
-        </div>
-        <br>
-        <br>
-        <p style="color: black; "> For Michigan is a 501(c)(4) Organization </p>
-        <p style="color: black; font-family:Arial, Helvetica, sans-serif"> Paid for by For Michigan Action Fund and not authorized by any candidate or candidate's committee  <br> All
-            Rights Reserved</p>
-    </div>
-
- 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxMCRV1y9FvH94q2vSeDaIPnaupLRq5Zy5_5i1iW7QpkoECr6BDi-_p2t-1TGoBxKYi/exec';
-        const formy = document.getElementById('my-form');
-        /*const messageDiv = document.getElementById('success-message');
-    
-        formy.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const formData = new FormData(formy);
-
-      fetch(scriptURL, { method: 'POST', body: formData })
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-          }
-          return response.text();
-        })
-        .then(data => {
-          messageDiv.textContent = "Form submitted successfully!";
-          formy.reset();
-        })
-        .catch(error => {
-          messageDiv.textContent = "Submission failed. Please try again.";
-          console.error('Error:', error);
-        });*/
-        formy.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevent default form submission
-
-            fetch(scriptURL, {
-                method: 'POST',
-                body: new FormData(formy)
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Redirect to another page after successful submission
-                    window.location.href = 'index.html'; // Replace with your desired redirect URL
-                } else {
-                    throw new Error('Network response was not ok.');
-                }
-            })
-            .catch(error => console.error('Error!', error.message));
-        });
-    //});
-      </script>
-
-
+<body>
+    <iframe src="https://www.mistudentsvote.com" title="MI Students Vote"></iframe>
 </body>
-
 </html>

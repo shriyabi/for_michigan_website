@@ -3,6 +3,7 @@
     "tailwindcss": "^3.4.10"
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.3",
     "formdata-polyfill": "^4.0.10",
     "promise-polyfill": "^8.3.0",
     "whatwg-fetch": "^3.6.20"
